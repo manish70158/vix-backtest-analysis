@@ -290,6 +290,36 @@ class NiftyAllExpiriesBacktester:
         nifty_data = nifty_expiry.iloc[0]
         vix_close = vix_expiry['Close'].iloc[0]
 
+        # Check if current close is within previous day's range
+        # Calculate percentage difference from previous close to current close
+        close_in_prev_range = "N/A"
+        prev_close_to_close_pct = None
+        close_vs_prev_range = "N/A"
+
+        if len(prev_day_idx) > 0:
+            prev_day_data = nifty_df.iloc[prev_day_idx[-1]]
+            prev_high = prev_day_data['High']
+            prev_low = prev_day_data['Low']
+            prev_close = prev_day_data['Close']
+            current_close = nifty_data['Close']
+
+            # Check if current close is between previous day's high and low
+            if prev_low <= current_close <= prev_high:
+                close_in_prev_range = "Yes"
+            else:
+                close_in_prev_range = "No"
+
+            # Calculate percentage change from previous close to current close
+            prev_close_to_close_pct = ((current_close - prev_close) / prev_close) * 100
+
+            # Determine position of current close relative to previous day's range
+            if current_close > prev_high:
+                close_vs_prev_range = "Above High"
+            elif current_close < prev_low:
+                close_vs_prev_range = "Below Low"
+            else:
+                close_vs_prev_range = "Within Range"
+
         # VIX predicts annualized volatility, convert to daily
         vix_predicted_move_pct = vix_open / 19.1
 
@@ -341,7 +371,10 @@ class NiftyAllExpiriesBacktester:
             'range_vs_vix_ratio': round(actual_range_pct / vix_predicted_move_pct, 2),
             'diff_pct': round(diff, 2),
             'vix_accuracy': vix_accuracy,
-            'move_direction': move_direction  # V6: Direction for all rows
+            'move_direction': move_direction,  # V6: Direction for all rows
+            'close_in_prev_range': close_in_prev_range,  # Check if close is in previous day's range
+            'prev_close_to_close_pct': round(prev_close_to_close_pct, 2) if prev_close_to_close_pct is not None else None,  # % change from prev close to current close
+            'close_vs_prev_range': close_vs_prev_range  # Position of close relative to prev day's high/low
         }
 
         return result

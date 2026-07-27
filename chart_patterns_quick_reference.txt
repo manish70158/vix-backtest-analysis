@@ -1,0 +1,43 @@
+================================================================================
+CHART PATTERNS QUICK REFERENCE (V3)
+================================================================================
+
+CRASH PATTERNS (Usually Underestimated):
+- █↓▁↑█↓▁ 📉  = Severe crash with failed bounce
+- ▇↓▁↑█↓▂ 📉  = Gap down, sold off, weak close
+- █↓▁↓▁→▁ 📉  = Continuous selling pressure
+
+RALLY PATTERNS (Often Underestimated):
+- ▁↑▁↑█↓▇ 📈  = Strong rally from lows
+- ▂↓▁↑█→█ 📈  = Rally to highs, held strength
+- ▁↑▃↑▇↑█ 📈  = Steady uptrend all day
+
+VOLATILE/CHOPPY PATTERNS:
+- ▆↓▁↑█↓▂ 📉  = Multiple whipsaws
+- ▄↓▁↑█↓▁ 📉  = High-low-high-low
+- ▅↑█↓▁↑▄ 📈  = Indecision, ended slightly up
+
+CALM/LOW VOLATILITY:
+- ▃↓▁↑█↓▄ 📈  = Small range, minimal movement
+- ▄→▄→▅→▄ 📈  = Sideways grinding
+- ▅↓▃↑▆→▅ 📈  = Tight consolidation
+
+================================================================================
+HOW TO USE:
+================================================================================
+1. Open vix_all_expiries_results_v3.csv in Google Sheets
+2. Look at 'chart' column
+3. Instantly see which days had:
+   - Big moves (lots of ↑↓ symbols)
+   - Crashes (█↓▁ pattern)
+   - Rallies (▁↑█ pattern)
+   - Calm days (→ symbols)
+4. Cross-reference with vix_accuracy column
+5. Understand WHY VIX underestimated
+
+FILTER IDEAS:
+- Sort by 'actual_range_pct' DESC → See most volatile days and their patterns
+- Filter 'chart' contains '📉' → All bearish days
+- Filter 'vix_accuracy' = 'Underestimated' → See what patterns VIX missed
+
+================================================================================

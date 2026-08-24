@@ -1,0 +1,333 @@
+{
+  "metadata": {
+    "generated": "2026-08-24T18:30:19.144442",
+    "overlap_period": "2025-08-14 to 2026-07-21",
+    "expiry_days": 50,
+    "blowout_count": 11,
+    "base_rate": 0.22
+  },
+  "correlations": {
+    "same_day": {
+      "fii_fut_idx_net_vs_is_blowout": {
+        "correlation": -0.3053,
+        "p_value": 0.0311,
+        "n": 50,
+        "significant": "True"
+      },
+      "fii_fut_idx_net_vs_actual_range_pct": {
+        "correlation": -0.3203,
+        "p_value": 0.0234,
+        "n": 50,
+        "significant": "True"
+      },
+      "fii_call_net_vs_is_blowout": {
+        "correlation": -0.3263,
+        "p_value": 0.0207,
+        "n": 50,
+        "significant": "True"
+      },
+      "fii_call_net_vs_actual_range_pct": {
+        "correlation": -0.4402,
+        "p_value": 0.0014,
+        "n": 50,
+        "significant": "True"
+      },
+      "fii_put_net_vs_is_blowout": {
+        "correlation": 0.2421,
+        "p_value": 0.0903,
+        "n": 50,
+        "significant": "False"
+      },
+      "fii_put_net_vs_actual_range_pct": {
+        "correlation": 0.2362,
+        "p_value": 0.0987,
+        "n": 50,
+        "significant": "False"
+      },
+      "fii_pcr_vs_is_blowout": {
+        "correlation": -0.1715,
+        "p_value": 0.2337,
+        "n": 50,
+        "significant": "False"
+      },
+      "fii_pcr_vs_actual_range_pct": {
+        "correlation": -0.1084,
+        "p_value": 0.4535,
+        "n": 50,
+        "significant": "False"
+      },
+      "fii_net_sentiment_vs_is_blowout": {
+        "correlation": -0.3058,
+        "p_value": 0.0308,
+        "n": 50,
+        "significant": "True"
+      },
+      "fii_net_sentiment_vs_actual_range_pct": {
+        "correlation": -0.3533,
+        "p_value": 0.0118,
+        "n": 50,
+        "significant": "True"
+      },
+      "fii_put_change_vs_is_blowout": {
+        "correlation": 0.2685,
+        "p_value": 0.0621,
+        "n": 49,
+        "significant": "False"
+      },
+      "fii_put_change_vs_actual_range_pct": {
+        "correlation": 0.1084,
+        "p_value": 0.4586,
+        "n": 49,
+        "significant": "False"
+      }
+    },
+    "t1_premarket": {
+      "t1_fii_fut_idx_net_vs_is_blowout": {
+        "correlation": -0.3181,
+        "p_value": 0.0244,
+        "n": 50,
+        "significant": "True"
+      },
+      "t1_fii_fut_idx_net_vs_actual_range_pct": {
+        "correlation": -0.3719,
+        "p_value": 0.0078,
+        "n": 50,
+        "significant": "True"
+      },
+      "t1_fii_call_net_vs_is_blowout": {
+        "correlation": -0.328,
+        "p_value": 0.0201,
+        "n": 50,
+        "significant": "True"
+      },
+      "t1_fii_call_net_vs_actual_range_pct": {
+        "correlation": -0.474,
+        "p_value": 0.0005,
+        "n": 50,
+        "significant": "True"
+      },
+      "t1_fii_put_net_vs_is_blowout": {
+        "correlation": 0.2701,
+        "p_value": 0.0578,
+        "n": 50,
+        "significant": "False"
+      },
+      "t1_fii_put_net_vs_actual_range_pct": {
+        "correlation": 0.35,
+        "p_value": 0.0127,
+        "n": 50,
+        "significant": "True"
+      },
+      "t1_fii_pcr_vs_is_blowout": {
+        "correlation": -0.0975,
+        "p_value": 0.5007,
+        "n": 50,
+        "significant": "False"
+      },
+      "t1_fii_pcr_vs_actual_range_pct": {
+        "correlation": -0.2515,
+        "p_value": 0.0781,
+        "n": 50,
+        "significant": "False"
+      }
+    }
+  },
+  "cross_tabs": {
+    "FII_Direction": {
+      "Neutral": {
+        "count": 27,
+        "blowouts": 7,
+        "blowout_rate": 0.2593,
+        "avg_range": 0.9696
+      },
+      "Bullish": {
+        "count": 20,
+        "blowouts": 2,
+        "blowout_rate": 0.1,
+        "avg_range": 0.855
+      },
+      "Bearish": {
+        "count": 3,
+        "blowouts": 2,
+        "blowout_rate": 0.6667,
+        "avg_range": 1.32
+      }
+    },
+    "DII_Direction": {
+      "Neutral": {
+        "count": 24,
+        "blowouts": 3,
+        "blowout_rate": 0.125,
+        "avg_range": 0.8088
+      },
+      "Bullish": {
+        "count": 26,
+        "blowouts": 8,
+        "blowout_rate": 0.3077,
+        "avg_range": 1.0704
+      }
+    },
+    "Pro_Direction": {
+      "Bearish": {
+        "count": 5,
+        "blowouts": 2,
+        "blowout_rate": 0.4,
+        "avg_range": 1.036
+      },
+      "Neutral": {
+        "count": 26,
+        "blowouts": 4,
+        "blowout_rate": 0.1538,
+        "avg_range": 0.9292
+      },
+      "Bullish": {
+        "count": 19,
+        "blowouts": 5,
+        "blowout_rate": 0.2632,
+        "avg_range": 0.9421
+      }
+    },
+    "Client_Direction": {
+      "Neutral": {
+        "count": 27,
+        "blowouts": 6,
+        "blowout_rate": 0.2222,
+        "avg_range": 0.9678
+      },
+      "Bearish": {
+        "count": 23,
+        "blowouts": 5,
+        "blowout_rate": 0.2174,
+        "avg_range": 0.9178
+      }
+    },
+    "t1_FII_Direction": {
+      "Neutral": {
+        "count": 29,
+        "blowouts": 7,
+        "blowout_rate": 0.2414,
+        "avg_range": 0.9897
+      },
+      "Bullish": {
+        "count": 16,
+        "blowouts": 2,
+        "blowout_rate": 0.125,
+        "avg_range": 0.7038
+      },
+      "Bearish": {
+        "count": 5,
+        "blowouts": 2,
+        "blowout_rate": 0.4,
+        "avg_range": 1.456
+      }
+    },
+    "consensus_count": {
+      "0": {
+        "count": 14,
+        "blowouts": 2,
+        "blowout_rate": 0.1429,
+        "avg_range": 0.7914
+      },
+      "1": {
+        "count": 26,
+        "blowouts": 5,
+        "blowout_rate": 0.1923,
+        "avg_range": 0.9715
+      },
+      "2": {
+        "count": 7,
+        "blowouts": 3,
+        "blowout_rate": 0.4286,
+        "avg_range": 0.92
+      },
+      "3": {
+        "count": 3,
+        "blowouts": 1,
+        "blowout_rate": 0.3333,
+        "avg_range": 1.4867
+      }
+    }
+  },
+  "rules": {
+    "base_rate": 0.22,
+    "rules": {
+      "FII_Direction_Bearish": {
+        "triggers": 3,
+        "blowouts": 2,
+        "blowout_rate": 0.6667,
+        "lift": 3.03,
+        "pct_of_days": 0.06
+      },
+      "FII_Direction_Bullish": {
+        "triggers": 20,
+        "blowouts": 2,
+        "blowout_rate": 0.1,
+        "lift": 0.45,
+        "pct_of_days": 0.4
+      },
+      "fii_pcr_above_median": {
+        "triggers": 25,
+        "blowouts": 3,
+        "blowout_rate": 0.12,
+        "lift": 0.55,
+        "pct_of_days": 0.5
+      },
+      "fii_put_change_positive": {
+        "triggers": 31,
+        "blowouts": 8,
+        "blowout_rate": 0.2581,
+        "lift": 1.17,
+        "pct_of_days": 0.62
+      },
+      "t1_FII_Direction_Bearish": {
+        "triggers": 5,
+        "blowouts": 2,
+        "blowout_rate": 0.4,
+        "lift": 1.82,
+        "pct_of_days": 0.1
+      },
+      "t1_FII_Direction_Bullish": {
+        "triggers": 16,
+        "blowouts": 2,
+        "blowout_rate": 0.125,
+        "lift": 0.57,
+        "pct_of_days": 0.32
+      },
+      "fii_pcr_above_75pct": {
+        "triggers": 13,
+        "blowouts": 0,
+        "blowout_rate": 0.0,
+        "lift": 0.0,
+        "pct_of_days": 0.26
+      },
+      "fii_pcr_below_25pct": {
+        "triggers": 13,
+        "blowouts": 5,
+        "blowout_rate": 0.3846,
+        "lift": 1.75,
+        "pct_of_days": 0.26
+      },
+      "consensus_ge3": {
+        "triggers": 3,
+        "blowouts": 1,
+        "blowout_rate": 0.3333,
+        "lift": 1.52,
+        "pct_of_days": 0.06
+      },
+      "vix_change_gt_0.5": {
+        "triggers": 6,
+        "blowouts": 6,
+        "blowout_rate": 1.0,
+        "lift": 4.55,
+        "pct_of_days": 0.12
+      },
+      "vix_change_lt_0": {
+        "triggers": 34,
+        "blowouts": 4,
+        "blowout_rate": 0.1176,
+        "lift": 0.53,
+        "pct_of_days": 0.68
+      }
+    }
+  }
+}

@@ -43,12 +43,12 @@ import json
 class NiftyAllExpiriesBacktester:
     """Backtest VIX predictions vs actual NIFTY movement on weekly + monthly expiries."""
 
-    def __init__(self, years: int = 2):
+    def __init__(self, years: int = 6):
         """
         Initialize backtester.
 
         Args:
-            years: Number of years to backtest (default: 2)
+            years: Number of years to backtest (default: 6)
         """
         self.years = years
         # Go back full years plus a buffer to ensure we get all expiries
@@ -280,28 +280,49 @@ class NiftyAllExpiriesBacktester:
 
         # Get VIX from previous day (opening VIX expectation)
         vix_dates = vix_df.index.date
-        prev_day_idx = np.where(vix_dates < expiry_date_only)[0]
+        vix_prev_day_idx = np.where(vix_dates < expiry_date_only)[0]
 
-        if len(prev_day_idx) == 0:
+        if len(vix_prev_day_idx) == 0:
             vix_open = vix_expiry['Open'].iloc[0]
         else:
-            vix_open = vix_df.iloc[prev_day_idx[-1]]['Close']
+            vix_open = vix_df.iloc[vix_prev_day_idx[-1]]['Close']
 
         nifty_data = nifty_expiry.iloc[0]
         vix_close = vix_expiry['Close'].iloc[0]
 
+        # Get NIFTY previous day data (separate from VIX calculation)
+        nifty_dates = nifty_df.index.date
+        nifty_prev_day_idx = np.where(nifty_dates < expiry_date_only)[0]
+
         # Check if current close is within previous day's range
         # Calculate percentage difference from previous close to current close
         close_in_prev_range = "N/A"
+        open_in_prev_range = "N/A"  # Check if open is in prev day's range
         prev_close_to_close_pct = None
         close_vs_prev_range = "N/A"
+        prev_open = None
+        prev_high = None
+        prev_low = None
+        prev_close = None
+        gap_pct = None  # Gap between prev_close and nifty_open
 
-        if len(prev_day_idx) > 0:
-            prev_day_data = nifty_df.iloc[prev_day_idx[-1]]
+        if len(nifty_prev_day_idx) > 0:
+            prev_day_data = nifty_df.iloc[nifty_prev_day_idx[-1]]
+            prev_open = prev_day_data['Open']
             prev_high = prev_day_data['High']
             prev_low = prev_day_data['Low']
             prev_close = prev_day_data['Close']
             current_close = nifty_data['Close']
+            current_open = nifty_data['Open']
+
+            # Calculate gap percentage between prev_close and current open
+            gap_pct = ((current_open - prev_close) / prev_close) * 100
+
+            # Check if current open is between previous day's high and low
+            if prev_low <= current_open <= prev_high:
+                open_in_prev_range = "Yes"
+            else:
+                open_in_prev_range = "No"
 
             # Check if current close is between previous day's high and low
             if prev_low <= current_close <= prev_high:
@@ -361,6 +382,12 @@ class NiftyAllExpiriesBacktester:
             'nifty_high': round(nifty_data['High'], 2),
             'nifty_low': round(nifty_data['Low'], 2),
             'nifty_close': round(nifty_data['Close'], 2),
+            'prev_open': round(prev_open, 2) if prev_open is not None else None,
+            'prev_high': round(prev_high, 2) if prev_high is not None else None,
+            'prev_low': round(prev_low, 2) if prev_low is not None else None,
+            'prev_close': round(prev_close, 2) if prev_close is not None else None,
+            'gap_pct': round(gap_pct, 2) if gap_pct is not None else None,  # Gap between prev_close and nifty_open
+            'open_in_prev_range': open_in_prev_range,  # Check if open is in previous day's range
             'vix_open': round(vix_open, 2),
             'vix_close': round(vix_close, 2),
             'vix_predicted_move_pct': round(vix_predicted_move_pct, 2),
@@ -634,7 +661,7 @@ def main():
         formatter_class=argparse.RawDescriptionHelpFormatter
     )
 
-    parser.add_argument('--years', type=int, default=2, help='Number of years to backtest')
+    parser.add_argument('--years', type=int, default=6, help='Number of years to backtest')
     parser.add_argument('--json', type=str, default='vix_all_expiries_results_v6.json', help='JSON output filename')
     parser.add_argument('--csv', type=str, default='vix_all_expiries_results_v6.csv', help='CSV output filename')
 

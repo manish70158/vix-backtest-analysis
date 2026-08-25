@@ -242,3 +242,16 @@ Date,fii_fut_idx_net,fii_call_net,fii_put_net,FII_Direction,DII_Direction,Pro_Di
 2026-08-04,-153773,-164997,485728,Neutral,Neutral,Bearish,Neutral,24614.900390625,0.04,Bullish,
 2026-08-05,-158903,-228591,461172,Neutral,Neutral,Bullish,Bearish,24624.650390625,0.05,Bullish,
 2026-08-06,-145118,-163045,387627,Bullish,Neutral,Bullish,Bearish,24636.0,-0.27,Bearish,Incorrect
+2026-08-07,-150058,-213031,414412,Neutral,Neutral,Neutral,Neutral,24570.650390625,,Neutral,
+2026-08-10,-152163,-199936,429792,Neutral,Neutral,Neutral,Neutral,24583.80078125,0.05,Neutral,
+2026-08-11,-156131,-197579,485144,Neutral,Neutral,Neutral,Neutral,24471.69921875,-0.46,Bearish,
+2026-08-12,-165169,-230939,499737,Bearish,Neutral,Neutral,Neutral,24435.94921875,-0.15,Bearish,Correct
+2026-08-13,-168702,-288841,474116,Neutral,Neutral,Neutral,Neutral,24395.849609375,-0.16,Bearish,
+2026-08-14,-176698,-276645,497176,Bearish,Neutral,Neutral,Neutral,24366.0,-0.12,Bearish,Correct
+2026-08-17,-181587,-228525,502455,Neutral,Neutral,Neutral,Neutral,24287.650390625,-0.32,Bearish,
+2026-08-18,-194158,-231661,611080,Bearish,Neutral,Neutral,Neutral,24154.900390625,-0.55,Bearish,Correct
+2026-08-19,-209807,-313586,571624,Bearish,Neutral,Neutral,Neutral,24078.30078125,-0.32,Bearish,Correct
+2026-08-20,-212113,-233793,478916,Neutral,Neutral,Neutral,Neutral,24231.849609375,0.64,Bullish,
+2026-08-21,-209855,-218113,467947,Neutral,Neutral,Neutral,Neutral,24252.0,0.08,Neutral,
+2026-08-24,-219383,-199680,581958,Bearish,Neutral,Neutral,Neutral,24219.05078125,-0.14,Bearish,Correct
+2026-08-25,-184227,-198430,549436,Bullish,Neutral,Neutral,Neutral,24334.55078125,,Neutral,

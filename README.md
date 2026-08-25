@@ -1,4 +1,60 @@
-# Claude Skills for Options & Stock Trading
+# VIX Expiry Analysis & Trading Skills
+
+## VIX Expiry Day Analysis — Keeping Data Updated
+
+### Data Files
+
+| File | Description |
+|------|-------------|
+| `fii_dii_backtest_daily_results.csv` | Daily FII/DII participant positions from NSE (since Aug 2025) |
+| `vix_fii_t1_intraday_expiry_results.csv` | Expiry day analysis: VIX prediction vs actual move + T-1 FII/PRO stance |
+| `vix_all_expiries_results_v6_6years.csv` | Base 6-year backtest data (Jul 2020 – Jul 2026, read-only source) |
+
+### How to Update (Run After Each Expiry)
+
+```bash
+python3 update_data.py
+```
+
+This single command does:
+1. Fetches new daily FII/DII positions from NSE archives (incremental)
+2. Adds new expiry days to the expiry results CSV
+3. Correctly computes `close_vs_prev_range` using the previous **trading day's** high/low
+4. Fetches T-1 FII + PRO data for new expiry days
+
+### Full Rebuild (Only If Data Seems Wrong)
+
+If you need to regenerate the entire expiry CSV from scratch (fixes all historical data):
+
+```bash
+python3 build_full_6year_expiry.py
+```
+
+This takes ~10-15 minutes (NSE rate limiting) and:
+- Recomputes `close_vs_prev_range` and `prev_close_to_close_pct` for ALL rows using actual previous trading day data from yfinance
+- Fetches T-1 FII + PRO data from NSE archives for all 320+ expiry days
+
+### Key Columns Explained
+
+| Column | Meaning |
+|--------|---------|
+| `close_vs_prev_range` | Is expiry close Above High / Within Range / Below Low of **previous trading day** |
+| `prev_close_to_close_pct` | % change from previous trading day's close to expiry close |
+| `t1_fii_fut_daily` | FII futures position change on T-1 day |
+| `t1_fii_stance` | FII positioning interpretation (Bullish/Bearish/Hedging/etc.) |
+| `t1_pro_fut_daily` | PRO (Proprietary) futures position change on T-1 day |
+| `t1_pro_stance` | PRO positioning interpretation |
+| `expiry_risk_level` | Blowout risk based on FII stance (HIGH/MODERATE/LOW/SAFE) |
+
+### Requirements
+
+```bash
+pip install pandas yfinance requests
+```
+
+---
+
+## Trading Skills
 
 Two custom skills for Indian stock and options trading with real-time monitoring and screening.
 
@@ -333,5 +389,5 @@ Should show:
 
 ---
 
-**Last Updated**: July 18, 2026
+**Last Updated**: August 25, 2026
 **Created with**: Claude Code + Skill Creator

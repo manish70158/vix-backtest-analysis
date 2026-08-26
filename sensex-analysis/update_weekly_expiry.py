@@ -498,12 +498,6 @@ def run_pre_expiry():
         "t1_pro_put_daily": int(pro_put_d),
         "t1_pro_stance": pro_stance,
         "is_nifty_expiry_day": 1 if expiry_date.weekday() == 3 else 0,
-        "t1_fii_fut_daily_chg": float(fii_fut_d),
-        "t1_fii_call_daily_chg": float(fii_call_d),
-        "t1_fii_put_daily_chg": float(fii_put_d),
-        "t1_pro_fut_daily_chg": float(pro_fut_d),
-        "t1_pro_call_daily_chg": float(pro_call_d),
-        "t1_pro_put_daily_chg": float(pro_put_d),
         # BSE-specific daily changes (Sensex derivatives only, T1 - T2)
         "bse_fii_fut_daily": bse_daily.get("bse_fii_fut_daily", ""),
         "bse_fii_call_daily": bse_daily.get("bse_fii_call_daily", ""),

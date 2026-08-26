@@ -9,6 +9,7 @@
 | `fii_dii_backtest_daily_results.csv` | Daily FII/DII participant positions from NSE (since Aug 2025) |
 | `vix_fii_t1_intraday_expiry_results.csv` | Expiry day analysis: VIX prediction vs actual move + T-1 FII/PRO stance |
 | `vix_all_expiries_results_v6_6years.csv` | Base 6-year backtest data (Jul 2020 – Jul 2026, read-only source) |
+| `sensex-analysis/sensex_fii_t1_6year.csv` | **Auto-updated weekly** — 6-year Sensex expiry data with NSE + BSE participant positioning |
 
 ### How to Update (Run After Each Expiry)
 
@@ -21,6 +22,23 @@ This single command does:
 2. Adds new expiry days to the expiry results CSV
 3. Correctly computes `close_vs_prev_range` using the previous **trading day's** high/low
 4. Fetches T-1 FII + PRO data for new expiry days
+
+### Sensex Automated Weekly Update (GitHub Actions)
+
+The Sensex CSV (`sensex-analysis/sensex_fii_t1_6year.csv`) is updated automatically via GitHub Actions:
+
+| Schedule | Phase | What It Does |
+|----------|-------|--------------|
+| **Wednesday 9 PM IST** | `pre_expiry` | Fetches T-1 FII/PRO data from NSE + BSE, appends new row |
+| **Thursday 7 PM IST** | `post_expiry` | Fills Sensex OHLC + VIX metrics after market close |
+
+**Data Sources (both side-by-side):**
+- **NSE Archives** — Aggregate F&O daily changes (T1-T2) for stance/direction
+- **BSE (beta.bseindia.com)** — Sensex-specific daily changes via form POST
+
+**Manual trigger**: Actions → "Weekly Sensex Expiry Data Update" → Run workflow
+
+**Script**: `sensex-analysis/update_weekly_expiry.py`
 
 ### Full Rebuild (Only If Data Seems Wrong)
 

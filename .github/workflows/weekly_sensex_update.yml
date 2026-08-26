@@ -1,0 +1,68 @@
+name: Weekly Sensex Expiry Data Update
+
+on:
+  schedule:
+    # Wednesday 9 PM IST = 3:30 PM UTC (pre-expiry: fetch T-1 FII/PRO data)
+    - cron: '30 15 * * 3'
+    # Thursday 7 PM IST = 1:30 PM UTC (post-expiry: fill Sensex OHLC + VIX)
+    - cron: '30 13 * * 4'
+  workflow_dispatch:
+    inputs:
+      phase:
+        description: 'Phase to run (pre_expiry or post_expiry)'
+        required: true
+        default: 'pre_expiry'
+        type: choice
+        options:
+          - pre_expiry
+          - post_expiry
+
+permissions:
+  contents: write
+
+jobs:
+  update-csv:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Determine phase
+        id: phase
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "phase=${{ inputs.phase }}" >> $GITHUB_OUTPUT
+          elif [ "$(date -u +%u)" = "3" ]; then
+            echo "phase=pre_expiry" >> $GITHUB_OUTPUT
+          else
+            echo "phase=post_expiry" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Run update script
+        run: |
+          python sensex-analysis/update_weekly_expiry.py --phase ${{ steps.phase.outputs.phase }}
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add sensex-analysis/sensex_fii_t1_6year.csv
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            if [ "${{ steps.phase.outputs.phase }}" = "pre_expiry" ]; then
+              git commit -m "Add pre-expiry FII/PRO T-1 data for $(date -u +%Y-%m-%d)"
+            else
+              git commit -m "Fill post-expiry Sensex OHLC/VIX data for $(date -u +%Y-%m-%d)"
+            fi
+            git push
+          fi

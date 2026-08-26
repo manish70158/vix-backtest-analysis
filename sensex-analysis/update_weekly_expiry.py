@@ -199,15 +199,17 @@ def _parse_bse_oi_from_grid(html):
 
     data = {}
     # Row 1 = FII, Row 3 = Proprietary
-    # Columns: Label2=IdxFutL, Label3=IdxFutS, Label4=StkFutL, Label5=StkFutS,
-    #   Label6=IdxOptCallL, Label7=IdxOptCallS, lblND_CL_SHRT_CNTRCTS=IdxOptPutL,
-    #   Label8=IdxOptPutS
+    # Column mapping (from header colspan + span ID names):
+    #   Label2=IdxFutLong, Label3=IdxFutShort,
+    #   Label4=StkFutLong, Label5=StkFutShort,
+    #   Label6=IdxOptCallLong, Label7=IdxOptPutLong,
+    #   lblND_CL_SHRT_CNTRCTS=IdxOptCallShort, Label8=IdxOptPutShort
     for row_idx, prefix in [(1, "bse_fii"), (3, "bse_pro")]:
         fut_long = _parse_indian_num(spans.get(f"Label2_{row_idx}", "0"))
         fut_short = _parse_indian_num(spans.get(f"Label3_{row_idx}", "0"))
         call_long = _parse_indian_num(spans.get(f"Label6_{row_idx}", "0"))
-        call_short = _parse_indian_num(spans.get(f"Label7_{row_idx}", "0"))
-        put_long = _parse_indian_num(spans.get(f"lblND_CL_SHRT_CNTRCTS_{row_idx}", "0"))
+        call_short = _parse_indian_num(spans.get(f"lblND_CL_SHRT_CNTRCTS_{row_idx}", "0"))
+        put_long = _parse_indian_num(spans.get(f"Label7_{row_idx}", "0"))
         put_short = _parse_indian_num(spans.get(f"Label8_{row_idx}", "0"))
 
         data[f"{prefix}_fut_idx_net"] = fut_long - fut_short

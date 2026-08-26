@@ -258,10 +258,32 @@ The results CSV includes visual mini-charts for each expiry day:
 
 ## Files Generated
 
+All files consolidated in `sensex-analysis/` directory:
+
 ```
+── VIX Backtest Data ──
 ✅ vix_sensex_expiries_results.csv (46K)
 ✅ vix_sensex_expiries_results.json (192K)
 ✅ vix_sensex_expiries_results_formatted.xlsx (36K) ← Green highlighting
+✅ vix_sensex_6y_results.csv (48K) - 6-year data (318 expiries)
+✅ vix_sensex_6y_results.json (198K)
+
+── FII/DII Correlation Analysis ──
+✅ sensex_fii_t1_6year.csv (82K) - 318 expiry days + T-1 FII/PRO
+✅ fii_dii_vix_correlation_sensex.csv (98K) - 305 days with derived features
+✅ fii_dii_vix_correlation_sensex.json (20K) - correlation stats
+✅ FII_DII_VIX_CORRELATION_SENSEX_SUMMARY.md - findings report
+
+── Participant-wise Daily Data (FII/PRO separate) ──
+✅ participant_wise_daily.csv - daily FII, PRO, DII, Client positions
+✅ bse_fpi_participant_daily.csv - NSDL FPI daily data
+✅ bse_fpi_derivatives_raw.csv - raw derivatives by product
+✅ bse_dii_latest.csv - latest DII breakdown
+
+── Scripts ──
+✅ build_sensex_fii_6year.py - fetch 6-year Sensex + FII/PRO data
+✅ correlate_fii_dii_vix_sensex.py - correlation analysis
+✅ fetch_bse_participant_data.py - daily participant-wise OI fetcher
 ```
 
 ### Excel Formatting

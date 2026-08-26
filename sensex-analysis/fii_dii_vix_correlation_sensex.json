@@ -1,0 +1,706 @@
+{
+  "metadata": {
+    "generated": "2026-08-26T21:10:13.822887",
+    "index": "Sensex",
+    "period": "2020-06-26 to 2026-07-23",
+    "expiry_days": 305,
+    "blowout_count": 70,
+    "base_rate": 0.2295,
+    "alt_target_above_median_range": 0.4918,
+    "data_source": "6-year Sensex VIX + NSE FII T-1 daily flows"
+  },
+  "correlations": {
+    "fii_correlations": {
+      "t1_fii_fut_daily_vs_is_blowout": {
+        "correlation": -0.0566,
+        "p_value": 0.3248,
+        "n": 305,
+        "significant": "False"
+      },
+      "t1_fii_fut_daily_vs_actual_range_pct": {
+        "correlation": -0.1005,
+        "p_value": 0.0797,
+        "n": 305,
+        "significant": "False"
+      },
+      "t1_fii_fut_daily_vs_above_median_range": {
+        "correlation": -0.0917,
+        "p_value": 0.1098,
+        "n": 305,
+        "significant": "False"
+      },
+      "t1_fii_fut_daily_vs_high_range": {
+        "correlation": -0.0675,
+        "p_value": 0.2398,
+        "n": 305,
+        "significant": "False"
+      },
+      "t1_fii_call_daily_vs_is_blowout": {
+        "correlation": 0.0331,
+        "p_value": 0.5647,
+        "n": 305,
+        "significant": "False"
+      },
+      "t1_fii_call_daily_vs_actual_range_pct": {
+        "correlation": 0.0892,
+        "p_value": 0.1199,
+        "n": 305,
+        "significant": "False"
+      },
+      "t1_fii_call_daily_vs_above_median_range": {
+        "correlation": 0.0367,
+        "p_value": 0.5234,
+        "n": 305,
+        "significant": "False"
+      },
+      "t1_fii_call_daily_vs_high_range": {
+        "correlation": 0.1053,
+        "p_value": 0.0662,
+        "n": 305,
+        "significant": "False"
+      },
+      "t1_fii_put_daily_vs_is_blowout": {
+        "correlation": -0.0283,
+        "p_value": 0.6227,
+        "n": 305,
+        "significant": "False"
+      },
+      "t1_fii_put_daily_vs_actual_range_pct": {
+        "correlation": 0.0587,
+        "p_value": 0.3069,
+        "n": 305,
+        "significant": "False"
+      },
+      "t1_fii_put_daily_vs_above_median_range": {
+        "correlation": 0.0241,
+        "p_value": 0.6751,
+        "n": 305,
+        "significant": "False"
+      },
+      "t1_fii_put_daily_vs_high_range": {
+        "correlation": 0.0482,
+        "p_value": 0.4014,
+        "n": 305,
+        "significant": "False"
+      },
+      "fii_pcr_vs_is_blowout": {
+        "correlation": 0.0344,
+        "p_value": 0.5495,
+        "n": 305,
+        "significant": "False"
+      },
+      "fii_pcr_vs_actual_range_pct": {
+        "correlation": 0.0469,
+        "p_value": 0.4141,
+        "n": 305,
+        "significant": "False"
+      },
+      "fii_pcr_vs_above_median_range": {
+        "correlation": 0.0809,
+        "p_value": 0.1585,
+        "n": 305,
+        "significant": "False"
+      },
+      "fii_pcr_vs_high_range": {
+        "correlation": 0.0359,
+        "p_value": 0.5319,
+        "n": 305,
+        "significant": "False"
+      },
+      "fii_net_flow_vs_is_blowout": {
+        "correlation": 0.0541,
+        "p_value": 0.3465,
+        "n": 305,
+        "significant": "False"
+      },
+      "fii_net_flow_vs_actual_range_pct": {
+        "correlation": -0.0033,
+        "p_value": 0.9548,
+        "n": 305,
+        "significant": "False"
+      },
+      "fii_net_flow_vs_above_median_range": {
+        "correlation": -0.0218,
+        "p_value": 0.7045,
+        "n": 305,
+        "significant": "False"
+      },
+      "fii_net_flow_vs_high_range": {
+        "correlation": 0.0435,
+        "p_value": 0.4494,
+        "n": 305,
+        "significant": "False"
+      }
+    },
+    "pro_correlations": {
+      "t1_pro_fut_daily_vs_is_blowout": {
+        "correlation": 0.0729,
+        "p_value": 0.2043,
+        "n": 305,
+        "significant": "False"
+      },
+      "t1_pro_fut_daily_vs_actual_range_pct": {
+        "correlation": 0.0838,
+        "p_value": 0.1443,
+        "n": 305,
+        "significant": "False"
+      },
+      "t1_pro_fut_daily_vs_above_median_range": {
+        "correlation": 0.0539,
+        "p_value": 0.3478,
+        "n": 305,
+        "significant": "False"
+      },
+      "t1_pro_fut_daily_vs_high_range": {
+        "correlation": 0.081,
+        "p_value": 0.1584,
+        "n": 305,
+        "significant": "False"
+      },
+      "t1_pro_call_daily_vs_is_blowout": {
+        "correlation": 0.1247,
+        "p_value": 0.0295,
+        "n": 305,
+        "significant": "True"
+      },
+      "t1_pro_call_daily_vs_actual_range_pct": {
+        "correlation": 0.2037,
+        "p_value": 0.0003,
+        "n": 305,
+        "significant": "True"
+      },
+      "t1_pro_call_daily_vs_above_median_range": {
+        "correlation": 0.1677,
+        "p_value": 0.0033,
+        "n": 305,
+        "significant": "True"
+      },
+      "t1_pro_call_daily_vs_high_range": {
+        "correlation": 0.1109,
+        "p_value": 0.053,
+        "n": 305,
+        "significant": "False"
+      },
+      "t1_pro_put_daily_vs_is_blowout": {
+        "correlation": -0.0342,
+        "p_value": 0.5519,
+        "n": 305,
+        "significant": "False"
+      },
+      "t1_pro_put_daily_vs_actual_range_pct": {
+        "correlation": -0.0158,
+        "p_value": 0.7838,
+        "n": 305,
+        "significant": "False"
+      },
+      "t1_pro_put_daily_vs_above_median_range": {
+        "correlation": -0.0472,
+        "p_value": 0.4114,
+        "n": 305,
+        "significant": "False"
+      },
+      "t1_pro_put_daily_vs_high_range": {
+        "correlation": -0.0549,
+        "p_value": 0.3396,
+        "n": 305,
+        "significant": "False"
+      }
+    }
+  },
+  "cross_tabs": {
+    "t1_fii_stance": {
+      "FII Bearish (sold fut >10K)": {
+        "count": 48,
+        "blowouts": 13,
+        "blowout_rate": 0.2708,
+        "above_median_rate": 0.5625,
+        "avg_range": 1.1556,
+        "small_sample": false
+      },
+      "FII Mildly Bullish": {
+        "count": 25,
+        "blowouts": 3,
+        "blowout_rate": 0.12,
+        "above_median_rate": 0.44,
+        "avg_range": 1.028,
+        "small_sample": false
+      },
+      "FII Neutral": {
+        "count": 50,
+        "blowouts": 8,
+        "blowout_rate": 0.16,
+        "above_median_rate": 0.54,
+        "avg_range": 1.0758,
+        "small_sample": false
+      },
+      "FII Bullish (bought fut + sold puts)": {
+        "count": 46,
+        "blowouts": 11,
+        "blowout_rate": 0.2391,
+        "above_median_rate": 0.4783,
+        "avg_range": 1.0174,
+        "small_sample": false
+      },
+      "FII Confident (sold puts >20K)": {
+        "count": 62,
+        "blowouts": 15,
+        "blowout_rate": 0.2419,
+        "above_median_rate": 0.5,
+        "avg_range": 1.0479,
+        "small_sample": false
+      },
+      "FII Hedging (bought puts >20K)": {
+        "count": 34,
+        "blowouts": 10,
+        "blowout_rate": 0.2941,
+        "above_median_rate": 0.3529,
+        "avg_range": 0.9621,
+        "small_sample": false
+      },
+      "FII Very Bearish (sold fut >10K + bought puts >20K)": {
+        "count": 26,
+        "blowouts": 8,
+        "blowout_rate": 0.3077,
+        "above_median_rate": 0.5769,
+        "avg_range": 1.1438,
+        "small_sample": false
+      },
+      "FII Mildly Bearish": {
+        "count": 14,
+        "blowouts": 2,
+        "blowout_rate": 0.1429,
+        "above_median_rate": 0.3571,
+        "avg_range": 0.9636,
+        "small_sample": false
+      }
+    },
+    "t1_fii_direction": {
+      "Bearish": {
+        "count": 106,
+        "blowouts": 23,
+        "blowout_rate": 0.217,
+        "above_median_rate": 0.4717,
+        "avg_range": 1.0368,
+        "small_sample": false
+      },
+      "Bullish": {
+        "count": 135,
+        "blowouts": 34,
+        "blowout_rate": 0.2519,
+        "above_median_rate": 0.4815,
+        "avg_range": 1.0496,
+        "small_sample": false
+      },
+      "Neutral": {
+        "count": 64,
+        "blowouts": 13,
+        "blowout_rate": 0.2031,
+        "above_median_rate": 0.5469,
+        "avg_range": 1.1105,
+        "small_sample": false
+      }
+    },
+    "t1_pro_stance": {
+      "PRO Hedging (bought puts >20K)": {
+        "count": 170,
+        "blowouts": 36,
+        "blowout_rate": 0.2118,
+        "above_median_rate": 0.4882,
+        "avg_range": 1.0711,
+        "small_sample": false
+      },
+      "PRO Very Bearish (sold fut >10K + bought puts >20K)": {
+        "count": 29,
+        "blowouts": 8,
+        "blowout_rate": 0.2759,
+        "above_median_rate": 0.5862,
+        "avg_range": 1.0748,
+        "small_sample": false
+      },
+      "PRO Neutral": {
+        "count": 29,
+        "blowouts": 6,
+        "blowout_rate": 0.2069,
+        "above_median_rate": 0.4483,
+        "avg_range": 1.0938,
+        "small_sample": false
+      },
+      "PRO Bearish (sold fut >10K)": {
+        "count": 15,
+        "blowouts": 3,
+        "blowout_rate": 0.2,
+        "above_median_rate": 0.5333,
+        "avg_range": 1.0067,
+        "small_sample": false
+      },
+      "PRO Confident (sold puts >20K)": {
+        "count": 45,
+        "blowouts": 11,
+        "blowout_rate": 0.2444,
+        "above_median_rate": 0.4,
+        "avg_range": 0.9293,
+        "small_sample": false
+      },
+      "PRO Bullish (bought fut + sold puts)": {
+        "count": 7,
+        "blowouts": 2,
+        "blowout_rate": 0.2857,
+        "above_median_rate": 0.5714,
+        "avg_range": 1.2143,
+        "small_sample": true
+      },
+      "PRO Mildly Bearish": {
+        "count": 5,
+        "blowouts": 1,
+        "blowout_rate": 0.2,
+        "above_median_rate": 0.6,
+        "avg_range": 1.184,
+        "small_sample": true
+      },
+      "PRO Mildly Bullish": {
+        "count": 5,
+        "blowouts": 3,
+        "blowout_rate": 0.6,
+        "above_median_rate": 0.8,
+        "avg_range": 1.27,
+        "small_sample": true
+      }
+    },
+    "nifty_co_expiry": {
+      "sensex_only": {
+        "count": 260,
+        "blowouts": 65,
+        "blowout_rate": 0.25,
+        "above_median_rate": 0.4962,
+        "avg_range": 1.0665
+      },
+      "nifty_co_expiry": {
+        "count": 45,
+        "blowouts": 5,
+        "blowout_rate": 0.1111,
+        "above_median_rate": 0.4667,
+        "avg_range": 1.0082
+      }
+    }
+  },
+  "rules": {
+    "base_rate": 0.2295,
+    "alt_base_rate_above_median_range": 0.4918,
+    "blowout_count": 70,
+    "total_days": 305,
+    "rules": {
+      "FII_Direction_Bearish": {
+        "triggers": 106,
+        "blowouts": 23,
+        "blowout_rate": 0.217,
+        "lift_vs_base": 0.95,
+        "above_median_range_count": 50,
+        "above_median_range_rate": 0.4717,
+        "alt_lift": 0.96,
+        "high_range_count": 24,
+        "high_range_rate": 0.2264,
+        "avg_range": 1.0368,
+        "pct_of_days": 0.3475,
+        "small_sample": false
+      },
+      "FII_Direction_Bullish": {
+        "triggers": 135,
+        "blowouts": 34,
+        "blowout_rate": 0.2519,
+        "lift_vs_base": 1.1,
+        "above_median_range_count": 65,
+        "above_median_range_rate": 0.4815,
+        "alt_lift": 0.98,
+        "high_range_count": 32,
+        "high_range_rate": 0.237,
+        "avg_range": 1.0496,
+        "pct_of_days": 0.4426,
+        "small_sample": false
+      },
+      "FII_Direction_Neutral": {
+        "triggers": 64,
+        "blowouts": 13,
+        "blowout_rate": 0.2031,
+        "lift_vs_base": 0.89,
+        "above_median_range_count": 35,
+        "above_median_range_rate": 0.5469,
+        "alt_lift": 1.11,
+        "high_range_count": 19,
+        "high_range_rate": 0.2969,
+        "avg_range": 1.1105,
+        "pct_of_days": 0.2098,
+        "small_sample": false
+      },
+      "FII_Bearish_stance": {
+        "triggers": 88,
+        "blowouts": 23,
+        "blowout_rate": 0.2614,
+        "lift_vs_base": 1.14,
+        "above_median_range_count": 47,
+        "above_median_range_rate": 0.5341,
+        "alt_lift": 1.09,
+        "high_range_count": 25,
+        "high_range_rate": 0.2841,
+        "avg_range": 1.1216,
+        "pct_of_days": 0.2885,
+        "small_sample": false
+      },
+      "FII_Hedging_stance": {
+        "triggers": 34,
+        "blowouts": 10,
+        "blowout_rate": 0.2941,
+        "lift_vs_base": 1.28,
+        "above_median_range_count": 12,
+        "above_median_range_rate": 0.3529,
+        "alt_lift": 0.72,
+        "high_range_count": 9,
+        "high_range_rate": 0.2647,
+        "avg_range": 0.9621,
+        "pct_of_days": 0.1115,
+        "small_sample": false
+      },
+      "FII_Bullish_stance": {
+        "triggers": 71,
+        "blowouts": 14,
+        "blowout_rate": 0.1972,
+        "lift_vs_base": 0.86,
+        "above_median_range_count": 33,
+        "above_median_range_rate": 0.4648,
+        "alt_lift": 0.95,
+        "high_range_count": 16,
+        "high_range_rate": 0.2254,
+        "avg_range": 1.0211,
+        "pct_of_days": 0.2328,
+        "small_sample": false
+      },
+      "FII_Confident_stance": {
+        "triggers": 62,
+        "blowouts": 15,
+        "blowout_rate": 0.2419,
+        "lift_vs_base": 1.05,
+        "above_median_range_count": 31,
+        "above_median_range_rate": 0.5,
+        "alt_lift": 1.02,
+        "high_range_count": 13,
+        "high_range_rate": 0.2097,
+        "avg_range": 1.0479,
+        "pct_of_days": 0.2033,
+        "small_sample": false
+      },
+      "fii_pcr_above_median": {
+        "triggers": 152,
+        "blowouts": 37,
+        "blowout_rate": 0.2434,
+        "lift_vs_base": 1.06,
+        "above_median_range_count": 74,
+        "above_median_range_rate": 0.4868,
+        "alt_lift": 0.99,
+        "high_range_count": 39,
+        "high_range_rate": 0.2566,
+        "avg_range": 1.0737,
+        "pct_of_days": 0.4984,
+        "small_sample": false
+      },
+      "fii_pcr_above_75pct": {
+        "triggers": 76,
+        "blowouts": 21,
+        "blowout_rate": 0.2763,
+        "lift_vs_base": 1.2,
+        "above_median_range_count": 38,
+        "above_median_range_rate": 0.5,
+        "alt_lift": 1.02,
+        "high_range_count": 23,
+        "high_range_rate": 0.3026,
+        "avg_range": 1.0647,
+        "pct_of_days": 0.2492,
+        "small_sample": false
+      },
+      "fii_pcr_below_25pct": {
+        "triggers": 76,
+        "blowouts": 14,
+        "blowout_rate": 0.1842,
+        "lift_vs_base": 0.8,
+        "above_median_range_count": 35,
+        "above_median_range_rate": 0.4605,
+        "alt_lift": 0.94,
+        "high_range_count": 15,
+        "high_range_rate": 0.1974,
+        "avg_range": 1.0282,
+        "pct_of_days": 0.2492,
+        "small_sample": false
+      },
+      "fii_net_flow_negative": {
+        "triggers": 137,
+        "blowouts": 31,
+        "blowout_rate": 0.2263,
+        "lift_vs_base": 0.99,
+        "above_median_range_count": 68,
+        "above_median_range_rate": 0.4964,
+        "alt_lift": 1.01,
+        "high_range_count": 34,
+        "high_range_rate": 0.2482,
+        "avg_range": 1.0616,
+        "pct_of_days": 0.4492,
+        "small_sample": false
+      },
+      "fii_net_flow_very_negative": {
+        "triggers": 76,
+        "blowouts": 17,
+        "blowout_rate": 0.2237,
+        "lift_vs_base": 0.97,
+        "above_median_range_count": 36,
+        "above_median_range_rate": 0.4737,
+        "alt_lift": 0.96,
+        "high_range_count": 16,
+        "high_range_rate": 0.2105,
+        "avg_range": 1.032,
+        "pct_of_days": 0.2492,
+        "small_sample": false
+      },
+      "fii_put_buying_heavy": {
+        "triggers": 60,
+        "blowouts": 18,
+        "blowout_rate": 0.3,
+        "lift_vs_base": 1.31,
+        "above_median_range_count": 27,
+        "above_median_range_rate": 0.45,
+        "alt_lift": 0.92,
+        "high_range_count": 17,
+        "high_range_rate": 0.2833,
+        "avg_range": 1.0408,
+        "pct_of_days": 0.1967,
+        "small_sample": false
+      },
+      "fii_fut_selling_heavy": {
+        "triggers": 74,
+        "blowouts": 21,
+        "blowout_rate": 0.2838,
+        "lift_vs_base": 1.24,
+        "above_median_range_count": 42,
+        "above_median_range_rate": 0.5676,
+        "alt_lift": 1.15,
+        "high_range_count": 24,
+        "high_range_rate": 0.3243,
+        "avg_range": 1.1515,
+        "pct_of_days": 0.2426,
+        "small_sample": false
+      },
+      "FII_Bearish_AND_VIX_lt14": {
+        "triggers": 45,
+        "blowouts": 5,
+        "blowout_rate": 0.1111,
+        "lift_vs_base": 0.48,
+        "above_median_range_count": 11,
+        "above_median_range_rate": 0.2444,
+        "alt_lift": 0.5,
+        "high_range_count": 3,
+        "high_range_rate": 0.0667,
+        "avg_range": 0.8309,
+        "pct_of_days": 0.1475,
+        "small_sample": false
+      },
+      "FII_Bearish_AND_VIX_lt16": {
+        "triggers": 64,
+        "blowouts": 11,
+        "blowout_rate": 0.1719,
+        "lift_vs_base": 0.75,
+        "above_median_range_count": 22,
+        "above_median_range_rate": 0.3438,
+        "alt_lift": 0.7,
+        "high_range_count": 9,
+        "high_range_rate": 0.1406,
+        "avg_range": 0.9066,
+        "pct_of_days": 0.2098,
+        "small_sample": false
+      },
+      "is_nifty_expiry_day": {
+        "triggers": 45,
+        "blowouts": 5,
+        "blowout_rate": 0.1111,
+        "lift_vs_base": 0.48,
+        "above_median_range_count": 21,
+        "above_median_range_rate": 0.4667,
+        "alt_lift": 0.95,
+        "high_range_count": 8,
+        "high_range_rate": 0.1778,
+        "avg_range": 1.0082,
+        "pct_of_days": 0.1475,
+        "small_sample": false
+      },
+      "sensex_only_expiry": {
+        "triggers": 260,
+        "blowouts": 65,
+        "blowout_rate": 0.25,
+        "lift_vs_base": 1.09,
+        "above_median_range_count": 129,
+        "above_median_range_rate": 0.4962,
+        "alt_lift": 1.01,
+        "high_range_count": 67,
+        "high_range_rate": 0.2577,
+        "avg_range": 1.0665,
+        "pct_of_days": 0.8525,
+        "small_sample": false
+      },
+      "FII_Bearish_AND_nifty_expiry": {
+        "triggers": 18,
+        "blowouts": 1,
+        "blowout_rate": 0.0556,
+        "lift_vs_base": 0.24,
+        "above_median_range_count": 8,
+        "above_median_range_rate": 0.4444,
+        "alt_lift": 0.9,
+        "high_range_count": 2,
+        "high_range_rate": 0.1111,
+        "avg_range": 0.9656,
+        "pct_of_days": 0.059,
+        "small_sample": false
+      },
+      "vix_change_gt_0.5": {
+        "triggers": 39,
+        "blowouts": 20,
+        "blowout_rate": 0.5128,
+        "lift_vs_base": 2.23,
+        "above_median_range_count": 33,
+        "above_median_range_rate": 0.8462,
+        "alt_lift": 1.72,
+        "high_range_count": 25,
+        "high_range_rate": 0.641,
+        "avg_range": 1.5638,
+        "pct_of_days": 0.1279,
+        "small_sample": false
+      },
+      "vix_change_gt_1.0": {
+        "triggers": 15,
+        "blowouts": 10,
+        "blowout_rate": 0.6667,
+        "lift_vs_base": 2.9,
+        "above_median_range_count": 14,
+        "above_median_range_rate": 0.9333,
+        "alt_lift": 1.9,
+        "high_range_count": 11,
+        "high_range_rate": 0.7333,
+        "avg_range": 1.8153,
+        "pct_of_days": 0.0492,
+        "small_sample": false
+      },
+      "vix_change_lt_0": {
+        "triggers": 202,
+        "blowouts": 35,
+        "blowout_rate": 0.1733,
+        "lift_vs_base": 0.75,
+        "above_median_range_count": 83,
+        "above_median_range_rate": 0.4109,
+        "alt_lift": 0.84,
+        "high_range_count": 35,
+        "high_range_rate": 0.1733,
+        "avg_range": 0.9607,
+        "pct_of_days": 0.6623,
+        "small_sample": false
+      }
+    }
+  },
+  "nifty_comparison": {
+    "available": true,
+    "nifty_base_rate": 0.22
+  }
+}

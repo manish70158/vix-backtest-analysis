@@ -476,7 +476,7 @@ def update_expiry_results(session, fii_daily_df: pd.DataFrame):
 # ─── STEP 3: Regenerate FII-PRO Alignment Analysis ─────────────────────────
 
 def update_fii_pro_alignment():
-    """Regenerate fii_pro_alignment_results.csv from the daily results CSV."""
+    """Regenerate fii_pro_alignment_results.csv and fii_pro_alignment_results_3year.csv from the daily results CSV."""
     import subprocess
     import sys
 
@@ -526,9 +526,9 @@ def main():
     print("-" * 50)
     update_expiry_results(session, fii_df)
 
-    # Step 3: Regenerate FII-PRO alignment analysis
+    # Step 3: Regenerate FII-PRO alignment analysis (full + 3-year + reports)
     print()
-    print("STEP 3: Regenerate fii-pro-alignment-analysis/fii_pro_alignment_results.csv")
+    print("STEP 3: Regenerate fii-pro-alignment-analysis/ (full + 3-year CSVs + reports)")
     print("-" * 50)
     update_fii_pro_alignment()
 

@@ -6,12 +6,34 @@
 
 | File | Description |
 |------|-------------|
+| `vix_fii_t1_intraday_daily_results.csv` | **All trading days** — Nifty OHLC + T-1 FII/PRO stance for every trading day (Jul 2020+) |
+| `sensex-analysis/sensex_fii_t1_daily_results.csv` | **All trading days** — Same as above with Sensex expiry tagging |
 | `fii_dii_backtest_daily_results.csv` | Daily FII/DII participant positions from NSE (since Aug 2025) |
 | `vix_fii_t1_intraday_expiry_results.csv` | Expiry day analysis: VIX prediction vs actual move + T-1 FII/PRO stance |
 | `vix_all_expiries_results_v6_6years.csv` | Base 6-year backtest data (Jul 2020 – Jul 2026, read-only source) |
 | `sensex-analysis/sensex_fii_t1_6year.csv` | **Auto-updated weekly** — 6-year Sensex expiry data with NSE + BSE participant positioning |
 
-### How to Update (Run After Each Expiry)
+### How to Update Daily Results (All Trading Days)
+
+**Quick update** — regenerates from local PostgreSQL databases (requires `market_data` + `options_analysis` DBs):
+
+```bash
+python3 generate_daily_files.py
+```
+
+This reads Nifty 5-min data from `market_data.nifty50_5min` and FII/PRO participant positions from `options_analysis.raw_positions` (Aug 2025+), then writes:
+- `vix_fii_t1_intraday_daily_results.csv` (Nifty, all trading days)
+- `sensex-analysis/sensex_fii_t1_daily_results.csv` (Sensex, all trading days)
+
+**Full rebuild from NSE archives** — fetches T-1 participant OI for every trading day from NSE (cached, resumable):
+
+```bash
+python3 build_full_6year_daily.py
+```
+
+This takes ~30-45 minutes on first run (~3000 NSE requests with rate limiting). Progress is cached to `.nse_oi_cache.json` so interrupted runs resume where they left off. Subsequent runs reuse the cache and only fetch new dates.
+
+### How to Update Expiry Results (Run After Each Expiry)
 
 ```bash
 python3 update_data.py
@@ -40,7 +62,7 @@ The Sensex CSV (`sensex-analysis/sensex_fii_t1_6year.csv`) is updated automatica
 
 **Script**: `sensex-analysis/update_weekly_expiry.py`
 
-### Full Rebuild (Only If Data Seems Wrong)
+### Full Rebuild — Expiry CSV (Only If Data Seems Wrong)
 
 If you need to regenerate the entire expiry CSV from scratch (fixes all historical data):
 
@@ -67,8 +89,19 @@ This takes ~10-15 minutes (NSE rate limiting) and:
 ### Requirements
 
 ```bash
+# For expiry updates (update_data.py, build_full_6year_expiry.py)
 pip install pandas yfinance requests
+
+# For daily updates (generate_daily_files.py) — also needs PostgreSQL
+pip install pandas psycopg2-binary
+
+# For full daily rebuild from NSE archives (build_full_6year_daily.py)
+pip install pandas psycopg2-binary requests
 ```
+
+**PostgreSQL databases** (needed for `generate_daily_files.py` and `build_full_6year_daily.py`):
+- `market_data` — contains `nifty50_5min` table (Nifty 50 5-minute OHLC bars)
+- `options_analysis` — contains `raw_positions` table (daily FII/PRO participant positions, Aug 2025+)
 
 ---
 
@@ -254,6 +287,13 @@ Monitor option volume while trading:
 ## File Structure
 
 ```
+# Data update scripts
+update_data.py                        # Incremental update for expiry CSVs
+generate_daily_files.py               # Generate daily CSVs from PostgreSQL (fast)
+build_full_6year_daily.py             # Full rebuild daily CSVs from NSE archives (slow, cached)
+build_full_6year_expiry.py            # Full rebuild expiry CSV from scratch
+
+# Skills
 .claude/skills/
 ├── nifty50-volume-filter/
 │   ├── SKILL.md                      # Full documentation
@@ -407,5 +447,5 @@ Should show:
 
 ---
 
-**Last Updated**: August 25, 2026
+**Last Updated**: September 1, 2026
 **Created with**: Claude Code + Skill Creator

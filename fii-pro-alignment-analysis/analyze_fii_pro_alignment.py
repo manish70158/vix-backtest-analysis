@@ -17,7 +17,9 @@ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_ROOT = os.path.dirname(SCRIPT_DIR)
 INPUT_CSV = os.path.join(PROJECT_ROOT, "vix_fii_t1_intraday_daily_results.csv")
 OUTPUT_CSV = os.path.join(SCRIPT_DIR, "fii_pro_alignment_results.csv")
+OUTPUT_CSV_3Y = os.path.join(SCRIPT_DIR, "fii_pro_alignment_results_3year.csv")
 OUTPUT_REPORT = os.path.join(SCRIPT_DIR, "FII_PRO_ALIGNMENT_REPORT.md")
+OUTPUT_REPORT_3Y = os.path.join(SCRIPT_DIR, "FII_PRO_ALIGNMENT_REPORT_3YEAR.md")
 OUTPUT_EXPIRY_REPORT = os.path.join(SCRIPT_DIR, "FII_PRO_ALIGNMENT_EXPIRY_REPORT.md")
 
 BULLISH_VIEWS = {"Strong Bullish", "Bullish", "Mildly Bullish"}
@@ -1017,6 +1019,16 @@ def main():
     with open(OUTPUT_EXPIRY_REPORT, "w") as f:
         f.write(expiry_report)
     print(f"Expiry Report: {OUTPUT_EXPIRY_REPORT}")
+
+    # Generate last 3 years CSV + report
+    cutoff_3y = pd.to_datetime(df["date"]).max() - pd.Timedelta(days=3*365)
+    df_3y = df[pd.to_datetime(df["date"]) >= cutoff_3y].copy()
+    df_3y[output_cols].to_csv(OUTPUT_CSV_3Y, index=False)
+    print(f"\n3-Year CSV: {OUTPUT_CSV_3Y} ({len(df_3y)} rows, from {df_3y['date'].iloc[0]})")
+    report_3y = generate_report(df_3y, title="FII-PRO Alignment Reversal Analysis — Last 3 Years")
+    with open(OUTPUT_REPORT_3Y, "w") as f:
+        f.write(report_3y)
+    print(f"3-Year Report: {OUTPUT_REPORT_3Y}")
 
 
 if __name__ == "__main__":

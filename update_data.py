@@ -473,6 +473,37 @@ def update_expiry_results(session, fii_daily_df: pd.DataFrame):
         print("  No new expiry days added.")
 
 
+# ─── STEP 3: Regenerate FII-PRO Alignment Analysis ─────────────────────────
+
+def update_fii_pro_alignment():
+    """Regenerate fii_pro_alignment_results.csv from the daily results CSV."""
+    import subprocess
+    import sys
+
+    script = PROJECT_ROOT / "fii-pro-alignment-analysis" / "analyze_fii_pro_alignment.py"
+    if not script.exists():
+        print("  Script not found, skipping.")
+        return
+
+    daily_csv = PROJECT_ROOT / "vix_fii_t1_intraday_daily_results.csv"
+    if not daily_csv.exists():
+        print("  vix_fii_t1_intraday_daily_results.csv not found, skipping.")
+        return
+
+    result = subprocess.run(
+        [sys.executable, str(script)],
+        cwd=str(PROJECT_ROOT),
+        capture_output=True, text=True
+    )
+    if result.returncode == 0:
+        # Show last few lines of output
+        lines = result.stdout.strip().split('\n')
+        for line in lines[-6:]:
+            print(f"  {line}")
+    else:
+        print(f"  Error: {result.stderr[:500]}")
+
+
 # ─── MAIN ────────────────────────────────────────────────────────────────────
 
 def main():
@@ -494,6 +525,12 @@ def main():
     print("STEP 2: Update vix_fii_t1_intraday_expiry_results.csv")
     print("-" * 50)
     update_expiry_results(session, fii_df)
+
+    # Step 3: Regenerate FII-PRO alignment analysis
+    print()
+    print("STEP 3: Regenerate fii-pro-alignment-analysis/fii_pro_alignment_results.csv")
+    print("-" * 50)
+    update_fii_pro_alignment()
 
     print()
     print("=" * 60)

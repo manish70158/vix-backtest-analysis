@@ -1,0 +1,576 @@
+date,alignment,vix_exhaustion,close_outcome,vix_predicted_pct,half_threshold_pct,day_open,exceeded,cross_time,cross_minutes_from_open,cross_session,move_pct_at_cross,intraday_high_pct,intraday_low_pct,actual_open_close_pct,is_nifty_expiry,vix_open,vix_regime,year
+2020-08-18,Bullish Alignment,Exceeded Half then Reversed,Worked and Remained,1.34,0.67,11259.8,True,10:25,70.0,Early Morning (9:45-10:29),0.712,1.26,-0.04,1.17,0,21.31,Elevated (20-30),2020
+2020-09-01,Bearish Alignment,Exceeded Half then Reversed,Reversed by Close,1.44,0.72,11464.3,True,09:15,0.0,Opening (9:15-9:44),0.817,0.77,-0.85,0.26,0,22.84,Elevated (20-30),2020
+2020-09-10,Bearish Alignment,Reversed Before Half,Reversed by Close,1.4,0.7,11363.3,False,,,,,0.88,-0.3,0.8,1,22.23,Elevated (20-30),2020
+2020-09-11,Bullish Alignment,Reversed Before Half,Worked and Remained,1.34,0.67,11447.8,False,,,,,0.39,-0.24,0.06,0,21.26,Elevated (20-30),2020
+2020-09-15,Bearish Alignment,Reversed Before Half,Reversed by Close,1.33,0.665,11487.2,False,,,,,0.42,-0.39,0.39,0,21.19,Elevated (20-30),2020
+2020-09-25,Bullish Alignment,Exceeded Half then Reversed,Worked and Remained,1.48,0.74,10910.4,True,12:20,185.0,Midday (11:30-12:29),0.879,1.48,-0.5,1.15,0,23.51,Elevated (20-30),2020
+2020-09-28,Bullish Alignment,Exceeded Half then Reversed,Worked and Remained,1.3,0.65,11140.85,True,12:55,220.0,Early Afternoon (12:30-13:29),0.695,0.88,-0.36,0.88,0,20.68,Elevated (20-30),2020
+2020-10-29,Bearish Alignment,Reversed Before Half,Reversed by Close,1.47,0.735,11633.3,False,,,,,0.95,-0.23,0.32,1,23.28,Elevated (20-30),2020
+2020-11-03,Bullish Alignment,Exceeded Half then Reversed,Worked and Remained,1.59,0.795,11734.45,True,12:50,215.0,Early Afternoon (12:30-13:29),0.845,0.86,-0.04,0.62,0,25.21,Elevated (20-30),2020
+2020-11-20,Bearish Alignment,Exceeded Half then Reversed,Reversed by Close,1.23,0.615,12813.4,True,11:20,125.0,Late Morning (10:30-11:29),0.646,0.61,-0.65,0.25,0,19.57,Normal (15-20),2020
+2020-11-26,Bearish Alignment,Exceeded Half then Reversed,Reversed by Close,1.46,0.73,12906.45,True,10:00,45.0,Early Morning (9:45-10:29),0.781,0.86,-0.9,0.84,1,23.13,Elevated (20-30),2020
+2020-11-27,Bullish Alignment,Reversed Before Half,Reversed by Close,1.26,0.63,13012.05,False,,,,,0.14,-0.74,-0.53,0,20.02,Elevated (20-30),2020
+2020-12-04,Bullish Alignment,Exceeded Half then Reversed,Worked and Remained,1.2,0.6,13177.4,True,15:10,355.0,Closing (14:30-15:30),0.629,0.76,-0.19,0.71,0,19.0,Normal (15-20),2020
+2020-12-22,Bearish Alignment,Exceeded Half then Reversed,Reversed by Close,1.46,0.73,13373.65,True,09:35,20.0,Opening (9:15-9:44),1.022,0.88,-1.34,0.65,0,23.19,Elevated (20-30),2020
+2021-01-11,Bullish Alignment,Reversed Before Half,Worked and Remained,1.3,0.65,14474.05,False,,,,,0.15,-0.62,0.06,0,20.64,Elevated (20-30),2021
+2021-01-18,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,1.51,0.755,14453.3,True,09:30,15.0,Opening (9:15-9:44),0.855,0.01,-1.58,-1.54,0,24.01,Elevated (20-30),2021
+2021-01-20,Bullish Alignment,Exceeded Half then Reversed,Worked and Remained,1.44,0.72,14538.3,True,14:15,300.0,Late Afternoon (13:30-14:29),0.726,0.88,-0.14,0.58,0,22.9,Elevated (20-30),2021
+2021-01-25,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,1.41,0.705,14477.8,True,09:40,25.0,Opening (9:15-9:44),1.219,0.08,-1.78,-1.59,0,22.42,Elevated (20-30),2021
+2021-01-29,Bullish Alignment,Reversed Before Half,Reversed by Close,1.53,0.765,13946.6,False,,,,,0.14,-2.5,-2.05,0,24.29,Elevated (20-30),2021
+2021-02-16,Bullish Alignment,Reversed Before Half,Reversed by Close,1.35,0.675,15371.45,False,,,,,0.39,-0.83,-0.35,0,21.48,Elevated (20-30),2021
+2021-02-25,Bullish Alignment,Reversed Before Half,Worked and Remained,1.52,0.76,15079.85,False,,,,,0.62,-0.06,0.16,1,24.17,Elevated (20-30),2021
+2021-03-01,Bearish Alignment,Reversed Before Half,Reversed by Close,1.77,0.885,14702.5,False,,,,,0.71,-0.43,0.56,0,28.14,Elevated (20-30),2021
+2021-03-02,Bullish Alignment,Reversed Before Half,Worked and Remained,1.61,0.805,14865.3,False,,,,,0.63,-0.7,0.51,0,25.63,Elevated (20-30),2021
+2021-03-05,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,1.52,0.76,14977.95,True,14:10,295.0,Late Afternoon (13:30-14:29),0.77,0.75,-0.77,-0.1,0,24.15,Elevated (20-30),2021
+2021-03-10,Bullish Alignment,Reversed Before Half,Reversed by Close,1.42,0.71,15202.15,False,,,,,0.1,-0.66,-0.22,1,22.5,Elevated (20-30),2021
+2021-03-25,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,1.41,0.705,14570.9,True,09:20,5.0,Opening (9:15-9:44),0.872,0.0,-2.1,-1.54,1,22.46,Elevated (20-30),2021
+2021-03-26,Bullish Alignment,Reversed Before Half,Worked and Remained,1.43,0.715,14506.3,False,,,,,0.46,-0.63,0.09,0,22.7,Elevated (20-30),2021
+2021-04-01,Bearish Alignment,Exceeded Half then Reversed,Reversed by Close,1.3,0.65,14798.4,True,10:55,100.0,Late Morning (10:30-11:29),0.684,0.57,-0.71,0.46,1,20.65,Elevated (20-30),2021
+2021-04-30,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,1.47,0.735,14747.35,True,15:05,350.0,Closing (14:30-15:30),0.761,0.73,-0.98,-0.88,0,23.31,Elevated (20-30),2021
+2021-05-03,Bearish Alignment,Reversed Before Half,Reversed by Close,1.45,0.725,14481.05,False,,,,,1.33,-0.44,1.13,0,23.03,Elevated (20-30),2021
+2021-05-18,Bullish Alignment,Reversed Before Half,Worked and Remained,1.24,0.62,15067.2,False,,,,,0.46,-0.15,0.28,0,19.61,Normal (15-20),2021
+2021-05-24,Bullish Alignment,Reversed Before Half,Reversed by Close,1.2,0.6,15211.35,False,,,,,0.29,-0.43,-0.18,0,19.08,Normal (15-20),2021
+2021-06-07,Bearish Alignment,Reversed Before Half,Reversed by Close,1.0,0.5,15725.1,False,,,,,0.3,-0.29,0.14,0,15.94,Normal (15-20),2021
+2021-06-17,Bearish Alignment,Reversed Before Half,Reversed by Close,0.94,0.47,15648.3,False,,,,,0.77,-0.19,0.21,1,14.87,Low (<15),2021
+2021-06-25,Bullish Alignment,Reversed Before Half,Worked and Remained,0.95,0.475,15839.35,False,,,,,0.19,-0.42,0.05,0,15.1,Normal (15-20),2021
+2021-06-30,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.82,0.41,15776.9,True,15:15,360.0,Closing (14:30-15:30),0.412,0.39,-0.42,-0.29,0,13.0,Low (<15),2021
+2021-07-09,Bearish Alignment,Reversed Before Half,Reversed by Close,0.85,0.425,15688.25,False,,,,,0.27,-0.35,0.06,0,13.56,Low (<15),2021
+2021-07-14,Bullish Alignment,Exceeded Half then Reversed,Worked and Remained,0.79,0.395,15808.7,True,13:05,230.0,Early Afternoon (12:30-13:29),0.411,0.43,-0.28,0.23,0,12.62,Low (<15),2021
+2021-07-19,Bearish Alignment,Reversed Before Half,Reversed by Close,0.74,0.37,15754.5,False,,,,,0.52,-0.3,0.02,0,11.71,Low (<15),2021
+2021-07-20,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.8,0.4,15703.95,True,10:25,70.0,Early Morning (9:45-10:29),0.436,0.14,-0.8,-0.51,0,12.68,Low (<15),2021
+2021-07-26,Bullish Alignment,Reversed Before Half,Reversed by Close,0.74,0.37,15849.3,False,,,,,0.28,-0.31,-0.18,0,11.76,Low (<15),2021
+2021-07-28,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.83,0.415,15761.55,True,09:15,0.0,Opening (9:15-9:44),0.666,0.0,-1.57,-0.3,0,13.23,Low (<15),2021
+2021-07-30,Bullish Alignment,Reversed Before Half,Reversed by Close,0.82,0.41,15800.6,False,,,,,0.39,-0.35,-0.17,0,12.95,Low (<15),2021
+2021-08-03,Bullish Alignment,Exceeded Half then Reversed,Worked and Remained,0.81,0.405,15951.55,True,12:20,185.0,Midday (11:30-12:29),0.458,1.22,-0.22,1.08,0,12.81,Low (<15),2021
+2021-08-04,Bullish Alignment,Exceeded Half then Reversed,Worked and Remained,0.87,0.435,16195.25,True,10:20,65.0,Early Morning (9:45-10:29),0.479,0.59,-0.04,0.36,0,13.75,Low (<15),2021
+2021-08-13,Bullish Alignment,Exceeded Half then Reversed,Worked and Remained,0.78,0.39,16385.7,True,10:15,60.0,Early Morning (9:45-10:29),0.391,0.96,-0.0,0.82,0,12.37,Low (<15),2021
+2021-08-16,Bullish Alignment,Exceeded Half then Reversed,Worked and Remained,0.82,0.41,16518.4,True,14:50,335.0,Closing (14:30-15:30),0.422,0.42,-0.22,0.17,0,12.99,Low (<15),2021
+2021-08-25,Bullish Alignment,Reversed Before Half,Reversed by Close,0.83,0.415,16654.0,False,,,,,0.35,-0.22,-0.11,0,13.19,Low (<15),2021
+2021-09-02,Bearish Alignment,Reversed Before Half,Reversed by Close,0.89,0.445,17095.4,False,,,,,0.88,-0.19,0.81,1,14.19,Low (<15),2021
+2021-09-03,Bullish Alignment,Reversed Before Half,Worked and Remained,0.9,0.45,17262.45,False,,,,,0.45,-0.29,0.34,0,14.24,Low (<15),2021
+2021-09-16,Bullish Alignment,Exceeded Half then Reversed,Worked and Remained,0.86,0.43,17539.2,True,14:15,300.0,Late Afternoon (13:30-14:29),0.469,0.6,-0.16,0.5,1,13.73,Low (<15),2021
+2021-09-21,Bearish Alignment,Exceeded Half then Reversed,Reversed by Close,1.1,0.55,17450.5,True,11:10,115.0,Late Morning (10:30-11:29),0.601,0.73,-0.71,0.65,0,17.49,Normal (15-20),2021
+2021-09-24,Bullish Alignment,Reversed Before Half,Reversed by Close,1.05,0.525,17897.45,False,,,,,0.28,-0.43,-0.31,0,16.6,Normal (15-20),2021
+2021-10-01,Bullish Alignment,Reversed Before Half,Reversed by Close,1.16,0.58,17531.9,False,,,,,0.14,-0.45,-0.03,0,18.4,Normal (15-20),2021
+2021-10-07,Bearish Alignment,Reversed Before Half,Worked and Remained,1.09,0.545,17810.55,False,,,,,0.26,-0.25,-0.08,1,17.33,Normal (15-20),2021
+2021-10-08,Bullish Alignment,Reversed Before Half,Worked and Remained,1.02,0.51,17886.85,False,,,,,0.31,-0.26,0.12,0,16.16,Normal (15-20),2021
+2021-10-12,Bullish Alignment,Reversed Before Half,Worked and Remained,1.01,0.505,17915.8,False,,,,,0.5,-0.28,0.5,0,16.09,Normal (15-20),2021
+2021-10-21,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,1.15,0.575,18382.7,True,09:30,15.0,Opening (9:15-9:44),0.71,0.0,-1.82,-0.89,1,18.31,Normal (15-20),2021
+2021-10-25,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,1.11,0.555,18229.5,True,09:15,0.0,Opening (9:15-9:44),0.808,0.04,-1.42,-0.51,0,17.55,Normal (15-20),2021
+2021-10-28,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,1.06,0.53,18187.65,True,09:35,20.0,Opening (9:15-9:44),0.617,0.0,-2.13,-1.79,1,16.83,Normal (15-20),2021
+2021-11-02,Bullish Alignment,Reversed Before Half,Reversed by Close,1.09,0.545,17970.9,False,,,,,0.22,-0.68,-0.45,0,17.24,Normal (15-20),2021
+2021-11-03,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,1.07,0.535,17947.95,True,13:00,225.0,Early Afternoon (12:30-13:29),0.642,0.22,-1.06,-0.64,0,17.06,Normal (15-20),2021
+2021-11-10,Bearish Alignment,Reversed Before Half,Reversed by Close,1.01,0.505,17973.45,False,,,,,0.49,-0.32,0.2,0,16.0,Normal (15-20),2021
+2021-11-11,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,1.03,0.515,17967.45,True,10:15,60.0,Early Morning (9:45-10:29),0.571,0.0,-0.93,-0.46,1,16.31,Normal (15-20),2021
+2021-11-15,Bullish Alignment,Reversed Before Half,Reversed by Close,0.96,0.48,18140.95,False,,,,,0.38,-0.38,-0.27,0,15.22,Normal (15-20),2021
+2021-11-17,Bearish Alignment,Reversed Before Half,Worked and Remained,0.96,0.48,17939.35,False,,,,,0.46,-0.33,-0.29,0,15.2,Normal (15-20),2021
+2021-11-24,Bullish Alignment,Reversed Before Half,Reversed by Close,1.14,0.57,17550.05,False,,,,,0.29,-1.11,-1.1,0,18.02,Normal (15-20),2021
+2021-11-26,Bullish Alignment,Reversed Before Half,Reversed by Close,1.05,0.525,17338.75,False,,,,,0.04,-2.03,-1.92,0,16.66,Normal (15-20),2021
+2021-11-29,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,1.31,0.655,17055.8,True,09:15,0.0,Opening (9:15-9:44),1.281,0.61,-1.59,-0.09,0,20.8,Elevated (20-30),2021
+2021-11-30,Bullish Alignment,Exceeded Half then Reversed,Reversed by Close,1.31,0.655,17051.15,True,09:20,5.0,Opening (9:15-9:44),0.842,1.6,-0.69,-0.45,0,20.83,Elevated (20-30),2021
+2021-12-02,Bullish Alignment,Exceeded Half then Reversed,Worked and Remained,1.23,0.615,17183.2,True,10:15,60.0,Early Morning (9:45-10:29),0.656,1.36,-0.14,1.27,1,19.45,Normal (15-20),2021
+2021-12-06,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,1.16,0.58,17209.05,True,09:35,20.0,Opening (9:15-9:44),0.661,0.01,-1.83,-1.74,0,18.45,Normal (15-20),2021
+2021-12-07,Bearish Alignment,Reversed Before Half,Reversed by Close,1.26,0.63,17044.1,False,,,,,1.22,-0.32,0.8,0,20.08,Elevated (20-30),2021
+2021-12-08,Bullish Alignment,Exceeded Half then Reversed,Worked and Remained,1.16,0.58,17315.25,True,09:45,30.0,Early Morning (9:45-10:29),0.63,0.98,-0.02,0.88,0,18.46,Normal (15-20),2021
+2021-12-14,Bearish Alignment,Reversed Before Half,Reversed by Close,1.04,0.52,17283.2,False,,,,,0.54,-0.33,0.21,0,16.57,Normal (15-20),2021
+2021-12-17,Bullish Alignment,Reversed Before Half,Reversed by Close,1.0,0.5,17276.0,False,,,,,0.1,-1.79,-1.63,0,15.9,Normal (15-20),2021
+2021-12-20,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,1.03,0.515,16824.25,True,09:15,0.0,Opening (9:15-9:44),0.613,0.03,-2.46,-1.26,0,16.34,Normal (15-20),2021
+2021-12-22,Bullish Alignment,Exceeded Half then Reversed,Worked and Remained,1.1,0.55,16865.55,True,15:00,345.0,Closing (14:30-15:30),0.57,0.62,-0.27,0.61,0,17.54,Normal (15-20),2021
+2021-12-28,Bullish Alignment,Reversed Before Half,Worked and Remained,1.08,0.54,17177.6,False,,,,,0.42,-0.1,0.32,0,17.12,Normal (15-20),2021
+2021-12-30,Bearish Alignment,Reversed Before Half,Reversed by Close,1.02,0.51,17201.45,False,,,,,0.36,-0.31,0.16,1,16.24,Normal (15-20),2021
+2021-12-31,Bullish Alignment,Exceeded Half then Reversed,Worked and Remained,1.04,0.52,17244.5,True,09:30,15.0,Opening (9:15-9:44),0.545,0.9,0.0,0.69,0,16.57,Normal (15-20),2021
+2022-01-07,Bearish Alignment,Reversed Before Half,Reversed by Close,1.13,0.565,17797.6,False,,,,,0.6,-0.52,0.12,0,17.98,Normal (15-20),2022
+2022-01-19,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,1.12,0.56,18129.2,True,09:15,0.0,Opening (9:15-9:44),0.573,0.0,-1.35,-1.04,0,17.78,Normal (15-20),2022
+2022-01-20,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,1.12,0.56,17921.0,True,10:45,90.0,Late Morning (10:30-11:29),0.573,0.07,-1.52,-0.77,1,17.82,Normal (15-20),2022
+2022-01-31,Bearish Alignment,Reversed Before Half,Reversed by Close,1.3,0.65,17301.05,False,,,,,0.63,-0.21,0.22,0,20.7,Elevated (20-30),2022
+2022-02-03,Bullish Alignment,Reversed Before Half,Reversed by Close,1.17,0.585,17767.75,False,,,,,0.04,-1.43,-1.39,1,18.65,Normal (15-20),2022
+2022-02-04,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,1.21,0.605,17590.2,True,09:20,5.0,Opening (9:15-9:44),0.621,0.15,-0.72,-0.5,0,19.16,Normal (15-20),2022
+2022-02-08,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,1.29,0.645,17279.85,True,10:15,60.0,Early Morning (9:45-10:29),0.664,0.14,-1.37,-0.23,0,20.44,Elevated (20-30),2022
+2022-02-10,Bullish Alignment,Reversed Before Half,Worked and Remained,1.17,0.585,17554.1,False,,,,,0.49,-0.72,0.19,1,18.56,Normal (15-20),2022
+2022-02-14,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,1.18,0.59,17076.15,True,09:15,0.0,Opening (9:15-9:44),0.771,0.04,-1.56,-1.5,0,18.68,Normal (15-20),2022
+2022-02-16,Bullish Alignment,Reversed Before Half,Reversed by Close,1.3,0.65,17408.45,False,,,,,0.47,-0.86,-0.66,0,20.61,Elevated (20-30),2022
+2022-02-24,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,1.55,0.775,16548.9,True,13:40,265.0,Late Afternoon (13:30-14:29),0.786,0.93,-2.08,-2.0,1,24.54,Elevated (20-30),2022
+2022-02-28,Bullish Alignment,Exceeded Half then Reversed,Worked and Remained,1.68,0.84,16481.6,True,11:20,125.0,Late Morning (10:30-11:29),0.896,2.02,-0.76,1.87,0,26.74,Elevated (20-30),2022
+2022-03-08,Bearish Alignment,Reversed Before Half,Reversed by Close,1.85,0.925,15747.75,False,,,,,1.78,-0.48,1.69,0,29.33,Elevated (20-30),2022
+2022-03-10,Bullish Alignment,Reversed Before Half,Reversed by Close,1.73,0.865,16757.1,False,,,,,0.0,-1.84,-1.14,1,27.47,Elevated (20-30),2022
+2022-03-16,Bearish Alignment,Reversed Before Half,Reversed by Close,1.68,0.84,16876.65,False,,,,,0.66,-0.21,0.53,0,26.73,Elevated (20-30),2022
+2022-03-17,Bullish Alignment,Exceeded Half then Reversed,Worked and Remained,1.52,0.76,17202.9,True,14:05,290.0,Late Afternoon (13:30-14:29),0.824,0.82,-0.16,0.56,1,24.12,Elevated (20-30),2022
+2022-04-04,Bullish Alignment,Exceeded Half then Reversed,Worked and Remained,1.16,0.58,17809.1,True,09:25,10.0,Opening (9:15-9:44),0.674,1.56,-0.07,1.27,0,18.43,Normal (15-20),2022
+2022-04-05,Bullish Alignment,Reversed Before Half,Reversed by Close,1.13,0.565,18080.6,False,,,,,0.08,-0.87,-0.83,0,17.91,Normal (15-20),2022
+2022-04-06,Bearish Alignment,Reversed Before Half,Worked and Remained,1.16,0.58,17842.75,False,,,,,0.32,-0.35,-0.24,0,18.49,Normal (15-20),2022
+2022-04-12,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,1.15,0.575,17584.85,True,10:15,60.0,Early Morning (9:45-10:29),0.64,0.06,-0.81,-0.37,0,18.27,Normal (15-20),2022
+2022-04-25,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,1.16,0.58,17009.05,True,12:35,200.0,Early Afternoon (12:30-13:29),0.611,0.26,-0.71,-0.15,0,18.35,Normal (15-20),2022
+2022-04-28,Bearish Alignment,Exceeded Half then Reversed,Reversed by Close,1.3,0.65,17189.5,True,10:45,90.0,Late Morning (10:30-11:29),0.688,0.77,-0.69,0.24,1,20.61,Elevated (20-30),2022
+2022-04-29,Bullish Alignment,Reversed Before Half,Reversed by Close,1.22,0.61,17329.25,False,,,,,0.28,-1.59,-1.26,0,19.38,Normal (15-20),2022
+2022-05-06,Bullish Alignment,Reversed Before Half,Worked and Remained,1.28,0.64,16415.55,False,,,,,0.42,-0.45,0.14,0,20.29,Elevated (20-30),2022
+2022-05-09,Bearish Alignment,Reversed Before Half,Reversed by Close,1.34,0.67,16227.7,False,,,,,1.08,-0.52,0.5,0,21.25,Elevated (20-30),2022
+2022-05-18,Bullish Alignment,Reversed Before Half,Reversed by Close,1.43,0.715,16318.15,False,,,,,0.5,-0.65,-0.38,0,22.74,Elevated (20-30),2022
+2022-05-19,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,1.4,0.7,15917.4,True,14:30,315.0,Closing (14:30-15:30),0.713,0.41,-0.89,-0.56,1,22.3,Elevated (20-30),2022
+2022-05-23,Bullish Alignment,Exceeded Half then Reversed,Reversed by Close,1.46,0.73,16290.95,True,13:30,255.0,Late Afternoon (13:30-14:29),0.74,0.76,-0.64,-0.61,0,23.1,Elevated (20-30),2022
+2022-05-26,Bearish Alignment,Exceeded Half then Reversed,Reversed by Close,1.59,0.795,16105.0,True,10:25,70.0,Early Morning (9:45-10:29),0.897,0.61,-1.25,0.6,1,25.28,Elevated (20-30),2022
+2022-06-01,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,1.29,0.645,16594.4,True,13:40,265.0,Late Afternoon (13:30-14:29),0.68,0.33,-0.94,-0.32,0,20.48,Elevated (20-30),2022
+2022-06-06,Bearish Alignment,Reversed Before Half,Reversed by Close,1.26,0.63,16530.7,False,,,,,0.48,-0.51,0.2,0,19.98,Normal (15-20),2022
+2022-06-08,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,1.29,0.645,16474.95,True,09:35,20.0,Opening (9:15-9:44),0.715,0.23,-1.1,-0.85,0,20.43,Elevated (20-30),2022
+2022-06-10,Bullish Alignment,Reversed Before Half,Reversed by Close,1.21,0.605,16283.95,False,,,,,0.25,-0.68,-0.57,0,19.14,Normal (15-20),2022
+2022-06-13,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,1.23,0.615,15877.55,True,09:25,10.0,Opening (9:15-9:44),0.625,0.02,-1.22,-0.48,0,19.58,Normal (15-20),2022
+2022-06-15,Bearish Alignment,Reversed Before Half,Worked and Remained,1.38,0.69,15729.25,False,,,,,0.34,-0.32,-0.29,0,21.89,Elevated (20-30),2022
+2022-06-22,Bullish Alignment,Reversed Before Half,Reversed by Close,1.33,0.665,15545.65,False,,,,,0.08,-1.02,-0.93,0,21.14,Elevated (20-30),2022
+2022-07-01,Bullish Alignment,Reversed Before Half,Worked and Remained,1.38,0.69,15703.7,False,,,,,0.56,-1.22,0.38,0,21.84,Elevated (20-30),2022
+2022-07-07,Bullish Alignment,Reversed Before Half,Worked and Remained,1.28,0.64,16113.75,False,,,,,0.23,-0.41,0.14,1,20.27,Elevated (20-30),2022
+2022-07-13,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,1.17,0.585,16128.2,True,12:45,210.0,Early Afternoon (12:30-13:29),0.587,0.07,-1.1,-0.95,0,18.55,Normal (15-20),2022
+2022-07-14,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,1.17,0.585,16018.85,True,13:20,245.0,Early Afternoon (12:30-13:29),0.6,0.32,-1.0,-0.44,1,18.52,Normal (15-20),2022
+2022-07-15,Bullish Alignment,Reversed Before Half,Worked and Remained,1.16,0.58,16010.8,False,,,,,0.35,-0.52,0.26,0,18.34,Normal (15-20),2022
+2022-07-19,Bullish Alignment,Exceeded Half then Reversed,Worked and Remained,1.08,0.54,16187.05,True,09:45,30.0,Early Morning (9:45-10:29),0.565,1.06,0.0,0.88,0,17.16,Normal (15-20),2022
+2022-07-25,Bullish Alignment,Reversed Before Half,Reversed by Close,1.05,0.525,16662.55,False,,,,,0.25,-0.59,-0.32,0,16.65,Normal (15-20),2022
+2022-07-27,Bearish Alignment,Reversed Before Half,Reversed by Close,1.14,0.57,16475.35,False,,,,,1.08,-0.22,1.02,0,18.17,Normal (15-20),2022
+2022-07-28,Bullish Alignment,Exceeded Half then Reversed,Worked and Remained,1.14,0.57,16774.85,True,11:05,110.0,Late Morning (10:30-11:29),0.588,1.01,-0.16,0.88,1,18.13,Normal (15-20),2022
+2022-08-02,Bullish Alignment,Reversed Before Half,Reversed by Close,1.1,0.55,17310.15,False,,,,,0.46,-0.54,-0.09,0,17.49,Normal (15-20),2022
+2022-08-03,Bearish Alignment,Exceeded Half then Reversed,Reversed by Close,1.17,0.585,17349.25,True,11:05,110.0,Late Morning (10:30-11:29),0.652,0.33,-0.71,0.25,0,18.53,Normal (15-20),2022
+2022-08-19,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,1.09,0.545,17966.55,True,11:05,110.0,Late Morning (10:30-11:29),0.602,0.13,-1.42,-1.33,0,17.35,Normal (15-20),2022
+2022-08-22,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,1.15,0.575,17682.9,True,10:05,50.0,Early Morning (9:45-10:29),0.621,0.03,-1.21,-1.07,0,18.29,Normal (15-20),2022
+2022-09-05,Bearish Alignment,Reversed Before Half,Reversed by Close,1.23,0.615,17546.45,False,,,,,0.78,0.0,0.61,0,19.55,Normal (15-20),2022
+2022-09-06,Bullish Alignment,Reversed Before Half,Reversed by Close,1.24,0.62,17695.7,False,,,,,0.39,-0.61,-0.25,0,19.66,Normal (15-20),2022
+2022-09-07,Bearish Alignment,Reversed Before Half,Reversed by Close,1.23,0.615,17519.4,False,,,,,0.75,0.0,0.63,0,19.52,Normal (15-20),2022
+2022-09-08,Bearish Alignment,Reversed Before Half,Reversed by Close,1.22,0.61,17748.15,False,,,,,0.33,-0.31,0.29,1,19.37,Normal (15-20),2022
+2022-09-09,Bullish Alignment,Reversed Before Half,Reversed by Close,1.15,0.575,17923.35,False,,,,,0.01,-0.77,-0.52,0,18.31,Normal (15-20),2022
+2022-09-12,Bearish Alignment,Reversed Before Half,Reversed by Close,1.12,0.56,17890.85,False,,,,,0.5,0.0,0.23,0,17.72,Normal (15-20),2022
+2022-09-13,Bullish Alignment,Reversed Before Half,Worked and Remained,1.13,0.565,18044.45,False,,,,,0.24,-0.16,0.12,0,17.94,Normal (15-20),2022
+2022-09-14,Bullish Alignment,Exceeded Half then Reversed,Worked and Remained,1.1,0.55,17771.15,True,09:15,0.0,Opening (9:15-9:44),0.65,1.8,0.0,1.29,0,17.47,Normal (15-20),2022
+2022-09-15,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,1.15,0.575,18046.35,True,10:10,55.0,Early Morning (9:45-10:29),0.579,0.27,-1.02,-0.96,1,18.28,Normal (15-20),2022
+2022-09-16,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,1.16,0.58,17796.8,True,09:50,35.0,Early Morning (9:45-10:29),0.639,0.11,-1.68,-1.39,0,18.39,Normal (15-20),2022
+2022-09-20,Bullish Alignment,Exceeded Half then Reversed,Worked and Remained,1.26,0.63,17770.4,True,12:05,170.0,Midday (11:30-12:29),0.642,0.83,-0.05,0.12,0,19.94,Normal (15-20),2022
+2022-09-21,Bullish Alignment,Reversed Before Half,Reversed by Close,1.18,0.59,17766.35,False,,,,,0.41,-0.58,-0.28,0,18.8,Normal (15-20),2022
+2022-09-22,Bearish Alignment,Reversed Before Half,Reversed by Close,1.22,0.61,17609.65,False,,,,,0.64,-0.44,0.15,1,19.33,Normal (15-20),2022
+2022-09-26,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,1.3,0.65,17156.3,True,10:00,45.0,Early Morning (9:45-10:29),0.75,0.23,-1.03,-0.75,0,20.59,Elevated (20-30),2022
+2022-10-03,Bullish Alignment,Reversed Before Half,Reversed by Close,1.26,0.63,17102.1,False,,,,,0.06,-1.44,-1.32,0,19.97,Normal (15-20),2022
+2022-10-04,Bearish Alignment,Reversed Before Half,Reversed by Close,1.35,0.675,17147.45,False,,,,,0.8,-0.12,0.76,0,21.37,Elevated (20-30),2022
+2022-10-11,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,1.24,0.62,17256.05,True,10:00,45.0,Early Morning (9:45-10:29),0.665,0.0,-1.77,-1.69,0,19.62,Normal (15-20),2022
+2022-10-12,Bearish Alignment,Reversed Before Half,Reversed by Close,1.29,0.645,17025.55,False,,,,,0.68,-0.38,0.61,0,20.49,Elevated (20-30),2022
+2022-10-13,Bullish Alignment,Reversed Before Half,Reversed by Close,1.27,0.635,17087.35,False,,,,,0.14,-0.76,-0.41,1,20.18,Elevated (20-30),2022
+2022-10-14,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,1.28,0.64,17322.3,True,14:30,315.0,Closing (14:30-15:30),0.728,0.15,-0.88,-0.7,0,20.29,Elevated (20-30),2022
+2022-10-18,Bullish Alignment,Reversed Before Half,Worked and Remained,1.16,0.58,17438.75,False,,,,,0.51,0.0,0.3,0,18.42,Normal (15-20),2022
+2022-10-21,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,1.09,0.545,17622.85,True,14:30,315.0,Closing (14:30-15:30),0.577,0.27,-0.58,-0.22,0,17.23,Normal (15-20),2022
+2022-10-25,Bullish Alignment,Reversed Before Half,Reversed by Close,1.1,0.55,17808.3,False,,,,,0.0,-0.95,-0.93,0,17.42,Normal (15-20),2022
+2022-11-01,Bullish Alignment,Reversed Before Half,Worked and Remained,1.0,0.5,18130.7,False,,,,,0.25,-0.38,0.07,0,15.8,Normal (15-20),2022
+2022-11-03,Bearish Alignment,Reversed Before Half,Reversed by Close,1.05,0.525,17968.35,False,,,,,0.76,-0.02,0.44,1,16.66,Normal (15-20),2022
+2022-11-14,Bullish Alignment,Reversed Before Half,Reversed by Close,0.91,0.455,18376.4,False,,,,,0.12,-0.35,-0.31,0,14.41,Low (<15),2022
+2022-11-15,Bearish Alignment,Reversed Before Half,Reversed by Close,0.94,0.47,18362.75,False,,,,,0.35,-0.44,0.32,0,14.91,Low (<15),2022
+2022-11-16,Bullish Alignment,Reversed Before Half,Worked and Remained,0.92,0.46,18398.25,False,,,,,0.24,-0.29,0.02,0,14.64,Low (<15),2022
+2022-11-18,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.94,0.47,18382.95,True,09:55,40.0,Early Morning (9:45-10:29),0.496,0.06,-0.94,-0.43,0,14.88,Low (<15),2022
+2022-11-22,Bearish Alignment,Reversed Before Half,Reversed by Close,0.93,0.465,18179.15,False,,,,,0.43,-0.22,0.4,0,14.8,Low (<15),2022
+2022-11-25,Bullish Alignment,Reversed Before Half,Reversed by Close,0.85,0.425,18528.45,False,,,,,0.03,-0.45,-0.16,0,13.48,Low (<15),2022
+2022-11-28,Bearish Alignment,Reversed Before Half,Reversed by Close,0.84,0.42,18430.55,False,,,,,1.0,0.0,0.67,0,13.33,Low (<15),2022
+2022-12-01,Bullish Alignment,Reversed Before Half,Reversed by Close,0.87,0.435,18871.95,False,,,,,0.08,-0.5,-0.38,1,13.81,Low (<15),2022
+2022-12-02,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.84,0.42,18752.4,True,11:35,140.0,Midday (11:30-12:29),0.492,0.14,-0.6,-0.25,0,13.36,Low (<15),2022
+2022-12-05,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.85,0.425,18719.55,True,09:45,30.0,Early Morning (9:45-10:29),0.464,0.02,-0.68,-0.14,0,13.45,Low (<15),2022
+2022-12-06,Bullish Alignment,Reversed Before Half,Worked and Remained,0.86,0.43,18600.65,False,,,,,0.29,-0.12,0.25,0,13.73,Low (<15),2022
+2022-12-07,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.88,0.44,18638.85,True,15:10,355.0,Closing (14:30-15:30),0.475,0.16,-0.59,-0.47,0,14.04,Low (<15),2022
+2022-12-08,Bearish Alignment,Reversed Before Half,Reversed by Close,0.89,0.445,18570.85,False,,,,,0.29,-0.18,0.23,1,14.08,Low (<15),2022
+2022-12-09,Bullish Alignment,Reversed Before Half,Reversed by Close,0.84,0.42,18662.4,False,,,,,0.0,-1.35,-0.91,0,13.4,Low (<15),2022
+2022-12-12,Bearish Alignment,Reversed Before Half,Reversed by Close,0.85,0.425,18402.15,False,,,,,0.65,-0.3,0.5,0,13.48,Low (<15),2022
+2022-12-13,Bullish Alignment,Exceeded Half then Reversed,Worked and Remained,0.84,0.42,18524.4,True,13:05,230.0,Early Afternoon (12:30-13:29),0.435,0.5,-0.18,0.39,0,13.32,Low (<15),2022
+2022-12-14,Bullish Alignment,Reversed Before Half,Reversed by Close,0.81,0.405,18671.25,False,,,,,0.13,-0.2,-0.15,0,12.88,Low (<15),2022
+2022-12-15,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.81,0.405,18614.4,True,12:30,195.0,Early Afternoon (12:30-13:29),0.501,0.2,-1.21,-1.15,1,12.89,Low (<15),2022
+2022-12-16,Bearish Alignment,Reversed Before Half,Worked and Remained,0.86,0.43,18319.1,False,,,,,0.66,-0.35,-0.27,0,13.73,Low (<15),2022
+2022-12-20,Bullish Alignment,Reversed Before Half,Worked and Remained,0.85,0.425,18340.3,False,,,,,0.35,-0.75,0.25,0,13.55,Low (<15),2022
+2022-12-22,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.98,0.49,18288.8,True,09:25,10.0,Opening (9:15-9:44),0.507,0.15,-1.2,-0.95,1,15.56,Normal (15-20),2022
+2022-12-23,Bullish Alignment,Reversed Before Half,Reversed by Close,0.96,0.48,17977.65,False,,,,,0.38,-1.1,-0.85,0,15.19,Normal (15-20),2022
+2022-12-27,Bullish Alignment,Reversed Before Half,Worked and Remained,1.0,0.5,18089.8,False,,,,,0.33,-0.68,0.26,0,15.93,Normal (15-20),2022
+2023-01-02,Bearish Alignment,Reversed Before Half,Reversed by Close,0.94,0.47,18131.7,False,,,,,0.46,-0.24,0.42,0,14.87,Low (<15),2023
+2023-01-04,Bullish Alignment,Reversed Before Half,Reversed by Close,0.91,0.455,18230.65,False,,,,,0.06,-1.14,-1.06,0,14.39,Low (<15),2023
+2023-01-05,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.96,0.48,18101.95,True,10:05,50.0,Early Morning (9:45-10:29),0.486,0.09,-1.16,-0.56,1,15.2,Normal (15-20),2023
+2023-01-06,Bullish Alignment,Reversed Before Half,Reversed by Close,0.94,0.47,18008.05,False,,,,,0.21,-1.18,-0.79,0,14.98,Low (<15),2023
+2023-01-09,Bearish Alignment,Reversed Before Half,Reversed by Close,0.95,0.475,17952.55,False,,,,,1.05,-0.09,0.76,0,15.03,Normal (15-20),2023
+2023-01-10,Bullish Alignment,Reversed Before Half,Reversed by Close,0.92,0.46,18121.3,False,,,,,0.01,-1.46,-1.08,0,14.65,Low (<15),2023
+2023-01-11,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.98,0.49,17924.25,True,09:25,10.0,Opening (9:15-9:44),0.552,0.29,-0.55,-0.2,0,15.51,Normal (15-20),2023
+2023-01-16,Bullish Alignment,Reversed Before Half,Reversed by Close,0.91,0.455,18033.15,False,,,,,0.09,-0.99,-0.78,0,14.46,Low (<15),2023
+2023-01-17,Bearish Alignment,Reversed Before Half,Reversed by Close,0.95,0.475,17922.8,False,,,,,0.82,-0.19,0.75,0,15.02,Normal (15-20),2023
+2023-01-18,Bullish Alignment,Exceeded Half then Reversed,Worked and Remained,0.92,0.46,18074.3,True,11:25,130.0,Late Morning (10:30-11:29),0.461,0.6,-0.23,0.5,0,14.59,Low (<15),2023
+2023-01-19,Bullish Alignment,Reversed Before Half,Reversed by Close,0.91,0.455,18119.8,False,,,,,0.19,-0.31,-0.17,1,14.37,Low (<15),2023
+2023-01-20,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.88,0.44,18115.6,True,14:30,315.0,Closing (14:30-15:30),0.505,0.16,-0.54,-0.49,0,13.96,Low (<15),2023
+2023-01-24,Bullish Alignment,Reversed Before Half,Reversed by Close,0.86,0.43,18183.95,False,,,,,0.09,-0.58,-0.46,0,13.62,Low (<15),2023
+2023-01-25,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.86,0.43,18093.35,True,09:45,30.0,Early Morning (9:45-10:29),0.444,0.0,-1.36,-1.01,1,13.66,Low (<15),2023
+2023-02-02,Bearish Alignment,Reversed Before Half,Reversed by Close,1.06,0.53,17517.1,False,,,,,0.78,-0.39,0.54,1,16.78,Normal (15-20),2023
+2023-02-06,Bullish Alignment,Reversed Before Half,Reversed by Close,0.91,0.455,17818.55,False,,,,,0.0,-0.67,-0.32,0,14.4,Low (<15),2023
+2023-02-07,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.93,0.465,17790.1,True,12:15,180.0,Midday (11:30-12:29),0.497,0.12,-0.77,-0.39,0,14.69,Low (<15),2023
+2023-02-13,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.8,0.4,17859.1,True,09:55,40.0,Early Morning (9:45-10:29),0.484,0.12,-0.78,-0.53,0,12.75,Low (<15),2023
+2023-02-14,Bearish Alignment,Reversed Before Half,Reversed by Close,0.86,0.43,17840.35,False,,,,,0.64,-0.22,0.46,0,13.68,Low (<15),2023
+2023-02-15,Bullish Alignment,Exceeded Half then Reversed,Worked and Remained,0.85,0.425,17896.6,True,14:50,335.0,Closing (14:30-15:30),0.436,0.77,-0.24,0.71,0,13.45,Low (<15),2023
+2023-02-17,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.81,0.405,17974.85,True,13:30,255.0,Late Afternoon (13:30-14:29),0.427,0.33,-0.49,-0.18,0,12.89,Low (<15),2023
+2023-02-20,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.82,0.41,17965.55,True,12:40,205.0,Early Afternoon (12:30-13:29),0.413,0.21,-0.82,-0.66,0,13.09,Low (<15),2023
+2023-02-22,Bullish Alignment,Reversed Before Half,Reversed by Close,0.88,0.44,17755.35,False,,,,,0.09,-1.27,-1.14,0,14.01,Low (<15),2023
+2023-02-23,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.98,0.49,17574.65,True,09:30,15.0,Opening (9:15-9:44),0.537,0.25,-0.67,-0.29,1,15.59,Normal (15-20),2023
+2023-02-24,Bullish Alignment,Reversed Before Half,Reversed by Close,0.95,0.475,17591.35,False,,,,,0.05,-0.96,-0.72,0,15.08,Normal (15-20),2023
+2023-02-28,Bullish Alignment,Reversed Before Half,Reversed by Close,0.87,0.435,17383.25,False,,,,,0.33,-0.73,-0.38,0,13.88,Low (<15),2023
+2023-03-01,Bearish Alignment,Reversed Before Half,Reversed by Close,0.88,0.44,17360.1,False,,,,,0.62,-0.04,0.56,0,14.02,Low (<15),2023
+2023-03-02,Bullish Alignment,Reversed Before Half,Reversed by Close,0.82,0.41,17421.5,False,,,,,0.13,-0.66,-0.59,1,13.0,Low (<15),2023
+2023-03-03,Bearish Alignment,Reversed Before Half,Reversed by Close,0.82,0.41,17451.25,False,,,,,1.11,-0.12,0.81,0,12.97,Low (<15),2023
+2023-03-06,Bullish Alignment,Exceeded Half then Reversed,Worked and Remained,0.77,0.385,17680.35,True,09:20,5.0,Opening (9:15-9:44),0.424,0.67,0.0,0.22,0,12.18,Low (<15),2023
+2023-03-10,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.8,0.4,17443.8,True,09:30,15.0,Opening (9:15-9:44),0.466,0.0,-0.68,-0.14,0,12.73,Low (<15),2023
+2023-03-13,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.84,0.42,17421.9,True,11:50,155.0,Midday (11:30-12:29),0.437,0.62,-1.76,-1.36,0,13.41,Low (<15),2023
+2023-03-20,Bullish Alignment,Reversed Before Half,Reversed by Close,0.93,0.465,17066.6,False,,,,,0.0,-1.38,-0.37,0,14.77,Low (<15),2023
+2023-03-21,Bearish Alignment,Reversed Before Half,Reversed by Close,1.01,0.505,17060.4,False,,,,,0.39,-0.26,0.27,0,16.01,Normal (15-20),2023
+2023-03-22,Bullish Alignment,Reversed Before Half,Reversed by Close,0.95,0.475,17177.45,False,,,,,0.17,-0.4,-0.2,0,15.08,Normal (15-20),2023
+2023-03-27,Bearish Alignment,Reversed Before Half,Worked and Remained,0.96,0.48,16984.3,False,,,,,0.63,-0.38,-0.12,0,15.24,Normal (15-20),2023
+2023-03-28,Bullish Alignment,Reversed Before Half,Reversed by Close,0.97,0.485,17031.75,False,,,,,0.17,-0.69,-0.44,0,15.45,Normal (15-20),2023
+2023-04-12,Bullish Alignment,Reversed Before Half,Worked and Remained,0.75,0.375,17759.55,False,,,,,0.36,-0.24,0.33,0,11.98,Low (<15),2023
+2023-04-19,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.76,0.38,17653.35,True,13:45,270.0,Late Afternoon (13:30-14:29),0.38,0.07,-0.42,-0.24,0,12.08,Low (<15),2023
+2023-04-21,Bullish Alignment,Reversed Before Half,Reversed by Close,0.75,0.375,17639.75,False,,,,,0.13,-0.49,-0.12,0,11.94,Low (<15),2023
+2023-04-24,Bearish Alignment,Exceeded Half then Reversed,Reversed by Close,0.73,0.365,17707.55,True,09:30,15.0,Opening (9:15-9:44),0.379,0.26,-0.54,0.23,0,11.63,Low (<15),2023
+2023-04-25,Bullish Alignment,Reversed Before Half,Reversed by Close,0.74,0.37,17761.55,False,,,,,0.26,-0.25,0.0,0,11.67,Low (<15),2023
+2023-04-26,Bearish Alignment,Reversed Before Half,Reversed by Close,0.73,0.365,17767.3,False,,,,,0.33,-0.31,0.29,0,11.52,Low (<15),2023
+2023-04-27,Bullish Alignment,Exceeded Half then Reversed,Worked and Remained,0.73,0.365,17813.1,True,13:30,255.0,Late Afternoon (13:30-14:29),0.381,0.66,-0.08,0.62,1,11.65,Low (<15),2023
+2023-05-08,Bearish Alignment,Reversed Before Half,Reversed by Close,0.77,0.385,18120.6,False,,,,,0.92,-0.1,0.82,0,12.3,Low (<15),2023
+2023-05-09,Bullish Alignment,Reversed Before Half,Reversed by Close,0.8,0.4,18303.4,False,,,,,0.22,-0.4,-0.25,0,12.64,Low (<15),2023
+2023-05-10,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.8,0.4,18313.6,True,09:40,25.0,Opening (9:15-9:44),0.413,0.07,-0.55,-0.01,0,12.68,Low (<15),2023
+2023-05-11,Bullish Alignment,Reversed Before Half,Reversed by Close,0.82,0.41,18357.8,False,,,,,0.0,-0.47,-0.29,1,13.08,Low (<15),2023
+2023-05-15,Bullish Alignment,Exceeded Half then Reversed,Worked and Remained,0.81,0.405,18339.3,True,11:25,130.0,Late Morning (10:30-11:29),0.411,0.65,-0.26,0.25,0,12.85,Low (<15),2023
+2023-05-16,Bullish Alignment,Reversed Before Half,Reversed by Close,0.83,0.415,18432.35,False,,,,,0.0,-0.91,-0.84,0,13.17,Low (<15),2023
+2023-05-17,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.84,0.42,18300.45,True,10:45,90.0,Late Morning (10:30-11:29),0.435,0.04,-1.01,-0.56,0,13.29,Low (<15),2023
+2023-05-18,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.83,0.415,18287.5,True,12:15,180.0,Midday (11:30-12:29),0.428,0.05,-1.0,-0.84,1,13.11,Low (<15),2023
+2023-05-19,Bullish Alignment,Reversed Before Half,Worked and Remained,0.81,0.405,18186.15,False,,,,,0.17,-0.69,0.11,0,12.8,Low (<15),2023
+2023-05-25,Bearish Alignment,Reversed Before Half,Reversed by Close,0.83,0.415,18268.9,False,,,,,0.37,-0.36,0.37,1,13.11,Low (<15),2023
+2023-05-26,Bullish Alignment,Exceeded Half then Reversed,Worked and Remained,0.79,0.395,18368.35,True,12:00,165.0,Midday (11:30-12:29),0.403,0.76,-0.19,0.67,0,12.52,Low (<15),2023
+2023-05-29,Bullish Alignment,Reversed Before Half,Reversed by Close,0.75,0.375,18619.15,False,,,,,0.11,-0.2,-0.1,0,11.9,Low (<15),2023
+2023-05-30,Bearish Alignment,Reversed Before Half,Reversed by Close,0.77,0.385,18606.65,False,,,,,0.3,-0.16,0.18,0,12.3,Low (<15),2023
+2023-05-31,Bullish Alignment,Reversed Before Half,Reversed by Close,0.76,0.38,18594.2,False,,,,,0.04,-0.59,-0.39,0,12.01,Low (<15),2023
+2023-06-01,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.75,0.375,18579.4,True,14:45,330.0,Closing (14:30-15:30),0.399,0.0,-0.61,-0.5,1,11.97,Low (<15),2023
+2023-06-02,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.73,0.365,18550.85,True,10:15,60.0,Early Morning (9:45-10:29),0.369,0.12,-0.39,-0.13,0,11.6,Low (<15),2023
+2023-06-05,Bullish Alignment,Reversed Before Half,Reversed by Close,0.7,0.35,18612.0,False,,,,,0.15,-0.15,-0.07,0,11.13,Low (<15),2023
+2023-06-06,Bullish Alignment,Reversed Before Half,Worked and Remained,0.7,0.35,18600.8,False,,,,,0.11,-0.37,0.09,0,11.14,Low (<15),2023
+2023-06-08,Bullish Alignment,Reversed Before Half,Reversed by Close,0.72,0.36,18725.35,False,,,,,0.28,-0.58,-0.42,1,11.44,Low (<15),2023
+2023-06-09,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.71,0.355,18655.9,True,13:25,250.0,Early Afternoon (12:30-13:29),0.367,0.11,-0.54,-0.47,0,11.26,Low (<15),2023
+2023-06-12,Bearish Alignment,Reversed Before Half,Reversed by Close,0.7,0.35,18595.05,False,,,,,0.16,-0.18,0.11,0,11.12,Low (<15),2023
+2023-06-13,Bullish Alignment,Exceeded Half then Reversed,Worked and Remained,0.71,0.355,18631.8,True,09:35,20.0,Opening (9:15-9:44),0.356,0.51,0.0,0.47,0,11.25,Low (<15),2023
+2023-06-14,Bullish Alignment,Reversed Before Half,Worked and Remained,0.7,0.35,18744.6,False,,,,,0.13,-0.29,0.03,0,11.11,Low (<15),2023
+2023-06-16,Bearish Alignment,Reversed Before Half,Reversed by Close,0.7,0.35,18723.3,False,,,,,0.75,-0.06,0.54,0,11.08,Low (<15),2023
+2023-06-19,Bullish Alignment,Reversed Before Half,Reversed by Close,0.68,0.34,18873.3,False,,,,,0.03,-0.82,-0.63,0,10.84,Low (<15),2023
+2023-06-20,Bearish Alignment,Exceeded Half then Reversed,Reversed by Close,0.71,0.355,18752.35,True,09:25,10.0,Opening (9:15-9:44),0.411,0.46,-0.49,0.43,0,11.23,Low (<15),2023
+2023-06-21,Bullish Alignment,Reversed Before Half,Worked and Remained,0.7,0.35,18849.4,False,,,,,0.14,-0.29,0.07,0,11.13,Low (<15),2023
+2023-06-22,Bullish Alignment,Reversed Before Half,Reversed by Close,0.71,0.355,18853.6,False,,,,,0.17,-0.49,-0.39,1,11.29,Low (<15),2023
+2023-06-23,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.73,0.365,18741.85,True,09:25,10.0,Opening (9:15-9:44),0.375,0.05,-0.5,-0.39,0,11.55,Low (<15),2023
+2023-06-26,Bearish Alignment,Reversed Before Half,Reversed by Close,0.71,0.355,18682.35,False,,,,,0.21,-0.19,0.07,0,11.24,Low (<15),2023
+2023-06-27,Bullish Alignment,Exceeded Half then Reversed,Worked and Remained,0.72,0.36,18748.55,True,15:00,345.0,Closing (14:30-15:30),0.363,0.43,-0.18,0.37,0,11.4,Low (<15),2023
+2023-06-28,Bullish Alignment,Exceeded Half then Reversed,Worked and Remained,0.68,0.34,18908.15,True,12:00,165.0,Midday (11:30-12:29),0.381,0.54,-0.25,0.44,1,10.78,Low (<15),2023
+2023-07-12,Bullish Alignment,Reversed Before Half,Reversed by Close,0.69,0.345,19497.45,False,,,,,0.05,-0.7,-0.58,0,11.01,Low (<15),2023
+2023-07-13,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.69,0.345,19495.2,True,14:40,325.0,Closing (14:30-15:30),0.427,0.37,-0.56,-0.27,1,10.94,Low (<15),2023
+2023-07-14,Bullish Alignment,Exceeded Half then Reversed,Worked and Remained,0.69,0.345,19493.45,True,15:10,355.0,Closing (14:30-15:30),0.384,0.52,-0.31,0.48,0,10.94,Low (<15),2023
+2023-07-18,Bullish Alignment,Reversed Before Half,Reversed by Close,0.71,0.355,19787.5,False,,,,,0.16,-0.49,-0.18,0,11.32,Low (<15),2023
+2023-07-19,Bearish Alignment,Exceeded Half then Reversed,Reversed by Close,0.74,0.37,19802.95,True,11:55,160.0,Midday (11:30-12:29),0.381,0.25,-0.38,0.22,0,11.71,Low (<15),2023
+2023-07-20,Bullish Alignment,Exceeded Half then Reversed,Worked and Remained,0.73,0.365,19831.7,True,13:15,240.0,Early Afternoon (12:30-13:29),0.435,0.81,-0.37,0.7,1,11.6,Low (<15),2023
+2023-07-24,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.72,0.36,19748.45,True,11:55,160.0,Midday (11:30-12:29),0.395,0.17,-0.46,-0.42,0,11.49,Low (<15),2023
+2023-07-25,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.73,0.365,19729.35,True,11:05,110.0,Late Morning (10:30-11:29),0.392,0.0,-0.57,-0.26,0,11.65,Low (<15),2023
+2023-07-27,Bullish Alignment,Reversed Before Half,Reversed by Close,0.66,0.33,19850.9,False,,,,,0.08,-1.25,-0.76,1,10.46,Low (<15),2023
+2023-07-31,Bearish Alignment,Exceeded Half then Reversed,Reversed by Close,0.64,0.32,19666.35,True,09:20,5.0,Opening (9:15-9:44),0.35,0.54,-0.35,0.39,0,10.14,Low (<15),2023
+2023-08-01,Bullish Alignment,Reversed Before Half,Reversed by Close,0.66,0.33,19784.0,False,,,,,0.06,-0.4,-0.24,0,10.41,Low (<15),2023
+2023-08-03,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.71,0.355,19463.75,True,12:45,210.0,Early Afternoon (12:30-13:29),0.474,0.38,-0.85,-0.36,1,11.28,Low (<15),2023
+2023-08-11,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.72,0.36,19554.25,True,09:20,5.0,Opening (9:15-9:44),0.379,0.0,-0.72,-0.66,0,11.4,Low (<15),2023
+2023-08-18,Bearish Alignment,Reversed Before Half,Worked and Remained,0.77,0.385,19301.75,False,,,,,0.37,-0.25,-0.1,0,12.24,Low (<15),2023
+2023-08-22,Bullish Alignment,Reversed Before Half,Reversed by Close,0.75,0.375,19417.1,False,,,,,0.14,-0.18,-0.14,0,11.96,Low (<15),2023
+2023-08-23,Bearish Alignment,Reversed Before Half,Reversed by Close,0.74,0.37,19439.2,True,09:55,40.0,Early Morning (9:45-10:29),0.372,0.17,-0.37,0.01,0,11.75,Low (<15),2023
+2023-08-24,Bullish Alignment,Reversed Before Half,Reversed by Close,0.74,0.37,19535.15,False,,,,,0.25,-0.85,-0.79,1,11.73,Low (<15),2023
+2023-08-25,Bearish Alignment,Reversed Before Half,Worked and Remained,0.74,0.37,19297.4,False,,,,,0.22,-0.35,-0.28,0,11.7,Low (<15),2023
+2023-08-28,Bearish Alignment,Reversed Before Half,Reversed by Close,0.76,0.38,19298.35,False,,,,,0.35,-0.25,0.02,0,12.08,Low (<15),2023
+2023-08-29,Bullish Alignment,Reversed Before Half,Reversed by Close,0.78,0.39,19374.85,False,,,,,0.02,-0.33,-0.11,0,12.4,Low (<15),2023
+2023-09-04,Bullish Alignment,Reversed Before Half,Worked and Remained,0.72,0.36,19525.05,False,,,,,0.1,-0.47,0.05,0,11.37,Low (<15),2023
+2023-09-08,Bullish Alignment,Exceeded Half then Reversed,Worked and Remained,0.68,0.34,19774.8,True,14:10,295.0,Late Afternoon (13:30-14:29),0.342,0.47,-0.23,0.23,0,10.87,Low (<15),2023
+2023-09-11,Bullish Alignment,Exceeded Half then Reversed,Worked and Remained,0.68,0.34,19890.0,True,12:35,200.0,Early Afternoon (12:30-13:29),0.36,0.59,-0.08,0.55,0,10.78,Low (<15),2023
+2023-09-12,Bullish Alignment,Reversed Before Half,Reversed by Close,0.71,0.355,20110.15,False,,,,,0.0,-0.97,-0.62,0,11.35,Low (<15),2023
+2023-09-14,Bullish Alignment,Reversed Before Half,Reversed by Close,0.75,0.375,20127.95,False,,,,,0.2,-0.41,-0.13,1,11.83,Low (<15),2023
+2023-09-15,Bearish Alignment,Reversed Before Half,Reversed by Close,0.71,0.355,20156.45,False,,,,,0.33,-0.13,0.06,0,11.32,Low (<15),2023
+2023-09-18,Bullish Alignment,Reversed Before Half,Reversed by Close,0.69,0.345,20155.95,False,,,,,0.2,-0.19,-0.16,0,10.9,Low (<15),2023
+2023-09-22,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.68,0.34,19744.85,True,09:55,40.0,Early Morning (9:45-10:29),0.342,0.27,-0.44,-0.31,0,10.82,Low (<15),2023
+2023-09-25,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.67,0.335,19678.2,True,11:10,115.0,Late Morning (10:30-11:29),0.338,0.28,-0.39,-0.02,0,10.66,Low (<15),2023
+2023-09-26,Bullish Alignment,Reversed Before Half,Reversed by Close,0.69,0.345,19682.8,False,,,,,0.08,-0.23,-0.05,0,10.9,Low (<15),2023
+2023-09-28,Bullish Alignment,Reversed Before Half,Reversed by Close,0.73,0.365,19761.8,False,,,,,0.02,-1.36,-1.06,1,11.59,Low (<15),2023
+2023-09-29,Bearish Alignment,Reversed Before Half,Reversed by Close,0.81,0.405,19581.2,False,,,,,0.74,-0.15,0.29,0,12.82,Low (<15),2023
+2023-10-09,Bullish Alignment,Reversed Before Half,Reversed by Close,0.65,0.325,19539.45,False,,,,,0.25,-0.3,-0.21,0,10.3,Low (<15),2023
+2023-10-11,Bullish Alignment,Exceeded Half then Reversed,Worked and Remained,0.71,0.355,19767.0,True,10:40,85.0,Late Morning (10:30-11:29),0.365,0.37,-0.05,0.21,0,11.27,Low (<15),2023
+2023-10-16,Bearish Alignment,Reversed Before Half,Worked and Remained,0.67,0.335,19737.25,False,,,,,0.22,-0.23,-0.03,0,10.62,Low (<15),2023
+2023-10-23,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.68,0.34,19521.6,True,11:45,150.0,Midday (11:30-12:29),0.393,0.18,-1.35,-1.25,0,10.82,Low (<15),2023
+2023-10-30,Bullish Alignment,Exceeded Half then Reversed,Worked and Remained,0.69,0.345,19053.4,True,12:00,165.0,Midday (11:30-12:29),0.398,0.55,-0.6,0.5,0,10.91,Low (<15),2023
+2023-11-01,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.75,0.375,19064.05,True,13:15,240.0,Early Afternoon (12:30-13:29),0.41,0.17,-0.47,-0.39,0,11.83,Low (<15),2023
+2023-11-07,Bullish Alignment,Reversed Before Half,Worked and Remained,0.7,0.35,19404.05,False,,,,,0.1,-0.39,0.07,0,11.11,Low (<15),2023
+2023-11-09,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.7,0.35,19457.4,True,14:40,325.0,Closing (14:30-15:30),0.35,0.03,-0.41,-0.27,1,11.04,Low (<15),2023
+2023-11-13,Bullish Alignment,Reversed Before Half,Reversed by Close,0.71,0.355,19486.75,False,,,,,0.04,-0.37,-0.24,0,11.35,Low (<15),2023
+2023-11-20,Bearish Alignment,Reversed Before Half,Worked and Remained,0.75,0.375,19731.15,False,,,,,0.13,-0.31,-0.19,0,11.83,Low (<15),2023
+2023-11-22,Bullish Alignment,Reversed Before Half,Worked and Remained,0.77,0.385,19784.0,False,,,,,0.21,-0.41,0.13,0,12.23,Low (<15),2023
+2023-11-30,Bullish Alignment,Reversed Before Half,Worked and Remained,0.8,0.4,20108.5,False,,,,,0.25,-0.46,0.09,1,12.71,Low (<15),2023
+2023-12-01,Bearish Alignment,Reversed Before Half,Reversed by Close,0.8,0.4,20194.1,False,,,,,0.48,-0.05,0.31,0,12.69,Low (<15),2023
+2023-12-05,Bullish Alignment,Reversed Before Half,Worked and Remained,0.82,0.41,20808.9,False,,,,,0.27,-0.47,0.23,0,12.99,Low (<15),2023
+2023-12-06,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.85,0.425,20950.75,True,13:20,245.0,Early Afternoon (12:30-13:29),0.437,0.05,-0.47,-0.07,0,13.46,Low (<15),2023
+2023-12-08,Bullish Alignment,Reversed Before Half,Worked and Remained,0.8,0.4,20934.1,False,,,,,0.34,-0.34,0.18,0,12.67,Low (<15),2023
+2023-12-12,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.8,0.4,21018.55,True,14:15,300.0,Late Afternoon (13:30-14:29),0.404,0.09,-0.72,-0.56,0,12.76,Low (<15),2023
+2023-12-19,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.88,0.44,21477.65,True,09:40,25.0,Opening (9:15-9:44),0.491,0.13,-0.65,-0.15,0,13.9,Low (<15),2023
+2023-12-20,Bullish Alignment,Reversed Before Half,Reversed by Close,0.87,0.435,21543.5,False,,,,,0.23,-2.12,-2.05,0,13.87,Low (<15),2023
+2023-12-22,Bullish Alignment,Exceeded Half then Reversed,Worked and Remained,0.87,0.435,21295.85,True,11:00,105.0,Late Morning (10:30-11:29),0.444,0.44,-0.3,0.17,0,13.76,Low (<15),2023
+2024-01-03,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.92,0.46,21661.1,True,09:40,25.0,Opening (9:15-9:44),0.469,0.07,-0.74,-0.63,0,14.58,Low (<15),2024
+2024-01-04,Bullish Alignment,Reversed Before Half,Worked and Remained,0.89,0.445,21605.8,False,,,,,0.37,-0.19,0.3,1,14.1,Low (<15),2024
+2024-01-05,Bullish Alignment,Reversed Before Half,Worked and Remained,0.84,0.42,21705.75,False,,,,,0.2,-0.35,0.02,0,13.33,Low (<15),2024
+2024-01-08,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.8,0.4,21747.6,True,09:40,25.0,Opening (9:15-9:44),0.425,0.08,-1.17,-1.09,0,12.63,Low (<15),2024
+2024-01-09,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.85,0.425,21653.6,True,14:25,310.0,Late Afternoon (13:30-14:29),0.452,0.33,-0.63,-0.47,0,13.46,Low (<15),2024
+2024-01-15,Bullish Alignment,Reversed Before Half,Worked and Remained,0.83,0.415,22053.15,False,,,,,0.28,-0.41,0.26,0,13.1,Low (<15),2024
+2024-01-16,Bullish Alignment,Reversed Before Half,Reversed by Close,0.87,0.435,22080.5,False,,,,,0.2,-0.5,-0.22,0,13.79,Low (<15),2024
+2024-01-18,Bearish Alignment,Exceeded Half then Reversed,Reversed by Close,0.95,0.475,21414.2,True,09:50,35.0,Early Morning (9:45-10:29),0.523,0.58,-0.6,0.29,1,15.08,Normal (15-20),2024
+2024-01-25,Bullish Alignment,Reversed Before Half,Reversed by Close,0.91,0.455,21454.6,False,,,,,0.02,-0.97,-0.39,1,14.38,Low (<15),2024
+2024-01-31,Bearish Alignment,Reversed Before Half,Reversed by Close,1.01,0.505,21487.25,False,,,,,1.18,-0.18,1.03,0,16.1,Normal (15-20),2024
+2024-02-01,Bullish Alignment,Reversed Before Half,Reversed by Close,1.01,0.505,21780.65,False,,,,,0.24,-0.56,-0.41,1,16.05,Normal (15-20),2024
+2024-02-06,Bearish Alignment,Reversed Before Half,Reversed by Close,0.98,0.49,21825.2,False,,,,,0.58,-0.4,0.52,0,15.62,Normal (15-20),2024
+2024-02-07,Bullish Alignment,Reversed Before Half,Reversed by Close,0.99,0.495,22045.05,False,,,,,0.04,-0.84,-0.43,0,15.79,Normal (15-20),2024
+2024-02-09,Bearish Alignment,Reversed Before Half,Reversed by Close,1.0,0.5,21727.0,False,,,,,0.36,-0.45,0.27,0,15.83,Normal (15-20),2024
+2024-02-12,Bullish Alignment,Reversed Before Half,Reversed by Close,0.97,0.485,21800.8,False,,,,,0.14,-1.04,-0.86,0,15.45,Normal (15-20),2024
+2024-02-13,Bearish Alignment,Exceeded Half then Reversed,Reversed by Close,1.01,0.505,21664.3,True,09:30,15.0,Opening (9:15-9:44),0.558,0.47,-0.56,0.29,0,16.06,Normal (15-20),2024
+2024-02-14,Bullish Alignment,Exceeded Half then Reversed,Worked and Remained,1.0,0.5,21578.15,True,13:00,225.0,Early Afternoon (12:30-13:29),0.583,1.36,-0.22,1.25,0,15.81,Normal (15-20),2024
+2024-02-15,Bearish Alignment,Exceeded Half then Reversed,Reversed by Close,0.97,0.485,21906.55,True,09:55,40.0,Early Morning (9:45-10:29),0.497,0.22,-0.51,0.09,1,15.44,Normal (15-20),2024
+2024-02-26,Bearish Alignment,Reversed Before Half,Worked and Remained,0.94,0.47,22169.2,False,,,,,0.15,-0.42,-0.23,0,14.97,Low (<15),2024
+2024-02-29,Bearish Alignment,Reversed Before Half,Reversed by Close,1.03,0.515,21935.2,False,,,,,0.57,-0.34,0.49,1,16.33,Normal (15-20),2024
+2024-03-01,Bullish Alignment,Exceeded Half then Reversed,Worked and Remained,0.98,0.49,22048.3,True,09:40,25.0,Opening (9:15-9:44),0.541,1.38,-0.0,1.26,0,15.57,Normal (15-20),2024
+2024-03-13,Bullish Alignment,Reversed Before Half,Reversed by Close,0.86,0.43,22432.2,False,,,,,0.06,-2.35,-2.01,0,13.64,Low (<15),2024
+2024-03-14,Bearish Alignment,Reversed Before Half,Reversed by Close,0.91,0.455,21982.55,False,,,,,1.01,-0.3,0.78,1,14.43,Low (<15),2024
+2024-03-19,Bullish Alignment,Reversed Before Half,Reversed by Close,0.88,0.44,21946.45,False,,,,,0.15,-0.7,-0.62,0,13.9,Low (<15),2024
+2024-03-20,Bearish Alignment,Exceeded Half then Reversed,Reversed by Close,0.89,0.445,21843.9,True,10:40,85.0,Late Morning (10:30-11:29),0.586,0.4,-0.61,0.05,0,14.11,Low (<15),2024
+2024-04-03,Bearish Alignment,Reversed Before Half,Reversed by Close,0.73,0.365,22385.7,False,,,,,0.6,-0.18,0.27,0,11.65,Low (<15),2024
+2024-04-05,Bullish Alignment,Reversed Before Half,Worked and Remained,0.71,0.355,22486.4,False,,,,,0.23,-0.26,0.16,0,11.22,Low (<15),2024
+2024-04-16,Bearish Alignment,Reversed Before Half,Reversed by Close,0.79,0.395,22125.3,False,,,,,0.4,-0.21,0.24,0,12.47,Low (<15),2024
+2024-04-23,Bullish Alignment,Reversed Before Half,Reversed by Close,0.8,0.4,22447.05,False,,,,,0.0,-0.43,-0.38,0,12.7,Low (<15),2024
+2024-04-24,Bearish Alignment,Reversed Before Half,Worked and Remained,0.64,0.32,22421.55,False,,,,,0.24,-0.17,-0.04,0,10.2,Low (<15),2024
+2024-04-25,Bullish Alignment,Exceeded Half then Reversed,Worked and Remained,0.65,0.325,22316.9,True,09:35,20.0,Opening (9:15-9:44),0.325,1.38,-0.05,1.09,1,10.28,Low (<15),2024
+2024-04-26,Bullish Alignment,Reversed Before Half,Reversed by Close,0.68,0.34,22620.4,False,,,,,0.0,-1.04,-0.75,0,10.73,Low (<15),2024
+2024-04-29,Bearish Alignment,Reversed Before Half,Reversed by Close,0.69,0.345,22475.55,False,,,,,0.8,-0.15,0.7,0,10.93,Low (<15),2024
+2024-04-30,Bullish Alignment,Exceeded Half then Reversed,Reversed by Close,0.77,0.385,22679.65,True,10:50,95.0,Late Morning (10:30-11:29),0.394,0.46,-0.49,-0.41,0,12.24,Low (<15),2024
+2024-05-06,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.92,0.46,22561.6,True,09:40,25.0,Opening (9:15-9:44),0.566,0.12,-0.67,-0.46,0,14.62,Low (<15),2024
+2024-05-08,Bearish Alignment,Reversed Before Half,Reversed by Close,1.07,0.535,22231.2,False,,,,,0.62,-0.21,0.34,0,17.01,Normal (15-20),2024
+2024-05-09,Bullish Alignment,Reversed Before Half,Reversed by Close,1.08,0.54,22224.8,False,,,,,0.37,-1.32,-1.15,1,17.08,Normal (15-20),2024
+2024-05-10,Bearish Alignment,Reversed Before Half,Reversed by Close,1.15,0.575,21990.95,False,,,,,0.64,-0.18,0.29,0,18.2,Normal (15-20),2024
+2024-05-14,Bullish Alignment,Reversed Before Half,Worked and Remained,1.3,0.65,22126.5,False,,,,,0.65,-0.2,0.44,0,20.6,Elevated (20-30),2024
+2024-05-23,Bullish Alignment,Exceeded Half then Reversed,Worked and Remained,1.35,0.675,22614.1,True,11:55,160.0,Midday (11:30-12:29),0.683,1.68,-0.16,1.49,1,21.47,Elevated (20-30),2024
+2024-05-24,Bullish Alignment,Reversed Before Half,Worked and Remained,1.35,0.675,22930.75,False,,,,,0.42,-0.1,0.09,0,21.38,Elevated (20-30),2024
+2024-05-30,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,1.52,0.76,22617.45,True,14:55,340.0,Closing (14:30-15:30),0.886,0.39,-0.89,-0.27,1,24.18,Elevated (20-30),2024
+2024-06-04,Bullish Alignment,Reversed Before Half,Reversed by Close,1.32,0.66,23179.5,False,,,,,0.0,-8.19,-5.1,0,20.94,Elevated (20-30),2024
+2024-06-05,Bearish Alignment,Exceeded Half then Reversed,Reversed by Close,1.69,0.845,22128.35,True,09:20,5.0,Opening (9:15-9:44),1.496,2.45,-1.52,2.01,0,26.75,Elevated (20-30),2024
+2024-06-06,Bullish Alignment,Reversed Before Half,Worked and Remained,1.19,0.595,22798.6,False,,,,,0.49,-0.68,0.22,1,18.89,Normal (15-20),2024
+2024-06-07,Bullish Alignment,Exceeded Half then Reversed,Worked and Remained,1.06,0.53,22821.85,True,09:25,10.0,Opening (9:15-9:44),0.532,2.18,-0.14,1.96,0,16.8,Normal (15-20),2024
+2024-06-10,Bullish Alignment,Reversed Before Half,Reversed by Close,1.06,0.53,23319.15,False,,,,,0.4,-0.39,-0.36,0,16.88,Normal (15-20),2024
+2024-06-12,Bullish Alignment,Reversed Before Half,Reversed by Close,0.93,0.465,23344.45,False,,,,,0.42,-0.21,-0.15,0,14.77,Low (<15),2024
+2024-06-13,Bullish Alignment,Reversed Before Half,Reversed by Close,0.91,0.455,23480.95,False,,,,,0.0,-0.54,-0.35,1,14.39,Low (<15),2024
+2024-06-21,Bullish Alignment,Reversed Before Half,Reversed by Close,0.84,0.42,23661.15,False,,,,,0.03,-1.11,-0.88,0,13.35,Low (<15),2024
+2024-06-24,Bearish Alignment,Reversed Before Half,Reversed by Close,0.83,0.415,23382.3,False,,,,,0.75,-0.14,0.71,0,13.18,Low (<15),2024
+2024-06-25,Bullish Alignment,Exceeded Half then Reversed,Worked and Remained,0.89,0.445,23577.1,True,13:10,235.0,Early Afternoon (12:30-13:29),0.454,0.75,-0.06,0.61,0,14.06,Low (<15),2024
+2024-07-04,Bullish Alignment,Reversed Before Half,Reversed by Close,0.83,0.415,24369.95,False,,,,,0.13,-0.36,-0.27,1,13.21,Low (<15),2024
+2024-07-11,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.91,0.455,24396.55,True,10:10,55.0,Early Morning (9:45-10:29),0.509,0.03,-0.83,-0.24,1,14.43,Low (<15),2024
+2024-07-12,Bullish Alignment,Exceeded Half then Reversed,Worked and Remained,0.88,0.44,24387.95,True,10:50,95.0,Late Morning (10:30-11:29),0.448,0.84,-0.23,0.51,0,14.0,Low (<15),2024
+2024-07-16,Bullish Alignment,Reversed Before Half,Reversed by Close,0.89,0.445,24615.9,False,,,,,0.18,-0.11,-0.06,0,14.19,Low (<15),2024
+2024-07-22,Bearish Alignment,Reversed Before Half,Reversed by Close,0.93,0.465,24445.75,False,,,,,0.61,-0.34,0.29,0,14.83,Low (<15),2024
+2024-07-23,Bullish Alignment,Reversed Before Half,Reversed by Close,0.97,0.485,24568.9,False,,,,,0.06,-2.01,-0.38,0,15.44,Normal (15-20),2024
+2024-07-24,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.8,0.4,24444.95,True,12:15,180.0,Midday (11:30-12:29),0.506,0.24,-0.56,-0.01,0,12.75,Low (<15),2024
+2024-07-26,Bullish Alignment,Exceeded Half then Reversed,Worked and Remained,0.79,0.395,24423.35,True,09:35,20.0,Opening (9:15-9:44),0.423,1.79,-0.05,1.75,0,12.62,Low (<15),2024
+2024-07-29,Bullish Alignment,Reversed Before Half,Reversed by Close,0.77,0.385,24943.3,False,,,,,0.23,-0.68,-0.41,0,12.25,Low (<15),2024
+2024-08-05,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.9,0.45,24302.85,True,09:30,15.0,Opening (9:15-9:44),0.454,0.19,-1.68,-1.03,0,14.32,Low (<15),2024
+2024-08-06,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,1.28,0.64,24189.85,True,14:10,295.0,Late Afternoon (13:30-14:29),0.736,0.8,-0.95,-0.65,0,20.37,Elevated (20-30),2024
+2024-08-07,Bearish Alignment,Reversed Before Half,Reversed by Close,1.18,0.59,24289.4,False,,,,,0.2,-0.43,0.11,0,18.74,Normal (15-20),2024
+2024-08-09,Bearish Alignment,Reversed Before Half,Worked and Remained,1.05,0.525,24386.85,False,,,,,0.13,-0.31,-0.09,0,16.6,Normal (15-20),2024
+2024-08-12,Bullish Alignment,Exceeded Half then Reversed,Worked and Remained,0.97,0.485,24320.05,True,11:15,120.0,Late Morning (10:30-11:29),0.607,0.63,-0.44,0.12,0,15.34,Normal (15-20),2024
+2024-08-13,Bullish Alignment,Reversed Before Half,Reversed by Close,1.0,0.5,24342.35,False,,,,,0.07,-0.93,-0.83,0,15.87,Normal (15-20),2024
+2024-08-14,Bearish Alignment,Reversed Before Half,Worked and Remained,1.02,0.51,24184.4,False,,,,,0.05,-0.35,-0.16,1,16.17,Normal (15-20),2024
+2024-08-20,Bearish Alignment,Reversed Before Half,Reversed by Close,0.9,0.45,24648.9,False,,,,,0.35,-0.17,0.1,0,14.32,Low (<15),2024
+2024-08-21,Bullish Alignment,Exceeded Half then Reversed,Worked and Remained,0.87,0.435,24680.55,True,15:25,370.0,Closing (14:30-15:30),0.435,0.44,-0.11,0.41,0,13.82,Low (<15),2024
+2024-08-26,Bearish Alignment,Reversed Before Half,Reversed by Close,0.85,0.425,24906.1,False,,,,,0.55,-0.13,0.42,0,13.55,Low (<15),2024
+2024-08-28,Bearish Alignment,Reversed Before Half,Reversed by Close,0.86,0.43,25030.8,False,,,,,0.39,-0.26,0.06,0,13.63,Low (<15),2024
+2024-09-02,Bullish Alignment,Reversed Before Half,Reversed by Close,0.84,0.42,25333.6,False,,,,,0.0,-0.39,-0.24,0,13.39,Low (<15),2024
+2024-09-03,Bearish Alignment,Reversed Before Half,Worked and Remained,0.89,0.445,25313.4,False,,,,,0.03,-0.31,-0.18,0,14.06,Low (<15),2024
+2024-09-09,Bearish Alignment,Reversed Before Half,Reversed by Close,0.96,0.48,24823.4,False,,,,,0.54,-0.28,0.48,0,15.22,Normal (15-20),2024
+2024-09-10,Bullish Alignment,Exceeded Half then Reversed,Worked and Remained,0.9,0.45,24999.4,True,13:25,250.0,Early Afternoon (12:30-13:29),0.501,0.52,-0.41,0.21,0,14.24,Low (<15),2024
+2024-09-12,Bearish Alignment,Exceeded Half then Reversed,Reversed by Close,0.86,0.43,25059.65,True,11:25,130.0,Late Morning (10:30-11:29),0.472,1.49,-0.47,1.02,1,13.63,Low (<15),2024
+2024-09-16,Bearish Alignment,Reversed Before Half,Worked and Remained,0.79,0.395,25406.65,False,,,,,0.15,-0.28,-0.12,0,12.55,Low (<15),2024
+2024-09-17,Bullish Alignment,Reversed Before Half,Reversed by Close,0.78,0.39,25416.9,False,,,,,0.1,-0.25,-0.04,0,12.46,Low (<15),2024
+2024-09-23,Bullish Alignment,Reversed Before Half,Worked and Remained,0.81,0.405,25872.55,False,,,,,0.32,-0.1,0.22,0,12.79,Low (<15),2024
+2024-09-25,Bearish Alignment,Reversed Before Half,Reversed by Close,0.84,0.42,25899.45,False,,,,,0.51,-0.11,0.44,0,13.39,Low (<15),2024
+2024-10-01,Bearish Alignment,Reversed Before Half,Reversed by Close,0.81,0.405,25788.45,False,,,,,0.46,-0.19,0.09,0,12.79,Low (<15),2024
+2024-10-08,Bearish Alignment,Reversed Before Half,Reversed by Close,0.95,0.475,24832.2,False,,,,,0.85,-0.3,0.83,0,15.08,Normal (15-20),2024
+2024-10-11,Bullish Alignment,Reversed Before Half,Reversed by Close,0.85,0.425,24985.3,False,,,,,0.17,-0.26,-0.04,0,13.5,Low (<15),2024
+2024-10-15,Bullish Alignment,Reversed Before Half,Reversed by Close,0.82,0.41,25186.3,False,,,,,0.1,-0.71,-0.48,0,13.0,Low (<15),2024
+2024-10-16,Bearish Alignment,Reversed Before Half,Worked and Remained,0.82,0.41,25008.55,False,,,,,0.34,-0.4,-0.19,0,13.0,Low (<15),2024
+2024-10-17,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.82,0.41,25027.4,True,09:25,10.0,Opening (9:15-9:44),0.417,0.01,-1.19,-1.11,1,13.05,Low (<15),2024
+2024-10-18,Bearish Alignment,Reversed Before Half,Reversed by Close,0.84,0.42,24664.95,False,,,,,0.9,-0.39,0.8,0,13.39,Low (<15),2024
+2024-10-21,Bullish Alignment,Reversed Before Half,Reversed by Close,0.82,0.41,24956.15,False,,,,,0.09,-1.11,-0.87,0,13.04,Low (<15),2024
+2024-10-22,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.87,0.435,24798.65,True,10:25,70.0,Early Morning (9:45-10:29),0.646,0.34,-1.42,-1.28,0,13.76,Low (<15),2024
+2024-10-23,Bearish Alignment,Reversed Before Half,Reversed by Close,0.91,0.455,24378.15,False,,,,,0.93,-0.0,0.24,0,14.4,Low (<15),2024
+2024-10-24,Bullish Alignment,Reversed Before Half,Worked and Remained,0.92,0.46,24412.7,False,,,,,0.28,-0.29,0.01,1,14.62,Low (<15),2024
+2024-10-25,Bullish Alignment,Reversed Before Half,Reversed by Close,0.88,0.44,24418.05,False,,,,,0.09,-1.41,-0.84,0,13.97,Low (<15),2024
+2024-10-28,Bearish Alignment,Exceeded Half then Reversed,Reversed by Close,0.92,0.46,24251.1,True,09:45,30.0,Early Morning (9:45-10:29),0.479,1.0,-0.48,0.48,0,14.63,Low (<15),2024
+2024-10-29,Bullish Alignment,Exceeded Half then Reversed,Worked and Remained,0.9,0.45,24328.85,True,14:15,300.0,Late Afternoon (13:30-14:29),0.456,0.64,-0.77,0.51,0,14.29,Low (<15),2024
+2024-10-31,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.98,0.49,24349.85,True,12:15,180.0,Midday (11:30-12:29),0.505,0.09,-0.73,-0.46,1,15.51,Normal (15-20),2024
+2024-11-01,Bearish Alignment,Reversed Before Half,Worked and Remained,0.98,0.49,24302.75,False,,,,,0.27,-0.09,-0.01,0,15.55,Normal (15-20),2024
+2024-11-04,Bullish Alignment,Reversed Before Half,Reversed by Close,1.0,0.5,24315.75,False,,,,,0.0,-2.05,-1.34,0,15.9,Normal (15-20),2024
+2024-11-06,Bullish Alignment,Exceeded Half then Reversed,Worked and Remained,1.02,0.51,24308.75,True,11:55,160.0,Midday (11:30-12:29),0.542,0.94,-0.43,0.76,0,16.12,Normal (15-20),2024
+2024-11-07,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.94,0.47,24489.6,True,09:25,10.0,Opening (9:15-9:44),0.599,0.06,-1.27,-1.2,1,14.87,Low (<15),2024
+2024-11-08,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.94,0.47,24207.7,True,09:15,0.0,Opening (9:15-9:44),0.54,0.28,-0.58,-0.4,0,14.94,Low (<15),2024
+2024-11-13,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.92,0.46,23822.45,True,09:45,30.0,Early Morning (9:45-10:29),0.478,0.21,-1.31,-0.92,0,14.59,Low (<15),2024
+2024-11-25,Bullish Alignment,Reversed Before Half,Reversed by Close,1.01,0.505,24253.55,False,,,,,0.4,-0.49,-0.01,0,16.1,Normal (15-20),2024
+2024-11-26,Bullish Alignment,Reversed Before Half,Reversed by Close,0.96,0.48,24343.3,False,,,,,0.0,-0.9,-0.62,0,15.3,Normal (15-20),2024
+2024-11-27,Bearish Alignment,Reversed Before Half,Reversed by Close,0.96,0.48,24204.8,False,,,,,0.62,-0.24,0.3,0,15.31,Normal (15-20),2024
+2024-11-29,Bearish Alignment,Reversed Before Half,Reversed by Close,0.96,0.48,23927.15,False,,,,,1.09,0.0,0.82,0,15.21,Normal (15-20),2024
+2024-12-02,Bullish Alignment,Exceeded Half then Reversed,Worked and Remained,0.91,0.455,24140.85,True,14:05,290.0,Late Afternoon (13:30-14:29),0.503,0.67,-0.55,0.56,0,14.43,Low (<15),2024
+2024-12-04,Bullish Alignment,Reversed Before Half,Reversed by Close,0.91,0.455,24488.75,False,,,,,0.34,-0.5,-0.11,0,14.37,Low (<15),2024
+2024-12-10,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.89,0.445,24652.65,True,12:35,200.0,Early Afternoon (12:30-13:29),0.452,0.1,-0.58,-0.13,0,14.11,Low (<15),2024
+2024-12-16,Bullish Alignment,Reversed Before Half,Reversed by Close,0.82,0.41,24753.4,False,,,,,0.11,-0.61,-0.42,0,13.05,Low (<15),2024
+2024-12-17,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.88,0.44,24584.8,True,10:20,65.0,Early Morning (9:45-10:29),0.646,0.16,-1.14,-1.08,0,14.02,Low (<15),2024
+2024-12-18,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.91,0.455,24297.95,True,12:35,200.0,Early Afternoon (12:30-13:29),0.557,0.4,-0.61,-0.34,0,14.49,Low (<15),2024
+2024-12-19,Bearish Alignment,Reversed Before Half,Reversed by Close,0.91,0.455,23877.15,False,,,,,0.54,-0.03,0.36,1,14.37,Low (<15),2024
+2024-12-23,Bearish Alignment,Reversed Before Half,Reversed by Close,0.95,0.475,23738.2,False,,,,,0.55,-0.38,0.04,0,15.07,Normal (15-20),2024
+2024-12-24,Bullish Alignment,Reversed Before Half,Reversed by Close,0.85,0.425,23769.1,False,,,,,0.41,-0.35,-0.16,0,13.52,Low (<15),2024
+2025-01-02,Bullish Alignment,Exceeded Half then Reversed,Worked and Remained,0.91,0.455,23783.0,True,10:35,80.0,Late Morning (10:30-11:29),0.486,1.87,-0.13,1.62,1,14.51,Low (<15),2025
+2025-01-03,Bullish Alignment,Reversed Before Half,Reversed by Close,0.87,0.435,24196.4,False,,,,,0.0,-0.91,-0.85,0,13.74,Low (<15),2025
+2025-01-06,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.85,0.425,24045.8,True,09:45,30.0,Early Morning (9:45-10:29),0.559,0.18,-2.05,-1.73,0,13.54,Low (<15),2025
+2025-01-09,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.91,0.455,23674.75,True,10:45,90.0,Late Morning (10:30-11:29),0.539,0.06,-0.73,-0.5,1,14.47,Low (<15),2025
+2025-01-13,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.94,0.47,23195.4,True,14:30,315.0,Closing (14:30-15:30),0.556,0.63,-0.64,-0.46,0,14.92,Low (<15),2025
+2025-01-14,Bearish Alignment,Reversed Before Half,Reversed by Close,1.01,0.505,23165.9,False,,,,,0.43,-0.14,0.18,0,16.0,Normal (15-20),2025
+2025-01-15,Bullish Alignment,Reversed Before Half,Reversed by Close,0.97,0.485,23250.45,False,,,,,0.19,-0.45,-0.1,0,15.47,Normal (15-20),2025
+2025-01-21,Bullish Alignment,Reversed Before Half,Reversed by Close,1.03,0.515,23421.65,False,,,,,0.02,-1.9,-1.57,0,16.42,Normal (15-20),2025
+2025-01-23,Bullish Alignment,Exceeded Half then Reversed,Worked and Remained,1.06,0.53,23128.3,True,12:15,180.0,Midday (11:30-12:29),0.545,0.62,-0.16,0.38,1,16.77,Normal (15-20),2025
+2025-01-24,Bullish Alignment,Exceeded Half then Reversed,Reversed by Close,1.05,0.525,23183.9,True,11:40,145.0,Midday (11:30-12:29),0.601,0.7,-0.58,-0.4,0,16.7,Normal (15-20),2025
+2025-01-29,Bullish Alignment,Exceeded Half then Reversed,Worked and Remained,1.15,0.575,23026.75,True,12:15,180.0,Midday (11:30-12:29),0.616,0.68,-0.22,0.65,0,18.2,Normal (15-20),2025
+2025-01-30,Bullish Alignment,Exceeded Half then Reversed,Worked and Remained,1.17,0.585,23169.5,True,10:20,65.0,Early Morning (9:45-10:29),0.59,0.66,-0.13,0.55,1,18.64,Normal (15-20),2025
+2025-01-31,Bearish Alignment,Reversed Before Half,Reversed by Close,1.1,0.55,23296.75,False,,,,,1.07,-0.08,1.02,0,17.39,Normal (15-20),2025
+2025-02-04,Bearish Alignment,Reversed Before Half,Reversed by Close,0.9,0.45,23509.9,False,,,,,1.08,-0.37,0.84,0,14.35,Low (<15),2025
+2025-02-05,Bullish Alignment,Reversed Before Half,Reversed by Close,0.88,0.44,23801.75,False,,,,,0.02,-0.51,-0.48,0,14.02,Low (<15),2025
+2025-02-07,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.89,0.445,23649.5,True,10:15,60.0,Early Morning (9:45-10:29),0.533,0.19,-0.87,-0.37,0,14.18,Low (<15),2025
+2025-02-25,Bearish Alignment,Reversed Before Half,Reversed by Close,0.91,0.455,22516.45,False,,,,,0.48,-0.01,0.04,0,14.44,Low (<15),2025
+2025-03-06,Bullish Alignment,Reversed Before Half,Worked and Remained,0.86,0.43,22476.35,False,,,,,0.36,-1.03,0.24,1,13.67,Low (<15),2025
+2025-03-19,Bullish Alignment,Reversed Before Half,Worked and Remained,0.83,0.415,22874.95,False,,,,,0.29,-0.29,0.16,0,13.21,Low (<15),2025
+2025-03-24,Bullish Alignment,Exceeded Half then Reversed,Worked and Remained,0.79,0.395,23515.4,True,10:55,100.0,Late Morning (10:30-11:29),0.466,0.82,-0.35,0.68,0,12.58,Low (<15),2025
+2025-03-26,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.86,0.43,23700.95,True,11:55,160.0,Midday (11:30-12:29),0.473,0.15,-1.05,-1.0,0,13.64,Low (<15),2025
+2025-04-03,Bullish Alignment,Exceeded Half then Reversed,Worked and Remained,0.86,0.43,23150.3,True,09:20,5.0,Opening (9:15-9:44),0.451,0.67,-0.02,0.39,1,13.72,Low (<15),2025
+2025-04-07,Bearish Alignment,Reversed Before Half,Reversed by Close,0.87,0.435,21758.4,False,,,,,2.28,-0.07,2.2,0,13.76,Low (<15),2025
+2025-04-29,Bullish Alignment,Reversed Before Half,Reversed by Close,1.07,0.535,24370.7,False,,,,,0.36,-0.33,-0.19,0,16.94,Normal (15-20),2025
+2025-04-30,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,1.09,0.545,24342.05,True,15:25,370.0,Closing (14:30-15:30),0.589,0.22,-0.59,-0.39,1,17.37,Normal (15-20),2025
+2025-05-06,Bullish Alignment,Reversed Before Half,Reversed by Close,1.16,0.58,24500.75,False,,,,,0.04,-0.69,-0.67,0,18.34,Normal (15-20),2025
+2025-05-07,Bearish Alignment,Reversed Before Half,Reversed by Close,1.2,0.6,24233.3,False,,,,,0.89,-0.05,0.73,0,19.0,Normal (15-20),2025
+2025-05-14,Bearish Alignment,Reversed Before Half,Reversed by Close,1.15,0.575,24613.8,False,,,,,0.62,-0.32,0.29,0,18.2,Normal (15-20),2025
+2025-05-15,Bullish Alignment,Exceeded Half then Reversed,Worked and Remained,1.09,0.545,24694.45,True,13:05,230.0,Early Afternoon (12:30-13:29),0.658,1.71,-0.81,1.38,1,17.23,Normal (15-20),2025
+2025-05-23,Bearish Alignment,Reversed Before Half,Reversed by Close,1.09,0.545,24639.5,False,,,,,1.09,-0.1,0.83,0,17.26,Normal (15-20),2025
+2025-05-26,Bullish Alignment,Exceeded Half then Reversed,Worked and Remained,1.09,0.545,24919.35,True,09:30,15.0,Opening (9:15-9:44),0.548,0.64,-0.08,0.31,0,17.28,Normal (15-20),2025
+2025-05-28,Bearish Alignment,Reversed Before Half,Worked and Remained,1.17,0.585,24832.5,False,,,,,0.13,-0.38,-0.3,0,18.54,Normal (15-20),2025
+2025-06-05,Bullish Alignment,Exceeded Half then Reversed,Worked and Remained,0.99,0.495,24691.2,True,12:05,170.0,Midday (11:30-12:29),0.562,0.85,-0.32,0.28,1,15.75,Normal (15-20),2025
+2025-06-09,Bullish Alignment,Reversed Before Half,Reversed by Close,0.92,0.46,25160.1,False,,,,,0.0,-0.33,-0.23,0,14.63,Low (<15),2025
+2025-06-13,Bearish Alignment,Reversed Before Half,Reversed by Close,0.88,0.44,24473.0,False,,,,,1.15,0.0,1.07,0,14.02,Low (<15),2025
+2025-06-24,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.89,0.445,25179.9,True,13:35,260.0,Late Afternoon (13:30-14:29),0.589,0.55,-0.72,-0.43,0,14.05,Low (<15),2025
+2025-06-26,Bullish Alignment,Exceeded Half then Reversed,Worked and Remained,0.82,0.41,25268.95,True,09:30,15.0,Opening (9:15-9:44),0.479,1.17,-0.04,1.03,1,12.96,Low (<15),2025
+2025-07-02,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.79,0.395,25588.3,True,10:40,85.0,Late Morning (10:30-11:29),0.413,0.08,-0.82,-0.57,0,12.53,Low (<15),2025
+2025-07-03,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.78,0.39,25505.1,True,14:35,320.0,Closing (14:30-15:30),0.473,0.32,-0.47,-0.42,1,12.45,Low (<15),2025
+2025-07-14,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.74,0.37,25149.5,True,09:20,5.0,Opening (9:15-9:44),0.387,0.01,-0.59,-0.25,0,11.82,Low (<15),2025
+2025-07-22,Bullish Alignment,Reversed Before Half,Reversed by Close,0.71,0.355,25166.65,False,,,,,0.06,-0.52,-0.4,0,11.2,Low (<15),2025
+2025-07-23,Bearish Alignment,Reversed Before Half,Reversed by Close,0.68,0.34,25139.35,False,,,,,0.37,-0.21,0.28,0,10.75,Low (<15),2025
+2025-07-24,Bullish Alignment,Reversed Before Half,Reversed by Close,0.66,0.33,25243.3,False,,,,,0.01,-0.89,-0.76,1,10.52,Low (<15),2025
+2025-07-25,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.68,0.34,25010.35,True,09:15,0.0,Opening (9:15-9:44),0.346,0.0,-0.82,-0.71,0,10.72,Low (<15),2025
+2025-07-28,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.71,0.355,24782.45,True,13:20,245.0,Early Afternoon (12:30-13:29),0.375,0.43,-0.55,-0.44,0,11.28,Low (<15),2025
+2025-07-30,Bullish Alignment,Reversed Before Half,Reversed by Close,0.73,0.365,24890.4,False,,,,,0.05,-0.48,-0.18,0,11.53,Low (<15),2025
+2025-08-04,Bearish Alignment,Reversed Before Half,Reversed by Close,0.75,0.375,24596.05,False,,,,,0.57,-0.17,0.53,0,11.98,Low (<15),2025
+2025-08-05,Bullish Alignment,Reversed Before Half,Reversed by Close,0.75,0.375,24720.25,False,,,,,0.05,-0.53,-0.29,0,11.97,Low (<15),2025
+2025-08-06,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.74,0.37,24641.35,True,10:35,80.0,Late Morning (10:30-11:29),0.394,0.12,-0.41,-0.29,0,11.71,Low (<15),2025
+2025-08-07,Bearish Alignment,Exceeded Half then Reversed,Reversed by Close,0.75,0.375,24464.2,True,13:20,245.0,Early Afternoon (12:30-13:29),0.429,0.69,-0.49,0.66,1,11.96,Low (<15),2025
+2025-08-11,Bearish Alignment,Reversed Before Half,Reversed by Close,0.76,0.38,24371.5,False,,,,,0.94,-0.1,0.78,0,12.03,Low (<15),2025
+2025-08-12,Bullish Alignment,Exceeded Half then Reversed,Reversed by Close,0.77,0.385,24563.35,True,09:45,30.0,Early Morning (9:45-10:29),0.401,0.57,-0.4,-0.32,0,12.22,Low (<15),2025
+2025-08-13,Bearish Alignment,Reversed Before Half,Reversed by Close,0.77,0.385,24586.2,False,,,,,0.32,-0.21,0.18,0,12.23,Low (<15),2025
+2025-08-14,Bullish Alignment,Reversed Before Half,Worked and Remained,0.76,0.38,24607.25,False,,,,,0.27,-0.04,0.04,1,12.14,Low (<15),2025
+2025-08-25,Bearish Alignment,Reversed Before Half,Reversed by Close,0.74,0.37,24949.15,False,,,,,0.29,-0.22,0.12,0,11.73,Low (<15),2025
+2025-08-26,Bullish Alignment,Reversed Before Half,Reversed by Close,0.74,0.37,24899.5,False,,,,,0.08,-0.84,-0.76,0,11.76,Low (<15),2025
+2025-09-02,Bullish Alignment,Exceeded Half then Reversed,Reversed by Close,0.71,0.355,24653.0,True,10:00,45.0,Early Morning (9:45-10:29),0.378,0.42,-0.53,-0.32,1,11.29,Low (<15),2025
+2025-09-04,Bullish Alignment,Reversed Before Half,Reversed by Close,0.69,0.345,24980.75,False,,,,,0.0,-1.09,-0.96,0,10.93,Low (<15),2025
+2025-09-05,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.68,0.34,24818.85,True,10:10,55.0,Early Morning (9:45-10:29),0.581,0.05,-0.79,-0.3,0,10.85,Low (<15),2025
+2025-09-16,Bearish Alignment,Reversed Before Half,Reversed by Close,0.66,0.33,25073.6,False,,,,,0.75,-0.01,0.72,1,10.4,Low (<15),2025
+2025-09-17,Bullish Alignment,Reversed Before Half,Worked and Remained,0.65,0.325,25276.6,False,,,,,0.28,-0.0,0.21,0,10.27,Low (<15),2025
+2025-09-23,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.67,0.335,25209.0,True,09:45,30.0,Early Morning (9:45-10:29),0.356,0.21,-0.49,-0.09,1,10.56,Low (<15),2025
+2025-09-25,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.66,0.33,25034.5,True,14:10,295.0,Late Afternoon (13:30-14:29),0.341,0.23,-0.62,-0.52,0,10.52,Low (<15),2025
+2025-09-26,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.68,0.34,24818.55,True,13:25,250.0,Early Afternoon (12:30-13:29),0.347,0.2,-0.76,-0.59,0,10.78,Low (<15),2025
+2025-10-09,Bearish Alignment,Reversed Before Half,Reversed by Close,0.65,0.325,25074.3,False,,,,,0.5,-0.2,0.38,0,10.31,Low (<15),2025
+2025-10-10,Bullish Alignment,Exceeded Half then Reversed,Worked and Remained,0.64,0.32,25167.65,True,09:30,15.0,Opening (9:15-9:44),0.343,0.65,-0.04,0.44,0,10.12,Low (<15),2025
+2025-10-14,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.69,0.345,25277.55,True,10:00,45.0,Early Morning (9:45-10:29),0.365,0.13,-0.86,-0.61,1,11.01,Low (<15),2025
+2025-10-16,Bullish Alignment,Exceeded Half then Reversed,Worked and Remained,0.66,0.33,25394.9,True,12:15,180.0,Midday (11:30-12:29),0.359,0.91,-0.07,0.67,0,10.53,Low (<15),2025
+2025-10-30,Bullish Alignment,Reversed Before Half,Reversed by Close,0.75,0.375,25984.4,False,,,,,0.18,-0.54,-0.36,0,11.97,Low (<15),2025
+2025-10-31,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.76,0.38,25863.8,True,11:10,115.0,Late Morning (10:30-11:29),0.388,0.35,-0.59,-0.51,0,12.07,Low (<15),2025
+2025-11-13,Bullish Alignment,Exceeded Half then Reversed,Reversed by Close,0.76,0.38,25906.1,True,13:40,265.0,Late Afternoon (13:30-14:29),0.404,0.4,-0.38,-0.08,0,12.11,Low (<15),2025
+2025-11-14,Bearish Alignment,Reversed Before Half,Reversed by Close,0.77,0.385,25767.9,False,,,,,0.67,-0.11,0.58,0,12.16,Low (<15),2025
+2025-11-17,Bearish Alignment,Reversed Before Half,Reversed by Close,0.75,0.375,25948.2,False,,,,,0.29,-0.16,0.25,0,11.94,Low (<15),2025
+2025-11-18,Bullish Alignment,Reversed Before Half,Reversed by Close,0.74,0.37,26021.8,False,,,,,0.03,-0.56,-0.49,1,11.79,Low (<15),2025
+2025-11-19,Bearish Alignment,Reversed Before Half,Reversed by Close,0.76,0.38,25918.1,False,,,,,0.6,-0.24,0.52,0,12.1,Low (<15),2025
+2025-11-20,Bullish Alignment,Exceeded Half then Reversed,Worked and Remained,0.75,0.375,26132.1,True,14:15,300.0,Late Afternoon (13:30-14:29),0.438,0.44,-0.26,0.25,0,11.97,Low (<15),2025
+2025-11-24,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.86,0.43,26122.8,True,15:00,345.0,Closing (14:30-15:30),0.557,0.08,-0.81,-0.69,0,13.63,Low (<15),2025
+2025-11-25,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.83,0.415,25998.5,True,15:00,345.0,Closing (14:30-15:30),0.499,0.13,-0.54,-0.53,1,13.24,Low (<15),2025
+2025-11-26,Bullish Alignment,Exceeded Half then Reversed,Worked and Remained,0.77,0.385,25842.95,True,09:15,0.0,Opening (9:15-9:44),0.49,1.44,0.0,1.4,0,12.24,Low (<15),2025
+2025-11-27,Bullish Alignment,Reversed Before Half,Reversed by Close,0.75,0.375,26261.25,False,,,,,0.19,-0.45,-0.16,0,11.97,Low (<15),2025
+2025-11-28,Bearish Alignment,Reversed Before Half,Worked and Remained,0.74,0.37,26237.45,False,,,,,0.17,-0.25,-0.13,0,11.79,Low (<15),2025
+2025-12-01,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.73,0.365,26325.8,True,10:50,95.0,Late Morning (10:30-11:29),0.368,0.0,-0.77,-0.57,0,11.62,Low (<15),2025
+2025-12-08,Bullish Alignment,Reversed Before Half,Reversed by Close,0.65,0.325,26159.8,False,,,,,0.07,-1.02,-0.87,0,10.32,Low (<15),2025
+2025-12-09,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.7,0.35,25867.1,True,09:30,15.0,Opening (9:15-9:44),0.419,0.22,-0.54,-0.1,1,11.13,Low (<15),2025
+2025-12-10,Bullish Alignment,Reversed Before Half,Reversed by Close,0.69,0.345,25864.05,False,,,,,0.32,-0.5,-0.47,0,10.95,Low (<15),2025
+2025-12-12,Bullish Alignment,Reversed Before Half,Worked and Remained,0.66,0.33,25971.2,True,15:10,355.0,Closing (14:30-15:30),0.333,0.33,-0.13,0.28,0,10.4,Low (<15),2025
+2025-12-17,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.63,0.315,25902.4,True,10:25,70.0,Early Morning (9:45-10:29),0.36,0.1,-0.51,-0.31,0,10.06,Low (<15),2025
+2025-12-22,Bullish Alignment,Exceeded Half then Reversed,Worked and Remained,0.6,0.3,26055.85,True,09:30,15.0,Opening (9:15-9:44),0.311,0.48,-0.03,0.41,0,9.52,Low (<15),2025
+2025-12-23,Bullish Alignment,Reversed Before Half,Reversed by Close,0.61,0.305,26205.2,False,,,,,0.11,-0.33,-0.15,1,9.68,Low (<15),2025
+2025-12-31,Bullish Alignment,Exceeded Half then Reversed,Worked and Remained,0.61,0.305,25971.05,True,11:00,105.0,Late Morning (10:30-11:29),0.323,0.84,-0.01,0.66,0,9.68,Low (<15),2025
+2026-01-01,Bullish Alignment,Reversed Before Half,Reversed by Close,0.61,0.305,26173.3,False,,,,,0.09,-0.23,-0.13,0,9.68,Low (<15),2026
+2026-01-05,Bullish Alignment,Reversed Before Half,Reversed by Close,0.6,0.3,26333.7,False,,,,,0.15,-0.47,-0.34,0,9.45,Low (<15),2026
+2026-01-09,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.67,0.335,25840.4,True,11:35,140.0,Midday (11:30-12:29),0.335,0.39,-0.84,-0.53,0,10.6,Low (<15),2026
+2026-01-13,Bullish Alignment,Reversed Before Half,Reversed by Close,0.72,0.36,25897.35,False,,,,,0.01,-1.14,-0.71,1,11.37,Low (<15),2026
+2026-01-21,Bearish Alignment,Exceeded Half then Reversed,Reversed by Close,0.8,0.4,25141.0,True,10:40,85.0,Late Morning (10:30-11:29),0.457,0.64,-0.88,0.11,0,12.73,Low (<15),2026
+2026-02-02,Bearish Alignment,Reversed Before Half,Reversed by Close,0.95,0.475,24796.5,False,,,,,1.26,-0.47,1.14,0,15.1,Normal (15-20),2026
+2026-02-04,Bullish Alignment,Exceeded Half then Reversed,Worked and Remained,0.81,0.405,25675.05,True,09:25,10.0,Opening (9:15-9:44),0.441,0.56,-0.43,0.24,0,12.9,Low (<15),2026
+2026-02-05,Bullish Alignment,Reversed Before Half,Reversed by Close,0.77,0.385,25755.9,False,,,,,0.01,-0.68,-0.44,0,12.25,Low (<15),2026
+2026-02-06,Bearish Alignment,Exceeded Half then Reversed,Reversed by Close,0.77,0.385,25605.8,True,10:10,55.0,Early Morning (9:45-10:29),0.395,0.38,-0.44,0.26,0,12.17,Low (<15),2026
+2026-02-11,Bullish Alignment,Reversed Before Half,Reversed by Close,0.74,0.37,25997.45,False,,,,,0.05,-0.38,-0.2,0,11.67,Low (<15),2026
+2026-02-13,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.74,0.37,25571.15,True,15:05,350.0,Closing (14:30-15:30),0.388,0.23,-0.5,-0.43,0,11.73,Low (<15),2026
+2026-02-16,Bearish Alignment,Reversed Before Half,Reversed by Close,0.84,0.42,25423.6,False,,,,,1.08,-0.2,1.02,0,13.29,Low (<15),2026
+2026-02-17,Bullish Alignment,Exceeded Half then Reversed,Worked and Remained,0.84,0.42,25637.95,True,11:35,140.0,Midday (11:30-12:29),0.42,0.49,-0.26,0.3,1,13.33,Low (<15),2026
+2026-02-19,Bullish Alignment,Reversed Before Half,Reversed by Close,0.77,0.385,25873.35,False,,,,,0.05,-1.87,-1.77,0,12.22,Low (<15),2026
+2026-02-20,Bearish Alignment,Reversed Before Half,Reversed by Close,0.85,0.425,25406.55,False,,,,,1.01,-0.11,0.63,0,13.46,Low (<15),2026
+2026-02-23,Bullish Alignment,Reversed Before Half,Worked and Remained,0.9,0.45,25678.4,False,,,,,0.36,-0.27,0.1,0,14.36,Low (<15),2026
+2026-02-24,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.89,0.445,25641.8,True,09:30,15.0,Opening (9:15-9:44),0.523,0.0,-1.23,-0.71,1,14.17,Low (<15),2026
+2026-03-02,Bearish Alignment,Reversed Before Half,Reversed by Close,0.86,0.43,24659.25,False,,,,,1.34,-0.23,0.77,1,13.7,Low (<15),2026
+2026-03-09,Bearish Alignment,Exceeded Half then Reversed,Reversed by Close,1.25,0.625,23868.05,True,09:20,5.0,Opening (9:15-9:44),0.648,0.88,-0.71,0.58,0,19.88,Normal (15-20),2026
+2026-03-10,Bullish Alignment,Reversed Before Half,Worked and Remained,1.47,0.735,24280.8,False,,,,,0.09,-0.83,0.02,1,23.36,Elevated (20-30),2026
+2026-03-12,Bearish Alignment,Reversed Before Half,Worked and Remained,1.33,0.665,23674.85,False,,,,,0.67,-0.5,-0.15,0,21.06,Elevated (20-30),2026
+2026-03-18,Bullish Alignment,Exceeded Half then Reversed,Worked and Remained,1.25,0.625,23632.9,True,11:00,105.0,Late Morning (10:30-11:29),0.65,0.97,-0.06,0.56,0,19.79,Normal (15-20),2026
+2026-03-20,Bearish Alignment,Reversed Before Half,Reversed by Close,1.44,0.72,23110.15,False,,,,,1.02,-0.18,0.11,0,22.8,Elevated (20-30),2026
+2026-04-09,Bullish Alignment,Reversed Before Half,Reversed by Close,1.24,0.62,23909.05,False,,,,,0.34,-0.95,-0.6,0,19.7,Normal (15-20),2026
+2026-04-10,Bearish Alignment,Reversed Before Half,Reversed by Close,1.29,0.645,23880.55,False,,,,,0.81,-0.1,0.71,0,20.43,Elevated (20-30),2026
+2026-04-13,Bullish Alignment,Exceeded Half then Reversed,Worked and Remained,1.19,0.595,23589.6,True,10:25,70.0,Early Morning (9:45-10:29),0.605,1.35,-0.14,0.97,1,18.85,Normal (15-20),2026
+2026-04-17,Bearish Alignment,Reversed Before Half,Reversed by Close,1.14,0.57,24165.9,False,,,,,0.85,-0.29,0.83,0,18.09,Normal (15-20),2026
+2026-04-20,Bullish Alignment,Reversed Before Half,Reversed by Close,1.08,0.54,24391.5,False,,,,,0.37,-0.62,-0.25,0,17.21,Normal (15-20),2026
+2026-04-22,Bullish Alignment,Reversed Before Half,Reversed by Close,1.1,0.55,24470.85,False,,,,,0.18,-0.48,-0.42,0,17.53,Normal (15-20),2026
+2026-04-23,Bearish Alignment,Reversed Before Half,Worked and Remained,1.15,0.575,24202.35,False,,,,,0.45,-0.28,-0.19,0,18.3,Normal (15-20),2026
+2026-04-24,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,1.17,0.585,24100.55,True,09:45,30.0,Early Morning (9:45-10:29),0.596,0.44,-1.19,-0.82,0,18.59,Normal (15-20),2026
+2026-04-28,Bullish Alignment,Reversed Before Half,Reversed by Close,1.16,0.58,24049.9,False,,,,,0.55,-0.39,-0.14,1,18.38,Normal (15-20),2026
+2026-05-07,Bullish Alignment,Reversed Before Half,Reversed by Close,1.05,0.525,24398.5,False,,,,,0.34,-0.47,-0.25,0,16.68,Normal (15-20),2026
+2026-05-08,Bearish Alignment,Reversed Before Half,Worked and Remained,1.05,0.525,24233.65,False,,,,,0.08,-0.44,-0.22,0,16.62,Normal (15-20),2026
+2026-05-12,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,1.17,0.585,23722.6,True,11:05,110.0,Late Morning (10:30-11:29),0.61,0.15,-1.58,-1.23,1,18.55,Normal (15-20),2026
+2026-05-13,Bearish Alignment,Reversed Before Half,Reversed by Close,1.21,0.605,23362.45,False,,,,,0.94,-0.43,0.28,0,19.28,Normal (15-20),2026
+2026-05-15,Bullish Alignment,Reversed Before Half,Reversed by Close,1.17,0.585,23731.4,False,,,,,0.45,-0.51,-0.3,0,18.61,Normal (15-20),2026
+2026-05-19,Bullish Alignment,Reversed Before Half,Reversed by Close,1.24,0.62,23675.3,False,,,,,0.45,-0.37,-0.29,1,19.63,Normal (15-20),2026
+2026-05-22,Bearish Alignment,Reversed Before Half,Reversed by Close,1.12,0.56,23671.2,False,,,,,0.69,-0.0,0.33,0,17.82,Normal (15-20),2026
+2026-05-25,Bullish Alignment,Reversed Before Half,Worked and Remained,1.13,0.565,23940.25,False,,,,,0.48,-0.07,0.46,0,17.91,Normal (15-20),2026
+2026-05-27,Bearish Alignment,Reversed Before Half,Reversed by Close,1.02,0.51,23880.35,False,,,,,0.43,-0.09,0.17,0,16.13,Normal (15-20),2026
+2026-06-02,Bearish Alignment,Reversed Before Half,Reversed by Close,1.04,0.52,23229.15,False,,,,,1.41,0.0,1.27,1,16.54,Normal (15-20),2026
+2026-06-09,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,1.07,0.535,23259.05,True,10:45,90.0,Late Morning (10:30-11:29),0.549,0.09,-0.66,-0.01,1,17.03,Normal (15-20),2026
+2026-06-15,Bullish Alignment,Reversed Before Half,Reversed by Close,0.93,0.465,23984.85,False,,,,,0.11,-0.7,-0.53,0,14.72,Low (<15),2026
+2026-06-16,Bearish Alignment,Reversed Before Half,Reversed by Close,0.9,0.45,23923.9,False,,,,,0.33,-0.15,0.3,1,14.35,Low (<15),2026
+2026-06-22,Bearish Alignment,Reversed Before Half,Worked and Remained,0.82,0.41,24106.6,False,,,,,0.25,-0.14,-0.08,0,12.97,Low (<15),2026
+2026-06-25,Bullish Alignment,Exceeded Half then Reversed,Reversed by Close,0.84,0.42,24125.85,True,11:55,160.0,Midday (11:30-12:29),0.468,0.56,-0.36,-0.3,0,13.39,Low (<15),2026
+2026-07-03,Bullish Alignment,Reversed Before Half,Reversed by Close,0.77,0.385,24375.65,False,,,,,0.01,-0.51,-0.43,0,12.29,Low (<15),2026
+2026-07-07,Bullish Alignment,Reversed Before Half,Reversed by Close,0.74,0.37,24464.45,False,,,,,0.27,-0.47,-0.45,1,11.82,Low (<15),2026
+2026-07-09,Bearish Alignment,Reversed Before Half,Reversed by Close,0.92,0.46,23928.95,False,,,,,0.86,-0.01,0.22,0,14.68,Low (<15),2026
+2026-07-10,Bullish Alignment,Exceeded Half then Reversed,Worked and Remained,0.84,0.42,24124.7,True,10:00,45.0,Early Morning (9:45-10:29),0.42,0.43,-0.02,0.36,0,13.36,Low (<15),2026
+2026-07-13,Bullish Alignment,Exceeded Half then Reversed,Worked and Remained,0.77,0.385,24039.4,True,10:25,70.0,Early Morning (9:45-10:29),0.491,0.92,-0.16,0.71,0,12.25,Low (<15),2026
+2026-07-15,Bearish Alignment,Reversed Before Half,Worked and Remained,0.87,0.435,24085.85,False,,,,,0.56,-0.31,-0.05,0,13.75,Low (<15),2026
+2026-07-20,Bullish Alignment,Reversed Before Half,Worked and Remained,0.83,0.415,24190.05,False,,,,,0.31,-0.22,0.2,0,13.15,Low (<15),2026
+2026-07-21,Bearish Alignment,Reversed Before Half,Worked and Remained,0.82,0.41,24216.05,False,,,,,0.19,-0.33,-0.09,1,12.98,Low (<15),2026
+2026-07-22,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.79,0.395,24150.45,True,09:25,10.0,Opening (9:15-9:44),0.429,0.07,-0.78,-0.66,0,12.6,Low (<15),2026
+2026-07-27,Bullish Alignment,Reversed Before Half,Worked and Remained,0.88,0.44,23928.4,False,,,,,0.35,-0.15,0.31,0,14.03,Low (<15),2026
+2026-07-30,Bullish Alignment,Exceeded Half then Reversed,Worked and Remained,0.76,0.38,24249.55,True,15:25,370.0,Closing (14:30-15:30),0.385,0.39,-0.26,0.19,0,12.01,Low (<15),2026
+2026-08-04,Bullish Alignment,Reversed Before Half,Reversed by Close,0.75,0.375,24703.9,False,,,,,0.0,-1.12,-0.36,1,11.93,Low (<15),2026
+2026-08-05,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.77,0.385,24669.2,True,10:30,75.0,Late Morning (10:30-11:29),0.434,0.03,-0.69,-0.18,0,12.19,Low (<15),2026
+2026-08-07,Bullish Alignment,Reversed Before Half,Worked and Remained,0.77,0.385,24538.9,False,,,,,0.37,-0.07,0.13,0,12.16,Low (<15),2026
+2026-08-10,Bearish Alignment,Reversed Before Half,Reversed by Close,0.77,0.385,24581.25,False,,,,,0.16,-0.29,0.01,0,12.16,Low (<15),2026
+2026-08-12,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.75,0.375,24472.45,True,09:55,40.0,Early Morning (9:45-10:29),0.392,0.0,-0.84,-0.15,0,11.86,Low (<15),2026
+2026-08-19,Bearish Alignment,Exceeded Half then Reversed,Worked and Remained,0.72,0.36,24152.05,True,09:35,20.0,Opening (9:15-9:44),0.36,0.09,-0.52,-0.31,0,11.39,Low (<15),2026

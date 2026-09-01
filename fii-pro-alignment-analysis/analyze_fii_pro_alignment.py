@@ -975,6 +975,18 @@ def main():
     df["close_outcome"] = df["close_outcome"].replace("", "N/A")
     df["vix_exhaustion"] = df["vix_exhaustion"].replace("", "N/A")
 
+    # Day result: Green/Red + change percentage
+    df["result"] = df["actual_open_close_pct"].apply(
+        lambda x: "Green" if x > 0 else ("Red" if x < 0 else "Flat")
+    )
+    df["change_pct"] = df["actual_open_close_pct"].apply(
+        lambda x: f"+{x}%" if x > 0 else f"{x}%"
+    )
+
+    # Intraday up/down move from open (points)
+    df["up_from_open"] = round(df["nifty_high"] - df["nifty_open"], 2)
+    df["down_from_open"] = round(df["nifty_open"] - df["nifty_low"], 2)
+
     # VIX regime
     df["vix_regime"] = df["vix_open"].apply(vix_regime)
 
@@ -997,6 +1009,7 @@ def main():
     # Write results CSV
     output_cols = [
         "date", "nifty_open", "nifty_high", "nifty_low", "nifty_close",
+        "result", "change_pct", "up_from_open", "down_from_open",
         "fii_view", "pro_view", "fii_bucket", "pro_bucket",
         "alignment", "strong_alignment", "move_direction", "outcome_classification", "close_outcome", "vix_exhaustion",
         "vix_predicted_move_pct",

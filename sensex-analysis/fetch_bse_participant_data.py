@@ -449,24 +449,24 @@ def build_participant_daily(days_back: int = 30):
                 call_daily = t_minus_1_data.get(f'{prefix}_call_net', 0) - t_minus_2_data.get(f'{prefix}_call_net', 0)
                 put_daily = t_minus_1_data.get(f'{prefix}_put_net', 0) - t_minus_2_data.get(f'{prefix}_put_net', 0)
 
-                record[f'{prefix}_fut_daily'] = fut_daily
-                record[f'{prefix}_call_daily'] = call_daily
-                record[f'{prefix}_put_daily'] = put_daily
-                record[f'{prefix}_direction'] = determine_direction(fut_daily, call_daily, put_daily)
-                record[f'{prefix}_stance'] = determine_stance(prefix, fut_daily, call_daily, put_daily)
+                record[f't1_{prefix}_fut_daily'] = fut_daily
+                record[f't1_{prefix}_call_daily'] = call_daily
+                record[f't1_{prefix}_put_daily'] = put_daily
+                record[f't1_{prefix}_direction'] = determine_direction(fut_daily, call_daily, put_daily)
+                record[f't1_{prefix}_stance'] = determine_stance(prefix, fut_daily, call_daily, put_daily)
                 composite = int(fut_daily + call_daily - put_daily)
-                record[f'{prefix}_composite'] = composite
-                record[f'{prefix}_view'] = classify_view(composite)
+                record[f'nse_{prefix}_composite'] = composite
+                record[f'nse_{prefix}_view'] = classify_view(composite)
         else:
             # First row: no T-2 data available
             for prefix in ['fii', 'pro']:
-                record[f'{prefix}_fut_daily'] = 0
-                record[f'{prefix}_call_daily'] = 0
-                record[f'{prefix}_put_daily'] = 0
-                record[f'{prefix}_direction'] = "Neutral"
-                record[f'{prefix}_stance'] = f"{prefix.upper()} Neutral"
-                record[f'{prefix}_composite'] = 0
-                record[f'{prefix}_view'] = "Neutral"
+                record[f't1_{prefix}_fut_daily'] = 0
+                record[f't1_{prefix}_call_daily'] = 0
+                record[f't1_{prefix}_put_daily'] = 0
+                record[f't1_{prefix}_direction'] = "Neutral"
+                record[f't1_{prefix}_stance'] = f"{prefix.upper()} Neutral"
+                record[f'nse_{prefix}_composite'] = 0
+                record[f'nse_{prefix}_view'] = "Neutral"
 
         # Compute BSE daily changes: (T-1) - (T-2)
         t1_key = t_minus_1_date.strftime('%Y-%m-%d')
@@ -500,8 +500,8 @@ def build_participant_daily(days_back: int = 30):
         daily_records.append(record)
 
         if (i + 1) % 5 == 0 or i < 3:
-            fii_d = record.get('fii_direction', '?')
-            pro_d = record.get('pro_direction', '?')
+            fii_d = record.get('t1_fii_direction', '?')
+            pro_d = record.get('t1_pro_direction', '?')
             print(f"  [{i+1}/{len(all_data)-1}] Date={t_date.date()} (T-1={t_minus_1_date.date()}) "
                   f"FII:{record['fii_fut_idx_net']:+,} PRO:{record['pro_fut_idx_net']:+,} "
                   f"→ {fii_d}/{pro_d}")
@@ -516,15 +516,15 @@ def build_participant_daily(days_back: int = 30):
     nse_cols = ['date',
                 'fii_fut_idx_net', 'fii_fut_stk_net', 'fii_call_net', 'fii_put_net',
                 'pro_fut_idx_net', 'pro_fut_stk_net', 'pro_call_net', 'pro_put_net',
-                'fii_fut_daily', 'fii_call_daily', 'fii_put_daily',
-                'fii_direction', 'fii_stance',
-                'pro_fut_daily', 'pro_call_daily', 'pro_put_daily',
-                'pro_direction', 'pro_stance']
+                't1_fii_fut_daily', 't1_fii_call_daily', 't1_fii_put_daily',
+                't1_fii_direction', 't1_fii_stance',
+                't1_pro_fut_daily', 't1_pro_call_daily', 't1_pro_put_daily',
+                't1_pro_direction', 't1_pro_stance']
     bse_cols = ['bse_fii_fut_daily', 'bse_fii_call_daily', 'bse_fii_put_daily',
                 'bse_fii_composite', 'bse_fii_view',
                 'bse_pro_fut_daily', 'bse_pro_call_daily', 'bse_pro_put_daily',
                 'bse_pro_composite', 'bse_pro_view']
-    view_cols = ['fii_composite', 'fii_view', 'pro_composite', 'pro_view']
+    view_cols = ['nse_fii_composite', 'nse_fii_view', 'nse_pro_composite', 'nse_pro_view']
     ordered_cols = [c for c in nse_cols + bse_cols + view_cols if c in df.columns]
     df = df[ordered_cols]
 
@@ -544,25 +544,25 @@ def build_participant_daily(days_back: int = 30):
 
     # Summary statistics
     # Skip first row (no daily change)
-    analysis_df = df[df['fii_fut_daily'] != 0].copy() if len(df) > 1 else df
+    analysis_df = df[df['t1_fii_fut_daily'] != 0].copy() if len(df) > 1 else df
 
     print("  FII Direction Distribution:")
-    for d, count in analysis_df['fii_direction'].value_counts().items():
+    for d, count in analysis_df['t1_fii_direction'].value_counts().items():
         print(f"    {d}: {count} ({count/len(analysis_df)*100:.0f}%)")
 
     print()
     print("  PRO Direction Distribution:")
-    for d, count in analysis_df['pro_direction'].value_counts().items():
+    for d, count in analysis_df['t1_pro_direction'].value_counts().items():
         print(f"    {d}: {count} ({count/len(analysis_df)*100:.0f}%)")
 
     print()
     print("  FII Stance Distribution:")
-    for stance, count in analysis_df['fii_stance'].value_counts().head(5).items():
+    for stance, count in analysis_df['t1_fii_stance'].value_counts().head(5).items():
         print(f"    {stance}: {count}")
 
     print()
     print("  PRO Stance Distribution:")
-    for stance, count in analysis_df['pro_stance'].value_counts().head(5).items():
+    for stance, count in analysis_df['t1_pro_stance'].value_counts().head(5).items():
         print(f"    {stance}: {count}")
 
     print()

@@ -486,13 +486,16 @@ def build_participant_daily(days_back: int = 30):
                 record[f'{prefix}_fut_daily'] = fut_d
                 record[f'{prefix}_call_daily'] = call_d
                 record[f'{prefix}_put_daily'] = put_d
-                record[f'{prefix}_composite'] = int(fut_d + call_d - put_d)
+                composite = int(fut_d + call_d - put_d)
+                record[f'{prefix}_composite'] = composite
+                record[f'{prefix}_view'] = classify_view(composite)
         else:
             for prefix in ['bse_fii', 'bse_pro']:
                 record[f'{prefix}_fut_daily'] = ""
                 record[f'{prefix}_call_daily'] = ""
                 record[f'{prefix}_put_daily'] = ""
                 record[f'{prefix}_composite'] = ""
+                record[f'{prefix}_view'] = ""
 
         daily_records.append(record)
 
@@ -518,9 +521,9 @@ def build_participant_daily(days_back: int = 30):
                 'pro_fut_daily', 'pro_call_daily', 'pro_put_daily',
                 'pro_direction', 'pro_stance']
     bse_cols = ['bse_fii_fut_daily', 'bse_fii_call_daily', 'bse_fii_put_daily',
-                'bse_fii_composite',
+                'bse_fii_composite', 'bse_fii_view',
                 'bse_pro_fut_daily', 'bse_pro_call_daily', 'bse_pro_put_daily',
-                'bse_pro_composite']
+                'bse_pro_composite', 'bse_pro_view']
     view_cols = ['fii_composite', 'fii_view', 'pro_composite', 'pro_view']
     ordered_cols = [c for c in nse_cols + bse_cols + view_cols if c in df.columns]
     df = df[ordered_cols]

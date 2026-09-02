@@ -172,6 +172,27 @@ def determine_pro_stance(fut_daily, call_daily, put_daily):
         return "PRO Neutral"
 
 
+def classify_view(val):
+    """Classify composite value into a view label."""
+    if val is None:
+        return None
+    val = float(val)
+    if val > 100000:
+        return "Strong Bullish"
+    elif val > 50000:
+        return "Bullish"
+    elif val > 30000:
+        return "Mildly Bullish"
+    elif val >= -30000:
+        return "Neutral"
+    elif val >= -50000:
+        return "Mildly Bearish"
+    elif val >= -100000:
+        return "Bearish"
+    else:
+        return "Strong Bearish"
+
+
 def determine_expiry_risk(stance: str) -> str:
     """Determine risk level based on FII stance."""
     high_risk = ["FII Very Bearish", "FII Hedging", "FII Bearish"]
@@ -434,6 +455,11 @@ def main():
     t1_pro_put_daily = []
     t1_pro_stances = []
     observations = []
+    # Composite and view lists
+    fii_composites = []
+    pro_composites = []
+    fii_views = []
+    pro_views = []
 
     total = len(base_df)
     fetched_from_nse = 0
@@ -465,6 +491,11 @@ def main():
                     row['actual_range_pct'], row['vix_predicted_move_pct'], row['diff_pct']
                 ))
 
+                # FII composite and view
+                fii_comp = int(fut_d + call_d - put_d)
+                fii_composites.append(fii_comp)
+                fii_views.append(classify_view(fii_comp))
+
                 # PRO data not available in local file - fetch from NSE
                 t1_date = prev_days.iloc[-1]['Date'].to_pydatetime()
                 t2_date = prev_days.iloc[-2]['Date'].to_pydatetime()
@@ -486,6 +517,11 @@ def main():
                 t1_pro_call_daily.append(pro_call_d)
                 t1_pro_put_daily.append(pro_put_d)
                 t1_pro_stances.append(determine_pro_stance(pro_fut_d, pro_call_d, pro_put_d))
+
+                # PRO composite and view
+                pro_comp = int(pro_fut_d + pro_call_d - pro_put_d)
+                pro_composites.append(pro_comp)
+                pro_views.append(classify_view(pro_comp))
 
                 fetched_from_local += 1
 
@@ -511,6 +547,11 @@ def main():
                 row['vix_accuracy'], row['move_direction'],
                 row['actual_range_pct'], row['vix_predicted_move_pct'], row['diff_pct']
             ))
+            # Neutral composite and view
+            fii_composites.append(0)
+            fii_views.append("Neutral")
+            pro_composites.append(0)
+            pro_views.append("Neutral")
             failed += 1
             continue
 
@@ -574,6 +615,14 @@ def main():
             row['actual_range_pct'], row['vix_predicted_move_pct'], row['diff_pct']
         ))
 
+        # Composite and view for both FII and PRO
+        fii_comp = int(fut_d + call_d - put_d)
+        fii_composites.append(fii_comp)
+        fii_views.append(classify_view(fii_comp))
+        pro_comp = int(pro_fut_d + pro_call_d - pro_put_d)
+        pro_composites.append(pro_comp)
+        pro_views.append(classify_view(pro_comp))
+
         if (idx + 1) % 10 == 0 or idx < 5:
             print(f"  [{idx+1}/{total}] {row['date']} - T1={t1_date.strftime('%Y-%m-%d') if t1_date else 'N/A'} "
                   f"fut={int(fut_d):+,} call={int(call_d):+,} put={int(put_d):+,} → {stance}")
@@ -589,6 +638,10 @@ def main():
     base_df['t1_pro_stance'] = t1_pro_stances
     base_df['expiry_risk_level'] = t1_risks
     base_df['observation'] = observations
+    base_df['fii_composite'] = fii_composites
+    base_df['pro_composite'] = pro_composites
+    base_df['fii_view'] = fii_views
+    base_df['pro_view'] = pro_views
 
     # Step 6: Save
     output_path = PROJECT_ROOT / "vix_fii_t1_intraday_expiry_results.csv"

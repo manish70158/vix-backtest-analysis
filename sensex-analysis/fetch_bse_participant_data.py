@@ -144,6 +144,27 @@ def get_trading_days(start_date: datetime, end_date: datetime) -> list[datetime]
     return days
 
 
+def classify_view(val):
+    """Classify composite value into a view label."""
+    if val is None:
+        return None
+    val = float(val)
+    if val > 100000:
+        return "Strong Bullish"
+    elif val > 50000:
+        return "Bullish"
+    elif val > 30000:
+        return "Mildly Bullish"
+    elif val >= -30000:
+        return "Neutral"
+    elif val >= -50000:
+        return "Mildly Bearish"
+    elif val >= -100000:
+        return "Bearish"
+    else:
+        return "Strong Bearish"
+
+
 def determine_direction(fut_net: int, call_net: int, put_net: int) -> str:
     """Determine direction from net positions."""
     # Net score: positive futures + short calls + long puts = bearish hedging
@@ -245,6 +266,9 @@ def build_participant_daily(days_back: int = 30):
                 record[f'{prefix}_put_daily'] = put_daily
                 record[f'{prefix}_direction'] = determine_direction(fut_daily, call_daily, put_daily)
                 record[f'{prefix}_stance'] = determine_stance(prefix, fut_daily, call_daily, put_daily)
+                composite = int(fut_daily + call_daily - put_daily)
+                record[f'{prefix}_composite'] = composite
+                record[f'{prefix}_view'] = classify_view(composite)
         else:
             for prefix in ['fii', 'pro', 'dii', 'client']:
                 record[f'{prefix}_fut_daily'] = 0
@@ -252,6 +276,8 @@ def build_participant_daily(days_back: int = 30):
                 record[f'{prefix}_put_daily'] = 0
                 record[f'{prefix}_direction'] = "Neutral"
                 record[f'{prefix}_stance'] = f"{prefix.upper()} Neutral"
+                record[f'{prefix}_composite'] = 0
+                record[f'{prefix}_view'] = "Neutral"
 
         daily_records.append(record)
         prev_data = data

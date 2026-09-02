@@ -613,25 +613,7 @@ def main():
         expiry_type = (nex["expiry_type"] if nex
                        else (sxe["expiry_type"] if sxe else None))
 
-        # VIX — prefer expiry CSV value, fallback to yfinance on expiry days
-        vix_open_val = None
-        vix_close_val = None
-        if nex and nex.get("vix_open") is not None and not pd.isna(nex["vix_open"]):
-            vix_open_val = round(float(nex["vix_open"]), 2)
-            vix_close_val = round(float(nex["vix_close"]), 2)
-        elif sxe and sxe.get("vix_open") is not None and not pd.isna(sxe["vix_open"]):
-            vix_open_val = round(float(sxe["vix_open"]), 2)
-            vix_close_val = round(float(sxe["vix_close"]), 2)
-        elif (is_nifty_expiry or is_sensex_expiry) and d in vix_dict:
-            vx = vix_dict[d]
-            vo = yf_val(vx, "Open")
-            vc = yf_val(vx, "Close")
-            if vo is not None:
-                vix_open_val = round(vo, 2)
-            if vc is not None:
-                vix_close_val = round(vc, 2)
-
-        # VIX for all days (used in BSE daily CSV)
+        # VIX for all days from yfinance
         vix_open_all = None
         vix_close_all = None
         if d in vix_dict:
@@ -642,6 +624,21 @@ def main():
                 vix_open_all = round(vo, 2)
             if vc is not None:
                 vix_close_all = round(vc, 2)
+
+        # VIX — prefer expiry CSV value, fallback to yfinance for ALL days
+        vix_open_val = None
+        vix_close_val = None
+        if nex and nex.get("vix_open") is not None and not pd.isna(nex["vix_open"]):
+            vix_open_val = round(float(nex["vix_open"]), 2)
+            vix_close_val = round(float(nex["vix_close"]), 2)
+        elif sxe and sxe.get("vix_open") is not None and not pd.isna(sxe["vix_open"]):
+            vix_open_val = round(float(sxe["vix_open"]), 2)
+            vix_close_val = round(float(sxe["vix_close"]), 2)
+        # Fallback: use yfinance VIX for ALL days (not just expiry)
+        if vix_open_val is None and vix_open_all is not None:
+            vix_open_val = vix_open_all
+        if vix_close_val is None and vix_close_all is not None:
+            vix_close_val = vix_close_all
 
         # Sensex OHLC — prefer expiry CSV, fallback to yfinance
         sx_open = sx_high = sx_low = sx_close = None
@@ -748,6 +745,7 @@ def main():
             "intraday_high_pct": intraday_high_pct,
             "intraday_low_pct": intraday_low_pct,
             "move_direction": move_direction,
+            "nifty_day": "Green" if c >= o else "Red",
             "vix_open": vix_open_val,
             "vix_close": vix_close_val,
             "t1_fii_fut_daily": int(fii_fut_d) if fii_fut_d is not None else None,
@@ -784,6 +782,8 @@ def main():
             "intraday_high_pct": intraday_high_pct,
             "intraday_low_pct": intraday_low_pct,
             "move_direction": move_direction,
+            "nifty_day": "Green" if c >= o else "Red",
+            "sensex_day": ("Green" if sx_close >= sx_open else "Red") if sx_open and sx_close else None,
             "vix_open": vix_open_val,
             "vix_close": vix_close_val,
             "t1_fii_fut_daily": int(fii_fut_d) if fii_fut_d is not None else None,
@@ -972,26 +972,92 @@ def main():
     if new_6year_rows:
         print(f"    New expiry rows for 6year CSV: {len(new_6year_rows)}")
 
+    # 6b. Post-process: forward-fill gaps in VIX, Sensex OHLC, FII/PRO
+    print("\n[6b] Post-processing: filling data gaps...")
+
+    # -- Nifty CSV: forward-fill VIX and FII/PRO view/stance gaps --
+    new_nifty_df = pd.DataFrame(new_nifty_rows)
+    tmp_nifty = pd.concat([existing_nifty, new_nifty_df], ignore_index=True)
+    # VIX: forward-fill from previous trading day
+    for col in ['vix_open', 'vix_close']:
+        before = tmp_nifty[col].isna().sum()
+        tmp_nifty[col] = tmp_nifty[col].ffill()
+        after = tmp_nifty[col].isna().sum()
+        if before > after:
+            print(f"    Nifty {col}: filled {before - after} gaps via ffill")
+    # FII/PRO: forward-fill all columns from previous trading day
+    fii_blank = tmp_nifty['fii_view'].isna()
+    if fii_blank.any():
+        count = fii_blank.sum()
+        fii_pro_cols = ['t1_fii_fut_daily', 't1_fii_call_daily', 't1_fii_put_daily',
+                        't1_fii_stance', 'fii_composite', 'fii_view',
+                        't1_pro_fut_daily', 't1_pro_call_daily', 't1_pro_put_daily',
+                        't1_pro_stance', 'pro_composite', 'pro_view']
+        for col in fii_pro_cols:
+            tmp_nifty[col] = tmp_nifty[col].ffill()
+        # Fill any remaining NaN at the very start
+        tmp_nifty['fii_view'] = tmp_nifty['fii_view'].fillna('Neutral')
+        tmp_nifty['pro_view'] = tmp_nifty['pro_view'].fillna('Neutral')
+        tmp_nifty['t1_fii_stance'] = tmp_nifty['t1_fii_stance'].fillna('FII Neutral')
+        tmp_nifty['t1_pro_stance'] = tmp_nifty['t1_pro_stance'].fillna('PRO Neutral')
+        for col in ['t1_fii_fut_daily', 't1_fii_call_daily', 't1_fii_put_daily',
+                     'fii_composite', 't1_pro_fut_daily', 't1_pro_call_daily',
+                     't1_pro_put_daily', 'pro_composite']:
+            tmp_nifty[col] = tmp_nifty[col].fillna(0)
+        print(f"    Nifty FII/PRO: forward-filled {count} gaps")
+
+    # -- Sensex CSV: forward-fill VIX, Sensex OHLC, FII/PRO --
+    new_sensex_df = pd.DataFrame(new_sensex_rows)
+    tmp_sensex = pd.concat([existing_sensex, new_sensex_df], ignore_index=True)
+    # VIX: forward-fill
+    for col in ['vix_open', 'vix_close']:
+        before = tmp_sensex[col].isna().sum()
+        tmp_sensex[col] = tmp_sensex[col].ffill()
+        after = tmp_sensex[col].isna().sum()
+        if before > after:
+            print(f"    Sensex {col}: filled {before - after} gaps via ffill")
+    # Sensex OHLC: forward-fill (rare edge case for special sessions)
+    for col in ['sensex_open', 'sensex_high', 'sensex_low', 'sensex_close']:
+        before = tmp_sensex[col].isna().sum()
+        tmp_sensex[col] = tmp_sensex[col].ffill()
+        after = tmp_sensex[col].isna().sum()
+        if before > after:
+            print(f"    Sensex {col}: filled {before - after} gaps via ffill")
+    # FII/PRO: forward-fill all columns from previous trading day
+    fii_blank_s = tmp_sensex['fii_view'].isna()
+    if fii_blank_s.any():
+        count = fii_blank_s.sum()
+        fii_pro_cols = ['t1_fii_fut_daily', 't1_fii_call_daily', 't1_fii_put_daily',
+                        't1_fii_stance', 'fii_composite', 'fii_view',
+                        't1_pro_fut_daily', 't1_pro_call_daily', 't1_pro_put_daily',
+                        't1_pro_stance', 'pro_composite', 'pro_view']
+        for col in fii_pro_cols:
+            tmp_sensex[col] = tmp_sensex[col].ffill()
+        # Fill any remaining NaN at the very start
+        tmp_sensex['fii_view'] = tmp_sensex['fii_view'].fillna('Neutral')
+        tmp_sensex['pro_view'] = tmp_sensex['pro_view'].fillna('Neutral')
+        tmp_sensex['t1_fii_stance'] = tmp_sensex['t1_fii_stance'].fillna('FII Neutral')
+        tmp_sensex['t1_pro_stance'] = tmp_sensex['t1_pro_stance'].fillna('PRO Neutral')
+        for col in ['t1_fii_fut_daily', 't1_fii_call_daily', 't1_fii_put_daily',
+                     'fii_composite', 't1_pro_fut_daily', 't1_pro_call_daily',
+                     't1_pro_put_daily', 'pro_composite']:
+            tmp_sensex[col] = tmp_sensex[col].fillna(0)
+        print(f"    Sensex FII/PRO: forward-filled {count} gaps")
+
     # 7. Write updated CSVs
     print("\n[7] Writing updated CSVs...")
 
-    # Nifty daily
-    new_nifty_df = pd.DataFrame(new_nifty_rows)
-    updated_nifty = pd.concat([existing_nifty, new_nifty_df], ignore_index=True)
-    updated_nifty = updated_nifty[nifty_columns]
+    # Nifty daily (use post-processed tmp_nifty from step 6b)
+    updated_nifty = tmp_nifty[nifty_columns]
     updated_nifty.to_csv(nifty_csv_path, index=False)
     print(f"    Nifty:      {nifty_csv_path.name} — {len(updated_nifty)} rows "
-          f"(+{len(new_nifty_df)} new)")
+          f"(+{len(new_nifty_rows)} new)")
 
-    # Sensex daily
-    new_sensex_df = pd.DataFrame(new_sensex_rows)
-    updated_sensex = pd.concat(
-        [existing_sensex, new_sensex_df], ignore_index=True
-    )
-    updated_sensex = updated_sensex[sensex_columns]
+    # Sensex daily (use post-processed tmp_sensex from step 6b)
+    updated_sensex = tmp_sensex[sensex_columns]
     updated_sensex.to_csv(sensex_csv_path, index=False)
     print(f"    Sensex:     {sensex_csv_path.name} — {len(updated_sensex)} rows "
-          f"(+{len(new_sensex_df)} new)")
+          f"(+{len(new_sensex_rows)} new)")
 
     # BSE daily
     if new_bse_rows:

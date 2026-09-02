@@ -1,1 +1,3 @@
 date,day_of_week,sensex_open,sensex_high,sensex_low,sensex_close,actual_range_pct,actual_open_close_pct,move_direction,vix_open,vix_close,bse_fii_fut_daily,bse_fii_call_daily,bse_fii_put_daily,bse_fii_stance,bse_fii_composite,bse_fii_view,bse_pro_fut_daily,bse_pro_call_daily,bse_pro_put_daily,bse_pro_stance,bse_pro_composite,bse_pro_view
+2026-09-02,Wednesday,76471.32,76570.35,76135.72,76570.35,0.57,0.13,Down to Up,11.49,11.59,-15,-28403,34301,FII Hedging (bought puts >20K),-62719,Bearish,-128,-61651,34063,PRO Hedging (bought puts >20K),-95842,Bearish
+2026-09-02,Wednesday,76471.32,76570.35,76135.72,76570.35,0.57,0.13,Down to Up,11.49,11.59,-15,-28403,34301,FII Hedging (bought puts >20K),-62719,Bearish,-128,-61651,34063,PRO Hedging (bought puts >20K),-95842,Bearish

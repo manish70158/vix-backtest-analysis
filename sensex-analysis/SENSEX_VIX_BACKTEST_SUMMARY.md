@@ -275,10 +275,7 @@ All files consolidated in `sensex-analysis/` directory:
 ✅ FII_DII_VIX_CORRELATION_SENSEX_SUMMARY.md - findings report
 
 ── Participant-wise Daily Data (FII/PRO separate) ──
-✅ sensex_participant_wise_daily.csv - daily FII, PRO, DII, Client positions
-✅ bse_fpi_participant_daily.csv - NSDL FPI daily data
-✅ bse_fpi_derivatives_raw.csv - raw derivatives by product
-✅ bse_dii_latest.csv - latest DII breakdown
+✅ sensex_participant_wise_daily.csv - daily FII, PRO positions (T-1 format)
 
 ── Scripts ──
 ✅ build_sensex_fii_6year.py - fetch 6-year Sensex + FII/PRO data

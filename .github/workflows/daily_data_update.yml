@@ -1,0 +1,49 @@
+name: Daily Market Data Update
+
+on:
+  schedule:
+    # 7:30 PM IST = 2:00 PM UTC (after Indian market close + NSE archive publish lag)
+    - cron: '0 14 * * 1-5'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-daily-data:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run daily CSV update (Nifty + Sensex + BSE + expiry)
+        run: python generate_daily_files.py
+
+      - name: Run participant-wise daily update (FII/PRO/DII/Client)
+        run: python sensex-analysis/fetch_bse_participant_data.py
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add \
+            vix_fii_t1_intraday_daily_results.csv \
+            sensex-analysis/sensex_fii_t1_daily_results.csv \
+            sensex-analysis/bse_fii_t1_daily.csv \
+            sensex-analysis/sensex_fii_t1_6year_expiry.csv \
+            sensex-analysis/sensex_participant_wise_daily.csv
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Daily data update for $(date -u +%Y-%m-%d)"
+            git push
+          fi

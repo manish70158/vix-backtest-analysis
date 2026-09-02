@@ -2,9 +2,9 @@
 """
 Fetch Participant-wise Data (FII / PRO) for BSE/Sensex Analysis - T-1 Format
 
-Fetches SEPARATE FII and PRO data from NSE participant-wise OI archives.
-This is the same source used by build_sensex_fii_6year.py but fetches ALL
-trading days (not just expiry days).
+Fetches FII and PRO data from TWO sources:
+1. NSE participant-wise OI archives (aggregate F&O across all segments)
+2. BSE beta.bseindia.com (Sensex-specific derivatives OI)
 
 T-1 Format:
 - Each row's date = day T (e.g., 2026-08-28)
@@ -12,22 +12,19 @@ T-1 Format:
 - Daily changes = (T-1) minus (T-2)
 - This shows what positions were held BEFORE market opened on day T
 
-Source: https://archives.nseindia.com/content/nsccl/fao_participant_oi_DDMMYYYY.csv
-- Provides: FII, PRO — each with Futures + Options long/short positions
-- Updated daily by NSCCL (NSE Clearing Corporation)
-- Covers all F&O segments (Nifty, Sensex, BankNifty, stocks)
-
-BSE India's API (api.bseindia.com) is protected by Akamai WAF — cannot be accessed
-programmatically. NSE participant OI covers the same institutional positioning as
-it reflects overall F&O activity across all index derivatives.
+Sources:
+  NSE: https://archives.nseindia.com/content/nsccl/fao_participant_oi_DDMMYYYY.csv
+  BSE: https://beta.bseindia.com/markets/Derivatives/DeriReports/DeriMarketDisclosures.aspx
 
 Output:
-- sensex_participant_wise_daily.csv: Daily FII, PRO T-1 positions + directions
+- sensex_bse_participant_wise_daily.csv: Daily FII, PRO T-1 positions + directions
+  (NSE aggregate + BSE Sensex-specific columns)
 
 Author: Claude Code
-Date: 2026-08-26
+Date: 2026-09-02
 """
 
+import re
 import pandas as pd
 import numpy as np
 import requests
@@ -47,8 +44,18 @@ NSE_HEADERS = {
     'Referer': 'https://www.nseindia.com/',
 }
 
+BSE_HEADERS = {
+    'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) '
+                  'AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+    'Accept': 'text/html,application/xhtml+xml',
+    'Accept-Language': 'en-US,en;q=0.9',
+}
+
+BSE_URL = "https://beta.bseindia.com/markets/Derivatives/DeriReports/DeriMarketDisclosures.aspx"
+
 # Cache
 _cache = {}
+_bse_cache = {}
 
 
 def get_nse_session():
@@ -56,6 +63,143 @@ def get_nse_session():
     session = requests.Session()
     session.headers.update(NSE_HEADERS)
     return session
+
+
+def _parse_indian_num(s):
+    """Parse Indian number format (1,23,456) to int."""
+    s = s.strip().replace(",", "")
+    if s == "-" or s == "":
+        return 0
+    return int(s)
+
+
+def _parse_bse_oi_from_grid(html):
+    """Parse BSE OI data from grvOpenInterst grid span IDs."""
+    spans = dict(
+        re.findall(r"ContentPlaceHolder1_grvOpenInterst_([^\"]+)\"[^>]*>([^<]+)", html)
+    )
+
+    if "Label2_1" not in spans:
+        return _parse_bse_oi_from_html(html)
+
+    data = {}
+    for row_idx, prefix in [(1, "bse_fii"), (3, "bse_pro")]:
+        fut_long = _parse_indian_num(spans.get(f"Label2_{row_idx}", "0"))
+        fut_short = _parse_indian_num(spans.get(f"Label3_{row_idx}", "0"))
+        call_long = _parse_indian_num(spans.get(f"Label6_{row_idx}", "0"))
+        call_short = _parse_indian_num(spans.get(f"lblND_CL_SHRT_CNTRCTS_{row_idx}", "0"))
+        put_long = _parse_indian_num(spans.get(f"Label7_{row_idx}", "0"))
+        put_short = _parse_indian_num(spans.get(f"Label8_{row_idx}", "0"))
+
+        data[f"{prefix}_fut_idx_net"] = fut_long - fut_short
+        data[f"{prefix}_call_net"] = call_long - call_short
+        data[f"{prefix}_put_net"] = put_long - put_short
+
+    return data if "bse_fii_fut_idx_net" in data else None
+
+
+def _parse_bse_oi_from_html(html):
+    """Fallback: Parse BSE OI data from raw TD cells."""
+    oi_start = html.find("Participant wise Open Interest")
+    if oi_start == -1:
+        return None
+
+    oi_section = html[oi_start:oi_start + 20000]
+    all_tds = re.findall(r"<td[^>]*>(.*?)</td>", oi_section, re.DOTALL)
+    cleaned = [
+        re.sub(r"<[^>]+>", "", td).strip().replace("&nbsp;", "")
+        for td in all_tds
+    ]
+    cleaned = [c for c in cleaned if c.strip()]
+
+    if len(cleaned) < 40:
+        return None
+
+    data = {}
+    categories = {"FII": "bse_fii", "Proprietary": "bse_pro"}
+
+    for cat_name, prefix in categories.items():
+        if cat_name not in cleaned:
+            continue
+        idx = cleaned.index(cat_name) + 1
+        values = cleaned[idx:idx + 14]
+
+        try:
+            fut_idx_long = _parse_indian_num(values[0])
+            fut_idx_short = _parse_indian_num(values[1])
+            call_long = _parse_indian_num(values[4])
+            call_short = _parse_indian_num(values[5])
+            put_long = _parse_indian_num(values[6])
+            put_short = _parse_indian_num(values[7])
+
+            data[f"{prefix}_fut_idx_net"] = fut_idx_long - fut_idx_short
+            data[f"{prefix}_call_net"] = call_long - call_short
+            data[f"{prefix}_put_net"] = put_long - put_short
+        except (IndexError, ValueError) as e:
+            print(f"  BSE: Error parsing {cat_name} data: {e}")
+            continue
+
+    return data if "bse_fii_fut_idx_net" in data else None
+
+
+def fetch_bse_participant_oi(date=None):
+    """
+    Fetch BSE-specific participant-wise OI from beta.bseindia.com.
+    Supports historical dates via ASP.NET form postback.
+
+    Returns dict with bse_fii_*/bse_pro_* net positions or None.
+    """
+    cache_key = date.strftime('%d%m%Y') if date else 'latest'
+    if cache_key in _bse_cache:
+        return _bse_cache[cache_key]
+
+    try:
+        session = requests.Session()
+        session.headers.update(BSE_HEADERS)
+
+        r = session.get(BSE_URL, timeout=20)
+        if r.status_code != 200:
+            _bse_cache[cache_key] = None
+            return None
+
+        html = r.text
+
+        if date is None:
+            result = _parse_bse_oi_from_html(html)
+            _bse_cache[cache_key] = result
+            return result
+
+        viewstate = re.search(r"__VIEWSTATE[^G][^>]*value=\"([^\"]*)\"", html)
+        event_val = re.search(r"__EVENTVALIDATION[^>]*value=\"([^\"]*)\"", html)
+        viewstate_gen = re.search(r"__VIEWSTATEGENERATOR[^>]*value=\"([^\"]*)\"", html)
+
+        if not viewstate or not event_val:
+            result = _parse_bse_oi_from_html(html)
+            _bse_cache[cache_key] = result
+            return result
+
+        date_str = date.strftime("%d/%m/%Y")
+        form_data = {
+            "__VIEWSTATE": viewstate.group(1),
+            "__VIEWSTATEGENERATOR": viewstate_gen.group(1) if viewstate_gen else "",
+            "__VIEWSTATEENCRYPTED": "",
+            "__EVENTVALIDATION": event_val.group(1),
+            "ctl00$ContentPlaceHolder1$txtDate1": date_str,
+            "ctl00$ContentPlaceHolder1$btnTradeArchives": "Submit",
+        }
+
+        r2 = session.post(BSE_URL, data=form_data, timeout=20)
+        if r2.status_code != 200:
+            _bse_cache[cache_key] = None
+            return None
+
+        result = _parse_bse_oi_from_grid(r2.text)
+        _bse_cache[cache_key] = result
+        return result
+
+    except Exception as e:
+        _bse_cache[cache_key] = None
+        return None
 
 
 def fetch_participant_oi(session, date: datetime) -> dict | None:
@@ -221,8 +365,9 @@ def build_participant_daily(days_back: int = 30):
     print(f"Date: {datetime.now().strftime('%Y-%m-%d %H:%M')}")
     print("=" * 70)
     print()
-    print(f"Source: NSE Archives (archives.nseindia.com)")
-    print(f"  → fao_participant_oi_DDMMYYYY.csv")
+    print(f"Sources:")
+    print(f"  NSE: archives.nseindia.com → fao_participant_oi_DDMMYYYY.csv")
+    print(f"  BSE: beta.bseindia.com → Sensex-specific participant OI")
     print(f"  → T-1 Format: Each row date = T, positions = T-1 EOD")
     print(f"  → Daily changes = (T-1) - (T-2)")
     print()
@@ -237,7 +382,7 @@ def build_participant_daily(days_back: int = 30):
 
     session = get_nse_session()
 
-    # First, fetch all available data
+    # First, fetch all available NSE data
     all_data = []
     fetched = 0
     failed = 0
@@ -255,6 +400,25 @@ def build_participant_daily(days_back: int = 30):
     if len(all_data) < 2:
         print("\nERROR: Need at least 2 days of data for T-1 format.")
         return
+
+    # Fetch BSE-specific data for all dates
+    print(f"\nFetching BSE participant OI (Sensex-specific)...")
+    bse_all_data = {}
+    bse_fetched = 0
+    bse_failed = 0
+
+    for entry in all_data:
+        day = entry['date']
+        bse_data = fetch_bse_participant_oi(date=day)
+        time.sleep(1.0)  # BSE needs more delay (form postback)
+
+        if bse_data is not None:
+            bse_all_data[day.strftime('%Y-%m-%d')] = bse_data
+            bse_fetched += 1
+        else:
+            bse_failed += 1
+
+    print(f"  BSE fetched: {bse_fetched}, failed/unavailable: {bse_failed}")
 
     # Now build records in T-1 format
     daily_records = []
@@ -277,7 +441,7 @@ def build_participant_daily(days_back: int = 30):
             record[f'{prefix}_call_net'] = t_minus_1_data.get(f'{prefix}_call_net', 0)
             record[f'{prefix}_put_net'] = t_minus_1_data.get(f'{prefix}_put_net', 0)
 
-        # Compute daily changes: (T-1) - (T-2)
+        # Compute NSE daily changes: (T-1) - (T-2)
         if i > 0:
             t_minus_2_data = all_data[i - 1]['data']
             for prefix in ['fii', 'pro']:
@@ -304,6 +468,32 @@ def build_participant_daily(days_back: int = 30):
                 record[f'{prefix}_composite'] = 0
                 record[f'{prefix}_view'] = "Neutral"
 
+        # Compute BSE daily changes: (T-1) - (T-2)
+        t1_key = t_minus_1_date.strftime('%Y-%m-%d')
+        bse_t1 = bse_all_data.get(t1_key)
+
+        if i > 0:
+            t2_key = all_data[i - 1]['date'].strftime('%Y-%m-%d')
+            bse_t2 = bse_all_data.get(t2_key)
+        else:
+            bse_t2 = None
+
+        if bse_t1 and bse_t2:
+            for prefix in ['bse_fii', 'bse_pro']:
+                fut_d = bse_t1.get(f'{prefix}_fut_idx_net', 0) - bse_t2.get(f'{prefix}_fut_idx_net', 0)
+                call_d = bse_t1.get(f'{prefix}_call_net', 0) - bse_t2.get(f'{prefix}_call_net', 0)
+                put_d = bse_t1.get(f'{prefix}_put_net', 0) - bse_t2.get(f'{prefix}_put_net', 0)
+                record[f'{prefix}_fut_daily'] = fut_d
+                record[f'{prefix}_call_daily'] = call_d
+                record[f'{prefix}_put_daily'] = put_d
+                record[f'{prefix}_composite'] = int(fut_d + call_d - put_d)
+        else:
+            for prefix in ['bse_fii', 'bse_pro']:
+                record[f'{prefix}_fut_daily'] = ""
+                record[f'{prefix}_call_daily'] = ""
+                record[f'{prefix}_put_daily'] = ""
+                record[f'{prefix}_composite'] = ""
+
         daily_records.append(record)
 
         if (i + 1) % 5 == 0 or i < 3:
@@ -319,8 +509,24 @@ def build_participant_daily(days_back: int = 30):
 
     df = pd.DataFrame(daily_records)
 
+    # Ensure column order: NSE fields, then BSE fields, then composite/view
+    nse_cols = ['date',
+                'fii_fut_idx_net', 'fii_fut_stk_net', 'fii_call_net', 'fii_put_net',
+                'pro_fut_idx_net', 'pro_fut_stk_net', 'pro_call_net', 'pro_put_net',
+                'fii_fut_daily', 'fii_call_daily', 'fii_put_daily',
+                'fii_direction', 'fii_stance',
+                'pro_fut_daily', 'pro_call_daily', 'pro_put_daily',
+                'pro_direction', 'pro_stance']
+    bse_cols = ['bse_fii_fut_daily', 'bse_fii_call_daily', 'bse_fii_put_daily',
+                'bse_fii_composite',
+                'bse_pro_fut_daily', 'bse_pro_call_daily', 'bse_pro_put_daily',
+                'bse_pro_composite']
+    view_cols = ['fii_composite', 'fii_view', 'pro_composite', 'pro_view']
+    ordered_cols = [c for c in nse_cols + bse_cols + view_cols if c in df.columns]
+    df = df[ordered_cols]
+
     # Save full dataset
-    output_path = OUTPUT_DIR / "sensex_participant_wise_daily.csv"
+    output_path = OUTPUT_DIR / "sensex_bse_participant_wise_daily.csv"
     df.to_csv(output_path, index=False)
 
     print()
@@ -329,7 +535,8 @@ def build_participant_daily(days_back: int = 30):
     print(f"  Output: {output_path}")
     print(f"  Rows: {len(df)} trading days (T-1 format)")
     print(f"  Date range: {df['date'].min()} to {df['date'].max()}")
-    print(f"  Raw data fetched: {fetched} days, Failed/Holiday: {failed}")
+    print(f"  NSE data fetched: {fetched} days, Failed/Holiday: {failed}")
+    print(f"  BSE data fetched: {bse_fetched} days, Failed/Holiday: {bse_failed}")
     print()
 
     # Summary statistics

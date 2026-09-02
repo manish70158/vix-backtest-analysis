@@ -28,7 +28,7 @@ jobs:
       - name: Run daily CSV update (Nifty + Sensex + BSE + expiry)
         run: python generate_daily_files.py
 
-      - name: Run participant-wise daily update (FII/PRO/DII/Client)
+      - name: Run participant-wise daily update (NSE + BSE FII/PRO)
         run: python sensex-analysis/fetch_bse_participant_data.py
 
       - name: Commit and push changes
@@ -40,7 +40,7 @@ jobs:
             sensex-analysis/sensex_fii_t1_daily_results.csv \
             sensex-analysis/bse_fii_t1_daily.csv \
             sensex-analysis/sensex_fii_t1_6year_expiry.csv \
-            sensex-analysis/sensex_participant_wise_daily.csv
+            sensex-analysis/sensex_bse_participant_wise_daily.csv
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else

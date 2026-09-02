@@ -12,6 +12,7 @@
 | `vix_fii_t1_intraday_expiry_results.csv` | Expiry day analysis: VIX prediction vs actual move + T-1 FII/PRO stance |
 | `vix_all_expiries_results_v6_6years.csv` | Base 6-year backtest data (Jul 2020 – Jul 2026, read-only source) |
 | `sensex-analysis/sensex_fii_t1_6year_expiry.csv` | **Auto-updated weekly** — 6-year Sensex expiry data with NSE + BSE participant positioning |
+| `sensex-analysis/sensex_bse_participant_wise_daily.csv` | **Auto-updated daily** — FII/PRO T-1 positions from NSE (aggregate) + BSE (Sensex-specific) |
 
 ### How to Update Daily Results (All Trading Days)
 
@@ -44,6 +45,23 @@ This single command does:
 2. Adds new expiry days to the expiry results CSV
 3. Correctly computes `close_vs_prev_range` using the previous **trading day's** high/low
 4. Fetches T-1 FII + PRO data for new expiry days
+
+### Daily Participant-Wise Update (FII/PRO — NSE + BSE)
+
+**Manual run:**
+```bash
+python sensex-analysis/fetch_bse_participant_data.py
+```
+
+This fetches the last 30 trading days of FII/PRO data from two sources:
+- **NSE Archives** — Aggregate F&O participant OI (all segments: Nifty, Sensex, BankNifty, stocks)
+- **BSE (beta.bseindia.com)** — Sensex-specific derivative OI (BSE F&O only)
+
+Output: `sensex-analysis/sensex_bse_participant_wise_daily.csv` with columns:
+- NSE: `fii_fut_daily`, `fii_call_daily`, `fii_put_daily`, `fii_stance`, `fii_composite`, `fii_view` (same for PRO)
+- BSE: `bse_fii_fut_daily`, `bse_fii_call_daily`, `bse_fii_put_daily` (same for PRO)
+
+**Automated**: Runs daily via GitHub Actions at 7:30 PM IST (Mon–Fri).
 
 ### Sensex Automated Weekly Update (GitHub Actions)
 
@@ -292,6 +310,7 @@ update_data.py                        # Incremental update for expiry CSVs
 generate_daily_files.py               # Generate daily CSVs from PostgreSQL (fast)
 build_full_6year_daily.py             # Full rebuild daily CSVs from NSE archives (slow, cached)
 build_full_6year_expiry.py            # Full rebuild expiry CSV from scratch
+sensex-analysis/fetch_bse_participant_data.py  # Daily FII/PRO from NSE + BSE (auto-updated)
 
 # Skills
 .claude/skills/
@@ -447,5 +466,5 @@ Should show:
 
 ---
 
-**Last Updated**: September 1, 2026
+**Last Updated**: September 2, 2026
 **Created with**: Claude Code + Skill Creator

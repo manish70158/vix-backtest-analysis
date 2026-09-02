@@ -1,10 +1,16 @@
 #!/usr/bin/env python3
 """
-Fetch Participant-wise Data (FII / PRO) for BSE/Sensex Analysis
+Fetch Participant-wise Data (FII / PRO) for BSE/Sensex Analysis - T-1 Format
 
 Fetches SEPARATE FII and PRO data from NSE participant-wise OI archives.
 This is the same source used by build_sensex_fii_6year.py but fetches ALL
 trading days (not just expiry days).
+
+T-1 Format:
+- Each row's date = day T (e.g., 2026-08-28)
+- Positions = T-1's closing positions (e.g., 2026-08-27's EOD)
+- Daily changes = (T-1) minus (T-2)
+- This shows what positions were held BEFORE market opened on day T
 
 Source: https://archives.nseindia.com/content/nsccl/fao_participant_oi_DDMMYYYY.csv
 - Provides: FII, PRO — each with Futures + Options long/short positions
@@ -16,7 +22,7 @@ programmatically. NSE participant OI covers the same institutional positioning a
 it reflects overall F&O activity across all index derivatives.
 
 Output:
-- sensex_participant_wise_daily.csv: Daily FII, PRO positions + directions
+- sensex_participant_wise_daily.csv: Daily FII, PRO T-1 positions + directions
 
 Author: Claude Code
 Date: 2026-08-26
@@ -207,18 +213,18 @@ def determine_stance(prefix: str, fut_daily: int, call_daily: int, put_daily: in
 
 def build_participant_daily(days_back: int = 30):
     """
-    Fetch daily participant-wise OI data for the last N trading days.
-    Computes daily changes and direction signals for FII, PRO, DII, Client.
+    Fetch daily participant-wise OI data for the last N trading days in T-1 format.
+    Each row's date = day T, but positions = T-1's EOD, daily changes = (T-1) - (T-2).
     """
     print("=" * 70)
-    print("FETCH PARTICIPANT-WISE DATA (FII / PRO)")
+    print("FETCH PARTICIPANT-WISE DATA (FII / PRO) - T-1 Format")
     print(f"Date: {datetime.now().strftime('%Y-%m-%d %H:%M')}")
     print("=" * 70)
     print()
     print(f"Source: NSE Archives (archives.nseindia.com)")
     print(f"  → fao_participant_oi_DDMMYYYY.csv")
-    print(f"  → Separate columns for: FII, PRO")
-    print(f"  → Futures (Index + Stock) + Options (Call + Put) positions")
+    print(f"  → T-1 Format: Each row date = T, positions = T-1 EOD")
+    print(f"  → Daily changes = (T-1) - (T-2)")
     print()
 
     end_date = datetime.now()
@@ -230,8 +236,9 @@ def build_participant_daily(days_back: int = 30):
     print()
 
     session = get_nse_session()
-    daily_records = []
-    prev_data = None
+
+    # First, fetch all available data
+    all_data = []
     fetched = 0
     failed = 0
 
@@ -239,27 +246,44 @@ def build_participant_daily(days_back: int = 30):
         data = fetch_participant_oi(session, day)
         time.sleep(0.4)  # Rate limiting
 
-        if data is None:
+        if data is not None:
+            all_data.append({'date': day, 'data': data})
+            fetched += 1
+        else:
             failed += 1
-            prev_data = None
-            continue
 
-        fetched += 1
-        record = {'date': day.strftime('%Y-%m-%d')}
+    if len(all_data) < 2:
+        print("\nERROR: Need at least 2 days of data for T-1 format.")
+        return
 
-        # Store absolute positions
+    # Now build records in T-1 format
+    daily_records = []
+
+    for i in range(len(all_data) - 1):
+        # Current row will have date = T (next day)
+        # But positions from T-1 (current day)
+        # And daily changes = (T-1) - (T-2)
+
+        t_minus_1_date = all_data[i]['date']
+        t_minus_1_data = all_data[i]['data']
+        t_date = all_data[i + 1]['date']
+
+        record = {'date': t_date.strftime('%Y-%m-%d')}
+
+        # Store T-1 positions (positions held BEFORE day T opened)
         for prefix in ['fii', 'pro']:
-            record[f'{prefix}_fut_idx_net'] = data.get(f'{prefix}_fut_idx_net', 0)
-            record[f'{prefix}_fut_stk_net'] = data.get(f'{prefix}_fut_stk_net', 0)
-            record[f'{prefix}_call_net'] = data.get(f'{prefix}_call_net', 0)
-            record[f'{prefix}_put_net'] = data.get(f'{prefix}_put_net', 0)
+            record[f'{prefix}_fut_idx_net'] = t_minus_1_data.get(f'{prefix}_fut_idx_net', 0)
+            record[f'{prefix}_fut_stk_net'] = t_minus_1_data.get(f'{prefix}_fut_stk_net', 0)
+            record[f'{prefix}_call_net'] = t_minus_1_data.get(f'{prefix}_call_net', 0)
+            record[f'{prefix}_put_net'] = t_minus_1_data.get(f'{prefix}_put_net', 0)
 
-        # Compute daily changes if we have previous day
-        if prev_data:
+        # Compute daily changes: (T-1) - (T-2)
+        if i > 0:
+            t_minus_2_data = all_data[i - 1]['data']
             for prefix in ['fii', 'pro']:
-                fut_daily = data.get(f'{prefix}_fut_idx_net', 0) - prev_data.get(f'{prefix}_fut_idx_net', 0)
-                call_daily = data.get(f'{prefix}_call_net', 0) - prev_data.get(f'{prefix}_call_net', 0)
-                put_daily = data.get(f'{prefix}_put_net', 0) - prev_data.get(f'{prefix}_put_net', 0)
+                fut_daily = t_minus_1_data.get(f'{prefix}_fut_idx_net', 0) - t_minus_2_data.get(f'{prefix}_fut_idx_net', 0)
+                call_daily = t_minus_1_data.get(f'{prefix}_call_net', 0) - t_minus_2_data.get(f'{prefix}_call_net', 0)
+                put_daily = t_minus_1_data.get(f'{prefix}_put_net', 0) - t_minus_2_data.get(f'{prefix}_put_net', 0)
 
                 record[f'{prefix}_fut_daily'] = fut_daily
                 record[f'{prefix}_call_daily'] = call_daily
@@ -270,6 +294,7 @@ def build_participant_daily(days_back: int = 30):
                 record[f'{prefix}_composite'] = composite
                 record[f'{prefix}_view'] = classify_view(composite)
         else:
+            # First row: no T-2 data available
             for prefix in ['fii', 'pro']:
                 record[f'{prefix}_fut_daily'] = 0
                 record[f'{prefix}_call_daily'] = 0
@@ -280,18 +305,16 @@ def build_participant_daily(days_back: int = 30):
                 record[f'{prefix}_view'] = "Neutral"
 
         daily_records.append(record)
-        prev_data = data
 
         if (i + 1) % 5 == 0 or i < 3:
             fii_d = record.get('fii_direction', '?')
             pro_d = record.get('pro_direction', '?')
-            print(f"  [{fetched}/{len(trading_days)}] {day.date()} "
-                  f"FII:{record['fii_fut_idx_net']:+,} "
-                  f"PRO:{record['pro_fut_idx_net']:+,} "
-                  f"→ FII={fii_d} PRO={pro_d}")
+            print(f"  [{i+1}/{len(all_data)-1}] Date={t_date.date()} (T-1={t_minus_1_date.date()}) "
+                  f"FII:{record['fii_fut_idx_net']:+,} PRO:{record['pro_fut_idx_net']:+,} "
+                  f"→ {fii_d}/{pro_d}")
 
     if not daily_records:
-        print("\nERROR: No data fetched. NSE archives may be unavailable.")
+        print("\nERROR: No records built.")
         return
 
     df = pd.DataFrame(daily_records)
@@ -304,9 +327,9 @@ def build_participant_daily(days_back: int = 30):
     print("=" * 70)
     print("COMPLETE!")
     print(f"  Output: {output_path}")
-    print(f"  Rows: {len(df)} trading days")
+    print(f"  Rows: {len(df)} trading days (T-1 format)")
     print(f"  Date range: {df['date'].min()} to {df['date'].max()}")
-    print(f"  Fetched: {fetched}, Failed/Holiday: {failed}")
+    print(f"  Raw data fetched: {fetched} days, Failed/Holiday: {failed}")
     print()
 
     # Summary statistics

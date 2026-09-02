@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 """
-Fetch Participant-wise Data (FII / PRO / DII / Client) for BSE/Sensex Analysis
+Fetch Participant-wise Data (FII / PRO) for BSE/Sensex Analysis
 
 Fetches SEPARATE FII and PRO data from NSE participant-wise OI archives.
 This is the same source used by build_sensex_fii_6year.py but fetches ALL
 trading days (not just expiry days).
 
 Source: https://archives.nseindia.com/content/nsccl/fao_participant_oi_DDMMYYYY.csv
-- Provides: FII, PRO, DII, Client — each with Futures + Options long/short positions
+- Provides: FII, PRO — each with Futures + Options long/short positions
 - Updated daily by NSCCL (NSE Clearing Corporation)
 - Covers all F&O segments (Nifty, Sensex, BankNifty, stocks)
 
@@ -16,7 +16,7 @@ programmatically. NSE participant OI covers the same institutional positioning a
 it reflects overall F&O activity across all index derivatives.
 
 Output:
-- sensex_participant_wise_daily.csv: Daily FII, PRO, DII, Client positions + directions
+- sensex_participant_wise_daily.csv: Daily FII, PRO positions + directions
 
 Author: Claude Code
 Date: 2026-08-26
@@ -211,13 +211,13 @@ def build_participant_daily(days_back: int = 30):
     Computes daily changes and direction signals for FII, PRO, DII, Client.
     """
     print("=" * 70)
-    print("FETCH PARTICIPANT-WISE DATA (FII / PRO / DII / Client)")
+    print("FETCH PARTICIPANT-WISE DATA (FII / PRO)")
     print(f"Date: {datetime.now().strftime('%Y-%m-%d %H:%M')}")
     print("=" * 70)
     print()
     print(f"Source: NSE Archives (archives.nseindia.com)")
     print(f"  → fao_participant_oi_DDMMYYYY.csv")
-    print(f"  → Separate columns for: FII, PRO, DII, Client")
+    print(f"  → Separate columns for: FII, PRO")
     print(f"  → Futures (Index + Stock) + Options (Call + Put) positions")
     print()
 
@@ -248,7 +248,7 @@ def build_participant_daily(days_back: int = 30):
         record = {'date': day.strftime('%Y-%m-%d')}
 
         # Store absolute positions
-        for prefix in ['fii', 'pro', 'dii', 'client']:
+        for prefix in ['fii', 'pro']:
             record[f'{prefix}_fut_idx_net'] = data.get(f'{prefix}_fut_idx_net', 0)
             record[f'{prefix}_fut_stk_net'] = data.get(f'{prefix}_fut_stk_net', 0)
             record[f'{prefix}_call_net'] = data.get(f'{prefix}_call_net', 0)
@@ -256,7 +256,7 @@ def build_participant_daily(days_back: int = 30):
 
         # Compute daily changes if we have previous day
         if prev_data:
-            for prefix in ['fii', 'pro', 'dii', 'client']:
+            for prefix in ['fii', 'pro']:
                 fut_daily = data.get(f'{prefix}_fut_idx_net', 0) - prev_data.get(f'{prefix}_fut_idx_net', 0)
                 call_daily = data.get(f'{prefix}_call_net', 0) - prev_data.get(f'{prefix}_call_net', 0)
                 put_daily = data.get(f'{prefix}_put_net', 0) - prev_data.get(f'{prefix}_put_net', 0)
@@ -270,7 +270,7 @@ def build_participant_daily(days_back: int = 30):
                 record[f'{prefix}_composite'] = composite
                 record[f'{prefix}_view'] = classify_view(composite)
         else:
-            for prefix in ['fii', 'pro', 'dii', 'client']:
+            for prefix in ['fii', 'pro']:
                 record[f'{prefix}_fut_daily'] = 0
                 record[f'{prefix}_call_daily'] = 0
                 record[f'{prefix}_put_daily'] = 0
@@ -337,8 +337,6 @@ def build_participant_daily(days_back: int = 30):
     last = df.iloc[-1]
     print(f"    FII: Fut={last['fii_fut_idx_net']:+,} Call={last['fii_call_net']:+,} Put={last['fii_put_net']:+,}")
     print(f"    PRO: Fut={last['pro_fut_idx_net']:+,} Call={last['pro_call_net']:+,} Put={last['pro_put_net']:+,}")
-    print(f"    DII: Fut={last['dii_fut_idx_net']:+,} Call={last['dii_call_net']:+,} Put={last['dii_put_net']:+,}")
-    print(f"    Client: Fut={last['client_fut_idx_net']:+,} Call={last['client_call_net']:+,} Put={last['client_put_net']:+,}")
     print("=" * 70)
 
 

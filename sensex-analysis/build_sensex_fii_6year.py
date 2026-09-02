@@ -9,7 +9,7 @@ Steps:
 1. Load vix_sensex_6y_results.csv (318 rows)
 2. For each Sensex expiry, fetch T-1 and T-2 FII + PRO participant data from NSE
 3. Compute T-1 daily changes, stance, and risk level
-4. Output sensex_fii_t1_6year.csv
+4. Output sensex_fii_t1_6year_expiry.csv
 
 Author: Claude Code
 Date: 2026-08-26
@@ -331,7 +331,7 @@ def main():
     sensex_df['is_nifty_expiry_day'] = (sensex_df['date'].dt.dayofweek == 3).astype(int)
 
     # Step 5: Save
-    output_path = OUTPUT_DIR / "sensex_fii_t1_6year.csv"
+    output_path = OUTPUT_DIR / "sensex_fii_t1_6year_expiry.csv"
     sensex_df['date'] = sensex_df['date'].dt.strftime('%Y-%m-%d')
     sensex_df.to_csv(output_path, index=False)
 

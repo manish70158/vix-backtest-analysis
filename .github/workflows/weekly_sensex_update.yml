@@ -55,7 +55,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add sensex-analysis/sensex_fii_t1_6year.csv
+          git add sensex-analysis/sensex_fii_t1_6year_expiry.csv
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else

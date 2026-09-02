@@ -16,7 +16,7 @@ programmatically. NSE participant OI covers the same institutional positioning a
 it reflects overall F&O activity across all index derivatives.
 
 Output:
-- participant_wise_daily.csv: Daily FII, PRO, DII, Client positions + directions
+- sensex_participant_wise_daily.csv: Daily FII, PRO, DII, Client positions + directions
 
 Author: Claude Code
 Date: 2026-08-26
@@ -271,7 +271,7 @@ def build_participant_daily(days_back: int = 30):
     df = pd.DataFrame(daily_records)
 
     # Save full dataset
-    output_path = OUTPUT_DIR / "participant_wise_daily.csv"
+    output_path = OUTPUT_DIR / "sensex_participant_wise_daily.csv"
     df.to_csv(output_path, index=False)
 
     print()

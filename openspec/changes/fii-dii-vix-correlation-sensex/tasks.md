@@ -33,7 +33,7 @@
 
 ## 6. Participant-wise Daily Data (FII/PRO separate)
 
-- [x] 6.1 Create `fetch_bse_participant_data.py` that fetches daily participant-wise OI from NSE archives with separate FII, PRO, DII, Client columns. Source: `archives.nseindia.com/content/nsccl/fao_participant_oi_DDMMYYYY.csv`. Verify: script runs and produces `participant_wise_daily.csv` with separate participant columns.
+- [x] 6.1 Create `fetch_bse_participant_data.py` that fetches daily participant-wise OI from NSE archives with separate FII, PRO, DII, Client columns. Source: `archives.nseindia.com/content/nsccl/fao_participant_oi_DDMMYYYY.csv`. Verify: script runs and produces `sensex_participant_wise_daily.csv` with separate participant columns.
 - [x] 6.2 Compute daily changes (day-over-day position change) and direction signals (Bullish/Bearish/Neutral) independently for FII and PRO. Verify: `fii_direction`, `fii_stance`, `pro_direction`, `pro_stance` columns present.
 - [x] 6.3 Include both absolute positions (net long-short) and derived signals (stance, direction) for all 4 participants. Verify: columns for `{fii,pro,dii,client}_{fut_idx_net,call_net,put_net,fut_daily,direction,stance}`.
 

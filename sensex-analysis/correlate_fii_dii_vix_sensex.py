@@ -7,7 +7,7 @@ backtest results over 6 years (2020-2026) to determine whether institutional
 flow signals improve prediction of Sensex VIX blowout days.
 
 Inputs:
-  - sensex_fii_t1_6year.csv (built by build_sensex_fii_6year.py, ~318 expiry days)
+  - sensex_fii_t1_6year_expiry.csv (built by build_sensex_fii_6year.py, ~318 expiry days)
   OR if not available:
   - vix_sensex_6y_results.csv + fii_dii_backtest_daily_results.csv (1-year fallback)
 
@@ -35,7 +35,7 @@ PROJECT_ROOT = OUTPUT_DIR.parent
 
 def load_6year_data() -> pd.DataFrame:
     """Load the 6-year Sensex + FII dataset."""
-    sixyr_path = OUTPUT_DIR / "sensex_fii_t1_6year.csv"
+    sixyr_path = OUTPUT_DIR / "sensex_fii_t1_6year_expiry.csv"
 
     if sixyr_path.exists():
         df = pd.read_csv(sixyr_path)

@@ -162,8 +162,8 @@ All Sensex analysis files are consolidated in `sensex-analysis/`:
 
 | Source | File | Description |
 |--------|------|-------------|
-| NSE Archives | `participant_wise_daily.csv` | Daily FII/PRO/DII/Client positions (separate) |
-| NSE Archives | `sensex_fii_t1_6year.csv` | T-1 FII/PRO data for 318 expiry days |
+| NSE Archives | `sensex_participant_wise_daily.csv` | Daily FII/PRO/DII/Client positions (separate) |
+| NSE Archives | `sensex_fii_t1_6year_expiry.csv` | T-1 FII/PRO data for 318 expiry days |
 | NSDL FPI | `bse_fpi_participant_daily.csv` | FPI equity + derivatives (aggregated) |
 | Derived | `fii_dii_vix_correlation_sensex.csv` | 305 expiry days with all features |
 

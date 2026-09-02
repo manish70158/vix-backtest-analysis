@@ -11,7 +11,7 @@
 | `fii_dii_backtest_daily_results.csv` | Daily FII/DII participant positions from NSE (since Aug 2025) |
 | `vix_fii_t1_intraday_expiry_results.csv` | Expiry day analysis: VIX prediction vs actual move + T-1 FII/PRO stance |
 | `vix_all_expiries_results_v6_6years.csv` | Base 6-year backtest data (Jul 2020 – Jul 2026, read-only source) |
-| `sensex-analysis/sensex_fii_t1_6year.csv` | **Auto-updated weekly** — 6-year Sensex expiry data with NSE + BSE participant positioning |
+| `sensex-analysis/sensex_fii_t1_6year_expiry.csv` | **Auto-updated weekly** — 6-year Sensex expiry data with NSE + BSE participant positioning |
 
 ### How to Update Daily Results (All Trading Days)
 
@@ -47,7 +47,7 @@ This single command does:
 
 ### Sensex Automated Weekly Update (GitHub Actions)
 
-The Sensex CSV (`sensex-analysis/sensex_fii_t1_6year.csv`) is updated automatically via GitHub Actions:
+The Sensex CSV (`sensex-analysis/sensex_fii_t1_6year_expiry.csv`) is updated automatically via GitHub Actions:
 
 | Schedule | Phase | What It Does |
 |----------|-------|--------------|

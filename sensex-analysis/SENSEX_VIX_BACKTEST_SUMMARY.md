@@ -269,13 +269,13 @@ All files consolidated in `sensex-analysis/` directory:
 ✅ vix_sensex_6y_results.json (198K)
 
 ── FII/DII Correlation Analysis ──
-✅ sensex_fii_t1_6year.csv (82K) - 318 expiry days + T-1 FII/PRO
+✅ sensex_fii_t1_6year_expiry.csv (82K) - 318 expiry days + T-1 FII/PRO
 ✅ fii_dii_vix_correlation_sensex.csv (98K) - 305 days with derived features
 ✅ fii_dii_vix_correlation_sensex.json (20K) - correlation stats
 ✅ FII_DII_VIX_CORRELATION_SENSEX_SUMMARY.md - findings report
 
 ── Participant-wise Daily Data (FII/PRO separate) ──
-✅ participant_wise_daily.csv - daily FII, PRO, DII, Client positions
+✅ sensex_participant_wise_daily.csv - daily FII, PRO, DII, Client positions
 ✅ bse_fpi_participant_daily.csv - NSDL FPI daily data
 ✅ bse_fpi_derivatives_raw.csv - raw derivatives by product
 ✅ bse_dii_latest.csv - latest DII breakdown

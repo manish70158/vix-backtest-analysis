@@ -2,7 +2,7 @@
 """
 Weekly Sensex Expiry Data Updater
 
-Automated script run by GitHub Actions to update sensex_fii_t1_6year.csv weekly.
+Automated script run by GitHub Actions to update sensex_fii_t1_6year_expiry.csv weekly.
 
 Data Sources:
   - NSE Archives: Aggregate F&O participant OI (for daily change computation, T1-T2)
@@ -38,7 +38,7 @@ import requests
 import yfinance as yf
 
 SCRIPT_DIR = Path(__file__).parent
-CSV_PATH = SCRIPT_DIR / "sensex_fii_t1_6year.csv"
+CSV_PATH = SCRIPT_DIR / "sensex_fii_t1_6year_expiry.csv"
 
 NSE_HEADERS = {
     "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "

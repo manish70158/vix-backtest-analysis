@@ -2,3 +2,4 @@ date,day_of_week,sensex_open,sensex_high,sensex_low,sensex_close,actual_range_pc
 2026-09-02,Wednesday,76471.32,76570.35,76135.72,76570.35,0.57,0.13,Down to Up,11.49,11.59,-15,-28403,34301,FII Hedging (bought puts >20K),-62719,Bearish,-128,-61651,34063,PRO Hedging (bought puts >20K),-95842,Bearish
 2026-09-02,Wednesday,76471.32,76570.35,76135.72,76570.35,0.57,0.13,Down to Up,11.49,11.59,-15,-28403,34301,FII Hedging (bought puts >20K),-62719,Bearish,-128,-61651,34063,PRO Hedging (bought puts >20K),-95842,Bearish
 2026-09-03,Thursday,76724.95,76924.48,76152.86,76152.86,1.01,-0.75,Top to Down,11.59,11.34,9,17432,-51404,FII Confident (sold puts >20K),68845,Bullish,-149,54342,55108,PRO Hedging (bought puts >20K),-915,Neutral
+2026-09-04,Friday,76657.02,76883.14,76515.43,76515.43,0.48,-0.18,Top to Down,11.34,10.68,2,34454,34393,FII Hedging (bought puts >20K),63,Neutral,-296,32371,-36988,PRO Confident (sold puts >20K),69063,Bullish

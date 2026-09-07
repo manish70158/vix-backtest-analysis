@@ -1,0 +1,592 @@
+====================================================================================================
+COMPREHENSIVE FII/PRO COMBINATION ANALYSIS
+====================================================================================================
+
+####################################################################################################
+## Bullish Alignment (328 days, 22.1% of all trading days)
+####################################################################################################
+
+### Basic Stats
+  Days: 328 | Green: 152 (46.3%) | Red: 176 (53.7%)
+  Top to Down: 176 (53.7%) | Down to Up: 152 (46.3%)
+  Avg Range: 0.96% | Avg Open→Close: -0.080%
+  Avg High%: 0.40% | Avg Low%: -0.56%
+
+### VIX Accuracy
+  Underestimated: 58 (17.7%) | Overestimated: 270 (82.3%)
+  Avg VIX Predicted: 0.79% | Avg Actual Range: 0.96%
+  Avg Diff: 0.17% | Avg Range/VIX Ratio: 1.22
+  When Underestimated (58 days):
+    Green: 27 (46.6%) | Red: 31 (53.4%)
+    Top to Down: 31 (53.4%) | Avg Range: 1.80%
+    Avg Diff: 0.98% | Avg O→C: -0.176%
+
+### VIX Regime Breakdown
+  Low (<15): 198 days | U/E: 31 (15.7%) | Avg Range: 0.80%
+  Normal (15-20): 87 days | U/E: 16 (18.4%) | Avg Range: 1.07%
+  Elevated (20-30): 43 days | U/E: 11 (25.6%) | Avg Range: 1.46%
+
+### Expiry vs Non-Expiry
+  Expiry: 66 days | U/E: 13 (19.7%) | Green: 31 (47.0%)
+  Non-Expiry: 262 days | U/E: 45 (17.2%) | Green: 121 (46.2%)
+
+### Day of Week
+  Monday    :  59 days | U/E: 10 ( 16.9%) | Green: 25 ( 42.4%)
+  Tuesday   :  82 days | U/E: 11 ( 13.4%) | Green: 34 ( 41.5%)
+  Wednesday :  59 days | U/E:  7 ( 11.9%) | Green: 31 ( 52.5%)
+  Thursday  :  66 days | U/E: 14 ( 21.2%) | Green: 30 ( 45.5%)
+  Friday    :  60 days | U/E: 16 ( 26.7%) | Green: 32 ( 53.3%)
+
+### Year-over-Year
+  2020:   9 days | U/E:  1 ( 11.1%) | Green:  7 ( 77.8%)
+  2021:  40 days | U/E:  8 ( 20.0%) | Green: 22 ( 55.0%)
+  2022:  49 days | U/E:  8 ( 16.3%) | Green: 23 ( 46.9%)
+  2023:  78 days | U/E: 10 ( 12.8%) | Green: 35 ( 44.9%)
+  2024:  67 days | U/E: 20 ( 29.9%) | Green: 29 ( 43.3%)
+  2025:  48 days | U/E:  9 ( 18.8%) | Green: 22 ( 45.8%)
+  2026:  37 days | U/E:  2 (  5.4%) | Green: 14 ( 37.8%)
+
+### Sub-Combinations (FII View × PRO View)
+  Bullish         × Strong Bullish : 133 days | U/E: 20 ( 15.0%) | Green: 54 ( 40.6%) | Avg Range: 0.88% | Avg O→C: -0.145%
+  Strong Bullish  × Strong Bullish :  70 days | U/E: 12 ( 17.1%) | Green: 41 ( 58.6%) | Avg Range: 0.99% | Avg O→C: -0.018%
+  Mildly Bullish  × Strong Bullish :  42 days | U/E:  9 ( 21.4%) | Green: 14 ( 33.3%) | Avg Range: 1.00% | Avg O→C: -0.209%
+  Bullish         × Bullish        :  29 days | U/E:  4 ( 13.8%) | Green: 16 ( 55.2%) | Avg Range: 0.94% | Avg O→C: 0.120%
+  Mildly Bullish  × Bullish        :  26 days | U/E:  8 ( 30.8%) | Green: 10 ( 38.5%) | Avg Range: 1.15% | Avg O→C: -0.240%
+  Bullish         × Mildly Bullish :  10 days | U/E:  3 ( 30.0%) | Green:  4 ( 40.0%) | Avg Range: 0.92% | Avg O→C: 0.188%
+  Mildly Bullish  × Mildly Bullish :   7 days | U/E:  1 ( 14.3%) | Green:  6 ( 85.7%) | Avg Range: 0.99% | Avg O→C: 0.389%
+  Strong Bullish  × Mildly Bullish :   6 days | U/E:  1 ( 16.7%) | Green:  3 ( 50.0%) | Avg Range: 1.41% | Avg O→C: 0.018%
+  Strong Bullish  × Bullish        :   5 days | U/E:  0 (  0.0%) | Green:  4 ( 80.0%) | Avg Range: 0.84% | Avg O→C: 0.238%
+
+### VIX Half-Range Exhaustion
+  Exceeded Half: 123 days (37.5%)
+    Worked and Remained: 105 (85.4%) | Reversed by Close: 18 (14.6%)
+    Avg Range: 1.01% | Avg O→C: 0.503%
+    VIX Underestimated: 27 (22.0%)
+  Reversed Before Half: 205 days (62.5%)
+    Worked and Remained: 46 (22.4%) | Reversed by Close: 159 (77.6%)
+    Avg Range: 0.93% | Avg O→C: -0.429%
+    VIX Underestimated: 31 (15.1%)
+
+### Close Outcome
+  Worked and Remained: 151 (46.0%) | Reversed by Close: 177 (54.0%)
+
+### Top 5 Most Volatile Days
+  2024-06-04 | FII: Strong Bullish  | PRO: Strong Bullish  | VIX: 1.10% → Range: 8.19% (diff: +7.09%) | Top to Down | Red | O→C: -5.10%
+  2022-02-28 | FII: Strong Bullish  | PRO: Mildly Bullish  | VIX: 1.40% → Range: 2.78% (diff: +1.38%) | Down to Up | Green | O→C: +1.87%
+  2021-01-29 | FII: Mildly Bullish  | PRO: Strong Bullish  | VIX: 1.27% → Range: 2.64% (diff: +1.37%) | Top to Down | Red | O→C: -2.05%
+  2025-05-15 | FII: Mildly Bullish  | PRO: Strong Bullish  | VIX: 0.90% → Range: 2.52% (diff: +1.62%) | Down to Up | Green | O→C: +1.38%
+  2021-03-12 | FII: Mildly Bullish  | PRO: Bullish         | VIX: 1.09% → Range: 2.47% (diff: +1.38%) | Top to Down | Red | O→C: -1.94%
+
+####################################################################################################
+## Bearish Alignment (324 days, 21.8% of all trading days)
+####################################################################################################
+
+### Basic Stats
+  Days: 324 | Green: 150 (46.3%) | Red: 174 (53.7%)
+  Top to Down: 174 (53.7%) | Down to Up: 150 (46.3%)
+  Avg Range: 1.05% | Avg Open→Close: -0.087%
+  Avg High%: 0.44% | Avg Low%: -0.61%
+
+### VIX Accuracy
+  Underestimated: 71 (21.9%) | Overestimated: 253 (78.1%)
+  Avg VIX Predicted: 0.81% | Avg Actual Range: 1.05%
+  Avg Diff: 0.24% | Avg Range/VIX Ratio: 1.31
+  When Underestimated (71 days):
+    Green: 26 (36.6%) | Red: 45 (63.4%)
+    Top to Down: 45 (63.4%) | Avg Range: 1.76%
+    Avg Diff: 0.90% | Avg O→C: -0.368%
+
+### VIX Regime Breakdown
+  Low (<15): 184 days | U/E: 36 (19.6%) | Avg Range: 0.92%
+  Normal (15-20): 98 days | U/E: 23 (23.5%) | Avg Range: 1.09%
+  Elevated (20-30): 42 days | U/E: 12 (28.6%) | Avg Range: 1.53%
+
+### Expiry vs Non-Expiry
+  Expiry: 71 days | U/E: 21 (29.6%) | Green: 29 (40.8%)
+  Non-Expiry: 253 days | U/E: 50 (19.8%) | Green: 121 (47.8%)
+
+### Day of Week
+  Monday    :  75 days | U/E: 22 ( 29.3%) | Green: 39 ( 52.0%)
+  Tuesday   :  53 days | U/E: 11 ( 20.8%) | Green: 28 ( 52.8%)
+  Wednesday :  69 days | U/E:  8 ( 11.6%) | Green: 30 ( 43.5%)
+  Thursday  :  62 days | U/E: 17 ( 27.4%) | Green: 27 ( 43.5%)
+  Friday    :  64 days | U/E: 12 ( 18.8%) | Green: 26 ( 40.6%)
+
+### Year-over-Year
+  2020:   7 days | U/E:  2 ( 28.6%) | Green:  7 (100.0%)
+  2021:  37 days | U/E: 13 ( 35.1%) | Green: 15 ( 40.5%)
+  2022:  57 days | U/E: 11 ( 19.3%) | Green: 25 ( 43.9%)
+  2023:  67 days | U/E:  8 ( 11.9%) | Green: 25 ( 37.3%)
+  2024:  65 days | U/E: 19 ( 29.2%) | Green: 35 ( 53.8%)
+  2025:  50 days | U/E:  6 ( 12.0%) | Green: 22 ( 44.0%)
+  2026:  41 days | U/E: 12 ( 29.3%) | Green: 21 ( 51.2%)
+
+### Sub-Combinations (FII View × PRO View)
+  Bearish         × Strong Bearish :  94 days | U/E: 16 ( 17.0%) | Green: 44 ( 46.8%) | Avg Range: 1.01% | Avg O→C: -0.054%
+  Strong Bearish  × Strong Bearish :  90 days | U/E: 22 ( 24.4%) | Green: 38 ( 42.2%) | Avg Range: 1.06% | Avg O→C: -0.085%
+  Mildly Bearish  × Strong Bearish :  49 days | U/E: 15 ( 30.6%) | Green: 25 ( 51.0%) | Avg Range: 1.23% | Avg O→C: -0.148%
+  Bearish         × Bearish        :  30 days | U/E:  7 ( 23.3%) | Green: 13 ( 43.3%) | Avg Range: 1.03% | Avg O→C: -0.170%
+  Mildly Bearish  × Bearish        :  26 days | U/E:  6 ( 23.1%) | Green: 12 ( 46.2%) | Avg Range: 1.03% | Avg O→C: -0.026%
+  Mildly Bearish  × Mildly Bearish :  11 days | U/E:  1 (  9.1%) | Green:  9 ( 81.8%) | Avg Range: 0.78% | Avg O→C: 0.140%
+  Strong Bearish  × Bearish        :  11 days | U/E:  1 (  9.1%) | Green:  4 ( 36.4%) | Avg Range: 1.07% | Avg O→C: -0.200%
+  Bearish         × Mildly Bearish :   8 days | U/E:  3 ( 37.5%) | Green:  3 ( 37.5%) | Avg Range: 0.95% | Avg O→C: -0.094%
+  Strong Bearish  × Mildly Bearish :   5 days | U/E:  0 (  0.0%) | Green:  2 ( 40.0%) | Avg Range: 0.83% | Avg O→C: -0.190%
+
+### VIX Half-Range Exhaustion
+  Exceeded Half: 188 days (58.0%)
+    Worked and Remained: 150 (79.8%) | Reversed by Close: 38 (20.2%)
+    Avg Range: 1.18% | Avg O→C: -0.417%
+    VIX Underestimated: 60 (31.9%)
+  Reversed Before Half: 136 days (42.0%)
+    Worked and Remained: 23 (16.9%) | Reversed by Close: 113 (83.1%)
+    Avg Range: 0.86% | Avg O→C: 0.371%
+    VIX Underestimated: 11 (8.1%)
+
+### Close Outcome
+  Worked and Remained: 173 (53.4%) | Reversed by Close: 151 (46.6%)
+
+### Top 5 Most Volatile Days
+  2024-06-05 | FII: Strong Bearish  | PRO: Strong Bearish  | VIX: 1.40% → Range: 3.97% (diff: +2.57%) | Down to Up | Green | O→C: +2.01%
+  2026-02-01 | FII: Mildly Bearish  | PRO: Strong Bearish  | VIX: 0.71% → Range: 3.43% (diff: +2.72%) | Top to Down | Red | O→C: -2.23%
+  2022-02-24 | FII: Mildly Bearish  | PRO: Strong Bearish  | VIX: 1.28% → Range: 3.01% (diff: +1.73%) | Top to Down | Red | O→C: -2.00%
+  2021-04-05 | FII: Strong Bearish  | PRO: Bearish         | VIX: 1.05% → Range: 2.56% (diff: +1.51%) | Top to Down | Red | O→C: -1.27%
+  2021-12-20 | FII: Mildly Bearish  | PRO: Strong Bearish  | VIX: 0.86% → Range: 2.49% (diff: +1.63%) | Top to Down | Red | O→C: -1.26%
+
+####################################################################################################
+## FII Bullish + PRO Bearish (55 days, 3.7% of all trading days)
+####################################################################################################
+
+### Basic Stats
+  Days: 55 | Green: 25 (45.5%) | Red: 30 (54.5%)
+  Top to Down: 30 (54.5%) | Down to Up: 25 (45.5%)
+  Avg Range: 0.85% | Avg Open→Close: -0.052%
+  Avg High%: 0.39% | Avg Low%: -0.46%
+
+### VIX Accuracy
+  Underestimated: 7 (12.7%) | Overestimated: 48 (87.3%)
+  Avg VIX Predicted: 0.79% | Avg Actual Range: 0.85%
+  Avg Diff: 0.07% | Avg Range/VIX Ratio: 1.09
+  When Underestimated (7 days):
+    Green: 3 (42.9%) | Red: 4 (57.1%)
+    Top to Down: 4 (57.1%) | Avg Range: 1.73%
+    Avg Diff: 0.91% | Avg O→C: -0.309%
+
+### VIX Regime Breakdown
+  Low (<15): 35 days | U/E: 4 (11.4%) | Avg Range: 0.80%
+  Normal (15-20): 14 days | U/E: 2 (14.3%) | Avg Range: 0.86%
+  Elevated (20-30): 6 days | U/E: 1 (16.7%) | Avg Range: 1.10%
+
+### Expiry vs Non-Expiry
+  Expiry: 17 days | U/E: 3 (17.6%) | Green: 8 (47.1%)
+  Non-Expiry: 38 days | U/E: 4 (10.5%) | Green: 17 (44.7%)
+
+### Day of Week
+  Monday    :   9 days | U/E:  1 ( 11.1%) | Green:  5 ( 55.6%)
+  Tuesday   :  13 days | U/E:  1 (  7.7%) | Green:  6 ( 46.2%)
+  Wednesday :   7 days | U/E:  0 (  0.0%) | Green:  3 ( 42.9%)
+  Thursday  :  10 days | U/E:  3 ( 30.0%) | Green:  5 ( 50.0%)
+  Friday    :  16 days | U/E:  2 ( 12.5%) | Green:  6 ( 37.5%)
+
+### Year-over-Year
+  2021:   3 days | U/E:  1 ( 33.3%) | Green:  1 ( 33.3%)
+  2022:   7 days | U/E:  0 (  0.0%) | Green:  4 ( 57.1%)
+  2023:   3 days | U/E:  0 (  0.0%) | Green:  1 ( 33.3%)
+  2024:  29 days | U/E:  6 ( 20.7%) | Green: 10 ( 34.5%)
+  2025:   8 days | U/E:  0 (  0.0%) | Green:  7 ( 87.5%)
+  2026:   5 days | U/E:  0 (  0.0%) | Green:  2 ( 40.0%)
+
+### Sub-Combinations (FII View × PRO View)
+  Bullish         × Strong Bearish :  15 days | U/E:  2 ( 13.3%) | Green:  7 ( 46.7%) | Avg Range: 0.83% | Avg O→C: 0.076%
+  Mildly Bullish  × Bearish        :   9 days | U/E:  2 ( 22.2%) | Green:  4 ( 44.4%) | Avg Range: 0.88% | Avg O→C: -0.209%
+  Mildly Bullish  × Strong Bearish :   9 days | U/E:  1 ( 11.1%) | Green:  4 ( 44.4%) | Avg Range: 0.81% | Avg O→C: -0.096%
+  Bullish         × Mildly Bearish :   6 days | U/E:  0 (  0.0%) | Green:  2 ( 33.3%) | Avg Range: 0.69% | Avg O→C: -0.142%
+  Bullish         × Bearish        :   5 days | U/E:  0 (  0.0%) | Green:  2 ( 40.0%) | Avg Range: 0.88% | Avg O→C: -0.022%
+  Strong Bullish  × Strong Bearish :   5 days | U/E:  0 (  0.0%) | Green:  2 ( 40.0%) | Avg Range: 0.76% | Avg O→C: -0.034%
+  Mildly Bullish  × Mildly Bearish :   3 days | U/E:  2 ( 66.7%) | Green:  2 ( 66.7%) | Avg Range: 1.63% | Avg O→C: -0.057%
+  Strong Bullish  × Bearish        :   2 days | U/E:  0 (  0.0%) | Green:  1 ( 50.0%) | Avg Range: 0.73% | Avg O→C: -0.005%
+  Strong Bullish  × Mildly Bearish :   1 days | U/E:  0 (  0.0%) | Green:  1 (100.0%) | Avg Range: 0.45% | Avg O→C: 0.060%
+
+### Who Won by Close?
+  FII Bullish correct (close > open): 25 (45.5%)
+  PRO Bearish correct (close < open): 30 (54.5%)
+
+### Top 5 Most Volatile Days
+  2024-12-05 | FII: Mildly Bullish  | PRO: Mildly Bearish  | VIX: 0.76% → Range: 2.29% (diff: +1.53%) | Down to Up | Green | O→C: +0.66%
+  2024-11-28 | FII: Mildly Bullish  | PRO: Bearish         | VIX: 0.77% → Range: 1.95% (diff: +1.18%) | Top to Down | Red | O→C: -1.30%
+  2021-01-22 | FII: Mildly Bullish  | PRO: Mildly Bearish  | VIX: 1.13% → Range: 1.79% (diff: +0.66%) | Top to Down | Red | O→C: -1.49%
+  2024-02-22 | FII: Bullish         | PRO: Strong Bearish  | VIX: 0.83% → Range: 1.71% (diff: +0.88%) | Down to Up | Green | O→C: +0.61%
+  2024-11-05 | FII: Bullish         | PRO: Strong Bearish  | VIX: 0.87% → Range: 1.62% (diff: +0.75%) | Down to Up | Green | O→C: +1.18%
+
+####################################################################################################
+## FII Bearish + PRO Bullish (47 days, 3.2% of all trading days)
+####################################################################################################
+
+### Basic Stats
+  Days: 47 | Green: 29 (61.7%) | Red: 18 (38.3%)
+  Top to Down: 18 (38.3%) | Down to Up: 29 (61.7%)
+  Avg Range: 1.07% | Avg Open→Close: 0.157%
+  Avg High%: 0.56% | Avg Low%: -0.51%
+
+### VIX Accuracy
+  Underestimated: 13 (27.7%) | Overestimated: 34 (72.3%)
+  Avg VIX Predicted: 0.76% | Avg Actual Range: 1.07%
+  Avg Diff: 0.31% | Avg Range/VIX Ratio: 1.37
+  When Underestimated (13 days):
+    Green: 6 (46.2%) | Red: 7 (53.8%)
+    Top to Down: 7 (53.8%) | Avg Range: 1.83%
+    Avg Diff: 0.98% | Avg O→C: 0.186%
+
+### VIX Regime Breakdown
+  Low (<15): 27 days | U/E: 4 (14.8%) | Avg Range: 0.86%
+  Normal (15-20): 17 days | U/E: 7 (41.2%) | Avg Range: 1.25%
+  Elevated (20-30): 3 days | U/E: 2 (66.7%) | Avg Range: 1.97%
+
+### Expiry vs Non-Expiry
+  Expiry: 9 days | U/E: 2 (22.2%) | Green: 4 (44.4%)
+  Non-Expiry: 38 days | U/E: 11 (28.9%) | Green: 25 (65.8%)
+
+### Day of Week
+  Monday    :   7 days | U/E:  2 ( 28.6%) | Green:  6 ( 85.7%)
+  Tuesday   :   2 days | U/E:  1 ( 50.0%) | Green:  1 ( 50.0%)
+  Wednesday :   9 days | U/E:  3 ( 33.3%) | Green:  5 ( 55.6%)
+  Thursday  :  15 days | U/E:  2 ( 13.3%) | Green:  6 ( 40.0%)
+  Friday    :  14 days | U/E:  5 ( 35.7%) | Green: 11 ( 78.6%)
+
+### Year-over-Year
+  2021:   2 days | U/E:  1 ( 50.0%) | Green:  1 ( 50.0%)
+  2022:   3 days | U/E:  0 (  0.0%) | Green:  3 (100.0%)
+  2023:  10 days | U/E:  2 ( 20.0%) | Green:  8 ( 80.0%)
+  2024:  20 days | U/E:  7 ( 35.0%) | Green: 10 ( 50.0%)
+  2025:   3 days | U/E:  1 ( 33.3%) | Green:  3 (100.0%)
+  2026:   9 days | U/E:  2 ( 22.2%) | Green:  4 ( 44.4%)
+
+### Sub-Combinations (FII View × PRO View)
+  Bearish         × Strong Bullish :  11 days | U/E:  1 (  9.1%) | Green:  7 ( 63.6%) | Avg Range: 0.78% | Avg O→C: 0.134%
+  Mildly Bearish  × Strong Bullish :  11 days | U/E:  4 ( 36.4%) | Green:  7 ( 63.6%) | Avg Range: 1.31% | Avg O→C: 0.144%
+  Mildly Bearish  × Bullish        :   7 days | U/E:  3 ( 42.9%) | Green:  3 ( 42.9%) | Avg Range: 0.92% | Avg O→C: -0.194%
+  Bearish         × Bullish        :   6 days | U/E:  2 ( 33.3%) | Green:  5 ( 83.3%) | Avg Range: 1.23% | Avg O→C: 0.243%
+  Strong Bearish  × Strong Bullish :   4 days | U/E:  1 ( 25.0%) | Green:  1 ( 25.0%) | Avg Range: 0.92% | Avg O→C: -0.155%
+  Bearish         × Mildly Bullish :   3 days | U/E:  0 (  0.0%) | Green:  1 ( 33.3%) | Avg Range: 0.76% | Avg O→C: 0.093%
+  Mildly Bearish  × Mildly Bullish :   3 days | U/E:  1 ( 33.3%) | Green:  3 (100.0%) | Avg Range: 1.36% | Avg O→C: 1.000%
+  Strong Bearish  × Bullish        :   2 days | U/E:  1 ( 50.0%) | Green:  2 (100.0%) | Avg Range: 1.74% | Avg O→C: 0.775%
+
+### Who Won by Close?
+  FII Bearish correct (close < open): 17 (36.2%)
+  PRO Bullish correct (close > open): 29 (61.7%)
+
+### Top 5 Most Volatile Days
+  2024-11-22 | FII: Mildly Bearish  | PRO: Strong Bullish  | VIX: 0.84% → Range: 2.55% (diff: +1.71%) | Down to Up | Green | O→C: +1.97%
+  2024-12-13 | FII: Bearish         | PRO: Bullish         | VIX: 0.69% → Range: 2.50% (diff: +1.81%) | Down to Up | Green | O→C: +1.15%
+  2026-03-16 | FII: Strong Bearish  | PRO: Bullish         | VIX: 1.19% → Range: 2.37% (diff: +1.18%) | Down to Up | Green | O→C: +1.04%
+  2025-05-12 | FII: Mildly Bearish  | PRO: Mildly Bullish  | VIX: 1.13% → Range: 2.32% (diff: +1.19%) | Down to Up | Green | O→C: +2.05%
+  2024-12-20 | FII: Mildly Bearish  | PRO: Strong Bullish  | VIX: 0.76% → Range: 2.21% (diff: +1.45%) | Top to Down | Red | O→C: -1.37%
+
+####################################################################################################
+## Both Neutral (179 days, 12.1% of all trading days)
+####################################################################################################
+
+### Basic Stats
+  Days: 179 | Green: 87 (48.6%) | Red: 92 (51.4%)
+  Top to Down: 92 (51.4%) | Down to Up: 87 (48.6%)
+  Avg Range: 1.06% | Avg Open→Close: -0.041%
+  Avg High%: 0.46% | Avg Low%: -0.60%
+
+### VIX Accuracy
+  Underestimated: 34 (19.0%) | Overestimated: 145 (81.0%)
+  Avg VIX Predicted: 0.91% | Avg Actual Range: 1.06%
+  Avg Diff: 0.15% | Avg Range/VIX Ratio: 1.18
+  When Underestimated (34 days):
+    Green: 14 (41.2%) | Red: 20 (58.8%)
+    Top to Down: 20 (58.8%) | Avg Range: 1.85%
+    Avg Diff: 0.91% | Avg O→C: -0.432%
+
+### VIX Regime Breakdown
+  Low (<15): 64 days | U/E: 12 (18.8%) | Avg Range: 0.84%
+  Normal (15-20): 54 days | U/E: 8 (14.8%) | Avg Range: 1.05%
+  Elevated (20-30): 61 days | U/E: 14 (23.0%) | Avg Range: 1.30%
+
+### Expiry vs Non-Expiry
+  Expiry: 35 days | U/E: 6 (17.1%) | Green: 13 (37.1%)
+  Non-Expiry: 144 days | U/E: 28 (19.4%) | Green: 74 (51.4%)
+
+### Day of Week
+  Monday    :  39 days | U/E: 10 ( 25.6%) | Green: 22 ( 56.4%)
+  Tuesday   :  37 days | U/E:  5 ( 13.5%) | Green: 19 ( 51.4%)
+  Wednesday :  39 days | U/E:  5 ( 12.8%) | Green: 21 ( 53.8%)
+  Thursday  :  38 days | U/E:  6 ( 15.8%) | Green: 14 ( 36.8%)
+  Friday    :  24 days | U/E:  8 ( 33.3%) | Green: 11 ( 45.8%)
+
+### Year-over-Year
+  2020:  47 days | U/E:  7 ( 14.9%) | Green: 17 ( 36.2%)
+  2021:  42 days | U/E: 11 ( 26.2%) | Green: 24 ( 57.1%)
+  2022:  27 days | U/E:  4 ( 14.8%) | Green: 12 ( 44.4%)
+  2023:   5 days | U/E:  0 (  0.0%) | Green:  3 ( 60.0%)
+  2024:  10 days | U/E:  3 ( 30.0%) | Green:  8 ( 80.0%)
+  2025:  33 days | U/E:  4 ( 12.1%) | Green: 16 ( 48.5%)
+  2026:  15 days | U/E:  5 ( 33.3%) | Green:  7 ( 46.7%)
+
+### Sub-Combinations (FII View × PRO View)
+  Neutral         × Neutral        : 179 days | U/E: 34 ( 19.0%) | Green: 87 ( 48.6%) | Avg Range: 1.06% | Avg O→C: -0.041%
+
+### Top 5 Most Volatile Days
+  2022-01-24 | FII: Neutral         | PRO: Neutral         | VIX: 0.99% → Range: 3.41% (diff: +2.42%) | Top to Down | Red | O→C: -2.63%
+  2020-10-15 | FII: Neutral         | PRO: Neutral         | VIX: 1.06% → Range: 3.00% (diff: +1.94%) | Top to Down | Red | O→C: -2.92%
+  2020-09-21 | FII: Neutral         | PRO: Neutral         | VIX: 1.05% → Range: 2.74% (diff: +1.69%) | Top to Down | Red | O→C: -2.45%
+  2021-04-12 | FII: Neutral         | PRO: Neutral         | VIX: 1.04% → Range: 2.70% (diff: +1.66%) | Top to Down | Red | O→C: -2.01%
+  2020-08-14 | FII: Neutral         | PRO: Neutral         | VIX: 1.08% → Range: 2.24% (diff: +1.16%) | Top to Down | Red | O→C: -1.50%
+
+####################################################################################################
+## FII Neutral + PRO Bullish (215 days, 14.5% of all trading days)
+####################################################################################################
+
+### Basic Stats
+  Days: 215 | Green: 112 (52.1%) | Red: 103 (47.9%)
+  Top to Down: 103 (47.9%) | Down to Up: 112 (52.1%)
+  Avg Range: 1.05% | Avg Open→Close: 0.003%
+  Avg High%: 0.48% | Avg Low%: -0.57%
+
+### VIX Accuracy
+  Underestimated: 36 (16.7%) | Overestimated: 179 (83.3%)
+  Avg VIX Predicted: 0.87% | Avg Actual Range: 1.05%
+  Avg Diff: 0.17% | Avg Range/VIX Ratio: 1.18
+  When Underestimated (36 days):
+    Green: 16 (44.4%) | Red: 20 (55.6%)
+    Top to Down: 20 (55.6%) | Avg Range: 2.02%
+    Avg Diff: 1.00% | Avg O→C: -0.146%
+
+### VIX Regime Breakdown
+  Low (<15): 90 days | U/E: 6 (6.7%) | Avg Range: 0.71%
+  Normal (15-20): 67 days | U/E: 13 (19.4%) | Avg Range: 1.10%
+  Elevated (20-30): 57 days | U/E: 17 (29.8%) | Avg Range: 1.50%
+  High (>30): 1 days | U/E: 0 (0.0%) | Avg Range: 1.57%
+
+### Expiry vs Non-Expiry
+  Expiry: 45 days | U/E: 8 (17.8%) | Green: 22 (48.9%)
+  Non-Expiry: 170 days | U/E: 28 (16.5%) | Green: 90 (52.9%)
+
+### Day of Week
+  Monday    :  38 days | U/E:  7 ( 18.4%) | Green: 25 ( 65.8%)
+  Tuesday   :  40 days | U/E:  7 ( 17.5%) | Green: 18 ( 45.0%)
+  Wednesday :  48 days | U/E:  8 ( 16.7%) | Green: 22 ( 45.8%)
+  Thursday  :  44 days | U/E:  6 ( 13.6%) | Green: 24 ( 54.5%)
+  Friday    :  44 days | U/E:  8 ( 18.2%) | Green: 23 ( 52.3%)
+
+### Year-over-Year
+  2020:  18 days | U/E:  4 ( 22.2%) | Green: 11 ( 61.1%)
+  2021:  44 days | U/E: 10 ( 22.7%) | Green: 21 ( 47.7%)
+  2022:  36 days | U/E:  8 ( 22.2%) | Green: 23 ( 63.9%)
+  2023:  35 days | U/E:  3 (  8.6%) | Green: 19 ( 54.3%)
+  2024:  21 days | U/E:  2 (  9.5%) | Green: 10 ( 47.6%)
+  2025:  38 days | U/E:  2 (  5.3%) | Green: 15 ( 39.5%)
+  2026:  23 days | U/E:  7 ( 30.4%) | Green: 13 ( 56.5%)
+
+### Sub-Combinations (FII View × PRO View)
+  Neutral         × Strong Bullish :  87 days | U/E:  9 ( 10.3%) | Green: 45 ( 51.7%) | Avg Range: 0.94% | Avg O→C: 0.014%
+  Neutral         × Bullish        :  85 days | U/E: 15 ( 17.6%) | Green: 44 ( 51.8%) | Avg Range: 1.03% | Avg O→C: 0.035%
+  Neutral         × Mildly Bullish :  43 days | U/E: 12 ( 27.9%) | Green: 23 ( 53.5%) | Avg Range: 1.29% | Avg O→C: -0.081%
+
+### Who Won by Close?
+  PRO Bullish correct: 112 (52.1%)
+
+### Top 5 Most Volatile Days
+  2020-08-31 | FII: Neutral         | PRO: Mildly Bullish  | VIX: 0.96% → Range: 3.97% (diff: +3.01%) | Top to Down | Red | O→C: -3.71%
+  2023-02-01 | FII: Neutral         | PRO: Bullish         | VIX: 0.88% → Range: 3.47% (diff: +2.59%) | Top to Down | Red | O→C: -1.16%
+  2022-06-16 | FII: Neutral         | PRO: Mildly Bullish  | VIX: 1.16% → Range: 3.33% (diff: +2.17%) | Top to Down | Red | O→C: -3.06%
+  2021-03-19 | FII: Neutral         | PRO: Strong Bullish  | VIX: 1.05% → Range: 3.02% (diff: +1.97%) | Down to Up | Green | O→C: +1.81%
+  2026-04-02 | FII: Neutral         | PRO: Mildly Bullish  | VIX: 1.31% → Range: 2.68% (diff: +1.37%) | Down to Up | Green | O→C: +1.42%
+
+####################################################################################################
+## FII Neutral + PRO Bearish (231 days, 15.6% of all trading days)
+####################################################################################################
+
+### Basic Stats
+  Days: 231 | Green: 115 (49.8%) | Red: 116 (50.2%)
+  Top to Down: 116 (50.2%) | Down to Up: 115 (49.8%)
+  Avg Range: 1.07% | Avg Open→Close: -0.004%
+  Avg High%: 0.49% | Avg Low%: -0.58%
+
+### VIX Accuracy
+  Underestimated: 46 (19.9%) | Overestimated: 185 (80.1%)
+  Avg VIX Predicted: 0.85% | Avg Actual Range: 1.07%
+  Avg Diff: 0.22% | Avg Range/VIX Ratio: 1.27
+  When Underestimated (46 days):
+    Green: 21 (45.7%) | Red: 25 (54.3%)
+    Top to Down: 25 (54.3%) | Avg Range: 1.88%
+    Avg Diff: 0.98% | Avg O→C: -0.299%
+
+### VIX Regime Breakdown
+  Low (<15): 114 days | U/E: 19 (16.7%) | Avg Range: 0.87%
+  Normal (15-20): 63 days | U/E: 13 (20.6%) | Avg Range: 1.16%
+  Elevated (20-30): 54 days | U/E: 14 (25.9%) | Avg Range: 1.40%
+
+### Expiry vs Non-Expiry
+  Expiry: 49 days | U/E: 9 (18.4%) | Green: 25 (51.0%)
+  Non-Expiry: 182 days | U/E: 37 (20.3%) | Green: 90 (49.5%)
+
+### Day of Week
+  Monday    :  49 days | U/E:  8 ( 16.3%) | Green: 24 ( 49.0%)
+  Tuesday   :  49 days | U/E: 12 ( 24.5%) | Green: 24 ( 49.0%)
+  Wednesday :  42 days | U/E:  8 ( 19.0%) | Green: 26 ( 61.9%)
+  Thursday  :  47 days | U/E:  9 ( 19.1%) | Green: 24 ( 51.1%)
+  Friday    :  43 days | U/E:  9 ( 20.9%) | Green: 17 ( 39.5%)
+
+### Year-over-Year
+  2020:  12 days | U/E:  2 ( 16.7%) | Green:  7 ( 58.3%)
+  2021:  60 days | U/E: 14 ( 23.3%) | Green: 26 ( 43.3%)
+  2022:  39 days | U/E: 12 ( 30.8%) | Green: 24 ( 61.5%)
+  2023:  33 days | U/E:  5 ( 15.2%) | Green: 15 ( 45.5%)
+  2024:  23 days | U/E:  3 ( 13.0%) | Green:  8 ( 34.8%)
+  2025:  49 days | U/E:  5 ( 10.2%) | Green: 25 ( 51.0%)
+  2026:  15 days | U/E:  5 ( 33.3%) | Green: 10 ( 66.7%)
+
+### Sub-Combinations (FII View × PRO View)
+  Neutral         × Bearish        :  88 days | U/E: 18 ( 20.5%) | Green: 52 ( 59.1%) | Avg Range: 1.08% | Avg O→C: 0.045%
+  Neutral         × Strong Bearish :  83 days | U/E: 16 ( 19.3%) | Green: 38 ( 45.8%) | Avg Range: 0.99% | Avg O→C: 0.030%
+  Neutral         × Mildly Bearish :  60 days | U/E: 12 ( 20.0%) | Green: 25 ( 41.7%) | Avg Range: 1.18% | Avg O→C: -0.125%
+
+### Who Won by Close?
+  PRO Bearish correct: 114 (49.4%)
+
+### Top 5 Most Volatile Days
+  2020-12-21 | FII: Neutral         | PRO: Mildly Bearish  | VIX: 0.97% → Range: 4.67% (diff: +3.70%) | Top to Down | Red | O→C: -3.34%
+  2022-02-15 | FII: Neutral         | PRO: Strong Bearish  | VIX: 1.20% → Range: 3.15% (diff: +1.95%) | Down to Up | Green | O→C: +2.47%
+  2021-02-26 | FII: Neutral         | PRO: Bearish         | VIX: 1.20% → Range: 3.03% (diff: +1.83%) | Top to Down | Red | O→C: -2.45%
+  2022-05-04 | FII: Neutral         | PRO: Strong Bearish  | VIX: 1.06% → Range: 2.95% (diff: +1.89%) | Top to Down | Red | O→C: -2.35%
+  2022-03-07 | FII: Neutral         | PRO: Bearish         | VIX: 1.46% → Range: 2.90% (diff: +1.44%) | Down to Up | Green | O→C: +0.08%
+
+####################################################################################################
+## FII Bullish + PRO Neutral (55 days, 3.7% of all trading days)
+####################################################################################################
+
+### Basic Stats
+  Days: 55 | Green: 34 (61.8%) | Red: 21 (38.2%)
+  Top to Down: 21 (38.2%) | Down to Up: 34 (61.8%)
+  Avg Range: 0.88% | Avg Open→Close: 0.080%
+  Avg High%: 0.46% | Avg Low%: -0.42%
+
+### VIX Accuracy
+  Underestimated: 4 (7.3%) | Overestimated: 51 (92.7%)
+  Avg VIX Predicted: 0.86% | Avg Actual Range: 0.88%
+  Avg Diff: 0.02% | Avg Range/VIX Ratio: 1.04
+  When Underestimated (4 days):
+    Green: 1 (25.0%) | Red: 3 (75.0%)
+    Top to Down: 3 (75.0%) | Avg Range: 1.81%
+    Avg Diff: 0.94% | Avg O→C: -0.637%
+
+### VIX Regime Breakdown
+  Low (<15): 22 days | U/E: 2 (9.1%) | Avg Range: 0.76%
+  Normal (15-20): 22 days | U/E: 1 (4.5%) | Avg Range: 0.88%
+  Elevated (20-30): 11 days | U/E: 1 (9.1%) | Avg Range: 1.14%
+
+### Expiry vs Non-Expiry
+  Expiry: 10 days | U/E: 0 (0.0%) | Green: 4 (40.0%)
+  Non-Expiry: 45 days | U/E: 4 (8.9%) | Green: 30 (66.7%)
+
+### Day of Week
+  Monday    :   8 days | U/E:  0 (  0.0%) | Green:  7 ( 87.5%)
+  Tuesday   :  16 days | U/E:  3 ( 18.8%) | Green:  8 ( 50.0%)
+  Wednesday :  11 days | U/E:  0 (  0.0%) | Green:  8 ( 72.7%)
+  Thursday  :   5 days | U/E:  0 (  0.0%) | Green:  2 ( 40.0%)
+  Friday    :  15 days | U/E:  1 (  6.7%) | Green:  9 ( 60.0%)
+
+### Year-over-Year
+  2020:   7 days | U/E:  0 (  0.0%) | Green:  7 (100.0%)
+  2021:   6 days | U/E:  0 (  0.0%) | Green:  4 ( 66.7%)
+  2022:  16 days | U/E:  1 (  6.2%) | Green: 11 ( 68.8%)
+  2023:   5 days | U/E:  0 (  0.0%) | Green:  3 ( 60.0%)
+  2024:   4 days | U/E:  0 (  0.0%) | Green:  1 ( 25.0%)
+  2025:  10 days | U/E:  3 ( 30.0%) | Green:  5 ( 50.0%)
+  2026:   7 days | U/E:  0 (  0.0%) | Green:  3 ( 42.9%)
+
+### Sub-Combinations (FII View × PRO View)
+  Mildly Bullish  × Neutral        :  29 days | U/E:  4 ( 13.8%) | Green: 18 ( 62.1%) | Avg Range: 0.98% | Avg O→C: 0.004%
+  Bullish         × Neutral        :  21 days | U/E:  0 (  0.0%) | Green: 15 ( 71.4%) | Avg Range: 0.82% | Avg O→C: 0.217%
+  Strong Bullish  × Neutral        :   5 days | U/E:  0 (  0.0%) | Green:  1 ( 20.0%) | Avg Range: 0.57% | Avg O→C: -0.054%
+
+### Who Won by Close?
+  FII Bullish correct: 34 (61.8%)
+
+### Top 5 Most Volatile Days
+  2022-02-01 | FII: Mildly Bullish  | PRO: Neutral         | VIX: 1.15% → Range: 2.15% (diff: +1.00%) | Down to Up | Green | O→C: +0.43%
+  2025-04-01 | FII: Mildly Bullish  | PRO: Neutral         | VIX: 0.67% → Range: 1.84% (diff: +1.17%) | Top to Down | Red | O→C: -0.69%
+  2025-05-13 | FII: Mildly Bullish  | PRO: Neutral         | VIX: 0.96% → Range: 1.71% (diff: +0.75%) | Top to Down | Red | O→C: -1.09%
+  2022-02-21 | FII: Mildly Bullish  | PRO: Neutral         | VIX: 1.16% → Range: 1.63% (diff: +0.47%) | Down to Up | Green | O→C: +0.08%
+  2025-04-04 | FII: Mildly Bullish  | PRO: Neutral         | VIX: 0.71% → Range: 1.54% (diff: +0.83%) | Top to Down | Red | O→C: -1.20%
+
+####################################################################################################
+## FII Bearish + PRO Neutral (51 days, 3.4% of all trading days)
+####################################################################################################
+
+### Basic Stats
+  Days: 51 | Green: 24 (47.1%) | Red: 27 (52.9%)
+  Top to Down: 27 (52.9%) | Down to Up: 24 (47.1%)
+  Avg Range: 1.10% | Avg Open→Close: -0.222%
+  Avg High%: 0.38% | Avg Low%: -0.72%
+
+### VIX Accuracy
+  Underestimated: 9 (17.6%) | Overestimated: 42 (82.4%)
+  Avg VIX Predicted: 0.82% | Avg Actual Range: 1.10%
+  Avg Diff: 0.28% | Avg Range/VIX Ratio: 1.35
+  When Underestimated (9 days):
+    Green: 0 (0.0%) | Red: 9 (100.0%)
+    Top to Down: 9 (100.0%) | Avg Range: 1.99%
+    Avg Diff: 1.09% | Avg O→C: -1.350%
+
+### VIX Regime Breakdown
+  Low (<15): 29 days | U/E: 4 (13.8%) | Avg Range: 0.93%
+  Normal (15-20): 13 days | U/E: 3 (23.1%) | Avg Range: 1.32%
+  Elevated (20-30): 9 days | U/E: 2 (22.2%) | Avg Range: 1.34%
+
+### Expiry vs Non-Expiry
+  Expiry: 10 days | U/E: 2 (20.0%) | Green: 3 (30.0%)
+  Non-Expiry: 41 days | U/E: 7 (17.1%) | Green: 21 (51.2%)
+
+### Day of Week
+  Monday    :  13 days | U/E:  2 ( 15.4%) | Green:  7 ( 53.8%)
+  Tuesday   :   7 days | U/E:  3 ( 42.9%) | Green:  4 ( 57.1%)
+  Wednesday :  11 days | U/E:  1 (  9.1%) | Green:  5 ( 45.5%)
+  Thursday  :   9 days | U/E:  1 ( 11.1%) | Green:  4 ( 44.4%)
+  Friday    :  11 days | U/E:  2 ( 18.2%) | Green:  4 ( 36.4%)
+
+### Year-over-Year
+  2020:   2 days | U/E:  1 ( 50.0%) | Green:  0 (  0.0%)
+  2021:  11 days | U/E:  1 (  9.1%) | Green:  5 ( 45.5%)
+  2022:   9 days | U/E:  4 ( 44.4%) | Green:  3 ( 33.3%)
+  2023:   7 days | U/E:  0 (  0.0%) | Green:  6 ( 85.7%)
+  2024:   5 days | U/E:  2 ( 40.0%) | Green:  1 ( 20.0%)
+  2025:   6 days | U/E:  0 (  0.0%) | Green:  4 ( 66.7%)
+  2026:  11 days | U/E:  1 (  9.1%) | Green:  5 ( 45.5%)
+
+### Sub-Combinations (FII View × PRO View)
+  Bearish         × Neutral        :  24 days | U/E:  3 ( 12.5%) | Green: 11 ( 45.8%) | Avg Range: 1.14% | Avg O→C: -0.236%
+  Mildly Bearish  × Neutral        :  19 days | U/E:  4 ( 21.1%) | Green: 10 ( 52.6%) | Avg Range: 1.09% | Avg O→C: -0.178%
+  Strong Bearish  × Neutral        :   8 days | U/E:  2 ( 25.0%) | Green:  3 ( 37.5%) | Avg Range: 1.00% | Avg O→C: -0.286%
+
+### Who Won by Close?
+  FII Bearish correct: 27 (52.9%)
+
+### Top 5 Most Volatile Days
+  2026-02-03 | FII: Bearish         | PRO: Neutral         | VIX: 0.73% → Range: 2.66% (diff: +1.93%) | Top to Down | Red | O→C: -2.26%
+  2022-04-19 | FII: Bearish         | PRO: Neutral         | VIX: 1.01% → Range: 2.59% (diff: +1.58%) | Top to Down | Red | O→C: -2.26%
+  2022-05-13 | FII: Bearish         | PRO: Neutral         | VIX: 1.27% → Range: 2.14% (diff: +0.87%) | Top to Down | Red | O→C: -1.31%
+  2022-09-23 | FII: Mildly Bearish  | PRO: Neutral         | VIX: 0.99% → Range: 1.97% (diff: +0.98%) | Top to Down | Red | O→C: -1.49%
+  2020-10-26 | FII: Mildly Bearish  | PRO: Neutral         | VIX: 1.14% → Range: 1.89% (diff: +0.75%) | Top to Down | Red | O→C: -1.34%
+
+
+====================================================================================================
+MASTER COMPARISON TABLE
+====================================================================================================
+
+Category                             Days      %  Green%   Red%  U/E   U/E%  AvgRange   AvgO→C  AvgDiff
+----------------------------------------------------------------------------------------------------
+Bullish Alignment                     328  22.1%   46.3%  53.7%   58  17.7%     0.96%  -0.080%   +0.17%
+Bearish Alignment                     324  21.8%   46.3%  53.7%   71  21.9%     1.05%  -0.087%   +0.24%
+FII Bullish + PRO Bearish              55   3.7%   45.5%  54.5%    7  12.7%     0.85%  -0.052%   +0.07%
+FII Bearish + PRO Bullish              47   3.2%   61.7%  38.3%   13  27.7%     1.07%  +0.157%   +0.31%
+Both Neutral                          179  12.1%   48.6%  51.4%   34  19.0%     1.06%  -0.041%   +0.15%
+FII Neutral + PRO Bullish             215  14.5%   52.1%  47.9%   36  16.7%     1.05%  +0.003%   +0.17%
+FII Neutral + PRO Bearish             231  15.6%   49.8%  50.2%   46  19.9%     1.07%  -0.004%   +0.22%
+FII Bullish + PRO Neutral              55   3.7%   61.8%  38.2%    4   7.3%     0.88%  +0.080%   +0.02%
+FII Bearish + PRO Neutral              51   3.4%   47.1%  52.9%    9  17.6%     1.10%  -0.222%   +0.28%
+----------------------------------------------------------------------------------------------------
+ALL DAYS                             1485 100.0%   49.0%  51.0%  278  18.7%     1.02%  -0.043%   +0.19%

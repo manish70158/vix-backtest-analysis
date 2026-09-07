@@ -1,0 +1,974 @@
+====================================================================================================
+COMPREHENSIVE FII VIEW x PRO VIEW COMBINATIONS ANALYSIS
+====================================================================================================
+
+Total records in dataset: 731
+Date range: 2023-09-04 to 2026-09-01
+
+
+
+====================================================================================================
+FII VIEW: STRONG BULLISH
+====================================================================================================
+Total days with this FII view: 54
+
+
+--------------------------------------------------------------------------------
+  PRO VIEW: Bearish
+--------------------------------------------------------------------------------
+  Total Days: 1
+  Green Days: 0 (0.00%)
+  Red Days: 1 (100.00%)
+  Average Change %: -0.320%
+  Average Up from Open: 88.100%
+  Average Down from Open: 100.100%
+  Average Actual Range %: 0.780%
+  Average Intraday High %: 0.370%
+  Average Intraday Low %: -0.420%
+
+  Move Direction Distribution:
+    Top to Down: 1 (100.00%)
+
+  Expiry vs Non-Expiry Breakdown:
+    EXPIRY DAYS: 0 | No data
+    NON-EXPIRY DAYS: 1 | Green: 0 (0.00%) | Avg Change: -0.320%
+
+
+--------------------------------------------------------------------------------
+  PRO VIEW: Bullish
+--------------------------------------------------------------------------------
+  Total Days: 2
+  Green Days: 1 (50.00%)
+  Red Days: 1 (50.00%)
+  Average Change %: -0.040%
+  Average Up from Open: 123.300%
+  Average Down from Open: 120.875%
+  Average Actual Range %: 0.970%
+  Average Intraday High %: 0.490%
+  Average Intraday Low %: -0.480%
+
+  Move Direction Distribution:
+    Top to Down: 1 (50.00%)
+    Down to Up: 1 (50.00%)
+
+  Expiry vs Non-Expiry Breakdown:
+    EXPIRY DAYS: 1 | Green: 0 (0.00%) | Avg Change: -0.320%
+    NON-EXPIRY DAYS: 1 | Green: 1 (100.00%) | Avg Change: 0.240%
+
+
+--------------------------------------------------------------------------------
+  PRO VIEW: Mildly Bearish
+--------------------------------------------------------------------------------
+  Total Days: 1
+  Green Days: 1 (100.00%)
+  Red Days: 0 (0.00%)
+  Average Change %: 0.060%
+  Average Up from Open: 48.350%
+  Average Down from Open: 51.350%
+  Average Actual Range %: 0.450%
+  Average Intraday High %: 0.220%
+  Average Intraday Low %: -0.230%
+
+  Move Direction Distribution:
+    Down to Up: 1 (100.00%)
+
+  Expiry vs Non-Expiry Breakdown:
+    EXPIRY DAYS: 0 | No data
+    NON-EXPIRY DAYS: 1 | Green: 1 (100.00%) | Avg Change: 0.060%
+
+
+--------------------------------------------------------------------------------
+  PRO VIEW: Mildly Bullish
+--------------------------------------------------------------------------------
+  Total Days: 2
+  Green Days: 1 (50.00%)
+  Red Days: 1 (50.00%)
+  Average Change %: -0.120%
+  Average Up from Open: 71.250%
+  Average Down from Open: 127.775%
+  Average Actual Range %: 0.840%
+  Average Intraday High %: 0.310%
+  Average Intraday Low %: -0.530%
+
+  Move Direction Distribution:
+    Top to Down: 1 (50.00%)
+    Down to Up: 1 (50.00%)
+
+  Expiry vs Non-Expiry Breakdown:
+    EXPIRY DAYS: 1 | Green: 1 (100.00%) | Avg Change: 0.380%
+    NON-EXPIRY DAYS: 1 | Green: 0 (0.00%) | Avg Change: -0.620%
+
+
+--------------------------------------------------------------------------------
+  PRO VIEW: Neutral
+--------------------------------------------------------------------------------
+  Total Days: 4
+  Green Days: 1 (25.00%)
+  Red Days: 3 (75.00%)
+  Average Change %: 0.005%
+  Average Up from Open: 54.225%
+  Average Down from Open: 81.713%
+  Average Actual Range %: 0.585%
+  Average Intraday High %: 0.238%
+  Average Intraday Low %: -0.345%
+
+  Move Direction Distribution:
+    Top to Down: 3 (75.00%)
+    Down to Up: 1 (25.00%)
+
+  Expiry vs Non-Expiry Breakdown:
+    EXPIRY DAYS: 1 | Green: 0 (0.00%) | Avg Change: -0.290%
+    NON-EXPIRY DAYS: 3 | Green: 1 (33.33%) | Avg Change: 0.103%
+
+
+--------------------------------------------------------------------------------
+  PRO VIEW: Strong Bearish
+--------------------------------------------------------------------------------
+  Total Days: 5
+  Green Days: 2 (40.00%)
+  Red Days: 3 (60.00%)
+  Average Change %: -0.034%
+  Average Up from Open: 96.870%
+  Average Down from Open: 80.650%
+  Average Actual Range %: 0.760%
+  Average Intraday High %: 0.410%
+  Average Intraday Low %: -0.346%
+
+  Move Direction Distribution:
+    Top to Down: 3 (60.00%)
+    Down to Up: 2 (40.00%)
+
+  Expiry vs Non-Expiry Breakdown:
+    EXPIRY DAYS: 0 | No data
+    NON-EXPIRY DAYS: 5 | Green: 2 (40.00%) | Avg Change: -0.034%
+
+
+--------------------------------------------------------------------------------
+  PRO VIEW: Strong Bullish
+--------------------------------------------------------------------------------
+  Total Days: 39
+  Green Days: 25 (64.10%)
+  Red Days: 14 (35.90%)
+  Average Change %: -0.028%
+  Average Up from Open: 95.055%
+  Average Down from Open: 141.662%
+  Average Actual Range %: 1.014%
+  Average Intraday High %: 0.407%
+  Average Intraday Low %: -0.608%
+
+  Move Direction Distribution:
+    Down to Up: 25 (64.10%)
+    Top to Down: 14 (35.90%)
+
+  Expiry vs Non-Expiry Breakdown:
+    EXPIRY DAYS: 2 | Green: 2 (100.00%) | Avg Change: 0.155%
+    NON-EXPIRY DAYS: 37 | Green: 23 (62.16%) | Avg Change: -0.038%
+
+
+
+====================================================================================================
+FII VIEW: BULLISH
+====================================================================================================
+Total days with this FII view: 101
+
+
+--------------------------------------------------------------------------------
+  PRO VIEW: Bearish
+--------------------------------------------------------------------------------
+  Total Days: 1
+  Green Days: 0 (0.00%)
+  Red Days: 1 (100.00%)
+  Average Change %: -0.050%
+  Average Up from Open: 25.450%
+  Average Down from Open: 130.700%
+  Average Actual Range %: 0.670%
+  Average Intraday High %: 0.110%
+  Average Intraday Low %: -0.560%
+
+  Move Direction Distribution:
+    Top to Down: 1 (100.00%)
+
+  Expiry vs Non-Expiry Breakdown:
+    EXPIRY DAYS: 0 | No data
+    NON-EXPIRY DAYS: 1 | Green: 0 (0.00%) | Avg Change: -0.050%
+
+
+--------------------------------------------------------------------------------
+  PRO VIEW: Bullish
+--------------------------------------------------------------------------------
+  Total Days: 10
+  Green Days: 6 (60.00%)
+  Red Days: 4 (40.00%)
+  Average Change %: 0.245%
+  Average Up from Open: 140.115%
+  Average Down from Open: 80.550%
+  Average Actual Range %: 0.904%
+  Average Intraday High %: 0.576%
+  Average Intraday Low %: -0.328%
+
+  Move Direction Distribution:
+    Down to Up: 6 (60.00%)
+    Top to Down: 4 (40.00%)
+
+  Expiry vs Non-Expiry Breakdown:
+    EXPIRY DAYS: 4 | Green: 3 (75.00%) | Avg Change: 0.145%
+    NON-EXPIRY DAYS: 6 | Green: 3 (50.00%) | Avg Change: 0.312%
+
+
+--------------------------------------------------------------------------------
+  PRO VIEW: Mildly Bearish
+--------------------------------------------------------------------------------
+  Total Days: 2
+  Green Days: 1 (50.00%)
+  Red Days: 1 (50.00%)
+  Average Change %: -0.035%
+  Average Up from Open: 69.925%
+  Average Down from Open: 39.200%
+  Average Actual Range %: 0.450%
+  Average Intraday High %: 0.290%
+  Average Intraday Low %: -0.160%
+
+  Move Direction Distribution:
+    Top to Down: 1 (50.00%)
+    Down to Up: 1 (50.00%)
+
+  Expiry vs Non-Expiry Breakdown:
+    EXPIRY DAYS: 2 | Green: 1 (50.00%) | Avg Change: -0.035%
+    NON-EXPIRY DAYS: 0 | No data
+
+
+--------------------------------------------------------------------------------
+  PRO VIEW: Mildly Bullish
+--------------------------------------------------------------------------------
+  Total Days: 7
+  Green Days: 4 (57.14%)
+  Red Days: 3 (42.86%)
+  Average Change %: 0.396%
+  Average Up from Open: 166.279%
+  Average Down from Open: 75.064%
+  Average Actual Range %: 1.046%
+  Average Intraday High %: 0.721%
+  Average Intraday Low %: -0.323%
+
+  Move Direction Distribution:
+    Down to Up: 4 (57.14%)
+    Top to Down: 3 (42.86%)
+
+  Expiry vs Non-Expiry Breakdown:
+    EXPIRY DAYS: 2 | Green: 2 (100.00%) | Avg Change: 1.355%
+    NON-EXPIRY DAYS: 5 | Green: 2 (40.00%) | Avg Change: 0.012%
+
+
+--------------------------------------------------------------------------------
+  PRO VIEW: Neutral
+--------------------------------------------------------------------------------
+  Total Days: 8
+  Green Days: 5 (62.50%)
+  Red Days: 3 (37.50%)
+  Average Change %: 0.149%
+  Average Up from Open: 130.162%
+  Average Down from Open: 52.719%
+  Average Actual Range %: 0.761%
+  Average Intraday High %: 0.538%
+  Average Intraday Low %: -0.223%
+
+  Move Direction Distribution:
+    Down to Up: 5 (62.50%)
+    Top to Down: 3 (37.50%)
+
+  Expiry vs Non-Expiry Breakdown:
+    EXPIRY DAYS: 3 | Green: 1 (33.33%) | Avg Change: -0.040%
+    NON-EXPIRY DAYS: 5 | Green: 4 (80.00%) | Avg Change: 0.262%
+
+
+--------------------------------------------------------------------------------
+  PRO VIEW: Strong Bearish
+--------------------------------------------------------------------------------
+  Total Days: 14
+  Green Days: 6 (42.86%)
+  Red Days: 8 (57.14%)
+  Average Change %: 0.049%
+  Average Up from Open: 86.950%
+  Average Down from Open: 107.018%
+  Average Actual Range %: 0.829%
+  Average Intraday High %: 0.366%
+  Average Intraday Low %: -0.462%
+
+  Move Direction Distribution:
+    Top to Down: 8 (57.14%)
+    Down to Up: 6 (42.86%)
+
+  Expiry vs Non-Expiry Breakdown:
+    EXPIRY DAYS: 5 | Green: 2 (40.00%) | Avg Change: 0.226%
+    NON-EXPIRY DAYS: 9 | Green: 4 (44.44%) | Avg Change: -0.050%
+
+
+--------------------------------------------------------------------------------
+  PRO VIEW: Strong Bullish
+--------------------------------------------------------------------------------
+  Total Days: 59
+  Green Days: 18 (30.51%)
+  Red Days: 41 (69.49%)
+  Average Change %: -0.184%
+  Average Up from Open: 76.620%
+  Average Down from Open: 121.944%
+  Average Actual Range %: 0.844%
+  Average Intraday High %: 0.327%
+  Average Intraday Low %: -0.517%
+
+  Move Direction Distribution:
+    Top to Down: 41 (69.49%)
+    Down to Up: 18 (30.51%)
+
+  Expiry vs Non-Expiry Breakdown:
+    EXPIRY DAYS: 13 | Green: 5 (38.46%) | Avg Change: -0.068%
+    NON-EXPIRY DAYS: 46 | Green: 13 (28.26%) | Avg Change: -0.217%
+
+
+
+====================================================================================================
+FII VIEW: NEUTRAL
+====================================================================================================
+Total days with this FII view: 310
+
+
+--------------------------------------------------------------------------------
+  PRO VIEW: Bearish
+--------------------------------------------------------------------------------
+  Total Days: 33
+  Green Days: 19 (57.58%)
+  Red Days: 14 (42.42%)
+  Average Change %: 0.055%
+  Average Up from Open: 113.074%
+  Average Down from Open: 97.832%
+  Average Actual Range %: 0.881%
+  Average Intraday High %: 0.475%
+  Average Intraday Low %: -0.407%
+
+  Move Direction Distribution:
+    Down to Up: 19 (57.58%)
+    Top to Down: 14 (42.42%)
+
+  Expiry vs Non-Expiry Breakdown:
+    EXPIRY DAYS: 5 | Green: 4 (80.00%) | Avg Change: 0.414%
+    NON-EXPIRY DAYS: 28 | Green: 15 (53.57%) | Avg Change: -0.009%
+
+
+--------------------------------------------------------------------------------
+  PRO VIEW: Bullish
+--------------------------------------------------------------------------------
+  Total Days: 24
+  Green Days: 14 (58.33%)
+  Red Days: 9 (37.50%)
+  Average Change %: 0.058%
+  Average Up from Open: 89.300%
+  Average Down from Open: 106.010%
+  Average Actual Range %: 0.825%
+  Average Intraday High %: 0.385%
+  Average Intraday Low %: -0.440%
+
+  Move Direction Distribution:
+    Down to Up: 14 (58.33%)
+    Top to Down: 10 (41.67%)
+
+  Expiry vs Non-Expiry Breakdown:
+    EXPIRY DAYS: 6 | Green: 2 (33.33%) | Avg Change: -0.092%
+    NON-EXPIRY DAYS: 18 | Green: 12 (66.67%) | Avg Change: 0.108%
+
+
+--------------------------------------------------------------------------------
+  PRO VIEW: Mildly Bearish
+--------------------------------------------------------------------------------
+  Total Days: 17
+  Green Days: 5 (29.41%)
+  Red Days: 12 (70.59%)
+  Average Change %: -0.231%
+  Average Up from Open: 72.568%
+  Average Down from Open: 138.915%
+  Average Actual Range %: 0.889%
+  Average Intraday High %: 0.302%
+  Average Intraday Low %: -0.586%
+
+  Move Direction Distribution:
+    Top to Down: 12 (70.59%)
+    Down to Up: 5 (29.41%)
+
+  Expiry vs Non-Expiry Breakdown:
+    EXPIRY DAYS: 3 | Green: 0 (0.00%) | Avg Change: -0.327%
+    NON-EXPIRY DAYS: 14 | Green: 5 (35.71%) | Avg Change: -0.211%
+
+
+--------------------------------------------------------------------------------
+  PRO VIEW: Mildly Bullish
+--------------------------------------------------------------------------------
+  Total Days: 14
+  Green Days: 7 (50.00%)
+  Red Days: 7 (50.00%)
+  Average Change %: -0.011%
+  Average Up from Open: 131.671%
+  Average Down from Open: 115.961%
+  Average Actual Range %: 1.052%
+  Average Intraday High %: 0.559%
+  Average Intraday Low %: -0.494%
+
+  Move Direction Distribution:
+    Down to Up: 7 (50.00%)
+    Top to Down: 7 (50.00%)
+
+  Expiry vs Non-Expiry Breakdown:
+    EXPIRY DAYS: 3 | Green: 1 (33.33%) | Avg Change: -0.190%
+    NON-EXPIRY DAYS: 11 | Green: 6 (54.55%) | Avg Change: 0.037%
+
+
+--------------------------------------------------------------------------------
+  PRO VIEW: Neutral
+--------------------------------------------------------------------------------
+  Total Days: 145
+  Green Days: 70 (48.28%)
+  Red Days: 72 (49.66%)
+  Average Change %: -0.038%
+  Average Up from Open: 113.526%
+  Average Down from Open: 125.434%
+  Average Actual Range %: 1.020%
+  Average Intraday High %: 0.486%
+  Average Intraday Low %: -0.534%
+
+  Move Direction Distribution:
+    Top to Down: 75 (51.72%)
+    Down to Up: 70 (48.28%)
+
+  Expiry vs Non-Expiry Breakdown:
+    EXPIRY DAYS: 28 | Green: 10 (35.71%) | Avg Change: -0.173%
+    NON-EXPIRY DAYS: 117 | Green: 60 (51.28%) | Avg Change: -0.006%
+
+
+--------------------------------------------------------------------------------
+  PRO VIEW: Strong Bearish
+--------------------------------------------------------------------------------
+  Total Days: 33
+  Green Days: 20 (60.61%)
+  Red Days: 12 (36.36%)
+  Average Change %: 0.161%
+  Average Up from Open: 113.052%
+  Average Down from Open: 84.588%
+  Average Actual Range %: 0.842%
+  Average Intraday High %: 0.486%
+  Average Intraday Low %: -0.357%
+
+  Move Direction Distribution:
+    Down to Up: 20 (60.61%)
+    Top to Down: 13 (39.39%)
+
+  Expiry vs Non-Expiry Breakdown:
+    EXPIRY DAYS: 7 | Green: 2 (28.57%) | Avg Change: 0.009%
+    NON-EXPIRY DAYS: 26 | Green: 18 (69.23%) | Avg Change: 0.202%
+
+
+--------------------------------------------------------------------------------
+  PRO VIEW: Strong Bullish
+--------------------------------------------------------------------------------
+  Total Days: 44
+  Green Days: 19 (43.18%)
+  Red Days: 25 (56.82%)
+  Average Change %: -0.085%
+  Average Up from Open: 70.986%
+  Average Down from Open: 106.630%
+  Average Actual Range %: 0.754%
+  Average Intraday High %: 0.298%
+  Average Intraday Low %: -0.455%
+
+  Move Direction Distribution:
+    Top to Down: 25 (56.82%)
+    Down to Up: 19 (43.18%)
+
+  Expiry vs Non-Expiry Breakdown:
+    EXPIRY DAYS: 5 | Green: 3 (60.00%) | Avg Change: 0.052%
+    NON-EXPIRY DAYS: 39 | Green: 16 (41.03%) | Avg Change: -0.103%
+
+
+
+====================================================================================================
+FII VIEW: BEARISH
+====================================================================================================
+Total days with this FII view: 89
+
+
+--------------------------------------------------------------------------------
+  PRO VIEW: Bearish
+--------------------------------------------------------------------------------
+  Total Days: 15
+  Green Days: 7 (46.67%)
+  Red Days: 8 (53.33%)
+  Average Change %: 0.067%
+  Average Up from Open: 107.753%
+  Average Down from Open: 115.630%
+  Average Actual Range %: 0.949%
+  Average Intraday High %: 0.461%
+  Average Intraday Low %: -0.487%
+
+  Move Direction Distribution:
+    Top to Down: 8 (53.33%)
+    Down to Up: 7 (46.67%)
+
+  Expiry vs Non-Expiry Breakdown:
+    EXPIRY DAYS: 1 | Green: 0 (0.00%) | Avg Change: -0.500%
+    NON-EXPIRY DAYS: 14 | Green: 7 (50.00%) | Avg Change: 0.107%
+
+
+--------------------------------------------------------------------------------
+  PRO VIEW: Bullish
+--------------------------------------------------------------------------------
+  Total Days: 4
+  Green Days: 4 (100.00%)
+  Red Days: 0 (0.00%)
+  Average Change %: 0.500%
+  Average Up from Open: 153.012%
+  Average Down from Open: 115.250%
+  Average Actual Range %: 1.118%
+  Average Intraday High %: 0.637%
+  Average Intraday Low %: -0.480%
+
+  Move Direction Distribution:
+    Down to Up: 4 (100.00%)
+
+  Expiry vs Non-Expiry Breakdown:
+    EXPIRY DAYS: 1 | Green: 1 (100.00%) | Avg Change: 0.760%
+    NON-EXPIRY DAYS: 3 | Green: 3 (100.00%) | Avg Change: 0.413%
+
+
+--------------------------------------------------------------------------------
+  PRO VIEW: Mildly Bearish
+--------------------------------------------------------------------------------
+  Total Days: 7
+  Green Days: 3 (42.86%)
+  Red Days: 4 (57.14%)
+  Average Change %: -0.066%
+  Average Up from Open: 95.500%
+  Average Down from Open: 147.393%
+  Average Actual Range %: 0.996%
+  Average Intraday High %: 0.393%
+  Average Intraday Low %: -0.604%
+
+  Move Direction Distribution:
+    Top to Down: 4 (57.14%)
+    Down to Up: 3 (42.86%)
+
+  Expiry vs Non-Expiry Breakdown:
+    EXPIRY DAYS: 3 | Green: 1 (33.33%) | Avg Change: -0.220%
+    NON-EXPIRY DAYS: 4 | Green: 2 (50.00%) | Avg Change: 0.050%
+
+
+--------------------------------------------------------------------------------
+  PRO VIEW: Mildly Bullish
+--------------------------------------------------------------------------------
+  Total Days: 3
+  Green Days: 1 (33.33%)
+  Red Days: 2 (66.67%)
+  Average Change %: 0.093%
+  Average Up from Open: 71.367%
+  Average Down from Open: 105.150%
+  Average Actual Range %: 0.760%
+  Average Intraday High %: 0.313%
+  Average Intraday Low %: -0.443%
+
+  Move Direction Distribution:
+    Top to Down: 2 (66.67%)
+    Down to Up: 1 (33.33%)
+
+  Expiry vs Non-Expiry Breakdown:
+    EXPIRY DAYS: 0 | No data
+    NON-EXPIRY DAYS: 3 | Green: 1 (33.33%) | Avg Change: 0.093%
+
+
+--------------------------------------------------------------------------------
+  PRO VIEW: Neutral
+--------------------------------------------------------------------------------
+  Total Days: 10
+  Green Days: 4 (40.00%)
+  Red Days: 6 (60.00%)
+  Average Change %: -0.277%
+  Average Up from Open: 96.295%
+  Average Down from Open: 174.440%
+  Average Actual Range %: 1.099%
+  Average Intraday High %: 0.394%
+  Average Intraday Low %: -0.705%
+
+  Move Direction Distribution:
+    Top to Down: 6 (60.00%)
+    Down to Up: 4 (40.00%)
+
+  Expiry vs Non-Expiry Breakdown:
+    EXPIRY DAYS: 2 | Green: 0 (0.00%) | Avg Change: -1.250%
+    NON-EXPIRY DAYS: 8 | Green: 4 (50.00%) | Avg Change: -0.034%
+
+
+--------------------------------------------------------------------------------
+  PRO VIEW: Strong Bearish
+--------------------------------------------------------------------------------
+  Total Days: 43
+  Green Days: 21 (48.84%)
+  Red Days: 22 (51.16%)
+  Average Change %: 0.013%
+  Average Up from Open: 96.493%
+  Average Down from Open: 107.788%
+  Average Actual Range %: 0.876%
+  Average Intraday High %: 0.412%
+  Average Intraday Low %: -0.462%
+
+  Move Direction Distribution:
+    Top to Down: 22 (51.16%)
+    Down to Up: 21 (48.84%)
+
+  Expiry vs Non-Expiry Breakdown:
+    EXPIRY DAYS: 8 | Green: 4 (50.00%) | Avg Change: 0.089%
+    NON-EXPIRY DAYS: 35 | Green: 17 (48.57%) | Avg Change: -0.005%
+
+
+--------------------------------------------------------------------------------
+  PRO VIEW: Strong Bullish
+--------------------------------------------------------------------------------
+  Total Days: 7
+  Green Days: 3 (42.86%)
+  Red Days: 3 (42.86%)
+  Average Change %: 0.119%
+  Average Up from Open: 120.607%
+  Average Down from Open: 69.807%
+  Average Actual Range %: 0.826%
+  Average Intraday High %: 0.531%
+  Average Intraday Low %: -0.296%
+
+  Move Direction Distribution:
+    Top to Down: 4 (57.14%)
+    Down to Up: 3 (42.86%)
+
+  Expiry vs Non-Expiry Breakdown:
+    EXPIRY DAYS: 3 | Green: 2 (66.67%) | Avg Change: 0.330%
+    NON-EXPIRY DAYS: 4 | Green: 1 (25.00%) | Avg Change: -0.040%
+
+
+
+====================================================================================================
+FII VIEW: STRONG BEARISH
+====================================================================================================
+Total days with this FII view: 66
+
+
+--------------------------------------------------------------------------------
+  PRO VIEW: Bearish
+--------------------------------------------------------------------------------
+  Total Days: 5
+  Green Days: 1 (20.00%)
+  Red Days: 4 (80.00%)
+  Average Change %: -0.192%
+  Average Up from Open: 88.400%
+  Average Down from Open: 102.270%
+  Average Actual Range %: 0.796%
+  Average Intraday High %: 0.368%
+  Average Intraday Low %: -0.428%
+
+  Move Direction Distribution:
+    Top to Down: 4 (80.00%)
+    Down to Up: 1 (20.00%)
+
+  Expiry vs Non-Expiry Breakdown:
+    EXPIRY DAYS: 2 | Green: 0 (0.00%) | Avg Change: -0.345%
+    NON-EXPIRY DAYS: 3 | Green: 1 (33.33%) | Avg Change: -0.090%
+
+
+--------------------------------------------------------------------------------
+  PRO VIEW: Bullish
+--------------------------------------------------------------------------------
+  Total Days: 2
+  Green Days: 2 (100.00%)
+  Red Days: 0 (0.00%)
+  Average Change %: 0.775%
+  Average Up from Open: 285.525%
+  Average Down from Open: 117.850%
+  Average Actual Range %: 1.735%
+  Average Intraday High %: 1.225%
+  Average Intraday Low %: -0.510%
+
+  Move Direction Distribution:
+    Down to Up: 2 (100.00%)
+
+  Expiry vs Non-Expiry Breakdown:
+    EXPIRY DAYS: 0 | No data
+    NON-EXPIRY DAYS: 2 | Green: 2 (100.00%) | Avg Change: 0.775%
+
+
+--------------------------------------------------------------------------------
+  PRO VIEW: Mildly Bearish
+--------------------------------------------------------------------------------
+  Total Days: 3
+  Green Days: 1 (33.33%)
+  Red Days: 2 (66.67%)
+  Average Change %: -0.077%
+  Average Up from Open: 104.067%
+  Average Down from Open: 81.000%
+  Average Actual Range %: 0.773%
+  Average Intraday High %: 0.433%
+  Average Intraday Low %: -0.340%
+
+  Move Direction Distribution:
+    Top to Down: 2 (66.67%)
+    Down to Up: 1 (33.33%)
+
+  Expiry vs Non-Expiry Breakdown:
+    EXPIRY DAYS: 0 | No data
+    NON-EXPIRY DAYS: 3 | Green: 1 (33.33%) | Avg Change: -0.077%
+
+
+--------------------------------------------------------------------------------
+  PRO VIEW: Neutral
+--------------------------------------------------------------------------------
+  Total Days: 6
+  Green Days: 2 (33.33%)
+  Red Days: 4 (66.67%)
+  Average Change %: -0.195%
+  Average Up from Open: 75.217%
+  Average Down from Open: 146.850%
+  Average Actual Range %: 0.957%
+  Average Intraday High %: 0.338%
+  Average Intraday Low %: -0.618%
+
+  Move Direction Distribution:
+    Top to Down: 4 (66.67%)
+    Down to Up: 2 (33.33%)
+
+  Expiry vs Non-Expiry Breakdown:
+    EXPIRY DAYS: 1 | Green: 1 (100.00%) | Avg Change: 0.640%
+    NON-EXPIRY DAYS: 5 | Green: 1 (20.00%) | Avg Change: -0.362%
+
+
+--------------------------------------------------------------------------------
+  PRO VIEW: Strong Bearish
+--------------------------------------------------------------------------------
+  Total Days: 46
+  Green Days: 22 (47.83%)
+  Red Days: 24 (52.17%)
+  Average Change %: -0.014%
+  Average Up from Open: 120.040%
+  Average Down from Open: 131.339%
+  Average Actual Range %: 1.056%
+  Average Intraday High %: 0.508%
+  Average Intraday Low %: -0.547%
+
+  Move Direction Distribution:
+    Top to Down: 24 (52.17%)
+    Down to Up: 22 (47.83%)
+
+  Expiry vs Non-Expiry Breakdown:
+    EXPIRY DAYS: 7 | Green: 2 (28.57%) | Avg Change: -0.229%
+    NON-EXPIRY DAYS: 39 | Green: 20 (51.28%) | Avg Change: 0.024%
+
+
+--------------------------------------------------------------------------------
+  PRO VIEW: Strong Bullish
+--------------------------------------------------------------------------------
+  Total Days: 4
+  Green Days: 1 (25.00%)
+  Red Days: 3 (75.00%)
+  Average Change %: -0.155%
+  Average Up from Open: 71.975%
+  Average Down from Open: 140.888%
+  Average Actual Range %: 0.917%
+  Average Intraday High %: 0.338%
+  Average Intraday Low %: -0.578%
+
+  Move Direction Distribution:
+    Top to Down: 3 (75.00%)
+    Down to Up: 1 (25.00%)
+
+  Expiry vs Non-Expiry Breakdown:
+    EXPIRY DAYS: 2 | Green: 0 (0.00%) | Avg Change: -0.360%
+    NON-EXPIRY DAYS: 2 | Green: 1 (50.00%) | Avg Change: 0.050%
+
+
+
+====================================================================================================
+MASTER SUMMARY TABLE - ALL COMBINATIONS (Sorted by Green% Descending)
+====================================================================================================
+
+FII View             PRO View               Days   Green%   Avg Chg% Dominant Pattern   Exp G% Non-Exp G%
+----------------------------------------------------------------------------------------------------
+Strong Bullish       Mildly Bearish            1  100.00%     0.060% Down to Up         0.00%    100.00%
+Bearish              Bullish                   4  100.00%     0.500% Down to Up       100.00%    100.00%
+Strong Bearish       Bullish                   2  100.00%     0.775% Down to Up         0.00%    100.00%
+Strong Bullish       Strong Bullish           39   64.10%    -0.028% Down to Up       100.00%     62.16%
+Bullish              Neutral                   8   62.50%     0.149% Down to Up        33.33%     80.00%
+Neutral              Strong Bearish           33   60.61%     0.161% Down to Up        28.57%     69.23%
+Bullish              Bullish                  10   60.00%     0.245% Down to Up        75.00%     50.00%
+Neutral              Bullish                  24   58.33%     0.058% Down to Up        33.33%     66.67%
+Neutral              Bearish                  33   57.58%     0.055% Down to Up        80.00%     53.57%
+Bullish              Mildly Bullish            7   57.14%     0.396% Down to Up       100.00%     40.00%
+Strong Bullish       Bullish                   2   50.00%    -0.040% Top to Down        0.00%    100.00%
+Neutral              Mildly Bullish           14   50.00%    -0.011% Down to Up        33.33%     54.55%
+Bullish              Mildly Bearish            2   50.00%    -0.035% Top to Down       50.00%      0.00%
+Strong Bullish       Mildly Bullish            2   50.00%    -0.120% Top to Down      100.00%      0.00%
+Bearish              Strong Bearish           43   48.84%     0.013% Top to Down       50.00%     48.57%
+Neutral              Neutral                 145   48.28%    -0.038% Top to Down       35.71%     51.28%
+Strong Bearish       Strong Bearish           46   47.83%    -0.014% Top to Down       28.57%     51.28%
+Bearish              Bearish                  15   46.67%     0.067% Top to Down        0.00%     50.00%
+Neutral              Strong Bullish           44   43.18%    -0.085% Top to Down       60.00%     41.03%
+Bearish              Strong Bullish            7   42.86%     0.119% Top to Down       66.67%     25.00%
+Bearish              Mildly Bearish            7   42.86%    -0.066% Top to Down       33.33%     50.00%
+Bullish              Strong Bearish           14   42.86%     0.049% Top to Down       40.00%     44.44%
+Strong Bullish       Strong Bearish            5   40.00%    -0.034% Top to Down        0.00%     40.00%
+Bearish              Neutral                  10   40.00%    -0.277% Top to Down        0.00%     50.00%
+Bearish              Mildly Bullish            3   33.33%     0.093% Top to Down        0.00%     33.33%
+Strong Bearish       Neutral                   6   33.33%    -0.195% Top to Down      100.00%     20.00%
+Strong Bearish       Mildly Bearish            3   33.33%    -0.077% Top to Down        0.00%     33.33%
+Bullish              Strong Bullish           59   30.51%    -0.184% Top to Down       38.46%     28.26%
+Neutral              Mildly Bearish           17   29.41%    -0.231% Top to Down        0.00%     35.71%
+Strong Bearish       Strong Bullish            4   25.00%    -0.155% Top to Down        0.00%     50.00%
+Strong Bullish       Neutral                   4   25.00%     0.005% Top to Down        0.00%     33.33%
+Strong Bearish       Bearish                   5   20.00%    -0.192% Top to Down        0.00%     33.33%
+Bullish              Bearish                   1    0.00%    -0.050% Top to Down        0.00%      0.00%
+Strong Bullish       Bearish                   1    0.00%    -0.320% Top to Down        0.00%      0.00%
+
+====================================================================================================
+KEY INSIGHTS
+====================================================================================================
+
+1. TOP 5 BEST COMBINATIONS (Highest Green%):
+--------------------------------------------------------------------------------
+   1. Strong Bullish + Mildly Bearish
+      Days: 1 | Green: 100.00% | Avg Change: 0.060%
+   2. Bearish + Bullish
+      Days: 4 | Green: 100.00% | Avg Change: 0.500%
+   3. Strong Bearish + Bullish
+      Days: 2 | Green: 100.00% | Avg Change: 0.775%
+   4. Strong Bullish + Strong Bullish
+      Days: 39 | Green: 64.10% | Avg Change: -0.028%
+   5. Bullish + Neutral
+      Days: 8 | Green: 62.50% | Avg Change: 0.149%
+
+2. TOP 5 WORST COMBINATIONS (Lowest Green%):
+--------------------------------------------------------------------------------
+   1. Strong Bearish + Strong Bullish
+      Days: 4 | Green: 25.00% | Avg Change: -0.155%
+   2. Strong Bullish + Neutral
+      Days: 4 | Green: 25.00% | Avg Change: 0.005%
+   3. Strong Bearish + Bearish
+      Days: 5 | Green: 20.00% | Avg Change: -0.192%
+   4. Bullish + Bearish
+      Days: 1 | Green: 0.00% | Avg Change: -0.050%
+   5. Strong Bullish + Bearish
+      Days: 1 | Green: 0.00% | Avg Change: -0.320%
+
+3. TOP 5 HIGHEST AVERAGE CHANGE COMBINATIONS:
+--------------------------------------------------------------------------------
+   1. Strong Bearish + Bullish
+      Days: 2 | Avg Change: 0.775% | Green: 100.00%
+   2. Bearish + Bullish
+      Days: 4 | Avg Change: 0.500% | Green: 100.00%
+   3. Bullish + Mildly Bullish
+      Days: 7 | Avg Change: 0.396% | Green: 57.14%
+   4. Bullish + Bullish
+      Days: 10 | Avg Change: 0.245% | Green: 60.00%
+   5. Neutral + Strong Bearish
+      Days: 33 | Avg Change: 0.161% | Green: 60.61%
+
+4. TOP 5 LOWEST AVERAGE CHANGE COMBINATIONS:
+--------------------------------------------------------------------------------
+   1. Strong Bullish + Bearish
+      Days: 1 | Avg Change: -0.320% | Green: 0.00%
+   2. Bearish + Neutral
+      Days: 10 | Avg Change: -0.277% | Green: 40.00%
+   3. Neutral + Mildly Bearish
+      Days: 17 | Avg Change: -0.231% | Green: 29.41%
+   4. Strong Bearish + Neutral
+      Days: 6 | Avg Change: -0.195% | Green: 33.33%
+   5. Strong Bearish + Bearish
+      Days: 5 | Avg Change: -0.192% | Green: 20.00%
+
+5. COMBINATIONS WITH STRONG EXPIRY vs NON-EXPIRY DIVERGENCE (>15% difference):
+--------------------------------------------------------------------------------
+   1. Strong Bullish + Bullish
+      Expiry Green: 0.00% (1 days) | Non-Expiry Green: 100.00% (1 days)
+      Divergence: 100.00%
+   2. Strong Bullish + Mildly Bullish
+      Expiry Green: 100.00% (1 days) | Non-Expiry Green: 0.00% (1 days)
+      Divergence: 100.00%
+   3. Strong Bearish + Bullish
+      Expiry Green: 0.00% (0 days) | Non-Expiry Green: 100.00% (2 days)
+      Divergence: 100.00%
+   4. Strong Bullish + Mildly Bearish
+      Expiry Green: 0.00% (0 days) | Non-Expiry Green: 100.00% (1 days)
+      Divergence: 100.00%
+   5. Strong Bearish + Neutral
+      Expiry Green: 100.00% (1 days) | Non-Expiry Green: 20.00% (5 days)
+      Divergence: 80.00%
+   6. Bullish + Mildly Bullish
+      Expiry Green: 100.00% (2 days) | Non-Expiry Green: 40.00% (5 days)
+      Divergence: 60.00%
+   7. Bearish + Neutral
+      Expiry Green: 0.00% (2 days) | Non-Expiry Green: 50.00% (8 days)
+      Divergence: 50.00%
+   8. Bearish + Bearish
+      Expiry Green: 0.00% (1 days) | Non-Expiry Green: 50.00% (14 days)
+      Divergence: 50.00%
+   9. Strong Bearish + Strong Bullish
+      Expiry Green: 0.00% (2 days) | Non-Expiry Green: 50.00% (2 days)
+      Divergence: 50.00%
+   10. Bullish + Mildly Bearish
+      Expiry Green: 50.00% (2 days) | Non-Expiry Green: 0.00% (0 days)
+      Divergence: 50.00%
+   11. Bullish + Neutral
+      Expiry Green: 33.33% (3 days) | Non-Expiry Green: 80.00% (5 days)
+      Divergence: 46.67%
+   12. Bearish + Strong Bullish
+      Expiry Green: 66.67% (3 days) | Non-Expiry Green: 25.00% (4 days)
+      Divergence: 41.67%
+   13. Neutral + Strong Bearish
+      Expiry Green: 28.57% (7 days) | Non-Expiry Green: 69.23% (26 days)
+      Divergence: 40.66%
+   14. Strong Bullish + Strong Bearish
+      Expiry Green: 0.00% (0 days) | Non-Expiry Green: 40.00% (5 days)
+      Divergence: 40.00%
+   15. Strong Bullish + Strong Bullish
+      Expiry Green: 100.00% (2 days) | Non-Expiry Green: 62.16% (37 days)
+      Divergence: 37.84%
+   16. Neutral + Mildly Bearish
+      Expiry Green: 0.00% (3 days) | Non-Expiry Green: 35.71% (14 days)
+      Divergence: 35.71%
+   17. Bearish + Mildly Bullish
+      Expiry Green: 0.00% (0 days) | Non-Expiry Green: 33.33% (3 days)
+      Divergence: 33.33%
+   18. Strong Bearish + Mildly Bearish
+      Expiry Green: 0.00% (0 days) | Non-Expiry Green: 33.33% (3 days)
+      Divergence: 33.33%
+   19. Strong Bearish + Bearish
+      Expiry Green: 0.00% (2 days) | Non-Expiry Green: 33.33% (3 days)
+      Divergence: 33.33%
+   20. Strong Bullish + Neutral
+      Expiry Green: 0.00% (1 days) | Non-Expiry Green: 33.33% (3 days)
+      Divergence: 33.33%
+   21. Neutral + Bullish
+      Expiry Green: 33.33% (6 days) | Non-Expiry Green: 66.67% (18 days)
+      Divergence: 33.33%
+   22. Neutral + Bearish
+      Expiry Green: 80.00% (5 days) | Non-Expiry Green: 53.57% (28 days)
+      Divergence: 26.43%
+   23. Bullish + Bullish
+      Expiry Green: 75.00% (4 days) | Non-Expiry Green: 50.00% (6 days)
+      Divergence: 25.00%
+   24. Strong Bearish + Strong Bearish
+      Expiry Green: 28.57% (7 days) | Non-Expiry Green: 51.28% (39 days)
+      Divergence: 22.71%
+   25. Neutral + Mildly Bullish
+      Expiry Green: 33.33% (3 days) | Non-Expiry Green: 54.55% (11 days)
+      Divergence: 21.21%
+   26. Neutral + Strong Bullish
+      Expiry Green: 60.00% (5 days) | Non-Expiry Green: 41.03% (39 days)
+      Divergence: 18.97%
+   27. Bearish + Mildly Bearish
+      Expiry Green: 33.33% (3 days) | Non-Expiry Green: 50.00% (4 days)
+      Divergence: 16.67%
+   28. Neutral + Neutral
+      Expiry Green: 35.71% (28 days) | Non-Expiry Green: 51.28% (117 days)
+      Divergence: 15.57%
+
+====================================================================================================
+ANALYSIS COMPLETE
+====================================================================================================

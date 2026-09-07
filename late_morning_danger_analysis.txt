@@ -1,0 +1,724 @@
+====================================================================================================
+BEARISH LATE-MORNING (10:30-11:29) DANGER ZONE ANALYSIS
+====================================================================================================
+
+====================================================================================================
+PART 1: DEEP DIVE INTO BEARISH LATE-MORNING (10:30-11:29) CROSSES
+====================================================================================================
+
+Total Bearish Late-Morning Crosses: 21
+
+----------------------------------------------------------------------------------------------------
+ALL BEARISH LATE-MORNING CROSSES WITH DETAILS:
+----------------------------------------------------------------------------------------------------
+
+Date: 2020-11-20
+  FII View:  Mildly Bearish | PRO View:  Strong Bearish | Combo: Mildly Bearish + Strong Bearish
+  VIX Regime: Normal (15-20) | VIX Open: 19.57
+  Cross Time:      11:20 | Session: Late Morning
+  Expiry:  NO
+  Outcome: Reversed by Close | Actual Close %:   0.25%
+  Move at Cross:   0.65% | Intraday Low:  -0.65%
+
+Date: 2021-04-01
+  FII View:  Strong Bearish | PRO View:         Bearish | Combo: Strong Bearish + Bearish
+  VIX Regime: Elevated (20-30) | VIX Open: 20.65
+  Cross Time:      10:55 | Session: Late Morning
+  Expiry: YES
+  Outcome: Reversed by Close | Actual Close %:   0.46%
+  Move at Cross:   0.68% | Intraday Low:  -0.71%
+
+Date: 2021-09-21
+  FII View:         Bearish | PRO View:  Strong Bearish | Combo: Bearish + Strong Bearish
+  VIX Regime: Normal (15-20) | VIX Open: 17.49
+  Cross Time:      11:10 | Session: Late Morning
+  Expiry:  NO
+  Outcome: Reversed by Close | Actual Close %:   0.65%
+  Move at Cross:   0.60% | Intraday Low:  -0.71%
+
+Date: 2022-01-20
+  FII View:  Mildly Bearish | PRO View:  Strong Bearish | Combo: Mildly Bearish + Strong Bearish
+  VIX Regime: Normal (15-20) | VIX Open: 17.82
+  Cross Time:      10:45 | Session: Late Morning
+  Expiry: YES
+  Outcome: Worked and Remained | Actual Close %:  -0.77%
+  Move at Cross:   0.57% | Intraday Low:  -1.52%
+
+Date: 2022-04-28
+  FII View:  Mildly Bearish | PRO View:  Strong Bearish | Combo: Mildly Bearish + Strong Bearish
+  VIX Regime: Elevated (20-30) | VIX Open: 20.61
+  Cross Time:      10:45 | Session: Late Morning
+  Expiry: YES
+  Outcome: Reversed by Close | Actual Close %:   0.24%
+  Move at Cross:   0.69% | Intraday Low:  -0.69%
+
+Date: 2022-08-03
+  FII View:         Bearish | PRO View:         Bearish | Combo: Bearish + Bearish
+  VIX Regime: Normal (15-20) | VIX Open: 18.53
+  Cross Time:      11:05 | Session: Late Morning
+  Expiry:  NO
+  Outcome: Reversed by Close | Actual Close %:   0.25%
+  Move at Cross:   0.65% | Intraday Low:  -0.71%
+
+Date: 2022-08-19
+  FII View:  Mildly Bearish | PRO View:  Strong Bearish | Combo: Mildly Bearish + Strong Bearish
+  VIX Regime: Normal (15-20) | VIX Open: 17.35
+  Cross Time:      11:05 | Session: Late Morning
+  Expiry:  NO
+  Outcome: Worked and Remained | Actual Close %:  -1.33%
+  Move at Cross:   0.60% | Intraday Low:  -1.42%
+
+Date: 2023-05-17
+  FII View:         Bearish | PRO View:  Strong Bearish | Combo: Bearish + Strong Bearish
+  VIX Regime:  Low (<15) | VIX Open: 13.29
+  Cross Time:      10:45 | Session: Late Morning
+  Expiry:  NO
+  Outcome: Worked and Remained | Actual Close %:  -0.56%
+  Move at Cross:   0.43% | Intraday Low:  -1.01%
+
+Date: 2023-07-25
+  FII View:         Bearish | PRO View:  Strong Bearish | Combo: Bearish + Strong Bearish
+  VIX Regime:  Low (<15) | VIX Open: 11.65
+  Cross Time:      11:05 | Session: Late Morning
+  Expiry:  NO
+  Outcome: Worked and Remained | Actual Close %:  -0.26%
+  Move at Cross:   0.39% | Intraday Low:  -0.57%
+
+Date: 2023-09-25
+  FII View:  Mildly Bearish | PRO View:         Bearish | Combo: Mildly Bearish + Bearish
+  VIX Regime:  Low (<15) | VIX Open: 10.66
+  Cross Time:      11:10 | Session: Late Morning
+  Expiry:  NO
+  Outcome: Worked and Remained | Actual Close %:  -0.02%
+  Move at Cross:   0.34% | Intraday Low:  -0.39%
+
+Date: 2024-03-20
+  FII View:         Bearish | PRO View:  Strong Bearish | Combo: Bearish + Strong Bearish
+  VIX Regime:  Low (<15) | VIX Open: 14.11
+  Cross Time:      10:40 | Session: Late Morning
+  Expiry:  NO
+  Outcome: Reversed by Close | Actual Close %:   0.05%
+  Move at Cross:   0.59% | Intraday Low:  -0.61%
+
+Date: 2024-09-12
+  FII View:  Mildly Bearish | PRO View:  Strong Bearish | Combo: Mildly Bearish + Strong Bearish
+  VIX Regime:  Low (<15) | VIX Open: 13.63
+  Cross Time:      11:25 | Session: Late Morning
+  Expiry: YES
+  Outcome: Reversed by Close | Actual Close %:   1.02%
+  Move at Cross:   0.47% | Intraday Low:  -0.47%
+
+Date: 2025-01-09
+  FII View:         Bearish | PRO View:         Bearish | Combo: Bearish + Bearish
+  VIX Regime:  Low (<15) | VIX Open: 14.47
+  Cross Time:      10:45 | Session: Late Morning
+  Expiry: YES
+  Outcome: Worked and Remained | Actual Close %:  -0.50%
+  Move at Cross:   0.54% | Intraday Low:  -0.73%
+
+Date: 2025-07-02
+  FII View:         Bearish | PRO View:         Bearish | Combo: Bearish + Bearish
+  VIX Regime:  Low (<15) | VIX Open: 12.53
+  Cross Time:      10:40 | Session: Late Morning
+  Expiry:  NO
+  Outcome: Worked and Remained | Actual Close %:  -0.57%
+  Move at Cross:   0.41% | Intraday Low:  -0.82%
+
+Date: 2025-08-06
+  FII View:  Mildly Bearish | PRO View:  Strong Bearish | Combo: Mildly Bearish + Strong Bearish
+  VIX Regime:  Low (<15) | VIX Open: 11.71
+  Cross Time:      10:35 | Session: Late Morning
+  Expiry:  NO
+  Outcome: Worked and Remained | Actual Close %:  -0.29%
+  Move at Cross:   0.39% | Intraday Low:  -0.41%
+
+Date: 2025-10-31
+  FII View:  Strong Bearish | PRO View:  Strong Bearish | Combo: Strong Bearish + Strong Bearish
+  VIX Regime:  Low (<15) | VIX Open: 12.07
+  Cross Time:      11:10 | Session: Late Morning
+  Expiry:  NO
+  Outcome: Worked and Remained | Actual Close %:  -0.51%
+  Move at Cross:   0.39% | Intraday Low:  -0.59%
+
+Date: 2025-12-01
+  FII View:         Bearish | PRO View:         Bearish | Combo: Bearish + Bearish
+  VIX Regime:  Low (<15) | VIX Open: 11.62
+  Cross Time:      10:50 | Session: Late Morning
+  Expiry:  NO
+  Outcome: Worked and Remained | Actual Close %:  -0.57%
+  Move at Cross:   0.37% | Intraday Low:  -0.77%
+
+Date: 2026-01-21
+  FII View:  Mildly Bearish | PRO View:         Bearish | Combo: Mildly Bearish + Bearish
+  VIX Regime:  Low (<15) | VIX Open: 12.73
+  Cross Time:      10:40 | Session: Late Morning
+  Expiry:  NO
+  Outcome: Reversed by Close | Actual Close %:   0.11%
+  Move at Cross:   0.46% | Intraday Low:  -0.88%
+
+Date: 2026-05-12
+  FII View:         Bearish | PRO View:  Mildly Bearish | Combo: Bearish + Mildly Bearish
+  VIX Regime: Normal (15-20) | VIX Open: 18.55
+  Cross Time:      11:05 | Session: Late Morning
+  Expiry: YES
+  Outcome: Worked and Remained | Actual Close %:  -1.23%
+  Move at Cross:   0.61% | Intraday Low:  -1.58%
+
+Date: 2026-06-09
+  FII View:  Mildly Bearish | PRO View:         Bearish | Combo: Mildly Bearish + Bearish
+  VIX Regime: Normal (15-20) | VIX Open: 17.03
+  Cross Time:      10:45 | Session: Late Morning
+  Expiry: YES
+  Outcome: Worked and Remained | Actual Close %:  -0.01%
+  Move at Cross:   0.55% | Intraday Low:  -0.66%
+
+Date: 2026-08-05
+  FII View:         Bearish | PRO View:         Bearish | Combo: Bearish + Bearish
+  VIX Regime:  Low (<15) | VIX Open: 12.19
+  Cross Time:      10:30 | Session: Late Morning
+  Expiry:  NO
+  Outcome: Worked and Remained | Actual Close %:  -0.18%
+  Move at Cross:   0.43% | Intraday Low:  -0.69%
+
+----------------------------------------------------------------------------------------------------
+FII-PRO COMBINATION BREAKDOWN:
+----------------------------------------------------------------------------------------------------
+
+FII-PRO Combination                          N  Wins    WR% Avg Close%
+----------------------------------------------------------------------------------------------------
+Mildly Bearish + Strong Bearish              6     0    0.0      -0.15
+Bearish + Bearish                            5     0    0.0      -0.31
+Bearish + Strong Bearish                     4     0    0.0      -0.03
+Mildly Bearish + Bearish                     3     0    0.0       0.03
+Bearish + Mildly Bearish                     1     0    0.0      -1.23
+Strong Bearish + Bearish                     1     0    0.0       0.46
+Strong Bearish + Strong Bearish              1     0    0.0      -0.51
+
+----------------------------------------------------------------------------------------------------
+VIX REGIME BREAKDOWN:
+----------------------------------------------------------------------------------------------------
+
+VIX Regime               N  Wins    WR% Avg Close%
+----------------------------------------------------------------------------------------------------
+Low (<15)               12     0    0.0      -0.19
+Normal (15-20)           7     0    0.0      -0.31
+Elevated (20-30)         2     0    0.0       0.35
+
+----------------------------------------------------------------------------------------------------
+EXPIRY vs NON-EXPIRY BREAKDOWN:
+----------------------------------------------------------------------------------------------------
+
+Type                N  Wins    WR% Avg Close%
+----------------------------------------------------------------------------------------------------
+Non-Expiry         14     0    0.0      -0.21
+Expiry              7     0    0.0      -0.11
+
+
+====================================================================================================
+PART 2: ALL SESSIONS COMPARISON - BEARISH EXCEEDED HALF THRESHOLD
+====================================================================================================
+
+Total Bearish Exceeded Half Threshold Cases: 152
+
+====================================================================================================
+SESSION: OPENING
+====================================================================================================
+
+Overall: N=44, Wins=0, Win Rate=0.0%, Avg Close%=-0.51%
+
+FII-PRO Combination                          N  Wins    WR% Avg Close%
+----------------------------------------------------------------------------------------------------
+Strong Bearish + Strong Bearish             19     0    0.0      -0.32
+Bearish + Strong Bearish                    11     0    0.0      -0.63
+Mildly Bearish + Strong Bearish              6     0    0.0      -0.68
+Bearish + Bearish                            4     0    0.0      -0.77
+Mildly Bearish + Bearish                     3     0    0.0      -0.81
+Strong Bearish + Bearish                     1     0    0.0       0.39
+
+VIX Regime               N  Wins    WR% Avg Close%
+----------------------------------------------------------------------------------------------------
+Low (<15)               22     0    0.0      -0.42
+Normal (15-20)          14     0    0.0      -0.73
+Elevated (20-30)         8     0    0.0      -0.34
+
+Type                N  Wins    WR% Avg Close%
+----------------------------------------------------------------------------------------------------
+Non-Expiry         35     0    0.0      -0.39
+Expiry              9     0    0.0      -0.95
+
+====================================================================================================
+SESSION: EARLY MORNING
+====================================================================================================
+
+Overall: N=34, Wins=0, Win Rate=0.0%, Avg Close%=-0.47%
+
+FII-PRO Combination                          N  Wins    WR% Avg Close%
+----------------------------------------------------------------------------------------------------
+Bearish + Strong Bearish                    12     0    0.0      -0.31
+Strong Bearish + Strong Bearish             10     0    0.0      -0.58
+Bearish + Bearish                            3     0    0.0      -0.78
+Mildly Bearish + Strong Bearish              3     0    0.0      -0.60
+Mildly Bearish + Bearish                     2     0    0.0      -0.41
+Strong Bearish + Mildly Bearish              2     0    0.0      -0.67
+Bearish + Mildly Bearish                     1     0    0.0      -0.09
+Mildly Bearish + Mildly Bearish              1     0    0.0       0.09
+
+VIX Regime               N  Wins    WR% Avg Close%
+----------------------------------------------------------------------------------------------------
+Low (<15)               20     0    0.0      -0.47
+Normal (15-20)          10     0    0.0      -0.69
+Elevated (20-30)         4     0    0.0       0.12
+
+Type                N  Wins    WR% Avg Close%
+----------------------------------------------------------------------------------------------------
+Non-Expiry         23     0    0.0      -0.60
+Expiry             11     0    0.0      -0.19
+
+====================================================================================================
+SESSION: LATE MORNING
+====================================================================================================
+
+Overall: N=21, Wins=0, Win Rate=0.0%, Avg Close%=-0.18%
+
+FII-PRO Combination                          N  Wins    WR% Avg Close%
+----------------------------------------------------------------------------------------------------
+Mildly Bearish + Strong Bearish              6     0    0.0      -0.15
+Bearish + Bearish                            5     0    0.0      -0.31
+Bearish + Strong Bearish                     4     0    0.0      -0.03
+Mildly Bearish + Bearish                     3     0    0.0       0.03
+Bearish + Mildly Bearish                     1     0    0.0      -1.23
+Strong Bearish + Bearish                     1     0    0.0       0.46
+Strong Bearish + Strong Bearish              1     0    0.0      -0.51
+
+VIX Regime               N  Wins    WR% Avg Close%
+----------------------------------------------------------------------------------------------------
+Low (<15)               12     0    0.0      -0.19
+Normal (15-20)           7     0    0.0      -0.31
+Elevated (20-30)         2     0    0.0       0.35
+
+Type                N  Wins    WR% Avg Close%
+----------------------------------------------------------------------------------------------------
+Non-Expiry         14     0    0.0      -0.21
+Expiry              7     0    0.0      -0.11
+
+====================================================================================================
+SESSION: MIDDAY
+====================================================================================================
+
+Overall: N=11, Wins=0, Win Rate=0.0%, Avg Close%=-0.57%
+
+FII-PRO Combination                          N  Wins    WR% Avg Close%
+----------------------------------------------------------------------------------------------------
+Strong Bearish + Strong Bearish              6     0    0.0      -0.34
+Bearish + Strong Bearish                     3     0    0.0      -0.71
+Bearish + Bearish                            1     0    0.0      -1.25
+Strong Bearish + Bearish                     1     0    0.0      -0.84
+
+VIX Regime               N  Wins    WR% Avg Close%
+----------------------------------------------------------------------------------------------------
+Low (<15)               10     0    0.0      -0.58
+Normal (15-20)           1     0    0.0      -0.46
+
+Type                N  Wins    WR% Avg Close%
+----------------------------------------------------------------------------------------------------
+Non-Expiry          9     0    0.0      -0.55
+Expiry              2     0    0.0      -0.65
+
+====================================================================================================
+SESSION: EARLY AFTERNOON
+====================================================================================================
+
+Overall: N=15, Wins=0, Win Rate=0.0%, Avg Close%=-0.41%
+
+FII-PRO Combination                          N  Wins    WR% Avg Close%
+----------------------------------------------------------------------------------------------------
+Bearish + Strong Bearish                     6     0    0.0      -0.46
+Strong Bearish + Strong Bearish              4     0    0.0      -0.60
+Bearish + Mildly Bearish                     2     0    0.0       0.04
+Bearish + Bearish                            1     0    0.0      -0.44
+Mildly Bearish + Strong Bearish              1     0    0.0      -0.13
+Strong Bearish + Bearish                     1     0    0.0      -0.44
+
+VIX Regime               N  Wins    WR% Avg Close%
+----------------------------------------------------------------------------------------------------
+Low (<15)               11     0    0.0      -0.36
+Normal (15-20)           4     0    0.0      -0.55
+
+Type                N  Wins    WR% Avg Close%
+----------------------------------------------------------------------------------------------------
+Non-Expiry         11     0    0.0      -0.44
+Expiry              4     0    0.0      -0.32
+
+====================================================================================================
+SESSION: LATE AFTERNOON
+====================================================================================================
+
+Overall: N=10, Wins=0, Win Rate=0.0%, Avg Close%=-0.55%
+
+FII-PRO Combination                          N  Wins    WR% Avg Close%
+----------------------------------------------------------------------------------------------------
+Bearish + Strong Bearish                     3     0    0.0      -0.44
+Mildly Bearish + Bearish                     3     0    0.0      -0.40
+Mildly Bearish + Strong Bearish              3     0    0.0      -0.93
+Strong Bearish + Strong Bearish              1     0    0.0      -0.18
+
+VIX Regime               N  Wins    WR% Avg Close%
+----------------------------------------------------------------------------------------------------
+Low (<15)                6     0    0.0      -0.40
+Elevated (20-30)         4     0    0.0      -0.77
+
+Type                N  Wins    WR% Avg Close%
+----------------------------------------------------------------------------------------------------
+Non-Expiry          9     0    0.0      -0.39
+Expiry              1     0    0.0      -2.00
+
+====================================================================================================
+SESSION: CLOSING
+====================================================================================================
+
+Overall: N=17, Wins=0, Win Rate=0.0%, Avg Close%=-0.46%
+
+FII-PRO Combination                          N  Wins    WR% Avg Close%
+----------------------------------------------------------------------------------------------------
+Bearish + Strong Bearish                     5     0    0.0      -0.36
+Mildly Bearish + Strong Bearish              4     0    0.0      -0.64
+Strong Bearish + Strong Bearish              3     0    0.0      -0.56
+Mildly Bearish + Bearish                     2     0    0.0      -0.42
+Strong Bearish + Bearish                     2     0    0.0      -0.34
+Bearish + Bearish                            1     0    0.0      -0.29
+
+VIX Regime               N  Wins    WR% Avg Close%
+----------------------------------------------------------------------------------------------------
+Low (<15)               11     0    0.0      -0.44
+Elevated (20-30)         4     0    0.0      -0.60
+Normal (15-20)           2     0    0.0      -0.30
+
+Type                N  Wins    WR% Avg Close%
+----------------------------------------------------------------------------------------------------
+Non-Expiry          9     0    0.0      -0.51
+Expiry              8     0    0.0      -0.40
+
+
+====================================================================================================
+PART 3: FII-PRO COMBINATION PROBABILITY MATRIX - BEARISH EXCEEDED HALF
+====================================================================================================
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+WIN RATE MATRIX (%) BY SESSION AND FII-PRO COMBINATION:
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Opening:
+  Bearish + Bearish                            0.0% (4)
+  Bearish + Strong Bearish                    0.0% (11)
+  Mildly Bearish + Bearish                     0.0% (3)
+  Mildly Bearish + Strong Bearish              0.0% (6)
+  Strong Bearish + Bearish                     0.0% (1)
+  Strong Bearish + Strong Bearish             0.0% (19)
+
+Early Morning:
+  Bearish + Bearish                            0.0% (3)
+  Bearish + Mildly Bearish                     0.0% (1)
+  Bearish + Strong Bearish                    0.0% (12)
+  Mildly Bearish + Bearish                     0.0% (2)
+  Mildly Bearish + Mildly Bearish              0.0% (1)
+  Mildly Bearish + Strong Bearish              0.0% (3)
+  Strong Bearish + Mildly Bearish              0.0% (2)
+  Strong Bearish + Strong Bearish             0.0% (10)
+
+Late Morning:
+  Bearish + Bearish                            0.0% (5)
+  Bearish + Mildly Bearish                     0.0% (1)
+  Bearish + Strong Bearish                     0.0% (4)
+  Mildly Bearish + Bearish                     0.0% (3)
+  Mildly Bearish + Strong Bearish              0.0% (6)
+  Strong Bearish + Bearish                     0.0% (1)
+  Strong Bearish + Strong Bearish              0.0% (1)
+
+Midday:
+  Bearish + Bearish                            0.0% (1)
+  Bearish + Strong Bearish                     0.0% (3)
+  Strong Bearish + Bearish                     0.0% (1)
+  Strong Bearish + Strong Bearish              0.0% (6)
+
+Early Afternoon:
+  Bearish + Bearish                            0.0% (1)
+  Bearish + Mildly Bearish                     0.0% (2)
+  Bearish + Strong Bearish                     0.0% (6)
+  Mildly Bearish + Strong Bearish              0.0% (1)
+  Strong Bearish + Bearish                     0.0% (1)
+  Strong Bearish + Strong Bearish              0.0% (4)
+
+Late Afternoon:
+  Bearish + Strong Bearish                     0.0% (3)
+  Mildly Bearish + Bearish                     0.0% (3)
+  Mildly Bearish + Strong Bearish              0.0% (3)
+  Strong Bearish + Strong Bearish              0.0% (1)
+
+Closing:
+  Bearish + Bearish                            0.0% (1)
+  Bearish + Strong Bearish                     0.0% (5)
+  Mildly Bearish + Bearish                     0.0% (2)
+  Mildly Bearish + Strong Bearish              0.0% (4)
+  Strong Bearish + Bearish                     0.0% (2)
+  Strong Bearish + Strong Bearish              0.0% (3)
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+OVERALL WIN RATE BY FII-PRO COMBINATION (ALL BEARISH EXCEEDED HALF SESSIONS):
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+FII-PRO Combination                          N  Wins    WR% Avg Close%
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Bearish + Bearish                           15     0    0.0      -0.60
+Bearish + Mildly Bearish                     4     0    0.0      -0.31
+Bearish + Strong Bearish                    44     0    0.0      -0.43
+Mildly Bearish + Bearish                    13     0    0.0      -0.40
+Mildly Bearish + Mildly Bearish              1     0    0.0       0.09
+Mildly Bearish + Strong Bearish             23     0    0.0      -0.53
+Strong Bearish + Bearish                     6     0    0.0      -0.19
+Strong Bearish + Mildly Bearish              2     0    0.0      -0.67
+Strong Bearish + Strong Bearish             44     0    0.0      -0.43
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+SAFEST COMBINATIONS (Highest Win Rate, Min 5 occurrences):
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Rank  FII-PRO Combination                          N    WR%
+------------------------------------------------------------------------------------------------------------------------------------------------------
+1     Bearish + Bearish                           15    0.0
+2     Bearish + Strong Bearish                    44    0.0
+3     Mildly Bearish + Bearish                    13    0.0
+4     Mildly Bearish + Strong Bearish             23    0.0
+5     Strong Bearish + Bearish                     6    0.0
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+MOST DANGEROUS COMBINATIONS IN LATE MORNING (Min 3 occurrences):
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Rank  FII-PRO Combination                          N    WR%
+------------------------------------------------------------------------------------------------------------------------------------------------------
+1     Bearish + Bearish                            5    0.0
+2     Bearish + Strong Bearish                     4    0.0
+3     Mildly Bearish + Bearish                     3    0.0
+4     Mildly Bearish + Strong Bearish              6    0.0
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+EXPECTED VALUE ANALYSIS (Probability × Win Rate):
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Note: Expected Value = (Frequency % of Exceeded Half) × Win Rate%
+
+FII-PRO Combination                          N   Freq%    WR%       EV
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Bearish + Bearish                           15    9.9%    0.0     0.00
+Bearish + Mildly Bearish                     4    2.6%    0.0     0.00
+Bearish + Strong Bearish                    44   28.9%    0.0     0.00
+Mildly Bearish + Bearish                    13    8.6%    0.0     0.00
+Mildly Bearish + Mildly Bearish              1    0.7%    0.0     0.00
+Mildly Bearish + Strong Bearish             23   15.1%    0.0     0.00
+Strong Bearish + Bearish                     6    3.9%    0.0     0.00
+Strong Bearish + Mildly Bearish              2    1.3%    0.0     0.00
+Strong Bearish + Strong Bearish             44   28.9%    0.0     0.00
+
+
+====================================================================================================
+PART 4: BULLISH COMPARISON - ALL SESSIONS WITH EXCEEDED HALF THRESHOLD
+====================================================================================================
+
+Total Bullish Exceeded Half Threshold Cases: 85
+
+====================================================================================================
+SESSION: OPENING
+====================================================================================================
+
+Overall: N=17, Wins=0, Win Rate=0.0%, Avg Close%=0.81%
+
+FII-PRO Combination                          N  Wins    WR% Avg Close%
+----------------------------------------------------------------------------------------------------
+Strong Bullish + Strong Bullish              4     0    0.0       0.97
+Bullish + Strong Bullish                     3     0    0.0       0.65
+Strong Bullish + Bullish                     3     0    0.0       0.47
+Bullish + Bullish                            2     0    0.0       0.65
+Mildly Bullish + Strong Bullish              2     0    0.0       0.92
+Bullish + Mildly Bullish                     1     0    0.0       1.09
+Mildly Bullish + Bullish                     1     0    0.0       1.27
+Mildly Bullish + Mildly Bullish              1     0    0.0       1.03
+
+VIX Regime               N  Wins    WR% Avg Close%
+----------------------------------------------------------------------------------------------------
+Low (<15)               10     0    0.0       0.74
+Normal (15-20)           6     0    0.0       1.13
+Elevated (20-30)         1     0    0.0      -0.45
+
+Type                N  Wins    WR% Avg Close%
+----------------------------------------------------------------------------------------------------
+Non-Expiry         14     0    0.0       0.80
+Expiry              3     0    0.0       0.84
+
+====================================================================================================
+SESSION: EARLY MORNING
+====================================================================================================
+
+Overall: N=12, Wins=0, Win Rate=0.0%, Avg Close%=0.61%
+
+FII-PRO Combination                          N  Wins    WR% Avg Close%
+----------------------------------------------------------------------------------------------------
+Bullish + Bullish                            3     0    0.0       0.68
+Bullish + Strong Bullish                     3     0    0.0       0.44
+Strong Bullish + Strong Bullish              2     0    0.0       0.88
+Mildly Bullish + Bullish                     1     0    0.0       0.55
+Mildly Bullish + Mildly Bullish              1     0    0.0       1.17
+Mildly Bullish + Strong Bullish              1     0    0.0       0.82
+Strong Bullish + Bullish                     1     0    0.0      -0.32
+
+VIX Regime               N  Wins    WR% Avg Close%
+----------------------------------------------------------------------------------------------------
+Low (<15)                6     0    0.0       0.27
+Normal (15-20)           5     0    0.0       0.91
+Elevated (20-30)         1     0    0.0       1.17
+
+Type                N  Wins    WR% Avg Close%
+----------------------------------------------------------------------------------------------------
+Non-Expiry          8     0    0.0       0.61
+Expiry              4     0    0.0       0.62
+
+====================================================================================================
+SESSION: LATE MORNING
+====================================================================================================
+
+Overall: N=13, Wins=0, Win Rate=0.0%, Avg Close%=0.59%
+
+FII-PRO Combination                          N  Wins    WR% Avg Close%
+----------------------------------------------------------------------------------------------------
+Strong Bullish + Strong Bullish              5     0    0.0       0.35
+Bullish + Strong Bullish                     3     0    0.0       0.29
+Bullish + Mildly Bullish                     2     0    0.0       1.15
+Mildly Bullish + Strong Bullish              2     0    0.0       0.41
+Strong Bullish + Mildly Bullish              1     0    0.0       1.87
+
+VIX Regime               N  Wins    WR% Avg Close%
+----------------------------------------------------------------------------------------------------
+Low (<15)                9     0    0.0       0.47
+Normal (15-20)           3     0    0.0       0.52
+Elevated (20-30)         1     0    0.0       1.87
+
+Type                N  Wins    WR% Avg Close%
+----------------------------------------------------------------------------------------------------
+Non-Expiry         11     0    0.0       0.47
+Expiry              2     0    0.0       1.25
+
+====================================================================================================
+SESSION: MIDDAY
+====================================================================================================
+
+Overall: N=15, Wins=0, Win Rate=0.0%, Avg Close%=0.52%
+
+FII-PRO Combination                          N  Wins    WR% Avg Close%
+----------------------------------------------------------------------------------------------------
+Bullish + Strong Bullish                     5     0    0.0       0.52
+Strong Bullish + Strong Bullish              5     0    0.0       0.44
+Mildly Bullish + Bullish                     2     0    0.0       0.71
+Bullish + Bullish                            1     0    0.0       1.08
+Mildly Bullish + Strong Bullish              1     0    0.0       0.12
+Strong Bullish + Mildly Bullish              1     0    0.0       0.38
+
+VIX Regime               N  Wins    WR% Avg Close%
+----------------------------------------------------------------------------------------------------
+Low (<15)                7     0    0.0       0.48
+Normal (15-20)           6     0    0.0       0.30
+Elevated (20-30)         2     0    0.0       1.32
+
+Type                N  Wins    WR% Avg Close%
+----------------------------------------------------------------------------------------------------
+Non-Expiry         10     0    0.0       0.49
+Expiry              5     0    0.0       0.58
+
+====================================================================================================
+SESSION: EARLY AFTERNOON
+====================================================================================================
+
+Overall: N=10, Wins=0, Win Rate=0.0%, Avg Close%=0.68%
+
+FII-PRO Combination                          N  Wins    WR% Avg Close%
+----------------------------------------------------------------------------------------------------
+Strong Bullish + Strong Bullish              3     0    0.0       0.28
+Bullish + Strong Bullish                     2     0    0.0       0.97
+Mildly Bullish + Strong Bullish              2     0    0.0       0.99
+Bullish + Bullish                            1     0    0.0       0.88
+Mildly Bullish + Bullish                     1     0    0.0       0.55
+Mildly Bullish + Mildly Bullish              1     0    0.0       0.62
+
+VIX Regime               N  Wins    WR% Avg Close%
+----------------------------------------------------------------------------------------------------
+Low (<15)                6     0    0.0       0.45
+Elevated (20-30)         2     0    0.0       0.75
+Normal (15-20)           2     0    0.0       1.31
+
+Type                N  Wins    WR% Avg Close%
+----------------------------------------------------------------------------------------------------
+Non-Expiry          8     0    0.0       0.59
+Expiry              2     0    0.0       1.04
+
+====================================================================================================
+SESSION: LATE AFTERNOON
+====================================================================================================
+
+Overall: N=10, Wins=0, Win Rate=0.0%, Avg Close%=0.31%
+
+FII-PRO Combination                          N  Wins    WR% Avg Close%
+----------------------------------------------------------------------------------------------------
+Strong Bullish + Strong Bullish              5     0    0.0       0.19
+Bullish + Strong Bullish                     4     0    0.0       0.56
+Bullish + Bullish                            1     0    0.0      -0.08
+
+VIX Regime               N  Wins    WR% Avg Close%
+----------------------------------------------------------------------------------------------------
+Low (<15)                7     0    0.0       0.37
+Elevated (20-30)         3     0    0.0       0.18
+
+Type                N  Wins    WR% Avg Close%
+----------------------------------------------------------------------------------------------------
+Non-Expiry          7     0    0.0       0.21
+Expiry              3     0    0.0       0.56
+
+====================================================================================================
+SESSION: CLOSING
+====================================================================================================
+
+Overall: N=8, Wins=0, Win Rate=0.0%, Avg Close%=0.46%
+
+FII-PRO Combination                          N  Wins    WR% Avg Close%
+----------------------------------------------------------------------------------------------------
+Mildly Bullish + Bullish                     3     0    0.0       0.42
+Bullish + Strong Bullish                     2     0    0.0       0.45
+Strong Bullish + Strong Bullish              2     0    0.0       0.45
+Bullish + Bullish                            1     0    0.0       0.61
+
+VIX Regime               N  Wins    WR% Avg Close%
+----------------------------------------------------------------------------------------------------
+Low (<15)                6     0    0.0       0.39
+Normal (15-20)           2     0    0.0       0.66
+
+Type                N  Wins    WR% Avg Close%
+----------------------------------------------------------------------------------------------------
+Non-Expiry          8     0    0.0       0.46
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+OVERALL WIN RATE BY FII-PRO COMBINATION (ALL BULLISH EXCEEDED HALF SESSIONS):
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+FII-PRO Combination                          N  Wins    WR% Avg Close%
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Bullish + Bullish                            9     0    0.0       0.65
+Bullish + Mildly Bullish                     3     0    0.0       1.13
+Bullish + Strong Bullish                    22     0    0.0       0.54
+Mildly Bullish + Bullish                     8     0    0.0       0.63
+Mildly Bullish + Mildly Bullish              3     0    0.0       0.94
+Mildly Bullish + Strong Bullish              8     0    0.0       0.70
+Strong Bullish + Bullish                     4     0    0.0       0.27
+Strong Bullish + Mildly Bullish              2     0    0.0       1.12
+Strong Bullish + Strong Bullish             26     0    0.0       0.47
+
+====================================================================================================
+ANALYSIS COMPLETE
+====================================================================================================

@@ -381,29 +381,29 @@ Once a bearish cross happens in the late-morning window, you can observe how far
 
 #### All 21 Late Morning Bearish Crosses (Reference)
 
-| Date | FII View | PRO View | VIX | Cross | Low% | Close% | Held? | Exp |
-|------|----------|----------|----:|:-----:|-----:|-------:|:-----:|:---:|
-| 2020-11-20 | Mildly Bearish | Strong Bearish | 19.6 | 11:20 | -0.65% | +0.25% | ✗ | |
-| 2021-04-01 | Strong Bearish | Bearish | 20.6 | 10:55 | -0.71% | +0.46% | ✗ | Yes |
-| 2021-09-21 | Bearish | Strong Bearish | 17.5 | 11:10 | -0.71% | +0.65% | ✗ | |
-| 2022-01-20 | Mildly Bearish | Strong Bearish | 17.8 | 10:45 | -1.52% | -0.77% | ✓ | Yes |
-| 2022-04-28 | Mildly Bearish | Strong Bearish | 20.6 | 10:45 | -0.69% | +0.24% | ✗ | Yes |
-| 2022-08-03 | Bearish | Bearish | 18.5 | 11:05 | -0.71% | +0.25% | ✗ | |
-| 2022-08-19 | Mildly Bearish | Strong Bearish | 17.4 | 11:05 | -1.42% | -1.33% | ✓ | |
-| 2023-05-17 | Bearish | Strong Bearish | 13.3 | 10:45 | -1.01% | -0.56% | ✓ | |
-| 2023-07-25 | Bearish | Strong Bearish | 11.7 | 11:05 | -0.57% | -0.26% | ✓ | |
-| 2023-09-25 | Mildly Bearish | Bearish | 10.7 | 11:10 | -0.39% | -0.02% | ✓ | |
-| 2024-03-20 | Bearish | Strong Bearish | 14.1 | 10:40 | -0.61% | +0.05% | ✗ | |
-| 2024-09-12 | Mildly Bearish | Strong Bearish | 13.6 | 11:25 | -0.47% | +1.02% | ✗ | Yes |
-| 2025-01-09 | Bearish | Bearish | 14.5 | 10:45 | -0.73% | -0.50% | ✓ | Yes |
-| 2025-07-02 | Bearish | Bearish | 12.5 | 10:40 | -0.82% | -0.57% | ✓ | |
-| 2025-08-06 | Mildly Bearish | Strong Bearish | 11.7 | 10:35 | -0.41% | -0.29% | ✓ | |
-| 2025-10-31 | Strong Bearish | Strong Bearish | 12.1 | 11:10 | -0.59% | -0.51% | ✓ | |
-| 2025-12-01 | Bearish | Bearish | 11.6 | 10:50 | -0.77% | -0.57% | ✓ | |
-| 2026-01-21 | Mildly Bearish | Bearish | 12.7 | 10:40 | -0.88% | +0.11% | ✗ | |
-| 2026-05-12 | Bearish | Mildly Bearish | 18.6 | 11:05 | -1.58% | -1.23% | ✓ | Yes |
-| 2026-06-09 | Mildly Bearish | Bearish | 17.0 | 10:45 | -0.66% | -0.01% | ✓ | Yes |
-| 2026-08-05 | Bearish | Bearish | 12.2 | 10:30 | -0.69% | -0.18% | ✓ | |
+| Date | FII View | PRO View | VIX | Cross | Low% | Close% | Held? | Exp | Close≥Half |
+|------|----------|----------|----:|:-----:|-----:|-------:|:-----:|:---:|:----------:|
+| 2020-11-20 | Mildly Bearish | Strong Bearish | 19.6 | 11:20 | -0.65% | +0.25% | ✗ | | ✗ |
+| 2021-04-01 | Strong Bearish | Bearish | 20.6 | 10:55 | -0.71% | +0.46% | ✗ | Yes | ✗ |
+| 2021-09-21 | Bearish | Strong Bearish | 17.5 | 11:10 | -0.71% | +0.65% | ✗ | | ✗ |
+| 2022-01-20 | Mildly Bearish | Strong Bearish | 17.8 | 10:45 | -1.52% | -0.77% | ✓ | Yes | ✓ |
+| 2022-04-28 | Mildly Bearish | Strong Bearish | 20.6 | 10:45 | -0.69% | +0.24% | ✗ | Yes | ✗ |
+| 2022-08-03 | Bearish | Bearish | 18.5 | 11:05 | -0.71% | +0.25% | ✗ | | ✗ |
+| 2022-08-19 | Mildly Bearish | Strong Bearish | 17.4 | 11:05 | -1.42% | -1.33% | ✓ | | ✓ |
+| 2023-05-17 | Bearish | Strong Bearish | 13.3 | 10:45 | -1.01% | -0.56% | ✓ | | ✓ |
+| 2023-07-25 | Bearish | Strong Bearish | 11.7 | 11:05 | -0.57% | -0.26% | ✓ | | ✗ |
+| 2023-09-25 | Mildly Bearish | Bearish | 10.7 | 11:10 | -0.39% | -0.02% | ✓ | | ✗ |
+| 2024-03-20 | Bearish | Strong Bearish | 14.1 | 10:40 | -0.61% | +0.05% | ✗ | | ✗ |
+| 2024-09-12 | Mildly Bearish | Strong Bearish | 13.6 | 11:25 | -0.47% | +1.02% | ✗ | Yes | ✗ |
+| 2025-01-09 | Bearish | Bearish | 14.5 | 10:45 | -0.73% | -0.50% | ✓ | Yes | ✓ |
+| 2025-07-02 | Bearish | Bearish | 12.5 | 10:40 | -0.82% | -0.57% | ✓ | | ✓ |
+| 2025-08-06 | Mildly Bearish | Strong Bearish | 11.7 | 10:35 | -0.41% | -0.29% | ✓ | | ✗ |
+| 2025-10-31 | Strong Bearish | Strong Bearish | 12.1 | 11:10 | -0.59% | -0.51% | ✓ | | ✓ |
+| 2025-12-01 | Bearish | Bearish | 11.6 | 10:50 | -0.77% | -0.57% | ✓ | | ✓ |
+| 2026-01-21 | Mildly Bearish | Bearish | 12.7 | 10:40 | -0.88% | +0.11% | ✗ | | ✗ |
+| 2026-05-12 | Bearish | Mildly Bearish | 18.6 | 11:05 | -1.58% | -1.23% | ✓ | Yes | ✓ |
+| 2026-06-09 | Mildly Bearish | Bearish | 17.0 | 10:45 | -0.66% | -0.01% | ✓ | Yes | ✗ |
+| 2026-08-05 | Bearish | Bearish | 12.2 | 10:30 | -0.69% | -0.18% | ✓ | | ✗ |
 
 ```
 LATE MORNING BEARISH: DECISION RULES
@@ -527,30 +527,30 @@ For bullish alignment, the reversal (price drops below open) happens at a median
 
 ### Recent Examples (2025-2026)
 
-| Date | FII | PRO | VIX Predicted% | High% | Close% | Cross Time | Expiry? |
-|------|-----|-----|------:|------:|------:|:----------:|:---:|
-| 2025-01-02 | Bullish | Mildly Bullish | 0.91% | +1.87% | **+1.62%** | 10:35 | Yes |
-| 2025-01-29 | Strong Bullish | Strong Bullish | 1.15% | +0.68% | **+0.65%** | 12:15 | No |
-| 2025-03-24 | Bullish | Mildly Bullish | 0.79% | +0.82% | **+0.68%** | 10:55 | No |
-| 2025-05-15 | Mildly Bullish | Strong Bullish | 1.09% | +1.71% | **+1.38%** | 13:05 | Yes |
-| 2025-06-26 | Mildly Bullish | Mildly Bullish | 0.82% | +1.17% | **+1.03%** | 9:30 | Yes |
-| 2025-10-16 | Bullish | Strong Bullish | 0.66% | +0.91% | **+0.67%** | 12:15 | No |
-| 2025-11-26 | Mildly Bullish | Strong Bullish | 0.77% | +1.44% | **+1.40%** | 9:15 | No |
-| 2025-12-22 | Strong Bullish | Strong Bullish | 0.60% | +0.48% | **+0.41%** | 9:30 | No |
-| 2026-02-17 | Bullish | Strong Bullish | 0.84% | +0.49% | **+0.30%** | 11:35 | Yes |
-| 2026-04-13 | Bullish | Bullish | 1.19% | +1.35% | **+0.97%** | 10:25 | Yes |
+| Date | FII | PRO | VIX Predicted% | High% | Close% | Cross Time | Expiry? | Close≥Half |
+|------|-----|-----|------:|------:|------:|:----------:|:---:|:----------:|
+| 2025-01-02 | Bullish | Mildly Bullish | 0.91% | +1.87% | **+1.62%** | 10:35 | Yes | ✓ |
+| 2025-01-29 | Strong Bullish | Strong Bullish | 1.15% | +0.68% | **+0.65%** | 12:15 | No | ✓ |
+| 2025-03-24 | Bullish | Mildly Bullish | 0.79% | +0.82% | **+0.68%** | 10:55 | No | ✓ |
+| 2025-05-15 | Mildly Bullish | Strong Bullish | 1.09% | +1.71% | **+1.38%** | 13:05 | Yes | ✓ |
+| 2025-06-26 | Mildly Bullish | Mildly Bullish | 0.82% | +1.17% | **+1.03%** | 9:30 | Yes | ✓ |
+| 2025-10-16 | Bullish | Strong Bullish | 0.66% | +0.91% | **+0.67%** | 12:15 | No | ✓ |
+| 2025-11-26 | Mildly Bullish | Strong Bullish | 0.77% | +1.44% | **+1.40%** | 9:15 | No | ✓ |
+| 2025-12-22 | Strong Bullish | Strong Bullish | 0.60% | +0.48% | **+0.41%** | 9:30 | No | ✓ |
+| 2026-02-17 | Bullish | Strong Bullish | 0.84% | +0.49% | **+0.30%** | 11:35 | Yes | ✗ |
+| 2026-04-13 | Bullish | Bullish | 1.19% | +1.35% | **+0.97%** | 10:25 | Yes | ✓ |
 
 ### Classic Examples (2021-2024)
 
-| Date | FII | PRO | VIX Predicted% | High% | Close% | Cross Time | Expiry? |
-|------|-----|-----|------:|------:|------:|:----------:|:---:|
-| 2021-08-03 | Bullish | Bullish | 0.81% | +1.22% | **+1.08%** | 12:20 | No |
-| 2021-12-02 | Bullish | Strong Bullish | 1.23% | +1.36% | **+1.27%** | 10:15 | Yes |
-| 2022-02-28 | Strong Bullish | Mildly Bullish | 1.68% | +2.02% | **+1.87%** | 11:20 | No |
-| 2022-07-28 | Strong Bullish | Strong Bullish | 1.14% | +1.01% | **+0.88%** | 11:05 | Yes |
-| 2023-07-20 | Bullish | Strong Bullish | 0.73% | +0.81% | **+0.70%** | 13:15 | Yes |
-| 2024-04-25 | Bullish | Mildly Bullish | 0.65% | +1.38% | **+1.09%** | 9:35 | Yes |
-| 2024-05-23 | Bullish | Strong Bullish | 1.35% | +1.68% | **+1.49%** | 11:55 | Yes |
+| Date | FII | PRO | VIX Predicted% | High% | Close% | Cross Time | Expiry? | Close≥Half |
+|------|-----|-----|------:|------:|------:|:----------:|:---:|:----------:|
+| 2021-08-03 | Bullish | Bullish | 0.81% | +1.22% | **+1.08%** | 12:20 | No | ✓ |
+| 2021-12-02 | Bullish | Strong Bullish | 1.23% | +1.36% | **+1.27%** | 10:15 | Yes | ✓ |
+| 2022-02-28 | Strong Bullish | Mildly Bullish | 1.68% | +2.02% | **+1.87%** | 11:20 | No | ✓ |
+| 2022-07-28 | Strong Bullish | Strong Bullish | 1.14% | +1.01% | **+0.88%** | 11:05 | Yes | ✓ |
+| 2023-07-20 | Bullish | Strong Bullish | 0.73% | +0.81% | **+0.70%** | 13:15 | Yes | ✓ |
+| 2024-04-25 | Bullish | Mildly Bullish | 0.65% | +1.38% | **+1.09%** | 9:35 | Yes | ✓ |
+| 2024-05-23 | Bullish | Strong Bullish | 1.35% | +1.68% | **+1.49%** | 11:55 | Yes | ✓ |
 
 ### Walkthrough: 2025-01-02
 
@@ -602,16 +602,16 @@ Result: Exceeded Half + Worked and Remained ✓
 
 ### All 8 Instances
 
-| Date | FII | PRO | VIX Predicted% | High% | Low% | Close% | Cross Time | Expiry? |
-|------|-----|-----|------:|------:|------:|------:|:----------:|:---:|
-| 2021-11-30 | Bullish | Bullish | 1.31% | +1.60% | -0.69% | **-0.45%** | 9:20 | No |
-| 2022-05-23 | Strong Bullish | Strong Bullish | 1.46% | +0.76% | -0.64% | **-0.61%** | 13:30 | No |
-| 2024-04-30 | Strong Bullish | Strong Bullish | 0.77% | +0.46% | -0.49% | **-0.41%** | 10:50 | No |
-| 2025-01-24 | Strong Bullish | Strong Bullish | 1.05% | +0.70% | -0.58% | **-0.40%** | 11:40 | No |
-| 2025-08-12 | Bullish | Strong Bullish | 0.77% | +0.57% | -0.40% | **-0.32%** | 9:45 | No |
-| 2025-09-02 | Strong Bullish | Bullish | 0.71% | +0.42% | -0.53% | **-0.32%** | 10:00 | Yes |
-| 2025-11-13 | Bullish | Bullish | 0.76% | +0.40% | -0.38% | **-0.08%** | 13:40 | No |
-| 2026-06-25 | Bullish | Strong Bullish | 0.84% | +0.56% | -0.36% | **-0.30%** | 11:55 | No |
+| Date | FII | PRO | VIX Predicted% | High% | Low% | Close% | Cross Time | Expiry? | Close≥Half |
+|------|-----|-----|------:|------:|------:|------:|:----------:|:---:|:----------:|
+| 2021-11-30 | Bullish | Bullish | 1.31% | +1.60% | -0.69% | **-0.45%** | 9:20 | No | ✗ |
+| 2022-05-23 | Strong Bullish | Strong Bullish | 1.46% | +0.76% | -0.64% | **-0.61%** | 13:30 | No | ✗ |
+| 2024-04-30 | Strong Bullish | Strong Bullish | 0.77% | +0.46% | -0.49% | **-0.41%** | 10:50 | No | ✗ |
+| 2025-01-24 | Strong Bullish | Strong Bullish | 1.05% | +0.70% | -0.58% | **-0.40%** | 11:40 | No | ✗ |
+| 2025-08-12 | Bullish | Strong Bullish | 0.77% | +0.57% | -0.40% | **-0.32%** | 9:45 | No | ✗ |
+| 2025-09-02 | Strong Bullish | Bullish | 0.71% | +0.42% | -0.53% | **-0.32%** | 10:00 | Yes | ✗ |
+| 2025-11-13 | Bullish | Bullish | 0.76% | +0.40% | -0.38% | **-0.08%** | 13:40 | No | ✗ |
+| 2026-06-25 | Bullish | Strong Bullish | 0.84% | +0.56% | -0.36% | **-0.30%** | 11:55 | No | ✗ |
 
 ### Walkthrough: 2021-11-30
 
@@ -725,33 +725,33 @@ Timing:
 
 ### Recent Examples (2025-2026)
 
-| Date | FII | PRO | VIX Predicted% | Low% | Close% | Cross Time | Expiry? |
-|------|-----|-----|------:|------:|------:|:----------:|:---:|
-| 2025-01-06 | Bearish | Strong Bearish | 0.85% | -2.05% | **-1.73%** | 9:45 | No |
-| 2025-01-09 | Bearish | Bearish | 0.91% | -0.73% | **-0.50%** | 10:45 | Yes |
-| 2025-03-26 | Bearish | Strong Bearish | 0.86% | -1.05% | **-1.00%** | 11:55 | No |
-| 2025-07-02 | Bearish | Bearish | 0.79% | -0.82% | **-0.57%** | 10:40 | No |
-| 2025-07-25 | Mildly Bearish | Strong Bearish | 0.68% | -0.82% | **-0.71%** | 9:15 | No |
-| 2025-09-05 | Bearish | Strong Bearish | 0.68% | -0.79% | **-0.30%** | 10:10 | No |
-| 2025-10-14 | Bearish | Strong Bearish | 0.69% | -0.86% | **-0.61%** | 10:00 | Yes |
-| 2025-10-31 | Strong Bearish | Strong Bearish | 0.76% | -0.59% | **-0.51%** | 11:10 | No |
-| 2025-11-24 | Strong Bearish | Strong Bearish | 0.86% | -0.81% | **-0.69%** | 15:00 | No |
-| 2026-02-24 | Mildly Bearish | Strong Bearish | 0.89% | -1.23% | **-0.71%** | 9:30 | Yes |
-| 2026-05-12 | Bearish | Mildly Bearish | 1.17% | -1.58% | **-1.23%** | 11:05 | Yes |
+| Date | FII | PRO | VIX Predicted% | Low% | Close% | Cross Time | Expiry? | Close≥Half |
+|------|-----|-----|------:|------:|------:|:----------:|:---:|:----------:|
+| 2025-01-06 | Bearish | Strong Bearish | 0.85% | -2.05% | **-1.73%** | 9:45 | No | ✓ |
+| 2025-01-09 | Bearish | Bearish | 0.91% | -0.73% | **-0.50%** | 10:45 | Yes | ✓ |
+| 2025-03-26 | Bearish | Strong Bearish | 0.86% | -1.05% | **-1.00%** | 11:55 | No | ✓ |
+| 2025-07-02 | Bearish | Bearish | 0.79% | -0.82% | **-0.57%** | 10:40 | No | ✓ |
+| 2025-07-25 | Mildly Bearish | Strong Bearish | 0.68% | -0.82% | **-0.71%** | 9:15 | No | ✓ |
+| 2025-09-05 | Bearish | Strong Bearish | 0.68% | -0.79% | **-0.30%** | 10:10 | No | ✗ |
+| 2025-10-14 | Bearish | Strong Bearish | 0.69% | -0.86% | **-0.61%** | 10:00 | Yes | ✓ |
+| 2025-10-31 | Strong Bearish | Strong Bearish | 0.76% | -0.59% | **-0.51%** | 11:10 | No | ✓ |
+| 2025-11-24 | Strong Bearish | Strong Bearish | 0.86% | -0.81% | **-0.69%** | 15:00 | No | ✓ |
+| 2026-02-24 | Mildly Bearish | Strong Bearish | 0.89% | -1.23% | **-0.71%** | 9:30 | Yes | ✓ |
+| 2026-05-12 | Bearish | Mildly Bearish | 1.17% | -1.58% | **-1.23%** | 11:05 | Yes | ✓ |
 
 ### Classic Examples (2021-2024)
 
-| Date | FII | PRO | VIX Predicted% | Low% | Close% | Cross Time | Expiry? |
-|------|-----|-----|------:|------:|------:|:----------:|:---:|
-| 2021-01-18 | Bearish | Bearish | 1.51% | -1.58% | **-1.54%** | 9:30 | No |
-| 2021-03-25 | Mildly Bearish | Strong Bearish | 1.41% | -2.10% | **-1.54%** | 9:20 | Yes |
-| 2021-10-28 | Bearish | Strong Bearish | 1.06% | -2.13% | **-1.79%** | 9:35 | Yes |
-| 2021-12-06 | Strong Bearish | Strong Bearish | 1.16% | -1.83% | **-1.74%** | 9:35 | No |
-| 2022-02-24 | Mildly Bearish | Strong Bearish | 1.55% | -2.08% | **-2.00%** | 13:40 | Yes |
-| 2022-12-15 | Bearish | Strong Bearish | 0.81% | -1.21% | **-1.15%** | 12:30 | Yes |
-| 2023-01-25 | Mildly Bearish | Strong Bearish | 0.86% | -1.36% | **-1.01%** | 9:45 | Yes |
-| 2024-10-17 | Strong Bearish | Strong Bearish | 0.82% | -1.19% | **-1.11%** | 9:25 | Yes |
-| 2024-11-07 | Strong Bearish | Strong Bearish | 0.94% | -1.27% | **-1.20%** | 9:25 | Yes |
+| Date | FII | PRO | VIX Predicted% | Low% | Close% | Cross Time | Expiry? | Close≥Half |
+|------|-----|-----|------:|------:|------:|:----------:|:---:|:----------:|
+| 2021-01-18 | Bearish | Bearish | 1.51% | -1.58% | **-1.54%** | 9:30 | No | ✓ |
+| 2021-03-25 | Mildly Bearish | Strong Bearish | 1.41% | -2.10% | **-1.54%** | 9:20 | Yes | ✓ |
+| 2021-10-28 | Bearish | Strong Bearish | 1.06% | -2.13% | **-1.79%** | 9:35 | Yes | ✓ |
+| 2021-12-06 | Strong Bearish | Strong Bearish | 1.16% | -1.83% | **-1.74%** | 9:35 | No | ✓ |
+| 2022-02-24 | Mildly Bearish | Strong Bearish | 1.55% | -2.08% | **-2.00%** | 13:40 | Yes | ✓ |
+| 2022-12-15 | Bearish | Strong Bearish | 0.81% | -1.21% | **-1.15%** | 12:30 | Yes | ✓ |
+| 2023-01-25 | Mildly Bearish | Strong Bearish | 0.86% | -1.36% | **-1.01%** | 9:45 | Yes | ✓ |
+| 2024-10-17 | Strong Bearish | Strong Bearish | 0.82% | -1.19% | **-1.11%** | 9:25 | Yes | ✓ |
+| 2024-11-07 | Strong Bearish | Strong Bearish | 0.94% | -1.27% | **-1.20%** | 9:25 | Yes | ✓ |
 
 ### Walkthrough: 2025-01-06
 
@@ -798,32 +798,32 @@ Result: Exceeded Half + Worked and Remained ✓
 
 ### All 24 Instances
 
-| Date | FII | PRO | VIX Predicted% | Low% | Close% | Cross Time | Expiry? |
-|------|-----|-----|------:|------:|------:|:----------:|:---:|
-| 2020-09-01 | Strong Bearish | Strong Bearish | 1.44% | -0.85% | **+0.26%** | 9:15 | No |
-| 2020-11-20 | Mildly Bearish | Strong Bearish | 1.23% | -0.65% | **+0.25%** | 11:20 | No |
-| 2020-11-26 | Bearish | Strong Bearish | 1.46% | -0.90% | **+0.84%** | 10:00 | Yes |
-| 2020-12-22 | Mildly Bearish | Strong Bearish | 1.46% | -1.34% | **+0.65%** | 9:35 | No |
-| 2021-04-01 | Strong Bearish | Bearish | 1.30% | -0.71% | **+0.46%** | 10:55 | Yes |
-| 2021-09-21 | Bearish | Strong Bearish | 1.10% | -0.71% | **+0.65%** | 11:10 | No |
-| 2022-04-28 | Mildly Bearish | Strong Bearish | 1.30% | -0.69% | **+0.24%** | 10:45 | Yes |
-| 2022-05-26 | Mildly Bearish | Strong Bearish | 1.59% | -1.25% | **+0.60%** | 10:25 | Yes |
-| 2022-08-03 | Bearish | Bearish | 1.17% | -0.71% | **+0.25%** | 9:45 | No |
-| 2023-04-24 | Bearish | Bearish | 0.73% | -0.54% | **+0.23%** | 9:35 | No |
-| 2023-06-20 | Bearish | Strong Bearish | 0.71% | -0.49% | **+0.43%** | 9:45 | No |
-| 2023-07-19 | Bearish | Strong Bearish | 0.74% | -0.38% | **+0.22%** | 9:25 | No |
-| 2023-07-31 | Strong Bearish | Bearish | 0.64% | -0.35% | **+0.39%** | 9:20 | No |
-| 2024-01-18 | Bearish | Strong Bearish | 0.95% | -0.60% | **+0.29%** | 10:10 | Yes |
-| 2024-02-13 | Strong Bearish | Strong Bearish | 1.01% | -0.56% | **+0.29%** | 9:30 | No |
-| 2024-02-15 | Mildly Bearish | Mildly Bearish | 0.97% | -0.51% | **+0.09%** | 9:40 | Yes |
-| 2024-03-20 | Bearish | Strong Bearish | 0.89% | -0.61% | **+0.05%** | 9:30 | No |
-| 2024-06-05 | Strong Bearish | Strong Bearish | 1.69% | -1.52% | **+2.01%** | 9:20 | No |
-| 2024-09-12 | Mildly Bearish | Strong Bearish | 0.86% | -0.47% | **+1.02%** | 11:25 | Yes |
-| 2024-10-28 | Strong Bearish | Strong Bearish | 0.92% | -0.48% | **+0.48%** | 9:30 | No |
-| 2025-08-07 | Bearish | Mildly Bearish | 0.75% | -0.49% | **+0.66%** | 13:20 | Yes |
-| 2026-01-21 | Mildly Bearish | Bearish | 0.80% | -0.88% | **+0.11%** | 10:40 | No |
-| 2026-02-06 | Bearish | Strong Bearish | 0.77% | -0.44% | **+0.26%** | 9:40 | No |
-| 2026-03-09 | Strong Bearish | Strong Bearish | 1.25% | -0.71% | **+0.58%** | 9:25 | No |
+| Date | FII | PRO | VIX Predicted% | Low% | Close% | Cross Time | Expiry? | Close≥Half |
+|------|-----|-----|------:|------:|------:|:----------:|:---:|:----------:|
+| 2020-09-01 | Strong Bearish | Strong Bearish | 1.44% | -0.85% | **+0.26%** | 9:15 | No | ✗ |
+| 2020-11-20 | Mildly Bearish | Strong Bearish | 1.23% | -0.65% | **+0.25%** | 11:20 | No | ✗ |
+| 2020-11-26 | Bearish | Strong Bearish | 1.46% | -0.90% | **+0.84%** | 10:00 | Yes | ✗ |
+| 2020-12-22 | Mildly Bearish | Strong Bearish | 1.46% | -1.34% | **+0.65%** | 9:35 | No | ✗ |
+| 2021-04-01 | Strong Bearish | Bearish | 1.30% | -0.71% | **+0.46%** | 10:55 | Yes | ✗ |
+| 2021-09-21 | Bearish | Strong Bearish | 1.10% | -0.71% | **+0.65%** | 11:10 | No | ✗ |
+| 2022-04-28 | Mildly Bearish | Strong Bearish | 1.30% | -0.69% | **+0.24%** | 10:45 | Yes | ✗ |
+| 2022-05-26 | Mildly Bearish | Strong Bearish | 1.59% | -1.25% | **+0.60%** | 10:25 | Yes | ✗ |
+| 2022-08-03 | Bearish | Bearish | 1.17% | -0.71% | **+0.25%** | 9:45 | No | ✗ |
+| 2023-04-24 | Bearish | Bearish | 0.73% | -0.54% | **+0.23%** | 9:35 | No | ✗ |
+| 2023-06-20 | Bearish | Strong Bearish | 0.71% | -0.49% | **+0.43%** | 9:45 | No | ✗ |
+| 2023-07-19 | Bearish | Strong Bearish | 0.74% | -0.38% | **+0.22%** | 9:25 | No | ✗ |
+| 2023-07-31 | Strong Bearish | Bearish | 0.64% | -0.35% | **+0.39%** | 9:20 | No | ✗ |
+| 2024-01-18 | Bearish | Strong Bearish | 0.95% | -0.60% | **+0.29%** | 10:10 | Yes | ✗ |
+| 2024-02-13 | Strong Bearish | Strong Bearish | 1.01% | -0.56% | **+0.29%** | 9:30 | No | ✗ |
+| 2024-02-15 | Mildly Bearish | Mildly Bearish | 0.97% | -0.51% | **+0.09%** | 9:40 | Yes | ✗ |
+| 2024-03-20 | Bearish | Strong Bearish | 0.89% | -0.61% | **+0.05%** | 9:30 | No | ✗ |
+| 2024-06-05 | Strong Bearish | Strong Bearish | 1.69% | -1.52% | **+2.01%** | 9:20 | No | ✗ |
+| 2024-09-12 | Mildly Bearish | Strong Bearish | 0.86% | -0.47% | **+1.02%** | 11:25 | Yes | ✗ |
+| 2024-10-28 | Strong Bearish | Strong Bearish | 0.92% | -0.48% | **+0.48%** | 9:30 | No | ✗ |
+| 2025-08-07 | Bearish | Mildly Bearish | 0.75% | -0.49% | **+0.66%** | 13:20 | Yes | ✗ |
+| 2026-01-21 | Mildly Bearish | Bearish | 0.80% | -0.88% | **+0.11%** | 10:40 | No | ✗ |
+| 2026-02-06 | Bearish | Strong Bearish | 0.77% | -0.44% | **+0.26%** | 9:40 | No | ✗ |
+| 2026-03-09 | Strong Bearish | Strong Bearish | 1.25% | -0.71% | **+0.58%** | 9:25 | No | ✗ |
 
 ### Walkthrough: 2024-06-05
 
@@ -938,6 +938,264 @@ Timing:
 ```
 
 **Pattern**: All "Down to Up" direction. Low% typically < -0.10%. Peak at 9:15 AM (opening candle). Average close: +0.36%.
+
+---
+
+# Close Erosion Analysis: Held but Close Below Half Threshold
+
+"Exceeded Half" + "Held" tells you the market moved past the threshold and closed in the aligned direction — but did the **close itself** remain above the half threshold? On roughly 1 in 3 "Held" days, the close erodes back below the half-range level despite staying in the right direction. This section identifies what drives that erosion.
+
+> **Data**: 94 Bullish Held days + 145 Bearish Held days (all aligned days that exceeded the half threshold and closed in the aligned direction).
+>
+> **"Full Hold"** = Held ✓ and Close≥Half ✓ (close stayed above the half threshold)
+> **"Erosion"** = Held ✓ but Close≥Half ✗ (close eroded back below the half threshold while staying in aligned direction)
+
+## Scale of the Problem
+
+| | Total Held | Full Hold (Close≥Half) | Erosion (Held, Close<Half) |
+|--|--:|--:|--:|
+| **Bullish** | 94 | 60 (63.8%) | **34 (36.2%)** |
+| **Bearish** | 145 | 87 (60.0%) | **58 (40.0%)** |
+
+Bearish erosion is more frequent (40%) than bullish (36%) — bearish moves get bought back more aggressively by close.
+
+### Expiry vs Non-Expiry Erosion Rates
+
+| | Full Hold | Erosion |
+|--|--:|--:|
+| **Bullish Expiry** | 14/21 (67%) | 7/21 (33%) |
+| **Bullish Non-Expiry** | 46/73 (63%) | 27/73 (37%) |
+| **Bearish Expiry** | 24/37 (65%) | 13/37 (35%) |
+| **Bearish Non-Expiry** | 63/108 (58%) | 45/108 (42%) |
+
+Expiry provides a small erosion benefit: bearish erosion drops from 42% to 35% on expiry, and bullish from 37% to 33%. Expiry-day positioning creates more durable closes.
+
+---
+
+## The #1 Signal: Intraday Depth Past Threshold
+
+**Depth Ratio** = Intraday Extreme% / Half Threshold%. This is the single dominant factor — VIX regime, conviction score, and combo choice barely differ between Full Hold and Erosion.
+
+### Bullish Alignment
+
+| Metric | Full Hold (60) | Erosion (34) | Delta |
+|--------|:---:|:---:|:---:|
+| Avg Depth Ratio | **2.20x** | **1.24x** | -0.96x |
+| Median Depth Ratio | **1.92x** | **1.17x** | -0.75x |
+| Avg Retention (Close/Extreme) | **85.3%** | **56.1%** | -29pp |
+| Avg VIX | 14.9 | 15.3 | +0.4 |
+| Avg Conviction Score | 4.6 | 4.8 | +0.2 |
+
+| Depth Filter | Full Hold | Erosion |
+|---|--:|--:|
+| **≥ 2.0x threshold** | **27/60 (45%)** | **0/34 (0%)** |
+| ≥ 1.5x threshold | 47/60 (78%) | 6/34 (18%) |
+
+**Zero bullish erosion days had depth ≥ 2.0x across the entire 6-year dataset.** When the intraday high reaches 2x the half threshold, the close has always remained above the half threshold.
+
+### Bearish Alignment
+
+| Metric | Full Hold (87) | Erosion (58) | Delta |
+|--------|:---:|:---:|:---:|
+| Avg Depth Ratio | **2.47x** | **1.53x** | -0.94x |
+| Median Depth Ratio | **2.41x** | **1.45x** | -0.96x |
+| Avg Retention (Close/Extreme) | **79.4%** | **38.6%** | -41pp |
+| Avg VIX | 14.9 | 14.9 | 0.0 |
+| Avg Conviction Score | 4.8 | 4.8 | 0.0 |
+
+| Depth Filter | Full Hold | Erosion |
+|---|--:|--:|
+| **≥ 2.0x threshold** | **58/87 (67%)** | **7/58 (12%)** |
+| ≥ 1.5x threshold | 75/87 (86%) | 23/58 (40%) |
+
+Bearish erosion is less clean than bullish at ≥ 2.0x — 7 of 58 erosion days had deep moves that still eroded. These are massive V-recovery days where the market dropped 2x+ the half threshold but recovered most of the move by close. On **expiry**, the 2.0x rule is perfect (0 bearish erosion at ≥ 2.0x), but non-expiry V-recoveries occasionally overwhelm even deep moves.
+
+---
+
+## Depth Bucket Analysis: Close≥Half Rate by Depth
+
+### Bullish
+
+| Depth Bucket | N | Held | WR% | Close≥Half | C≥H% | C≥H of Held |
+|:---|--:|--:|--:|--:|--:|--:|
+| 1.0–1.3x (shallow) | 33 | 27 | 82% | 5 | 15% | **19%** |
+| 1.3–1.5x | 16 | 13 | 81% | 7 | 44% | **54%** |
+| 1.5–2.0x | 26 | 26 | 100% | 20 | 77% | **77%** |
+| **2.0–3.0x (deep)** | **20** | **19** | **95%** | **19** | **95%** | **100%** |
+| **3.0x+ (very deep)** | **9** | **9** | **100%** | **9** | **100%** | **100%** |
+
+At depth ≥ 2.0x, every bullish day that held also had Close≥Half — **100% retention rate among held days**.
+
+### Bearish
+
+| Depth Bucket | N | Held | WR% | Close≥Half | C≥H% | C≥H of Held |
+|:---|--:|--:|--:|--:|--:|--:|
+| 1.0–1.3x (shallow) | 42 | 25 | 60% | 11 | 26% | **44%** |
+| 1.3–1.5x | 27 | 22 | 81% | 10 | 37% | **45%** |
+| 1.5–2.0x | 37 | 33 | 89% | 18 | 49% | **55%** |
+| **2.0–3.0x (deep)** | **49** | **48** | **98%** | **42** | **86%** | **88%** |
+| **3.0x+ (very deep)** | **17** | **17** | **100%** | **16** | **94%** | **94%** |
+
+Bearish at ≥ 2.0x is strong but not perfect: 88% retention among held days (vs 100% for bullish). The 12% that erode are V-recovery days where massive intraday drops get aggressively bought back — a distinctly bearish phenomenon.
+
+**Key pattern**: Both directions show a clean escalation from ~20% retention at 1.0-1.3x to ~95-100% at ≥ 2.0x. The threshold is sharper for bullish (100% at 2.0x) than bearish (88% at 2.0x, improving to 94% at 3.0x).
+
+---
+
+## What Does NOT Predict Erosion
+
+- **VIX regime**: Nearly identical distribution (65% Low VIX in both Full Hold and Erosion groups)
+- **Conviction score**: Identical averages (4.6-4.8 in both groups for both directions)
+- **Combo**: All combos appear in erosion proportionally to their overall frequency — no single combo is erosion-prone
+- **Expiry**: Small benefit (~5pp less erosion on expiry) but not a strong filter
+
+---
+
+## Bullish Erosion: All 34 Days
+
+| Date | FII View | PRO View | VIX | Half% | High% | Close% | Retention | Depth |
+|------|----------|----------|----:|------:|------:|-------:|----------:|------:|
+| 2020-11-03 | Mildly Bullish | Mildly Bullish | 25.2 | 0.79% | +0.86% | +0.62% | 72% | 1.08x |
+| 2021-01-20 | Bullish | Strong Bullish | 22.9 | 0.72% | +0.88% | +0.58% | 66% | 1.22x |
+| 2021-07-14 | Strong Bullish | Strong Bullish | 12.6 | 0.40% | +0.43% | +0.23% | 54% | 1.08x |
+| 2021-08-04 | Bullish | Strong Bullish | 13.8 | 0.43% | +0.59% | +0.36% | 61% | 1.36x |
+| 2021-08-16 | Mildly Bullish | Bullish | 13.0 | 0.41% | +0.42% | +0.17% | 41% | 1.03x |
+| 2021-09-03 | Mildly Bullish | Bullish | 14.2 | 0.45% | +0.45% | +0.34% | 76% | 1.00x |
+| 2022-03-17 | Bullish | Strong Bullish | 24.1 | 0.76% | +0.82% | +0.56% | 68% | 1.08x |
+| 2022-09-20 | Mildly Bullish | Strong Bullish | 19.9 | 0.63% | +0.83% | +0.12% | 15% | 1.32x |
+| 2022-12-13 | Strong Bullish | Strong Bullish | 13.3 | 0.42% | +0.50% | +0.39% | 78% | 1.19x |
+| 2023-03-06 | Strong Bullish | Strong Bullish | 12.2 | 0.38% | +0.67% | +0.22% | 33% | 1.75x |
+| 2023-05-15 | Bullish | Strong Bullish | 12.8 | 0.41% | +0.65% | +0.25% | 39% | 1.61x |
+| 2023-09-08 | Strong Bullish | Strong Bullish | 10.9 | 0.34% | +0.47% | +0.23% | 49% | 1.37x |
+| 2023-10-11 | Strong Bullish | Strong Bullish | 11.3 | 0.36% | +0.37% | +0.21% | 57% | 1.04x |
+| 2023-12-22 | Mildly Bullish | Strong Bullish | 13.8 | 0.43% | +0.44% | +0.17% | 39% | 1.02x |
+| 2023-12-26 | Mildly Bullish | Strong Bullish | 13.7 | 0.43% | +0.52% | +0.42% | 81% | 1.20x |
+| 2024-05-02 | Strong Bullish | Strong Bullish | 12.9 | 0.41% | +0.63% | +0.39% | 62% | 1.55x |
+| 2024-05-14 | Bullish | Strong Bullish | 20.6 | 0.65% | +0.65% | +0.44% | 68% | 1.00x |
+| 2024-05-21 | Bullish | Strong Bullish | 20.5 | 0.65% | +0.83% | +0.46% | 55% | 1.28x |
+| 2024-08-12 | Bullish | Strong Bullish | 15.3 | 0.48% | +0.63% | +0.12% | 19% | 1.30x |
+| 2024-08-21 | Bullish | Strong Bullish | 13.8 | 0.44% | +0.44% | +0.41% | 93% | 1.01x |
+| 2024-09-10 | Strong Bullish | Strong Bullish | 14.2 | 0.45% | +0.52% | +0.21% | 40% | 1.16x |
+| 2024-12-27 | Bullish | Strong Bullish | 14.0 | 0.44% | +0.58% | +0.13% | 22% | 1.31x |
+| 2025-01-23 | Strong Bullish | Mildly Bullish | 16.8 | 0.53% | +0.62% | +0.38% | 61% | 1.17x |
+| 2025-01-30 | Mildly Bullish | Bullish | 18.6 | 0.59% | +0.66% | +0.55% | 83% | 1.12x |
+| 2025-04-03 | Bullish | Strong Bullish | 13.7 | 0.43% | +0.67% | +0.39% | 58% | 1.55x |
+| 2025-05-26 | Bullish | Strong Bullish | 17.3 | 0.54% | +0.64% | +0.31% | 48% | 1.18x |
+| 2025-06-05 | Mildly Bullish | Bullish | 15.8 | 0.50% | +0.85% | +0.28% | 33% | 1.71x |
+| 2025-11-20 | Strong Bullish | Strong Bullish | 12.0 | 0.38% | +0.44% | +0.25% | 57% | 1.17x |
+| 2025-12-12 | Bullish | Strong Bullish | 10.4 | 0.33% | +0.33% | +0.28% | 85% | 1.01x |
+| 2026-02-04 | Strong Bullish | Bullish | 12.9 | 0.41% | +0.56% | +0.24% | 43% | 1.38x |
+| 2026-02-17 | Bullish | Strong Bullish | 13.3 | 0.42% | +0.49% | +0.30% | 61% | 1.17x |
+| 2026-03-18 | Strong Bullish | Strong Bullish | 19.8 | 0.62% | +0.97% | +0.56% | 58% | 1.56x |
+| 2026-07-10 | Bullish | Bullish | 13.4 | 0.42% | +0.43% | +0.36% | 84% | 1.02x |
+| 2026-07-30 | Strong Bullish | Strong Bullish | 12.0 | 0.38% | +0.39% | +0.19% | 49% | 1.03x |
+
+All 34 had depth < 2.0x. Average depth 1.24x, average retention 56%. The worst retention (2022-09-20 at 15%, 2024-08-12 at 19%) show rallies that peaked early and faded through the session.
+
+---
+
+## Bearish Erosion: All 58 Days
+
+| Date | FII View | PRO View | VIX | Half% | Low% | Close% | Retention | Depth |
+|------|----------|----------|----:|------:|-----:|-------:|----------:|------:|
+| 2021-03-05 | Bearish | Strong Bearish | 24.1 | 0.76% | -0.77% | -0.10% | 13% | 1.01x |
+| 2021-04-06 | Strong Bearish | Bearish | 21.2 | 0.67% | -1.10% | -0.25% | 23% | 1.65x |
+| 2021-06-30 | Bearish | Bearish | 13.0 | 0.41% | -0.42% | -0.29% | 69% | 1.03x |
+| 2021-07-23 | Strong Bearish | Strong Bearish | 11.9 | 0.37% | -0.55% | -0.04% | 7% | 1.47x |
+| 2021-07-28 | Bearish | Strong Bearish | 13.2 | 0.42% | -1.57% | -0.30% | 19% | 3.77x |
+| 2021-10-25 | Mildly Bearish | Bearish | 17.6 | 0.55% | -1.42% | -0.51% | 36% | 2.57x |
+| 2021-11-11 | Mildly Bearish | Bearish | 16.3 | 0.51% | -0.93% | -0.46% | 50% | 1.81x |
+| 2021-11-29 | Strong Bearish | Strong Bearish | 20.8 | 0.66% | -1.59% | -0.09% | 6% | 2.43x |
+| 2022-02-04 | Mildly Bearish | Strong Bearish | 19.2 | 0.60% | -0.72% | -0.50% | 69% | 1.19x |
+| 2022-02-08 | Bearish | Strong Bearish | 20.4 | 0.64% | -1.37% | -0.23% | 17% | 2.13x |
+| 2022-04-12 | Mildly Bearish | Bearish | 18.3 | 0.58% | -0.81% | -0.37% | 46% | 1.41x |
+| 2022-04-25 | Bearish | Strong Bearish | 18.4 | 0.58% | -0.71% | -0.15% | 21% | 1.23x |
+| 2022-05-19 | Bearish | Strong Bearish | 22.3 | 0.70% | -0.89% | -0.56% | 63% | 1.27x |
+| 2022-06-01 | Mildly Bearish | Strong Bearish | 20.5 | 0.65% | -0.94% | -0.32% | 34% | 1.46x |
+| 2022-06-13 | Strong Bearish | Strong Bearish | 19.6 | 0.62% | -1.22% | -0.48% | 39% | 1.98x |
+| 2022-07-14 | Bearish | Bearish | 18.5 | 0.58% | -1.00% | -0.44% | 44% | 1.71x |
+| 2022-10-21 | Bearish | Strong Bearish | 17.2 | 0.54% | -0.58% | -0.22% | 38% | 1.07x |
+| 2022-11-18 | Strong Bearish | Strong Bearish | 14.9 | 0.47% | -0.94% | -0.43% | 46% | 2.01x |
+| 2022-12-02 | Strong Bearish | Strong Bearish | 13.4 | 0.42% | -0.60% | -0.25% | 42% | 1.43x |
+| 2022-12-05 | Strong Bearish | Strong Bearish | 13.4 | 0.42% | -0.68% | -0.14% | 21% | 1.61x |
+| 2023-01-11 | Strong Bearish | Strong Bearish | 15.5 | 0.49% | -0.55% | -0.20% | 36% | 1.13x |
+| 2023-02-07 | Strong Bearish | Strong Bearish | 14.7 | 0.46% | -0.77% | -0.39% | 51% | 1.66x |
+| 2023-02-17 | Strong Bearish | Strong Bearish | 12.9 | 0.41% | -0.49% | -0.18% | 37% | 1.21x |
+| 2023-02-23 | Strong Bearish | Strong Bearish | 15.6 | 0.49% | -0.67% | -0.29% | 43% | 1.36x |
+| 2023-03-10 | Strong Bearish | Strong Bearish | 12.7 | 0.40% | -0.68% | -0.14% | 21% | 1.70x |
+| 2023-04-19 | Mildly Bearish | Bearish | 12.1 | 0.38% | -0.42% | -0.24% | 57% | 1.10x |
+| 2023-05-10 | Bearish | Strong Bearish | 12.7 | 0.40% | -0.55% | -0.01% | 2% | 1.38x |
+| 2023-06-02 | Bearish | Bearish | 11.6 | 0.37% | -0.39% | -0.13% | 33% | 1.07x |
+| 2023-07-13 | Bearish | Strong Bearish | 10.9 | 0.34% | -0.56% | -0.27% | 48% | 1.63x |
+| 2023-07-25 | Bearish | Strong Bearish | 11.7 | 0.37% | -0.57% | -0.26% | 46% | 1.55x |
+| 2023-09-22 | Strong Bearish | Strong Bearish | 10.8 | 0.34% | -0.44% | -0.31% | 71% | 1.29x |
+| 2023-09-25 | Mildly Bearish | Bearish | 10.7 | 0.34% | -0.39% | -0.02% | 5% | 1.16x |
+| 2023-11-09 | Bearish | Strong Bearish | 11.0 | 0.35% | -0.41% | -0.27% | 66% | 1.18x |
+| 2023-12-06 | Bearish | Strong Bearish | 13.5 | 0.42% | -0.47% | -0.07% | 15% | 1.11x |
+| 2023-12-19 | Bearish | Strong Bearish | 13.9 | 0.44% | -0.65% | -0.15% | 23% | 1.48x |
+| 2024-05-06 | Strong Bearish | Strong Bearish | 14.6 | 0.46% | -0.67% | -0.46% | 69% | 1.45x |
+| 2024-05-30 | Strong Bearish | Bearish | 24.2 | 0.76% | -0.89% | -0.27% | 30% | 1.17x |
+| 2024-07-11 | Bearish | Strong Bearish | 14.4 | 0.45% | -0.83% | -0.24% | 29% | 1.83x |
+| 2024-07-24 | Strong Bearish | Strong Bearish | 12.8 | 0.40% | -0.56% | -0.01% | 2% | 1.39x |
+| 2024-08-19 | Strong Bearish | Strong Bearish | 14.4 | 0.45% | -0.46% | -0.23% | 50% | 1.01x |
+| 2024-10-31 | Strong Bearish | Strong Bearish | 15.5 | 0.49% | -0.73% | -0.46% | 63% | 1.49x |
+| 2024-11-08 | Strong Bearish | Strong Bearish | 14.9 | 0.47% | -0.58% | -0.40% | 69% | 1.23x |
+| 2024-12-10 | Mildly Bearish | Strong Bearish | 14.1 | 0.44% | -0.58% | -0.13% | 22% | 1.31x |
+| 2024-12-18 | Strong Bearish | Strong Bearish | 14.5 | 0.46% | -0.61% | -0.34% | 56% | 1.34x |
+| 2025-01-13 | Mildly Bearish | Bearish | 14.9 | 0.47% | -0.64% | -0.46% | 72% | 1.36x |
+| 2025-02-07 | Strong Bearish | Mildly Bearish | 14.2 | 0.45% | -0.87% | -0.37% | 43% | 1.95x |
+| 2025-04-30 | Mildly Bearish | Bearish | 17.4 | 0.55% | -0.59% | -0.39% | 66% | 1.08x |
+| 2025-06-24 | Mildly Bearish | Bearish | 14.1 | 0.44% | -0.72% | -0.43% | 60% | 1.63x |
+| 2025-07-14 | Bearish | Bearish | 11.8 | 0.37% | -0.59% | -0.25% | 42% | 1.58x |
+| 2025-08-06 | Mildly Bearish | Strong Bearish | 11.7 | 0.37% | -0.41% | -0.29% | 71% | 1.11x |
+| 2025-09-05 | Bearish | Strong Bearish | 10.8 | 0.34% | -0.79% | -0.30% | 38% | 2.31x |
+| 2025-09-23 | Bearish | Mildly Bearish | 10.6 | 0.33% | -0.49% | -0.09% | 18% | 1.47x |
+| 2025-12-09 | Strong Bearish | Strong Bearish | 11.1 | 0.35% | -0.54% | -0.10% | 19% | 1.54x |
+| 2025-12-17 | Bearish | Strong Bearish | 10.1 | 0.32% | -0.51% | -0.31% | 61% | 1.61x |
+| 2026-06-09 | Mildly Bearish | Bearish | 17.0 | 0.54% | -0.66% | -0.01% | 2% | 1.23x |
+| 2026-08-05 | Bearish | Bearish | 12.2 | 0.38% | -0.69% | -0.18% | 26% | 1.80x |
+| 2026-08-12 | Bearish | Strong Bearish | 11.9 | 0.37% | -0.84% | -0.15% | 18% | 2.25x |
+| 2026-08-19 | Strong Bearish | Strong Bearish | 11.4 | 0.36% | -0.52% | -0.31% | 60% | 1.45x |
+
+Average depth 1.53x, average retention 39%. Unlike bullish erosion (which is depth < 2.0x only), bearish erosion includes 7 days at depth ≥ 2.0x — massive V-recoveries where the market dropped deeply but buying pressure overwhelmed the selloff by close. The most extreme: 2021-07-28 dropped 3.77x the threshold (-1.57%) but closed only -0.30% (19% retention).
+
+---
+
+## Erosion Summary
+
+```
+CLOSE≥HALF PREDICTION (real-time observable):
+┌──────────────────────────────────────────────────────────────────────┐
+│                                                                      │
+│  BULLISH — Depth thresholds are CLEAN                                │
+│    Depth ≥ 2.0x → Close≥Half 100% (of Held days: 28/28)            │
+│    Depth 1.5-2.0x → Close≥Half 77%                                  │
+│    Depth 1.3-1.5x → Close≥Half 54%                                  │
+│    Depth 1.0-1.3x → Close≥Half 19%                                  │
+│                                                                      │
+│  BEARISH — Depth helps but V-recoveries can override                 │
+│    Depth ≥ 3.0x → Close≥Half 94% (of Held: 16/17)                  │
+│    Depth 2.0-3.0x → Close≥Half 88% (of Held: 42/48)               │
+│    Depth 1.5-2.0x → Close≥Half 55%                                  │
+│    Depth 1.3-1.5x → Close≥Half 45%                                  │
+│    Depth 1.0-1.3x → Close≥Half 44%                                  │
+│                                                                      │
+│  BULLISH vs BEARISH ASYMMETRY:                                       │
+│    Bullish 2.0x = perfect (0 exceptions in 6 years)                  │
+│    Bearish 2.0x = strong but 12% erosion (V-recovery effect)         │
+│    On EXPIRY, bearish 2.0x is also perfect (0 exceptions)            │
+│                                                                      │
+│  WHAT DOESN'T MATTER: VIX regime, conviction score, combo           │
+│  WHAT MATTERS: Only depth of the intraday move past threshold        │
+│                                                                      │
+│  PRACTICAL USE: Once the threshold is crossed, check how far the     │
+│  move has gone. If the extreme is 2x+ the half threshold, expect     │
+│  the CLOSE to also exceed the half threshold (especially bullish     │
+│  and bearish on expiry). If barely past (1.0-1.3x), expect the      │
+│  close to erode back.                                                │
+│                                                                      │
+└──────────────────────────────────────────────────────────────────────┘
+```
 
 ---
 

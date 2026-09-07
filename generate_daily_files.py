@@ -444,6 +444,36 @@ def main():
     sensex_columns = list(existing_sensex.columns)
     nifty_columns = list(existing_nifty.columns)
 
+    # Add VIX accuracy columns if missing from existing CSV (one-time backfill)
+    vix_accuracy_cols = ['vix_predicted_move_pct', 'range_vs_vix_ratio',
+                         'diff_pct', 'vix_accuracy']
+    missing_vix_cols = [c for c in vix_accuracy_cols if c not in nifty_columns]
+    if missing_vix_cols:
+        insert_idx = nifty_columns.index('vix_close') + 1
+        for i, col in enumerate(missing_vix_cols):
+            nifty_columns.insert(insert_idx + i, col)
+        # Backfill from existing vix_open and actual_range_pct
+        existing_nifty['vix_predicted_move_pct'] = existing_nifty['vix_open'].apply(
+            lambda v: round(v / 19.1, 2) if pd.notna(v) else None
+        )
+        existing_nifty['range_vs_vix_ratio'] = existing_nifty.apply(
+            lambda r: round(r['actual_range_pct'] / r['vix_predicted_move_pct'], 2)
+            if pd.notna(r.get('vix_predicted_move_pct'))
+            and r.get('vix_predicted_move_pct', 0) != 0 else None,
+            axis=1
+        )
+        existing_nifty['diff_pct'] = existing_nifty.apply(
+            lambda r: round(r['actual_range_pct'] - r['vix_predicted_move_pct'], 2)
+            if pd.notna(r.get('vix_predicted_move_pct')) else None,
+            axis=1
+        )
+        existing_nifty['vix_accuracy'] = existing_nifty['diff_pct'].apply(
+            lambda d: ('Underestimated' if d > 0.5 else 'Overestimated')
+            if pd.notna(d) else None
+        )
+        filled = existing_nifty['vix_predicted_move_pct'].notna().sum()
+        print(f"    Added VIX accuracy columns (backfilled {filled} rows)")
+
     # BSE daily CSV (may be empty / header-only)
     if bse_daily_csv_path.exists():
         existing_bse_daily = pd.read_csv(bse_daily_csv_path)
@@ -730,6 +760,16 @@ def main():
             if bse_pro_fut_d is not None else None
         )
 
+        # VIX accuracy metrics (for all days with VIX data)
+        vix_predicted = (round(vix_open_val / 19.1, 2)
+                         if vix_open_val else None)
+        range_vs_vix = (round(actual_range_pct / vix_predicted, 2)
+                        if vix_predicted else None)
+        diff = (round(actual_range_pct - vix_predicted, 2)
+                if vix_predicted is not None else None)
+        vix_acc = (('Underestimated' if diff > 0.5 else 'Overestimated')
+                   if diff is not None else None)
+
         # ----- Nifty daily row -----
         new_nifty_rows.append({
             "date": str(d),
@@ -748,6 +788,10 @@ def main():
             "nifty_day": "Green" if c >= o else "Red",
             "vix_open": vix_open_val,
             "vix_close": vix_close_val,
+            "vix_predicted_move_pct": vix_predicted,
+            "range_vs_vix_ratio": range_vs_vix,
+            "diff_pct": diff,
+            "vix_accuracy": vix_acc,
             "t1_fii_fut_daily": int(fii_fut_d) if fii_fut_d is not None else None,
             "t1_fii_call_daily": int(fii_call_d) if fii_call_d is not None else None,
             "t1_fii_put_daily": int(fii_put_d) if fii_put_d is not None else None,

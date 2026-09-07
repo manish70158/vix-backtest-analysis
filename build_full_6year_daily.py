@@ -358,6 +358,16 @@ def main():
         vix_open = nex["vix_open"] if nex else (sxe["vix_open"] if sxe else None)
         vix_close = nex["vix_close"] if nex else (sxe["vix_close"] if sxe else None)
 
+        # VIX accuracy metrics
+        vix_predicted = (round(float(vix_open) / 19.1, 2)
+                         if vix_open is not None else None)
+        range_vs_vix = (round(actual_range_pct / vix_predicted, 2)
+                        if vix_predicted else None)
+        diff = (round(actual_range_pct - vix_predicted, 2)
+                if vix_predicted is not None else None)
+        vix_acc = (('Underestimated' if diff > 0.5 else 'Overestimated')
+                   if diff is not None else None)
+
         rows.append({
             "date": str(d),
             "day_of_week": dow,
@@ -379,6 +389,10 @@ def main():
             "move_direction": move_direction,
             "vix_open": round(float(vix_open), 2) if vix_open is not None else None,
             "vix_close": round(float(vix_close), 2) if vix_close is not None else None,
+            "vix_predicted_move_pct": vix_predicted,
+            "range_vs_vix_ratio": range_vs_vix,
+            "diff_pct": diff,
+            "vix_accuracy": vix_acc,
             "t1_fii_fut_daily": int(fii_fut_d) if fii_fut_d is not None else None,
             "t1_fii_call_daily": int(fii_call_d) if fii_call_d is not None else None,
             "t1_fii_put_daily": int(fii_put_d) if fii_put_d is not None else None,

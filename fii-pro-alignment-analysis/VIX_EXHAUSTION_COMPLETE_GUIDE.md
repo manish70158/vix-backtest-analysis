@@ -246,6 +246,34 @@ THE ASYMMETRY:
   → Bearish threshold crossing is indiscriminate (panic sells through)
 ```
 
+### Expected Value: Best Combinations End-to-End
+
+ExcH% alone doesn't tell the full story — a combo that crosses often but reverses frequently is worse than one that crosses less often but holds reliably. **Expected Value = P(Exceed Half) × P(Hold | Exceeded)** captures the probability of both crossing AND closing in the aligned direction.
+
+#### Bearish Alignment: Expected Value by Combination
+
+| Combo (FII + PRO) | Total Days | ExcH% | WR% if Exc | **EV** |
+|--------------------|----------:|------:|----------:|------:|
+| **Mildly Bearish + Bearish** | 23 | 56.5% | **92.3%** | **52.2%** |
+| **Strong Bearish + Strong Bearish** | 75 | 60.0% | 86.7% | **52.0%** |
+| **Bearish + Bearish** | 28 | 53.6% | 86.7% | **46.4%** |
+| Strong Bearish + Bearish | 9 | 66.7% | 66.7% | 44.4% |
+| Mildly Bearish + Strong Bearish | 43 | 53.5% | 78.3% | 41.9% |
+| Bearish + Strong Bearish | 92 | 47.8% | 84.1% | 40.2% |
+| Bearish + Mildly Bearish | 8 | 50.0% | 75.0% | 37.5% |
+| Mildly Bearish + Mildly Bearish | 9 | 11.1% | 0% | 0% |
+
+**Key insight**: Balanced conviction combos (both FII and PRO at similar levels) produce higher EV than asymmetric combos (one mild, one strong). "Mildly Bearish + Bearish" leads with 92.3% WR when exceeded — the highest of any bearish combo with meaningful sample size.
+
+```
+BEARISH EV TIERS:
+  TIER 1 (EV > 50%):  Mildly Bear + Bearish (52.2%), Strong Bear + Strong Bear (52.0%)
+  TIER 2 (EV 40-50%): Bearish + Bearish (46.4%), Strong Bear + Bearish (44.4%)
+                       Mildly Bear + Strong Bear (41.9%), Bearish + Strong Bear (40.2%)
+  TIER 3 (EV < 40%):  Bearish + Mildly Bear (37.5%)
+  DEAD  (EV = 0%):    Mildly Bear + Mildly Bear (0%)
+```
+
 ---
 
 ## Threshold Crossing Timing (5-Minute Candle Analysis)
@@ -280,6 +308,125 @@ THE ASYMMETRY:
 - Afternoon crosses (12:30+) → near-perfect WR% for both directions
 - **Bearish danger zone**: Late morning (10:30-11:30) → only 62% WR (V-shaped recovery window)
 - Bullish opening crosses → 94% WR (gap-up days that hold)
+
+### Bearish Late Morning Deep Dive (10:30-11:29) — The V-Recovery Window
+
+The late morning is the weakest session for bearish crosses at 61.9% WR (13 of 21). This section dissects the 21 cases to identify what separates the 13 winners from the 8 failures.
+
+#### Winner vs Failure Profile
+
+| Metric | Winners (13) | Failures (8) |
+|--------|:---:|:---:|
+| **Median VIX** | **12.5** | **18.0** |
+| **Avg depth past threshold (low/threshold)** | **1.89x** | **1.30x** |
+| Avg intraday low% | -0.86% | -0.68% |
+| Avg close% | -0.52% | +0.38% |
+| Low VIX regime (<15) | 9 (69%) | 3 (38%) |
+| Elevated VIX regime (20+) | 0 (0%) | 2 (25%) |
+| Expiry days | 4 | 3 |
+
+Two factors dominate:
+
+1. **VIX level**: Winners had lower VIX (median 12.5 vs 18.0). Higher VIX means a wider absolute threshold — the cross is "shallower" relative to the market's actual volatility, leaving more room for V-recoveries.
+
+2. **Depth past threshold**: Winners moved 1.89x the threshold on average vs failures at just 1.30x. If the market barely crosses the half-threshold by late morning, momentum is insufficient to prevent reversal.
+
+#### Late Morning: Combination Breakdown
+
+| Combo (FII + PRO) | N | Won | WR% | Comment |
+|--------------------|--:|----:|----:|---------|
+| **Bearish + Bearish** | **5** | **4** | **80%** | Balanced conviction holds |
+| Mildly Bearish + Bearish | 3 | 2 | 67% | |
+| **Mildly Bearish + Strong Bearish** | **6** | **3** | **50%** | PRO-heavy = exhausted by 10:30 |
+| **Bearish + Strong Bearish** | **4** | **2** | **50%** | PRO-heavy = exhausted by 10:30 |
+| Strong Bearish + Bearish | 1 | 0 | 0% | |
+| Strong Bearish + Strong Bearish | 1 | 1 | 100% | |
+
+**PRO-heavy combos collapse in late morning.** "Mildly Bearish + Strong Bearish" and "Bearish + Strong Bearish" drop to 50% WR here versus 88% in all other sessions combined (a **-38pp crash**). When PRO is aggressively selling but the threshold isn't crossed until 10:30+, the selling momentum is spent and buyers are stepping in.
+
+"Bearish + Bearish" (balanced conviction, both at regular level) holds at 80% — it doesn't front-load selling as aggressively, so there's momentum left when the threshold crosses.
+
+#### Late Morning WR% vs Rest of Day (Same Combos)
+
+| Combo | Late AM WR% | Rest of Day WR% | Delta |
+|-------|:---:|:---:|:---:|
+| Bearish + Bearish | 80% | 90% | -10pp |
+| Mildly Bearish + Strong Bearish | **50%** | **88%** | **-38pp** |
+| Bearish + Strong Bearish | **50%** | **88%** | **-38pp** |
+| Mildly Bearish + Bearish | 67% | 100% | -33pp |
+
+#### Late Morning: VIX Regime × Expiry
+
+| Filter | N | WR% | Avg Close |
+|--------|--:|----:|----------:|
+| Low VIX + Non-Expiry | 10 | **80.0%** | -0.28% |
+| Low VIX + Expiry | 2 | 50.0% | +0.26% |
+| Normal VIX + Non-Expiry | 4 | 25.0% | -0.05% |
+| Normal VIX + Expiry | 3 | 100.0% | -0.67% |
+| Elevated VIX + Expiry | 2 | 0% | +0.35% |
+
+**Elevated VIX in late morning is a trap** — both cases reversed. Low VIX non-expiry is the safest filter (80% WR).
+
+#### Actionable Depth Filter (Real-Time Observable)
+
+Once a bearish cross happens in the late-morning window, you can observe how far past the threshold the move has already gone:
+
+| Depth Filter (low% / threshold) | N | WR% |
+|----|--:|----:|
+| **≥ 1.5x threshold** | **11** | **90.9%** |
+| ≥ 2.0x threshold | 7 | 85.7% |
+| ≥ 2.5x threshold | 3 | 100% |
+
+**If the intraday low has moved 1.5x+ past the half-threshold by the time the late-morning cross is identified, WR jumps from 62% to 91%.** This is the most actionable real-time filter: check how far the selloff has gone versus the VIX-predicted half-range. A shallow cross (barely past threshold) in late morning is the high-reversal-risk scenario.
+
+#### All 21 Late Morning Bearish Crosses (Reference)
+
+| Date | FII View | PRO View | VIX | Cross | Low% | Close% | Held? | Exp |
+|------|----------|----------|----:|:-----:|-----:|-------:|:-----:|:---:|
+| 2020-11-20 | Mildly Bearish | Strong Bearish | 19.6 | 11:20 | -0.65% | +0.25% | ✗ | |
+| 2021-04-01 | Strong Bearish | Bearish | 20.6 | 10:55 | -0.71% | +0.46% | ✗ | Yes |
+| 2021-09-21 | Bearish | Strong Bearish | 17.5 | 11:10 | -0.71% | +0.65% | ✗ | |
+| 2022-01-20 | Mildly Bearish | Strong Bearish | 17.8 | 10:45 | -1.52% | -0.77% | ✓ | Yes |
+| 2022-04-28 | Mildly Bearish | Strong Bearish | 20.6 | 10:45 | -0.69% | +0.24% | ✗ | Yes |
+| 2022-08-03 | Bearish | Bearish | 18.5 | 11:05 | -0.71% | +0.25% | ✗ | |
+| 2022-08-19 | Mildly Bearish | Strong Bearish | 17.4 | 11:05 | -1.42% | -1.33% | ✓ | |
+| 2023-05-17 | Bearish | Strong Bearish | 13.3 | 10:45 | -1.01% | -0.56% | ✓ | |
+| 2023-07-25 | Bearish | Strong Bearish | 11.7 | 11:05 | -0.57% | -0.26% | ✓ | |
+| 2023-09-25 | Mildly Bearish | Bearish | 10.7 | 11:10 | -0.39% | -0.02% | ✓ | |
+| 2024-03-20 | Bearish | Strong Bearish | 14.1 | 10:40 | -0.61% | +0.05% | ✗ | |
+| 2024-09-12 | Mildly Bearish | Strong Bearish | 13.6 | 11:25 | -0.47% | +1.02% | ✗ | Yes |
+| 2025-01-09 | Bearish | Bearish | 14.5 | 10:45 | -0.73% | -0.50% | ✓ | Yes |
+| 2025-07-02 | Bearish | Bearish | 12.5 | 10:40 | -0.82% | -0.57% | ✓ | |
+| 2025-08-06 | Mildly Bearish | Strong Bearish | 11.7 | 10:35 | -0.41% | -0.29% | ✓ | |
+| 2025-10-31 | Strong Bearish | Strong Bearish | 12.1 | 11:10 | -0.59% | -0.51% | ✓ | |
+| 2025-12-01 | Bearish | Bearish | 11.6 | 10:50 | -0.77% | -0.57% | ✓ | |
+| 2026-01-21 | Mildly Bearish | Bearish | 12.7 | 10:40 | -0.88% | +0.11% | ✗ | |
+| 2026-05-12 | Bearish | Mildly Bearish | 18.6 | 11:05 | -1.58% | -1.23% | ✓ | Yes |
+| 2026-06-09 | Mildly Bearish | Bearish | 17.0 | 10:45 | -0.66% | -0.01% | ✓ | Yes |
+| 2026-08-05 | Bearish | Bearish | 12.2 | 10:30 | -0.69% | -0.18% | ✓ | |
+
+```
+LATE MORNING BEARISH: DECISION RULES
+┌──────────────────────────────────────────────────────────────────────┐
+│  AVOID (high reversal risk):                                         │
+│    × PRO "Strong Bearish" combos crossing 10:30-11:29  →  50% WR    │
+│    × Elevated VIX (20+) in late morning               →   0% WR     │
+│    × Shallow crosses (< 1.5x threshold depth)         →  high risk  │
+│                                                                      │
+│  TRUST (still reliable in late morning):                             │
+│    ✓ "Bearish + Bearish" (balanced conviction)         →  80% WR    │
+│    ✓ Depth ≥ 1.5x threshold at time of cross           →  91% WR    │
+│    ✓ Low VIX (<15) + Non-Expiry                        →  80% WR    │
+│                                                                      │
+│  WHY LATE MORNING FAILS:                                             │
+│    → Panic selling is front-loaded (Opening/Early AM)                │
+│    → By 10:30, aggressive PRO selling is exhausted                   │
+│    → Buyers sense the selling is over and step in                    │
+│    → Result: V-shaped recovery before close                          │
+│    → The "gap" between panic selling (9:15-10:29) and durable        │
+│      afternoon moves (12:30+) creates the weakest window             │
+└──────────────────────────────────────────────────────────────────────┘
+```
 
 ### VIX Regime Timing
 
@@ -889,6 +1036,9 @@ Expiry helps bullish (momentum continues) but hurts bearish (short-covering rall
 │  │   Median cross: 10:25 AM (72 min faster than bullish)             │
 │  │   Afternoon cross (12:30+) → ~95-100% WR                         │
 │  │   DANGER: Late morning (10:30-11:30) → only 62% WR               │
+│  │     → PRO "Strong Bearish" combos drop to 50% WR here            │
+│  │     → Depth ≥ 1.5x threshold rescues WR to 91%                   │
+│  │     → Low VIX + Non-Expiry rescues WR to 80%                     │
 │  │   Failures: 24 of 153 — mostly early AM panic dips                │
 │  │                                                                   │
 │  └─ Reversed Before Half → 81.4% close BULLISH (avg +0.36%)         │
@@ -904,6 +1054,20 @@ Expiry helps bullish (momentum continues) but hurts bearish (short-covering rall
 │  • Selloffs are front-loaded (panic); rallies build gradually        │
 │  • Expiry helps bullish (+5.3%) but hurts bearish (-4.6%)            │
 │  • Afternoon crosses → near-perfect WR% for both directions         │
+├──────────────────────────────────────────────────────────────────────┤
+│  BEARISH LATE MORNING (10:30-11:29) FILTERS                          │
+│  • Overall: 62% WR — worst session, V-recovery window                │
+│  • PRO "Strong Bearish" combos → 50% WR (exhausted by 10:30)        │
+│  • "Bearish + Bearish" (balanced) → 80% WR (momentum still left)    │
+│  • Depth ≥ 1.5x threshold → 91% WR (deep selloff = durable)        │
+│  • Low VIX + Non-Expiry → 80% WR (safest regime filter)             │
+│  • Elevated VIX (20+) → 0% WR (2/2 reversed — avoid)               │
+├──────────────────────────────────────────────────────────────────────┤
+│  BEARISH EXPECTED VALUE (P(Exceed) × P(Hold)) — TOP COMBOS          │
+│  1. Mildly Bear + Bearish      EV=52.2%  (92% WR, 57% cross rate)  │
+│  2. Strong Bear + Strong Bear  EV=52.0%  (87% WR, 60% cross rate)  │
+│  3. Bearish + Bearish          EV=46.4%  (87% WR, 54% cross rate)  │
+│  Worst: Mildly Bear + Mildly Bear  EV=0%  (avoid entirely)          │
 ├──────────────────────────────────────────────────────────────────────┤
 │  REVERSED BEFORE HALF TIMING (the "when is it dead?" signal)         │
 │  • Both directions: ~50% peak in the opening session (9:15-9:44)     │

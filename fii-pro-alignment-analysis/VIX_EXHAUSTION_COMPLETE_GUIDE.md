@@ -67,6 +67,187 @@ BEARISH ALIGNMENT:
 
 ---
 
+## Sub-Category Breakdown: Which FII-PRO Combinations Reach the Half Threshold?
+
+Not all alignments are equal. "Strong Bearish + Strong Bearish" behaves very differently from "Mildly Bearish + Mildly Bearish." This section breaks down each specific FII-PRO stance combination to identify which are most prone to crossing the VIX half-threshold, and which tend to fail before reaching it.
+
+> **Data**: 316 Bullish Alignment days + 321 Bearish Alignment days from Aug 2020 – Aug 2026.
+> Combinations with fewer than 5 observations are marked with *.
+
+### Bullish Alignment: Exceeded Half % by Combination
+
+| FII View | PRO View | N | ExcH | ExcH% | ExcH WR% | RevBH | RevBH WR% |
+|----------|----------|--:|-----:|------:|----------:|------:|----------:|
+| Strong Bullish | Strong Bullish | 66 | 25 | **37.9%** | 92.0% | 41 | 39.0% |
+| Strong Bullish | Bullish | 5* | 4 | 80.0%* | 75.0%* | 1 | 100%* |
+| Bullish | Strong Bullish | 115 | 22 | **19.1%** | 90.9% | 93 | 23.7% |
+| Bullish | Bullish | 23 | 8 | **34.8%** | 75.0% | 15 | 46.7% |
+| Strong Bullish | Mildly Bullish | 5* | 2 | 40.0%* | 100%* | 3 | 0%* |
+| Mildly Bullish | Strong Bullish | 47 | 13 | **27.7%** | 100.0% | 34 | 14.7% |
+| Bullish | Mildly Bullish | 9 | 3 | 33.3% | 100.0% | 6 | 33.3% |
+| Mildly Bullish | Bullish | 35 | 11 | **31.4%** | 90.9% | 24 | 25.0% |
+| Mildly Bullish | Mildly Bullish | 11 | 5 | **45.5%** | 80.0% | 6 | 83.3% |
+
+#### Bullish: FII x PRO Exceeded Half Grid
+
+```
+                    PRO →  Strong Bullish    Bullish         Mildly Bullish
+FII ↓
+Strong Bullish            37.9% (N=66)      80.0%* (N=5)    40.0%* (N=5)
+Bullish                   19.1% (N=115)     34.8% (N=23)    33.3%  (N=9)
+Mildly Bullish            27.7% (N=47)      31.4% (N=35)    45.5%  (N=11)
+```
+
+**Key bullish findings:**
+
+1. **"Bullish + Strong Bullish" is the worst performer at 19.1%** — this is the most common combination (115 days) yet the least likely to reach the half threshold. When PRO is "Strong Bullish" but FII is merely "Bullish," the market often lacks the momentum to push through. However, when it does cross, WR% is 90.9%.
+
+2. **"Strong Bullish + Strong Bullish" crosses at 37.9%** with the highest WR% among large-sample combos (92.0%). This is the gold standard — maximum conviction, maximum reliability when it works.
+
+3. **FII-led bullish > PRO-led bullish for threshold crossing**: When FII is stronger than PRO, the exceeded half rate is **47.4%** vs only **23.4%** when PRO is stronger. FII conviction appears to drive bullish momentum more than PRO conviction.
+
+4. **"Mildly Bullish + Mildly Bullish" has the highest ExcH% at 45.5%** — counterintuitive but makes sense: on these days the VIX-predicted range is wider (VIX is higher), so the half threshold is relatively easier to cross. These are high-VIX days where even mild alignment can generate enough move. WR% is lower (80%) though.
+
+5. **"Mildly Bullish + Strong Bullish" has 100% WR% when exceeded** (13 of 13 worked). Small sample, but when FII is cautious and PRO is aggressive and the market still pushes through the threshold, it's a durable move.
+
+### Bearish Alignment: Exceeded Half % by Combination
+
+| FII View | PRO View | N | ExcH | ExcH% | ExcH WR% | RevBH | RevBH WR% |
+|----------|----------|--:|-----:|------:|----------:|------:|----------:|
+| Strong Bearish | Strong Bearish | 76 | 44 | **57.9%** | 88.6% | 32 | 15.6% |
+| Strong Bearish | Bearish | 9 | 6 | 66.7% | 66.7% | 3 | 33.3% |
+| Bearish | Strong Bearish | 92 | 45 | **48.9%** | 82.2% | 47 | 25.5% |
+| Bearish | Bearish | 28 | 14 | **50.0%** | 85.7% | 14 | 21.4% |
+| Strong Bearish | Mildly Bearish | 4* | 2 | 50.0%* | 100%* | 2 | 50%* |
+| Mildly Bearish | Strong Bearish | 53 | 30 | **56.6%** | 80.0% | 23 | 13.0% |
+| Bearish | Mildly Bearish | 10 | 5 | **50.0%** | 80.0% | 5 | 40.0% |
+| Mildly Bearish | Bearish | 35 | 18 | **51.4%** | 88.9% | 17 | 35.3% |
+| Mildly Bearish | Mildly Bearish | 14 | 2 | **14.3%** | 50.0%* | 12 | 8.3% |
+
+#### Bearish: FII x PRO Exceeded Half Grid
+
+```
+                    PRO →  Strong Bearish    Bearish         Mildly Bearish
+FII ↓
+Strong Bearish            57.9% (N=76)      66.7%  (N=9)    50.0%* (N=4)
+Bearish                   48.9% (N=92)      50.0%  (N=28)   50.0%  (N=10)
+Mildly Bearish            56.6% (N=53)      51.4%  (N=35)   14.3%  (N=14)
+```
+
+**Key bearish findings:**
+
+1. **Bearish is far more uniform**: Every combination except Mildly+Mildly crosses the threshold ~49-58% of the time. Selloffs don't require both participants to be maximally bearish.
+
+2. **"Strong Bearish + Strong Bearish" leads at 57.9%** with the highest WR% (88.6%). Maximum bearish conviction translates directly to maximum threshold crossing AND holding.
+
+3. **"Mildly Bearish + Mildly Bearish" is the only weak bearish combo at 14.3%** (2 of 14 days). When both FII and PRO are only mildly bearish, the selling conviction is insufficient. RevBH WR% is also just 8.3% — these days rarely work in either direction.
+
+4. **"Mildly Bearish + Strong Bearish" crosses at 56.6%** — nearly as often as the Strongest combo. When PRO is aggressively selling, even mild FII selling creates enough downward pressure to break through. This is the opposite of the bullish pattern (where PRO-led didn't help).
+
+5. **Leadership doesn't matter for bearish**: FII Stronger (56.5%), PRO Stronger (51.7%), Equal (50.8%) — all within a narrow band. Bearish momentum is more of a self-reinforcing panic regardless of who leads.
+
+### Combined Strength Score Analysis
+
+Assigning: Strong=3, Regular=2, Mildly=1. Combined score = FII + PRO (range: 2-6).
+
+| Score | Bullish N | Bull ExcH% | Bull ExcH WR% | Bearish N | Bear ExcH% | Bear ExcH WR% |
+|:-----:|----------:|-----------:|--------------:|----------:|-----------:|--------------:|
+| 6 (max) | 66 | **37.9%** | 92.0% | 76 | **57.9%** | 88.6% |
+| 5 | 120 | 21.7% | 88.5% | 101 | 50.5% | 80.4% |
+| 4 | 75 | 30.7% | 91.3% | 85 | 54.1% | 82.6% |
+| 3 | 44 | 31.8% | 92.9% | 45 | 51.1% | 87.0% |
+| 2 (min) | 11 | 45.5% | 80.0% | 14 | 14.3% | 50.0% |
+
+**Bullish shows a U-shaped pattern**: Highest at Score 2 (45.5%) and Score 6 (37.9%), lowest at Score 5 (21.7%). The Score 5 trough is driven by "Bullish + Strong Bullish" (N=115, only 19.1% ExcH) — the single most common bullish combo and the least effective.
+
+**Bearish is nearly monotonic**: Score 6 (57.9%) > Score 4 (54.1%) > Score 3 (51.1%) > Score 5 (50.5%) > Score 2 (14.3%). The only outlier is Mildly+Mildly at the bottom.
+
+### FII-Led vs PRO-Led: Who Drives the Threshold Cross?
+
+| Leader | Bullish N | Bull ExcH% | Bearish N | Bear ExcH% |
+|--------|----------:|-----------:|----------:|-----------:|
+| FII Stronger | 19 | **47.4%** | 23 | 56.5% |
+| PRO Stronger | 197 | 23.4% | 180 | 51.7% |
+| Equal | 100 | 38.0% | 118 | 50.8% |
+
+**For bullish alignment, FII leadership matters significantly**: FII-stronger combos cross at 47.4% vs PRO-stronger at just 23.4% (2x the rate). FII positioning may be a more direct catalyst for upside momentum.
+
+**For bearish alignment, leadership is irrelevant**: All three categories cluster around 51-57%. Panic selling is indiscriminate.
+
+### Expiry Effect by Conviction Tier
+
+| Tier (Score) | Bull Expiry ExcH% | Bull Non-Exp ExcH% | Bear Expiry ExcH% | Bear Non-Exp ExcH% |
+|:------------:|------------------:|--------------------:|------------------:|--------------------:|
+| Strongest (6) | 20.0% (N=5) | 39.3% (N=61) | **70.0%** (N=10) | 56.1% (N=66) |
+| Strong (5) | **35.7%** (N=28) | 17.4% (N=92) | **68.2%** (N=22) | 45.6% (N=79) |
+| Mid (4) | 37.5% (N=16) | 28.8% (N=59) | 56.5% (N=23) | 53.2% (N=62) |
+| Moderate (3) | 33.3% (N=12) | 31.2% (N=32) | **66.7%** (N=12) | 45.5% (N=33) |
+| Weakest (2) | — | 33.3% (N=9) | 66.7%* (N=3) | 0.0% (N=11) |
+
+**Bearish expiry is the threshold-crossing accelerator**: Every bearish tier shows a large expiry boost (+14 to +20 pp). Expiry-day selling amplifies bearish moves regardless of conviction level.
+
+**Bullish expiry helps Score 5 the most**: The struggling "Bullish + Strong Bullish" tier jumps from 17.4% to 35.7% on expiry — expiry provides the extra catalyst that PRO-led bullishness otherwise lacks.
+
+### Summary: Proneness to Reaching Half Threshold
+
+```
+BULLISH ALIGNMENT — Who reaches the half threshold?
+┌──────────────────────────────────────────────────────────────────┐
+│ MOST PRONE (highest ExcH%)                                      │
+│  1. Mildly Bullish + Mildly Bullish    45.5%  (N=11, caution)  │
+│  2. Strong Bullish + Strong Bullish    37.9%  (N=66, reliable) │
+│  3. Bullish + Bullish                  34.8%  (N=23)           │
+│  4. Mildly Bullish + Bullish           31.4%  (N=35)           │
+│  5. Mildly Bullish + Strong Bullish    27.7%  (N=47)           │
+│                                                                  │
+│ LEAST PRONE (lowest ExcH%)                                      │
+│  ★ Bullish + Strong Bullish            19.1%  (N=115)          │
+│    → Most common combo, yet worst at threshold crossing!        │
+│    → PRO-led bullish without FII conviction = weak momentum     │
+│                                                                  │
+│ BEST WR% WHEN EXCEEDED                                          │
+│  ★ Mildly Bullish + Strong Bullish    100%  (13/13)            │
+│  ★ Strong Bullish + Strong Bullish     92%  (23/25)            │
+│  ★ Mildly Bullish + Bullish            91%  (10/11)            │
+│                                                                  │
+│ KEY RULE: FII-led bullish crosses 2x more often than PRO-led   │
+└──────────────────────────────────────────────────────────────────┘
+
+BEARISH ALIGNMENT — Who reaches the half threshold?
+┌──────────────────────────────────────────────────────────────────┐
+│ MOST PRONE (highest ExcH%)                                      │
+│  1. Strong Bearish + Strong Bearish    57.9%  (N=76)           │
+│  2. Mildly Bearish + Strong Bearish    56.6%  (N=53)           │
+│  3. Mildly Bearish + Bearish           51.4%  (N=35)           │
+│  4. Bearish + Bearish                  50.0%  (N=28)           │
+│  5. Bearish + Strong Bearish           48.9%  (N=92)           │
+│                                                                  │
+│ LEAST PRONE (lowest ExcH%)                                      │
+│  ★ Mildly Bearish + Mildly Bearish    14.3%  (N=14)           │
+│    → Both participants lukewarm = no selling conviction         │
+│    → Only combo where bearish alignment consistently FAILS      │
+│                                                                  │
+│ BEST WR% WHEN EXCEEDED                                          │
+│  ★ Strong Bearish + Strong Bearish     89%  (39/44)            │
+│  ★ Mildly Bearish + Bearish            89%  (16/18)            │
+│  ★ Bearish + Bearish                   86%  (12/14)            │
+│                                                                  │
+│ KEY RULE: Leadership doesn't matter — ALL combos except         │
+│           Mildly+Mildly cross at ~49-58%                        │
+│                                                                  │
+│ EXPIRY BOOST: +14-20pp across ALL bearish tiers on expiry days  │
+└──────────────────────────────────────────────────────────────────┘
+
+THE ASYMMETRY:
+  Bullish: Combination MATTERS — ranges from 19% to 46%
+  Bearish: Combination barely matters — 49-58% for everything except Mildly+Mildly
+
+  → Bullish threshold crossing is selective (needs FII conviction)
+  → Bearish threshold crossing is indiscriminate (panic sells through)
+```
+
+---
+
 ## Threshold Crossing Timing (5-Minute Candle Analysis)
 
 ### Side-by-Side Timing

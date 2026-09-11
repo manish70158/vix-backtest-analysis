@@ -2,7 +2,7 @@
 
 **Generated from 292 Sensex expiry days with Nifty 5-minute proxy data**
 **Date range**: 2020-08-07 to 2026-08-20
-**Dates skipped** (no Nifty 5-min data): 31
+**Dates skipped** (no Nifty 5-min data): 33
 
 > **Methodology note:** Sensex 5-minute intraday data is not available.
 > Nifty 50 5-minute bars are used as a timing proxy — Sensex and Nifty are

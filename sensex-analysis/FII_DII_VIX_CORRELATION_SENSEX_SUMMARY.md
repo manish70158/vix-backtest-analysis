@@ -1,11 +1,11 @@
 # FII/DII + Sensex VIX Expiry-Day Correlation Analysis (6-Year)
 
-**Generated**: 2026-08-26 21:10
-**Period**: 2020-06-26 to 2026-07-23
-**Sensex Expiry Days Analyzed**: 305
-**Blowout Base Rate**: 22.9% (70/305 days)
-**Above-Median Range Rate**: 49.2%
-**Nifty Co-Expiry Days**: 45/305 (15%)
+**Generated**: 2026-09-11 22:29
+**Period**: 2020-06-26 to 2026-09-10
+**Sensex Expiry Days Analyzed**: 312
+**Blowout Base Rate**: 22.8% (71/312 days)
+**Above-Median Range Rate**: 49.7%
+**Nifty Co-Expiry Days**: 52/312 (17%)
 
 ---
 
@@ -13,16 +13,16 @@
 
 **Best FII pre-market signal (blowout)**: `fii_put_buying_heavy`
 - Blowout rate: 30% (lift: 1.3x vs 23% base)
-- Triggers on: 60/305 days (20%)
+- Triggers on: 60/312 days (19%)
 
 **Best FII pre-market signal (above-median range)**: `fii_fut_selling_heavy`
 - Above-median rate: 57% (lift: 1.1x)
-- Avg range: 1.15%
+- Avg range: 1.13%
 
 **VIX intraday benchmark**: `vix_change > 0.5`
 - Blowout rate: 51% (lift: 2.2x)
 - Above-median rate: 85% (alt lift: 1.7x)
-- Triggers on: 39/305 days
+- Triggers on: 39/312 days
 
 ---
 
@@ -32,39 +32,39 @@
 
 | Signal | Correlation | p-value | Significant? | n |
 |--------|------------|---------|-------------|---|
-| t1_fii_fut_daily | -0.057 | 0.325 | No | 305 |
-| fii_net_flow | +0.054 | 0.346 | No | 305 |
-| fii_pcr | +0.034 | 0.549 | No | 305 |
-| t1_fii_call_daily | +0.033 | 0.565 | No | 305 |
-| t1_fii_put_daily | -0.028 | 0.623 | No | 305 |
+| t1_fii_fut_daily | -0.056 | 0.328 | No | 312 |
+| fii_net_flow | +0.055 | 0.335 | No | 312 |
+| fii_pcr | +0.032 | 0.569 | No | 312 |
+| t1_fii_call_daily | +0.031 | 0.582 | No | 312 |
+| t1_fii_put_daily | -0.031 | 0.590 | No | 312 |
 
 ### FII T-1 Signals vs Actual Range
 
 | Signal | Correlation | p-value | Significant? | n |
 |--------|------------|---------|-------------|---|
-| t1_fii_fut_daily | -0.101 | 0.080 | No | 305 |
-| t1_fii_call_daily | +0.089 | 0.120 | No | 305 |
-| t1_fii_put_daily | +0.059 | 0.307 | No | 305 |
-| fii_pcr | +0.047 | 0.414 | No | 305 |
-| fii_net_flow | -0.003 | 0.955 | No | 305 |
+| t1_fii_fut_daily | -0.095 | 0.095 | No | 312 |
+| t1_fii_call_daily | +0.090 | 0.111 | No | 312 |
+| t1_fii_put_daily | +0.054 | 0.345 | No | 312 |
+| fii_pcr | +0.042 | 0.464 | No | 312 |
+| fii_net_flow | +0.007 | 0.900 | No | 312 |
 
 ### FII T-1 Signals vs Above-Median Range
 
 | Signal | Correlation | p-value | Significant? | n |
 |--------|------------|---------|-------------|---|
-| t1_fii_fut_daily | -0.092 | 0.110 | No | 305 |
-| fii_pcr | +0.081 | 0.159 | No | 305 |
-| t1_fii_call_daily | +0.037 | 0.523 | No | 305 |
-| t1_fii_put_daily | +0.024 | 0.675 | No | 305 |
-| fii_net_flow | -0.022 | 0.705 | No | 305 |
+| t1_fii_fut_daily | -0.089 | 0.118 | No | 312 |
+| fii_pcr | +0.076 | 0.183 | No | 312 |
+| t1_fii_call_daily | +0.041 | 0.466 | No | 312 |
+| t1_fii_put_daily | +0.020 | 0.720 | No | 312 |
+| fii_net_flow | -0.010 | 0.863 | No | 312 |
 
 ### PRO T-1 Signals vs Blowout
 
 | Signal | Correlation | p-value | Significant? | n |
 |--------|------------|---------|-------------|---|
-| t1_pro_call_daily | +0.125 | 0.029 | Yes | 305 |
-| t1_pro_fut_daily | +0.073 | 0.204 | No | 305 |
-| t1_pro_put_daily | -0.034 | 0.552 | No | 305 |
+| t1_pro_call_daily | +0.122 | 0.031 | Yes | 312 |
+| t1_pro_fut_daily | +0.069 | 0.222 | No | 312 |
+| t1_pro_put_daily | -0.034 | 0.548 | No | 312 |
 
 ---
 
@@ -72,36 +72,37 @@
 
 | Stance | Count | Blowouts | Blowout Rate | Above-Med Rate | Avg Range |
 |--------|-------|----------|-------------|---------------|-----------|
-| FII Very Bearish (sold fut >10K + bought puts >20K) | 26 | 8 | 31% | 58% | 1.14% |
+| FII Very Bearish (sold fut >10K + bought puts >20K) | 25 | 8 | 32% | 60% | 1.16% |
 | FII Hedging (bought puts >20K) | 34 | 10 | 29% | 35% | 0.96% |
-| FII Bearish (sold fut >10K) | 48 | 13 | 27% | 56% | 1.16% |
-| FII Confident (sold puts >20K) | 62 | 15 | 24% | 50% | 1.05% |
-| FII Bullish (bought fut + sold puts) | 46 | 11 | 24% | 48% | 1.02% |
+| FII Bearish (sold fut >10K) | 50 | 13 | 26% | 56% | 1.12% |
+| FII Confident (sold puts >20K) | 64 | 16 | 25% | 52% | 1.04% |
+| FII Bullish (bought fut + sold puts) | 47 | 11 | 23% | 49% | 1.01% |
 | FII Neutral | 50 | 8 | 16% | 54% | 1.08% |
-| FII Mildly Bearish | 14 | 2 | 14% | 36% | 0.96% |
-| FII Mildly Bullish | 25 | 3 | 12% | 44% | 1.03% |
+| FII Mildly Bearish | 16 | 2 | 12% | 31% | 0.92% |
+| FII Mildly Bullish | 25 | 3 | 12% | 48% | 1.03% |
+| FII Very Bearish (sold fut + bought puts) ⚠️ | 1 | 0 | 0% | 0% | 0.75% |
 
 ### FII Direction vs Blowout
 
 | Direction | Count | Blowouts | Blowout Rate | Above-Med Rate | Avg Range |
 |-----------|-------|----------|-------------|---------------|-----------|
-| Bearish | 106 | 23 | 22% | 47% | 1.04% |
-| Bullish | 135 | 34 | 25% | 48% | 1.05% |
+| Bearish | 112 | 24 | 21% | 46% | 1.01% |
+| Bullish | 136 | 34 | 25% | 50% | 1.05% |
 | Neutral | 64 | 13 | 20% | 55% | 1.11% |
 
 ### Nifty Co-Expiry Effect
 
 | Type | Count | Blowouts | Blowout Rate | Above-Med Rate | Avg Range |
 |------|-------|----------|-------------|---------------|-----------|
-| sensex_only | 260 | 65 | 25% | 50% | 1.07% |
-| nifty_co_expiry | 45 | 5 | 11% | 47% | 1.01% |
+| sensex_only | 260 | 65 | 25% | 51% | 1.07% |
+| nifty_co_expiry | 52 | 6 | 12% | 42% | 0.95% |
 
 ---
 
 ## Prediction Rule Testing (6-Year)
 
-**Base blowout rate**: 23% (70/305 days)
-**Above-median range rate**: 49%
+**Base blowout rate**: 23% (71/312 days)
+**Above-median range rate**: 50%
 
 ### All Rules Ranked by Blowout Lift
 
@@ -111,24 +112,24 @@
 | vix_change_gt_0.5 | 39 | 51% | 2.2x | 85% | 1.7x | 1.56% | Intraday |
 | fii_put_buying_heavy | 60 | 30% | 1.3x | 45% | 0.9x | 1.04% | Pre-market |
 | FII_Hedging_stance | 34 | 29% | 1.3x | 35% | 0.7x | 0.96% | Pre-market |
-| fii_fut_selling_heavy | 74 | 28% | 1.2x | 57% | 1.1x | 1.15% | Pre-market |
-| fii_pcr_above_75pct | 76 | 28% | 1.2x | 50% | 1.0x | 1.06% | Pre-market |
-| FII_Bearish_stance | 88 | 26% | 1.1x | 53% | 1.1x | 1.12% | Pre-market |
-| FII_Direction_Bullish | 135 | 25% | 1.1x | 48% | 1.0x | 1.05% | Pre-market |
-| sensex_only_expiry | 260 | 25% | 1.1x | 50% | 1.0x | 1.07% | Pre-market |
-| fii_pcr_above_median | 152 | 24% | 1.1x | 49% | 1.0x | 1.07% | Pre-market |
-| FII_Confident_stance | 62 | 24% | 1.1x | 50% | 1.0x | 1.05% | Pre-market |
-| fii_net_flow_negative | 137 | 23% | 1.0x | 50% | 1.0x | 1.06% | Pre-market |
-| fii_net_flow_very_negative | 76 | 22% | 1.0x | 47% | 1.0x | 1.03% | Pre-market |
-| FII_Direction_Bearish | 106 | 22% | 0.9x | 47% | 1.0x | 1.04% | Pre-market |
+| fii_fut_selling_heavy | 76 | 28% | 1.2x | 57% | 1.1x | 1.13% | Pre-market |
+| fii_pcr_above_75pct | 78 | 27% | 1.2x | 51% | 1.0x | 1.06% | Pre-market |
+| FII_Direction_Bullish | 136 | 25% | 1.1x | 50% | 1.0x | 1.05% | Pre-market |
+| FII_Bearish_stance | 92 | 25% | 1.1x | 52% | 1.1x | 1.09% | Pre-market |
+| FII_Confident_stance | 64 | 25% | 1.1x | 52% | 1.0x | 1.04% | Pre-market |
+| sensex_only_expiry | 260 | 25% | 1.1x | 51% | 1.0x | 1.07% | Pre-market |
+| fii_pcr_above_median | 156 | 24% | 1.0x | 49% | 1.0x | 1.06% | Pre-market |
+| fii_net_flow_negative | 143 | 22% | 1.0x | 49% | 1.0x | 1.04% | Pre-market |
+| FII_Direction_Bearish | 112 | 21% | 0.9x | 46% | 0.9x | 1.01% | Pre-market |
+| fii_net_flow_very_negative | 78 | 21% | 0.9x | 45% | 0.9x | 1.00% | Pre-market |
 | FII_Direction_Neutral | 64 | 20% | 0.9x | 55% | 1.1x | 1.11% | Pre-market |
-| FII_Bullish_stance | 71 | 20% | 0.9x | 46% | 0.9x | 1.02% | Pre-market |
-| fii_pcr_below_25pct | 76 | 18% | 0.8x | 46% | 0.9x | 1.03% | Pre-market |
-| FII_Bearish_AND_VIX_lt16 | 64 | 17% | 0.8x | 34% | 0.7x | 0.91% | Pre-market |
-| vix_change_lt_0 | 202 | 17% | 0.8x | 41% | 0.8x | 0.96% | Intraday |
-| FII_Bearish_AND_VIX_lt14 | 45 | 11% | 0.5x | 24% | 0.5x | 0.83% | Pre-market |
-| is_nifty_expiry_day | 45 | 11% | 0.5x | 47% | 0.9x | 1.01% | Pre-market |
-| FII_Bearish_AND_nifty_expiry | 18 | 6% | 0.2x | 44% | 0.9x | 0.97% | Pre-market |
+| FII_Bullish_stance | 72 | 19% | 0.8x | 49% | 1.0x | 1.02% | Pre-market |
+| fii_pcr_below_25pct | 78 | 18% | 0.8x | 47% | 0.9x | 1.02% | Pre-market |
+| vix_change_lt_0 | 207 | 17% | 0.8x | 42% | 0.8x | 0.95% | Intraday |
+| FII_Bearish_AND_VIX_lt16 | 70 | 17% | 0.8x | 33% | 0.7x | 0.88% | Pre-market |
+| FII_Bearish_AND_VIX_lt14 | 51 | 12% | 0.5x | 24% | 0.5x | 0.80% | Pre-market |
+| is_nifty_expiry_day | 52 | 12% | 0.5x | 42% | 0.8x | 0.95% | Pre-market |
+| FII_Bearish_AND_nifty_expiry | 24 | 8% | 0.4x | 38% | 0.8x | 0.87% | Pre-market |
 
 ---
 
@@ -136,9 +137,9 @@
 
 | Metric | Sensex (6yr) | Nifty (1yr overlap) |
 |--------|-------------|-------------------|
-| Days analyzed | 305 | 50 |
-| Blowout count | 70 | 11 |
-| Blowout rate | 22.9% | 22.0% |
+| Days analyzed | 312 | 50 |
+| Blowout count | 71 | 11 |
+| Blowout rate | 22.8% | 22.0% |
 
 ---
 
@@ -154,18 +155,4 @@ FII positioning data does NOT reliably predict Sensex VIX blowouts. Continue usi
 
 ---
 
----
-
-## Data Sources & Directory Structure
-
-All Sensex analysis files are consolidated in `sensex-analysis/`:
-
-| Source | File | Description |
-|--------|------|-------------|
-| NSE Archives | `sensex_participant_wise_daily.csv` | Daily FII/PRO positions (T-1 format) |
-| NSE Archives | `sensex_fii_t1_6year_expiry.csv` | T-1 FII/PRO data for 318 expiry days |
-| Derived | `fii_dii_vix_correlation_sensex.csv` | 305 expiry days with all features |
-
-**Note**: BSE India API (api.bseindia.com) is protected by Akamai WAF. NSE participant-wise OI archives used as equivalent source (covers same institutional positioning).
-
-*Analysis based on 305 Sensex expiry days with valid FII T-1 data.*
+*Analysis based on 312 Sensex expiry days with valid FII T-1 data.*

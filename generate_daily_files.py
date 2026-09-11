@@ -186,11 +186,23 @@ def fetch_participant_oi(session, date_obj, cache):
         return None
 
 
-def find_prev_trading_day(date_obj, max_lookback=7):
-    """Find previous weekday (rough proxy for trading day)."""
+def find_prev_trading_day(date_obj, max_lookback=7, cache=None):
+    """Find previous trading day.
+
+    If *cache* is provided, skip weekdays whose OI data is None (holidays).
+    Otherwise fall back to the simple weekday-only check.
+    """
     d = date_obj - timedelta(days=1)
     for _ in range(max_lookback):
         if d.weekday() < 5:
+            if cache is not None:
+                key = (d.date() if hasattr(d, 'date') and callable(d.date)
+                       else d).strftime('%d%m%Y')
+                cached = cache.get(key, "MISSING")
+                # None = confirmed holiday / failed fetch; skip it
+                if cached is None:
+                    d -= timedelta(days=1)
+                    continue
             return d
         d -= timedelta(days=1)
     return None
@@ -422,6 +434,309 @@ def to_date_dict(df):
 
 
 # ---------------------------------------------------------------------------
+# Backfill: retry failed OI fetches and recompute recent rows
+# ---------------------------------------------------------------------------
+def backfill_recent_rows(existing_nifty, existing_sensex, existing_bse_daily,
+                         cache, bse_cache, session, bse_session):
+    """
+    Scan last 15 trading days for rows with missing/stale FII/PRO data.
+    Retry previously-failed (None) OI cache entries from NSE/BSE archives.
+    Recompute and update affected rows in-place.
+    Returns the number of rows updated.
+    """
+    recent_dates = pd.to_datetime(existing_nifty['date']).tail(15).dt.date.tolist()
+
+    # Collect T-1 and T-2 dates needed
+    oi_dates_needed = set()
+    for d in recent_dates:
+        dt_obj = datetime.combine(d, datetime.min.time())
+        t1 = find_prev_trading_day(dt_obj, cache=cache)
+        if t1:
+            t1d = t1.date() if isinstance(t1, datetime) else t1
+            oi_dates_needed.add(t1d)
+            t2 = find_prev_trading_day(t1, cache=cache)
+            if t2:
+                t2d = t2.date() if isinstance(t2, datetime) else t2
+                oi_dates_needed.add(t2d)
+
+    # Retry NSE None entries (key exists but value is None = previously failed)
+    nse_retry = sorted(d for d in oi_dates_needed
+                       if d.strftime('%d%m%Y') in cache
+                       and cache[d.strftime('%d%m%Y')] is None)
+    if nse_retry:
+        print(f"    Retrying {len(nse_retry)} previously-failed NSE OI dates...")
+        nse_ok = 0
+        for d in nse_retry:
+            cache.pop(d.strftime('%d%m%Y'), None)
+            result = fetch_participant_oi(
+                session, datetime.combine(d, datetime.min.time()), cache
+            )
+            if result:
+                nse_ok += 1
+            time.sleep(0.7)
+        save_cache(cache)
+        print(f"    Got {nse_ok}/{len(nse_retry)} from NSE")
+
+    # Retry BSE None entries (key exists but value is None = previously failed)
+    bse_retry = sorted(d for d in oi_dates_needed
+                       if d.strftime('%d%m%Y') in bse_cache
+                       and bse_cache[d.strftime('%d%m%Y')] is None)
+    if bse_retry:
+        print(f"    Retrying {len(bse_retry)} previously-failed BSE OI dates...")
+        bse_ok = 0
+        for d in bse_retry:
+            bse_cache.pop(d.strftime('%d%m%Y'), None)
+            result = fetch_bse_participant_oi(
+                bse_session, datetime.combine(d, datetime.min.time()), bse_cache
+            )
+            if result:
+                bse_ok += 1
+            time.sleep(1.5)
+        save_bse_cache(bse_cache)
+        print(f"    Got {bse_ok}/{len(bse_retry)} from BSE")
+
+    if not nse_retry and not bse_retry:
+        print("    No failed OI entries to retry")
+
+    # Recompute FII/PRO for recent rows using updated cache
+    updated = 0
+    for d in recent_dates:
+        d_str = str(d)
+        dt_obj = datetime.combine(d, datetime.min.time())
+        t1 = find_prev_trading_day(dt_obj, cache=cache)
+        t2 = find_prev_trading_day(t1, cache=cache) if t1 else None
+        if not t1 or not t2:
+            continue
+
+        t1d = t1.date() if isinstance(t1, datetime) else t1
+        t2d = t2.date() if isinstance(t2, datetime) else t2
+        t1_key = t1d.strftime('%d%m%Y')
+        t2_key = t2d.strftime('%d%m%Y')
+        t1_data = cache.get(t1_key)
+        t2_data = cache.get(t2_key)
+
+        if not t1_data or not t2_data:
+            continue
+
+        # NSE FII/PRO
+        fii_fut_d = t1_data['fii_fut_idx_net'] - t2_data['fii_fut_idx_net']
+        fii_call_d = t1_data['fii_call_net'] - t2_data['fii_call_net']
+        fii_put_d = t1_data['fii_put_net'] - t2_data['fii_put_net']
+        pro_fut_d = pro_call_d = pro_put_d = None
+        if 'pro_fut_idx_net' in t1_data and 'pro_fut_idx_net' in t2_data:
+            pro_fut_d = t1_data['pro_fut_idx_net'] - t2_data['pro_fut_idx_net']
+            pro_call_d = t1_data['pro_call_net'] - t2_data['pro_call_net']
+            pro_put_d = t1_data['pro_put_net'] - t2_data['pro_put_net']
+
+        fii_stance = determine_stance("FII", fii_fut_d, fii_call_d, fii_put_d)
+        pro_stance = determine_stance("PRO", pro_fut_d, pro_call_d, pro_put_d)
+        fii_comp = int(fii_fut_d + fii_call_d - fii_put_d)
+        pro_comp = (int(pro_fut_d + pro_call_d - pro_put_d)
+                    if pro_fut_d is not None else None)
+
+        # Update Nifty rows
+        mask_n = existing_nifty['date'] == d_str
+        if mask_n.any():
+            existing_nifty.loc[mask_n, 't1_fii_fut_daily'] = int(fii_fut_d)
+            existing_nifty.loc[mask_n, 't1_fii_call_daily'] = int(fii_call_d)
+            existing_nifty.loc[mask_n, 't1_fii_put_daily'] = int(fii_put_d)
+            existing_nifty.loc[mask_n, 't1_fii_stance'] = fii_stance
+            existing_nifty.loc[mask_n, 'fii_composite'] = fii_comp
+            existing_nifty.loc[mask_n, 'fii_view'] = classify_view(fii_comp)
+            if pro_fut_d is not None:
+                existing_nifty.loc[mask_n, 't1_pro_fut_daily'] = int(pro_fut_d)
+                existing_nifty.loc[mask_n, 't1_pro_call_daily'] = int(pro_call_d)
+                existing_nifty.loc[mask_n, 't1_pro_put_daily'] = int(pro_put_d)
+                existing_nifty.loc[mask_n, 't1_pro_stance'] = pro_stance
+                existing_nifty.loc[mask_n, 'pro_composite'] = pro_comp
+                existing_nifty.loc[mask_n, 'pro_view'] = classify_view(pro_comp)
+            updated += 1
+
+        # Update Sensex rows
+        mask_s = existing_sensex['date'] == d_str
+        if mask_s.any():
+            existing_sensex.loc[mask_s, 't1_fii_fut_daily'] = int(fii_fut_d)
+            existing_sensex.loc[mask_s, 't1_fii_call_daily'] = int(fii_call_d)
+            existing_sensex.loc[mask_s, 't1_fii_put_daily'] = int(fii_put_d)
+            existing_sensex.loc[mask_s, 't1_fii_stance'] = fii_stance
+            existing_sensex.loc[mask_s, 'fii_composite'] = fii_comp
+            existing_sensex.loc[mask_s, 'fii_view'] = classify_view(fii_comp)
+            if pro_fut_d is not None:
+                existing_sensex.loc[mask_s, 't1_pro_fut_daily'] = int(pro_fut_d)
+                existing_sensex.loc[mask_s, 't1_pro_call_daily'] = int(pro_call_d)
+                existing_sensex.loc[mask_s, 't1_pro_put_daily'] = int(pro_put_d)
+                existing_sensex.loc[mask_s, 't1_pro_stance'] = pro_stance
+                existing_sensex.loc[mask_s, 'pro_composite'] = pro_comp
+                existing_sensex.loc[mask_s, 'pro_view'] = classify_view(pro_comp)
+
+        # Update BSE daily rows
+        bse_t1 = bse_cache.get(t1_key)
+        bse_t2 = bse_cache.get(t2_key)
+        if bse_t1 and bse_t2 and not existing_bse_daily.empty:
+            bf_fut = (bse_t1['bse_fii_fut_idx_net']
+                      - bse_t2['bse_fii_fut_idx_net'])
+            bf_call = (bse_t1['bse_fii_call_net']
+                       - bse_t2['bse_fii_call_net'])
+            bf_put = (bse_t1['bse_fii_put_net']
+                      - bse_t2['bse_fii_put_net'])
+            bp_fut = (bse_t1.get('bse_pro_fut_idx_net', 0)
+                      - bse_t2.get('bse_pro_fut_idx_net', 0))
+            bp_call = (bse_t1.get('bse_pro_call_net', 0)
+                       - bse_t2.get('bse_pro_call_net', 0))
+            bp_put = (bse_t1.get('bse_pro_put_net', 0)
+                      - bse_t2.get('bse_pro_put_net', 0))
+            bf_comp = int(bf_fut + bf_call - bf_put)
+            bp_comp = int(bp_fut + bp_call - bp_put)
+
+            mask_b = existing_bse_daily['date'] == d_str
+            if mask_b.any():
+                existing_bse_daily.loc[mask_b, 'bse_fii_fut_daily'] = int(bf_fut)
+                existing_bse_daily.loc[mask_b, 'bse_fii_call_daily'] = int(bf_call)
+                existing_bse_daily.loc[mask_b, 'bse_fii_put_daily'] = int(bf_put)
+                existing_bse_daily.loc[mask_b, 'bse_fii_stance'] = (
+                    determine_stance("FII", bf_fut, bf_call, bf_put))
+                existing_bse_daily.loc[mask_b, 'bse_fii_composite'] = bf_comp
+                existing_bse_daily.loc[mask_b, 'bse_fii_view'] = (
+                    classify_view(bf_comp))
+                existing_bse_daily.loc[mask_b, 'bse_pro_fut_daily'] = int(bp_fut)
+                existing_bse_daily.loc[mask_b, 'bse_pro_call_daily'] = int(bp_call)
+                existing_bse_daily.loc[mask_b, 'bse_pro_put_daily'] = int(bp_put)
+                existing_bse_daily.loc[mask_b, 'bse_pro_stance'] = (
+                    determine_stance("PRO", bp_fut, bp_call, bp_put))
+                existing_bse_daily.loc[mask_b, 'bse_pro_composite'] = bp_comp
+                existing_bse_daily.loc[mask_b, 'bse_pro_view'] = (
+                    classify_view(bp_comp))
+
+    return updated
+
+
+# ---------------------------------------------------------------------------
+# Repair: recompute ALL FII/PRO columns from cache (fixes ffill corruption)
+# ---------------------------------------------------------------------------
+def repair_fii_pro(csv_path, cache, label=""):
+    """
+    Re-derive every FII/PRO column from the raw OI cache for ALL rows.
+    Rows whose T-1/T-2 OI data is genuinely missing get NaN (not ffill'd).
+    Returns (dataframe, rows_fixed, rows_blank).
+    """
+    df = pd.read_csv(csv_path)
+    fixed = 0
+    blanked = 0
+
+    fii_num_cols = ['t1_fii_fut_daily', 't1_fii_call_daily', 't1_fii_put_daily',
+                    'fii_composite']
+    pro_num_cols = ['t1_pro_fut_daily', 't1_pro_call_daily', 't1_pro_put_daily',
+                    'pro_composite']
+    fii_txt_cols = ['t1_fii_stance', 'fii_view']
+    pro_txt_cols = ['t1_pro_stance', 'pro_view']
+
+    for idx, row in df.iterrows():
+        d = row['date']
+        try:
+            dt_obj = datetime.combine(
+                pd.Timestamp(d).date(), datetime.min.time()
+            )
+        except Exception:
+            continue
+
+        t1 = find_prev_trading_day(dt_obj, cache=cache)
+        t2 = find_prev_trading_day(t1, cache=cache) if t1 else None
+        if not t1 or not t2:
+            continue
+
+        t1d = t1.date() if isinstance(t1, datetime) else t1
+        t2d = t2.date() if isinstance(t2, datetime) else t2
+        t1_key = t1d.strftime('%d%m%Y')
+        t2_key = t2d.strftime('%d%m%Y')
+        t1_data = cache.get(t1_key)
+        t2_data = cache.get(t2_key)
+
+        if t1_data and t2_data:
+            fii_fut_d = t1_data['fii_fut_idx_net'] - t2_data['fii_fut_idx_net']
+            fii_call_d = t1_data['fii_call_net'] - t2_data['fii_call_net']
+            fii_put_d = t1_data['fii_put_net'] - t2_data['fii_put_net']
+            fii_comp = int(fii_fut_d + fii_call_d - fii_put_d)
+
+            pro_fut_d = pro_call_d = pro_put_d = None
+            if 'pro_fut_idx_net' in t1_data and 'pro_fut_idx_net' in t2_data:
+                pro_fut_d = t1_data['pro_fut_idx_net'] - t2_data['pro_fut_idx_net']
+                pro_call_d = t1_data['pro_call_net'] - t2_data['pro_call_net']
+                pro_put_d = t1_data['pro_put_net'] - t2_data['pro_put_net']
+            pro_comp = (int(pro_fut_d + pro_call_d - pro_put_d)
+                        if pro_fut_d is not None else None)
+
+            fii_stance = determine_stance("FII", fii_fut_d, fii_call_d, fii_put_d)
+            pro_stance = determine_stance("PRO", pro_fut_d, pro_call_d, pro_put_d)
+
+            old_fii = (row.get('t1_fii_fut_daily'), row.get('t1_fii_call_daily'),
+                       row.get('t1_fii_put_daily'))
+            new_fii = (int(fii_fut_d), int(fii_call_d), int(fii_put_d))
+
+            df.at[idx, 't1_fii_fut_daily'] = new_fii[0]
+            df.at[idx, 't1_fii_call_daily'] = new_fii[1]
+            df.at[idx, 't1_fii_put_daily'] = new_fii[2]
+            df.at[idx, 't1_fii_stance'] = fii_stance
+            df.at[idx, 'fii_composite'] = fii_comp
+            df.at[idx, 'fii_view'] = classify_view(fii_comp)
+            if pro_fut_d is not None:
+                df.at[idx, 't1_pro_fut_daily'] = int(pro_fut_d)
+                df.at[idx, 't1_pro_call_daily'] = int(pro_call_d)
+                df.at[idx, 't1_pro_put_daily'] = int(pro_put_d)
+                df.at[idx, 't1_pro_stance'] = pro_stance
+                df.at[idx, 'pro_composite'] = pro_comp
+                df.at[idx, 'pro_view'] = classify_view(pro_comp)
+
+            # Count rows where old values differed (were corrupted by ffill)
+            try:
+                if any(pd.notna(o) and int(float(o)) != n
+                       for o, n in zip(old_fii, new_fii) if pd.notna(o)):
+                    fixed += 1
+            except (ValueError, TypeError):
+                fixed += 1
+        else:
+            # No OI data available — blank out numeric columns, keep text defaults
+            for col in fii_num_cols + pro_num_cols:
+                df.at[idx, col] = None
+            df.at[idx, 't1_fii_stance'] = 'FII Neutral'
+            df.at[idx, 'fii_view'] = 'Neutral'
+            df.at[idx, 't1_pro_stance'] = 'PRO Neutral'
+            df.at[idx, 'pro_view'] = 'Neutral'
+            blanked += 1
+
+    return df, fixed, blanked
+
+
+def repair_all():
+    """Recompute all FII/PRO columns from cache for all CSVs."""
+    print("=" * 70)
+    print("REPAIR MODE: Recompute FII/PRO from OI cache")
+    print("=" * 70)
+
+    cache = load_cache()
+    print(f"Loaded NSE OI cache: {len(cache)} entries "
+          f"({sum(1 for v in cache.values() if v is not None)} with data, "
+          f"{sum(1 for v in cache.values() if v is None)} failed)")
+
+    nifty_csv = REPO / "vix_fii_t1_intraday_daily_results.csv"
+    sensex_csv = REPO / "sensex-analysis" / "sensex_fii_t1_daily_results.csv"
+
+    for csv_path, label in [(nifty_csv, "Nifty"), (sensex_csv, "Sensex")]:
+        if not csv_path.exists():
+            print(f"\n{label}: {csv_path.name} not found, skipping")
+            continue
+        print(f"\n{label}: {csv_path.name}")
+        df, fixed, blanked = repair_fii_pro(csv_path, cache, label)
+        df.to_csv(csv_path, index=False)
+        print(f"    Corrected {fixed} rows with wrong FII/PRO values")
+        print(f"    {blanked} rows have no OI data available (left blank)")
+        print(f"    Written {len(df)} rows to {csv_path.name}")
+
+    print("\n" + "=" * 70)
+    print("Repair complete.")
+    print("=" * 70)
+
+
+# ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
 def main():
@@ -487,17 +802,43 @@ def main():
     sixyr_columns = list(existing_6year.columns)
     existing_6year_dates = set(existing_6year["date"].astype(str).values)
 
-    last_date = pd.to_datetime(existing_sensex["date"]).max().date()
+    sensex_last = pd.to_datetime(existing_sensex["date"]).max().date()
+    nifty_last = pd.to_datetime(existing_nifty["date"]).max().date()
+    last_date = min(sensex_last, nifty_last)
     today = datetime.now(IST).date()
 
-    print(f"    Sensex daily: {len(existing_sensex)} rows, last: {last_date}")
-    print(f"    Nifty daily:  {len(existing_nifty)} rows")
+    print(f"    Sensex daily: {len(existing_sensex)} rows, last: {sensex_last}")
+    print(f"    Nifty daily:  {len(existing_nifty)} rows, last: {nifty_last}")
     print(f"    BSE daily:    {len(existing_bse_daily)} rows")
     print(f"    6year expiry: {len(existing_6year)} rows")
     print(f"    Today: {today}")
 
+    # 1b. Backfill: retry failed OI fetches for recent rows
+    print("\n[1b] Backfilling recent rows with missing FII/PRO data...")
+    cache = load_cache()
+    bse_cache = load_bse_cache()
+    session = requests.Session()
+    session.headers.update(NSE_HEADERS)
+    bse_session = requests.Session()
+    bse_session.headers.update(BSE_HEADERS)
+
+    backfilled = backfill_recent_rows(
+        existing_nifty, existing_sensex, existing_bse_daily,
+        cache, bse_cache, session, bse_session
+    )
+    if backfilled:
+        print(f"    Updated {backfilled} rows with actual FII/PRO data")
+
     if last_date >= today:
-        print("\n    Already up to date!")
+        if backfilled:
+            existing_nifty[nifty_columns].to_csv(nifty_csv_path, index=False)
+            existing_sensex[sensex_columns].to_csv(sensex_csv_path, index=False)
+            if not existing_bse_daily.empty and bse_daily_columns:
+                existing_bse_daily[bse_daily_columns].to_csv(
+                    bse_daily_csv_path, index=False)
+            print(f"\n    Saved backfilled data. Already up to date!")
+        else:
+            print("\n    Already up to date!")
         return
 
     start_date = last_date + timedelta(days=1)
@@ -546,9 +887,7 @@ def main():
 
     # 4. Fetch FII/PRO participant OI from NSE archives
     print("\n[4] Fetching FII/PRO OI from NSE archives...")
-    cache = load_cache()
-    session = requests.Session()
-    session.headers.update(NSE_HEADERS)
+    # cache and session already loaded in step [1b]
 
     new_dates = sorted([
         idx.date() if hasattr(idx, 'date') else pd.Timestamp(idx).date()
@@ -559,11 +898,11 @@ def main():
     dates_needed = set()
     for d in new_dates:
         dt_obj = datetime.combine(d, datetime.min.time())
-        t1 = find_prev_trading_day(dt_obj)
+        t1 = find_prev_trading_day(dt_obj, cache=cache)
         if t1:
             t1d = t1.date() if isinstance(t1, datetime) else t1
             dates_needed.add(t1d)
-            t2 = find_prev_trading_day(t1)
+            t2 = find_prev_trading_day(t1, cache=cache)
             if t2:
                 t2d = t2.date() if isinstance(t2, datetime) else t2
                 dates_needed.add(t2d)
@@ -586,9 +925,7 @@ def main():
 
     # 5. Fetch BSE participant OI from beta.bseindia.com
     print("\n[5] Fetching BSE participant OI from beta.bseindia.com...")
-    bse_cache = load_bse_cache()
-    bse_session = requests.Session()
-    bse_session.headers.update(BSE_HEADERS)
+    # bse_cache and bse_session already loaded in step [1b]
 
     bse_to_fetch = [d for d in sorted(dates_needed)
                     if d.strftime('%d%m%Y') not in bse_cache]
@@ -686,8 +1023,8 @@ def main():
 
         # NSE FII/PRO T-1 daily change (T-1 minus T-2 OI)
         dt_obj = datetime.combine(d, datetime.min.time())
-        t1 = find_prev_trading_day(dt_obj)
-        t2 = find_prev_trading_day(t1) if t1 else None
+        t1 = find_prev_trading_day(dt_obj, cache=cache)
+        t2 = find_prev_trading_day(t1, cache=cache) if t1 else None
 
         fii_fut_d = fii_call_d = fii_put_d = None
         pro_fut_d = pro_call_d = pro_put_d = None
@@ -1029,26 +1366,18 @@ def main():
         after = tmp_nifty[col].isna().sum()
         if before > after:
             print(f"    Nifty {col}: filled {before - after} gaps via ffill")
-    # FII/PRO: forward-fill all columns from previous trading day
+    # FII/PRO: leave numeric columns blank when data is unavailable
+    # (do NOT ffill — stale positioning data from a different date is misleading)
     fii_blank = tmp_nifty['fii_view'].isna()
     if fii_blank.any():
         count = fii_blank.sum()
-        fii_pro_cols = ['t1_fii_fut_daily', 't1_fii_call_daily', 't1_fii_put_daily',
-                        't1_fii_stance', 'fii_composite', 'fii_view',
-                        't1_pro_fut_daily', 't1_pro_call_daily', 't1_pro_put_daily',
-                        't1_pro_stance', 'pro_composite', 'pro_view']
-        for col in fii_pro_cols:
-            tmp_nifty[col] = tmp_nifty[col].ffill()
-        # Fill any remaining NaN at the very start
+        # Only fill text/label columns with safe defaults so downstream code
+        # doesn't break on NaN strings.  Numeric columns stay as NaN.
         tmp_nifty['fii_view'] = tmp_nifty['fii_view'].fillna('Neutral')
         tmp_nifty['pro_view'] = tmp_nifty['pro_view'].fillna('Neutral')
         tmp_nifty['t1_fii_stance'] = tmp_nifty['t1_fii_stance'].fillna('FII Neutral')
         tmp_nifty['t1_pro_stance'] = tmp_nifty['t1_pro_stance'].fillna('PRO Neutral')
-        for col in ['t1_fii_fut_daily', 't1_fii_call_daily', 't1_fii_put_daily',
-                     'fii_composite', 't1_pro_fut_daily', 't1_pro_call_daily',
-                     't1_pro_put_daily', 'pro_composite']:
-            tmp_nifty[col] = tmp_nifty[col].fillna(0)
-        print(f"    Nifty FII/PRO: forward-filled {count} gaps")
+        print(f"    Nifty FII/PRO: {count} rows with missing OI data (left blank)")
 
     # -- Sensex CSV: forward-fill VIX, Sensex OHLC, FII/PRO --
     new_sensex_df = pd.DataFrame(new_sensex_rows)
@@ -1067,26 +1396,15 @@ def main():
         after = tmp_sensex[col].isna().sum()
         if before > after:
             print(f"    Sensex {col}: filled {before - after} gaps via ffill")
-    # FII/PRO: forward-fill all columns from previous trading day
+    # FII/PRO: leave numeric columns blank when data is unavailable
     fii_blank_s = tmp_sensex['fii_view'].isna()
     if fii_blank_s.any():
         count = fii_blank_s.sum()
-        fii_pro_cols = ['t1_fii_fut_daily', 't1_fii_call_daily', 't1_fii_put_daily',
-                        't1_fii_stance', 'fii_composite', 'fii_view',
-                        't1_pro_fut_daily', 't1_pro_call_daily', 't1_pro_put_daily',
-                        't1_pro_stance', 'pro_composite', 'pro_view']
-        for col in fii_pro_cols:
-            tmp_sensex[col] = tmp_sensex[col].ffill()
-        # Fill any remaining NaN at the very start
         tmp_sensex['fii_view'] = tmp_sensex['fii_view'].fillna('Neutral')
         tmp_sensex['pro_view'] = tmp_sensex['pro_view'].fillna('Neutral')
         tmp_sensex['t1_fii_stance'] = tmp_sensex['t1_fii_stance'].fillna('FII Neutral')
         tmp_sensex['t1_pro_stance'] = tmp_sensex['t1_pro_stance'].fillna('PRO Neutral')
-        for col in ['t1_fii_fut_daily', 't1_fii_call_daily', 't1_fii_put_daily',
-                     'fii_composite', 't1_pro_fut_daily', 't1_pro_call_daily',
-                     't1_pro_put_daily', 'pro_composite']:
-            tmp_sensex[col] = tmp_sensex[col].fillna(0)
-        print(f"    Sensex FII/PRO: forward-filled {count} gaps")
+        print(f"    Sensex FII/PRO: {count} rows with missing OI data (left blank)")
 
     # 7. Write updated CSVs
     print("\n[7] Writing updated CSVs...")
@@ -1152,4 +1470,8 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    import sys
+    if "--repair" in sys.argv:
+        repair_all()
+    else:
+        main()

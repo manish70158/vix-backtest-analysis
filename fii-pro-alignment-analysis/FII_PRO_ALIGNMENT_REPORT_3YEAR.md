@@ -12,12 +12,12 @@
 
 | Metric | Count | % of Total |
 |--------|------:|----------:|
-| Total Trading Days | 730 | 100.0% |
-| **Aligned Days (Bullish + Bearish)** | **342** | **46.8%** |
-| Bullish Alignment | 170 | 23.3% |
-| Bearish Alignment | 172 | 23.6% |
+| Total Trading Days | 733 | 100.0% |
+| **Aligned Days (Bullish + Bearish)** | **342** | **46.7%** |
+| Bullish Alignment | 169 | 23.1% |
+| Bearish Alignment | 173 | 23.6% |
 | Mixed (opposing views) | 82 | 11.2% |
-| Neutral/Unclear | 306 | 41.9% |
+| Neutral/Unclear | 309 | 42.2% |
 
 ## Alignment Outcome Breakdown
 
@@ -30,19 +30,19 @@ When FII and PRO align, does the first half move in their direction and then rev
 | Worked then Reversed | 177 | 51.8% | 0.42% | -0.55% | -0.07% |
 | Against then Recovered | 165 | 48.2% | 0.42% | -0.5% | -0.03% |
 
-### Bullish Alignment (170 days)
+### Bullish Alignment (169 days)
 
 | Outcome | Count | % | Avg High% | Avg Low% | Avg Open→Close% |
 |---------|------:|--:|----------:|---------:|----------------:|
-| Worked then Reversed | 97 | 57.1% | 0.16% | -0.8% | -0.55% |
-| Against then Recovered | 73 | 42.9% | 0.68% | -0.25% | 0.51% |
+| Worked then Reversed | 97 | 57.4% | 0.16% | -0.8% | -0.55% |
+| Against then Recovered | 72 | 42.6% | 0.68% | -0.25% | 0.51% |
 
-### Bearish Alignment (172 days)
+### Bearish Alignment (173 days)
 
 | Outcome | Count | % | Avg High% | Avg Low% | Avg Open→Close% |
 |---------|------:|--:|----------:|---------:|----------------:|
-| Worked then Reversed | 80 | 46.5% | 0.74% | -0.26% | 0.51% |
-| Against then Recovered | 92 | 53.5% | 0.22% | -0.7% | -0.46% |
+| Worked then Reversed | 80 | 46.2% | 0.74% | -0.26% | 0.51% |
+| Against then Recovered | 93 | 53.8% | 0.22% | -0.7% | -0.45% |
 
 ## Worked and Remained: Did the Aligned View Win by Close?
 
@@ -55,22 +55,22 @@ A different lens: regardless of intraday path, did the market **close** in the a
 
 | Close Outcome | Count | % | Avg Open→Close% | Avg High% | Avg Low% | Avg Range% |
 |---------------|------:|--:|----------------:|----------:|---------:|-----------:|
-| Worked and Remained | 163 | 47.7% | -0.03% | 0.43% | -0.5% | 0.93% |
+| Worked and Remained | 163 | 47.7% | -0.03% | 0.42% | -0.5% | 0.93% |
 | Reversed by Close | 179 | 52.3% | -0.07% | 0.42% | -0.55% | 0.97% |
 
-### Bullish Alignment (170 days)
+### Bullish Alignment (169 days)
 
 | Close Outcome | Count | % | Avg Open→Close% | Avg High% | Avg Low% |
 |---------------|------:|--:|----------------:|----------:|---------:|
-| Worked and Remained | 73 | 42.9% | 0.51% | 0.68% | -0.25% |
-| Reversed by Close | 97 | 57.1% | -0.55% | 0.16% | -0.8% |
+| Worked and Remained | 72 | 42.6% | 0.51% | 0.68% | -0.25% |
+| Reversed by Close | 97 | 57.4% | -0.55% | 0.16% | -0.8% |
 
-### Bearish Alignment (172 days)
+### Bearish Alignment (173 days)
 
 | Close Outcome | Count | % | Avg Open→Close% | Avg High% | Avg Low% |
 |---------------|------:|--:|----------------:|----------:|---------:|
-| Worked and Remained | 90 | 52.3% | -0.47% | 0.22% | -0.71% |
-| Reversed by Close | 82 | 47.7% | 0.49% | 0.72% | -0.26% |
+| Worked and Remained | 91 | 52.6% | -0.46% | 0.22% | -0.7% |
+| Reversed by Close | 82 | 47.4% | 0.49% | 0.72% | -0.26% |
 
 ### Worked and Remained: Expiry vs Non-Expiry
 
@@ -92,10 +92,10 @@ A different lens: regardless of intraday path, did the market **close** in the a
 
 | Year | Aligned | Worked and Remained | % | Reversed by Close | % |
 |------|--------:|--------------------:|--:|------------------:|--:|
-| 2023 | 38 | 23 | 60.5% | 15 | 39.5% |
+| 2023 | 37 | 22 | 59.5% | 15 | 40.5% |
 | 2024 | 127 | 52 | 40.9% | 75 | 59.1% |
 | 2025 | 102 | 55 | 53.9% | 47 | 46.1% |
-| 2026 | 75 | 33 | 44.0% | 42 | 56.0% |
+| 2026 | 76 | 34 | 44.7% | 42 | 55.3% |
 
 ## VIX Half-Range Exhaustion: Did the Move Exhaust Before Reversing?
 
@@ -110,8 +110,8 @@ If it reversed before reaching half, the reversal happened without significant m
 
 | VIX Exhaustion | Count | % | Avg Open→Close% | Avg High% | Avg Low% | Avg VIX Predicted% |
 |----------------|------:|--:|----------------:|----------:|---------:|-------------------:|
-| Exceeded Half then Reversed | 156 | 45.6% | 0.0% | 0.51% | -0.54% | 0.73% |
-| Reversed Before Half | 186 | 54.4% | -0.1% | 0.35% | -0.52% | 0.74% |
+| Exceeded Half then Reversed | 155 | 45.3% | 0.0% | 0.51% | -0.55% | 0.73% |
+| Reversed Before Half | 187 | 54.7% | -0.1% | 0.35% | -0.52% | 0.74% |
 
 ### Cross-Tab: VIX Exhaustion × Close Outcome
 
@@ -119,28 +119,28 @@ Does exceeding half the VIX range predict whether the aligned view wins by close
 
 | VIX Exhaustion | Worked and Remained | % | Reversed by Close | % | Total |
 |----------------|--------------------:|--:|------------------:|--:|------:|
-| Exceeded Half then Reversed | 129 | 82.7% | 27 | 17.3% | 156 |
-| Reversed Before Half | 34 | 18.3% | 152 | 81.7% | 186 |
+| Exceeded Half then Reversed | 128 | 82.6% | 27 | 17.4% | 155 |
+| Reversed Before Half | 35 | 18.7% | 152 | 81.3% | 187 |
 
-### Bullish Alignment (170 days)
-
-| VIX Exhaustion | Count | % | Worked and Remained | WR% | Avg Open→Close% |
-|----------------|------:|--:|--------------------:|----:|----------------:|
-| Exceeded Half then Reversed | 65 | 38.2% | 54 | 83.1% | 0.48% |
-| Reversed Before Half | 105 | 61.8% | 19 | 18.1% | -0.45% |
-
-### Bearish Alignment (172 days)
+### Bullish Alignment (169 days)
 
 | VIX Exhaustion | Count | % | Worked and Remained | WR% | Avg Open→Close% |
 |----------------|------:|--:|--------------------:|----:|----------------:|
-| Exceeded Half then Reversed | 91 | 52.9% | 75 | 82.4% | -0.34% |
-| Reversed Before Half | 81 | 47.1% | 15 | 18.5% | 0.36% |
+| Exceeded Half then Reversed | 64 | 37.9% | 53 | 82.8% | 0.48% |
+| Reversed Before Half | 105 | 62.1% | 19 | 18.1% | -0.45% |
+
+### Bearish Alignment (173 days)
+
+| VIX Exhaustion | Count | % | Worked and Remained | WR% | Avg Open→Close% |
+|----------------|------:|--:|--------------------:|----:|----------------:|
+| Exceeded Half then Reversed | 91 | 52.6% | 75 | 82.4% | -0.34% |
+| Reversed Before Half | 82 | 47.4% | 16 | 19.5% | 0.36% |
 
 ### VIX Exhaustion by VIX Regime
 
 | VIX Regime | Total | Exceeded Half | % | Reversed Before Half | % |
 |------------|------:|--------------:|--:|---------------------:|--:|
-| Low (<15) | 245 | 118 | 48.2% | 127 | 51.8% |
+| Low (<15) | 245 | 117 | 47.8% | 128 | 52.2% |
 | Normal (15-20) | 81 | 30 | 37.0% | 51 | 63.0% |
 | Elevated (20-30) | 16 | 8 | 50.0% | 8 | 50.0% |
 | High (>30) | 0 | 0 | - | 0 | - |
@@ -153,8 +153,8 @@ Strong alignment = both FII and PRO have Bullish/Strong Bullish or Bearish/Stron
 | Category | Total | Worked then Reversed | % | Against then Recovered | % |
 |----------|------:|---------------------:|--:|-----------------------:|--:|
 | Strong Bullish | 122 | 68 | 55.7% | 54 | 44.3% |
-| Strong Bearish | 116 | 52 | 44.8% | 64 | 55.2% |
-| All Strong Aligned | 238 | 120 | 50.4% | 118 | 49.6% |
+| Strong Bearish | 117 | 52 | 44.4% | 65 | 55.6% |
+| All Strong Aligned | 239 | 120 | 50.2% | 119 | 49.8% |
 
 ## Mixed Days: When FII and PRO Oppose Each Other
 
@@ -188,33 +188,33 @@ whose view wins by close?
 When one or both participants are Neutral, there is no directional consensus.
 Does a solo directional view from one side carry any weight?
 
-### Overview (306 neutral days)
+### Overview (309 neutral days)
 
 | Sub-Type | Days | Top to Down | Down to Up | Avg Open→Close% | Avg Range% |
 |----------|-----:|----------:|----------:|----------------:|-----------:|
 | Both Neutral | 70 | 34 (48.6%) | 36 (51.4%) | -0.002% | 0.96% |
-| FII Neutral + PRO Bullish | 96 | 47 (49.0%) | 49 (51.0%) | -0.007% | 0.83% |
-| FII Neutral + PRO Bearish | 94 | 45 (47.9%) | 49 (52.1%) | 0.002% | 0.905% |
+| FII Neutral + PRO Bullish | 97 | 48 (49.5%) | 49 (50.5%) | -0.013% | 0.828% |
+| FII Neutral + PRO Bearish | 95 | 45 (47.4%) | 50 (52.6%) | 0.008% | 0.905% |
 | FII Bullish + PRO Neutral | 21 | 13 (61.9%) | 8 (38.1%) | -0.14% | 0.891% |
-| FII Bearish + PRO Neutral | 25 | 14 (56.0%) | 11 (44.0%) | -0.18% | 1.092% |
-| All Neutral/Unclear | 306 | 153 (50.0%) | 153 (50.0%) | -0.026% | 0.908% |
+| FII Bearish + PRO Neutral | 26 | 14 (53.8%) | 12 (46.2%) | -0.168% | 1.069% |
+| All Neutral/Unclear | 309 | 154 (49.8%) | 155 (50.2%) | -0.026% | 0.906% |
 
 ### Solo View Accuracy: Did the One Directional Side Win?
 
 | Sub-Type | Days | View Correct | % | Avg Open→Close% |
 |----------|-----:|-------------:|--:|----------------:|
-| FII Neutral + PRO Bullish | 96 | 49 | 51.0% | -0.007% |
-| FII Neutral + PRO Bearish | 94 | 44 | 46.8% | 0.002% |
+| FII Neutral + PRO Bullish | 97 | 49 | 50.5% | -0.013% |
+| FII Neutral + PRO Bearish | 95 | 44 | 46.3% | 0.008% |
 | FII Bullish + PRO Neutral | 21 | 8 | 38.1% | -0.14% |
-| FII Bearish + PRO Neutral | 25 | 14 | 56.0% | -0.18% |
+| FII Bearish + PRO Neutral | 26 | 14 | 53.8% | -0.168% |
 
 ### Range Comparison: Aligned vs Mixed vs Neutral
 
 | Category | Days | Avg Range% | Avg High% | Avg Low% |
 |----------|-----:|-----------:|----------:|---------:|
-| Aligned | 342 | 0.953% | 0.423% | -0.529% |
+| Aligned | 342 | 0.952% | 0.423% | -0.529% |
 | Mixed | 82 | 0.962% | 0.501% | -0.46% |
-| Neutral/Unclear | 306 | 0.908% | 0.425% | -0.483% |
+| Neutral/Unclear | 309 | 0.906% | 0.424% | -0.482% |
 
 ## Expiry vs Non-Expiry
 
@@ -236,10 +236,10 @@ Does a solo directional view from one side carry any weight?
 
 | Year | Trading Days | Aligned Days | Alignment% | Bullish Aligned | Bearish Aligned | Worked then Reversed | Reversal% |
 |------|------------:|-------------:|-----------:|----------------:|----------------:|---------------------:|----------:|
-| 2023 | 75 | 38 | 50.7% | 21 | 17 | 14 | 36.8% |
+| 2023 | 74 | 37 | 50.0% | 20 | 17 | 14 | 37.8% |
 | 2024 | 244 | 127 | 52.0% | 64 | 63 | 74 | 58.3% |
 | 2025 | 245 | 102 | 41.6% | 49 | 53 | 47 | 46.1% |
-| 2026 | 166 | 75 | 45.2% | 36 | 39 | 42 | 56.0% |
+| 2026 | 170 | 76 | 44.7% | 36 | 40 | 42 | 55.3% |
 
 ## Detailed: Bullish Alignment Days
 
@@ -250,8 +250,8 @@ When FII+PRO both lean bullish:
 
 | Pattern | Count | % | Avg Rise from Open | Avg Drop from Open | Avg Close Change |
 |---------|------:|--:|-------------------:|-------------------:|-----------------:|
-| Worked then Reversed (Top→Down) | 97 | 57.1% | 0.16% | -0.8% | -0.55% |
-| Against then Recovered (Down→Up) | 73 | 42.9% | 0.68% | -0.25% | 0.51% |
+| Worked then Reversed (Top→Down) | 97 | 57.4% | 0.16% | -0.8% | -0.55% |
+| Against then Recovered (Down→Up) | 72 | 42.6% | 0.68% | -0.25% | 0.51% |
 
 ## Detailed: Bearish Alignment Days
 
@@ -262,28 +262,28 @@ When FII+PRO both lean bearish:
 
 | Pattern | Count | % | Avg Rise from Open | Avg Drop from Open | Avg Close Change |
 |---------|------:|--:|-------------------:|-------------------:|-----------------:|
-| Worked then Reversed (Down→Up) | 80 | 46.5% | 0.74% | -0.26% | 0.51% |
-| Against then Recovered (Top→Down) | 92 | 53.5% | 0.22% | -0.7% | -0.46% |
+| Worked then Reversed (Down→Up) | 80 | 46.2% | 0.74% | -0.26% | 0.51% |
+| Against then Recovered (Top→Down) | 93 | 53.8% | 0.22% | -0.7% | -0.45% |
 
 ## Key Findings
 
-1. **Alignment frequency**: FII and PRO aligned on 342 of 730 days (46.8%). Bullish alignment (170) vs Bearish alignment (172).
+1. **Alignment frequency**: FII and PRO aligned on 342 of 733 days (46.7%). Bullish alignment (169) vs Bearish alignment (173).
 
 2. **Reversal is the dominant pattern**: On alignment days, "Worked then Reversed" occurred 51.8% of the time (177/342 days). This means when institutions agree, the first half tends to move in their direction but the second half reverses.
 
 3. **Worked and Remained (close validated view)**: On 47.7% of alignment days (163/342), the market closed in the aligned direction — meaning the institutional consensus was ultimately correct by end of day. The remaining 52.3% closed against the aligned view.
 
-4. **VIX half-range exhaustion**: 45.6% of alignment days exceeded half the VIX-predicted range in the aligned direction (156/342). Among those, 82.7% closed in the aligned direction (Worked and Remained) vs 18.3% for days that reversed before reaching half range. Exceeding half range predicts a better close outcome.
+4. **VIX half-range exhaustion**: 45.3% of alignment days exceeded half the VIX-predicted range in the aligned direction (155/342). Among those, 82.6% closed in the aligned direction (Worked and Remained) vs 18.7% for days that reversed before reaching half range. Exceeding half range predicts a better close outcome.
 
-5. **Bullish vs Bearish reversal**: Bullish alignment reversal rate = 57.1%, Bearish alignment reversal rate = 46.5%. Bullish alignment shows a higher tendency to reverse in the second half.
+5. **Bullish vs Bearish reversal**: Bullish alignment reversal rate = 57.4%, Bearish alignment reversal rate = 46.2%. Bullish alignment shows a higher tendency to reverse in the second half.
 
 6. **Expiry effect**: Reversal rate on expiry days = 42.6% vs non-expiry = 54.0%. Non-expiry days show higher reversal tendency.
 
-7. **Strong alignment signal**: When both have strong views (excluding Mildly), reversal rate = 50.4% (120/238 days). Stronger conviction shows lower reversal tendency.
+7. **Strong alignment signal**: When both have strong views (excluding Mildly), reversal rate = 50.2% (120/239 days). Stronger conviction shows lower reversal tendency.
 
 8. **Mixed days (opposing views)**: 82 days where FII and PRO disagreed. When FII was bullish and PRO bearish (49 days), it was a coin flip (50/50). When FII was bearish and PRO bullish (33 days), PRO's bullish view won 57.6% of the time — PRO tends to be more reliable when they disagree.
 
-9. **Neutral days (no consensus)**: 306 days (54.6%) where one or both sides had no view — a perfect coin flip overall (50/50 direction split). However, when FII alone has a view and PRO is neutral, FII's solo signal is reliable: bullish correct 38.1% (21 days), bearish correct 56.0% (25 days). PRO's solo view shows no edge. Neutral days also have the widest avg range (0.91%) — institutional indecision means unpredictable volatility.
+9. **Neutral days (no consensus)**: 309 days (54.6%) where one or both sides had no view — a perfect coin flip overall (50/50 direction split). However, when FII alone has a view and PRO is neutral, FII's solo signal is reliable: bullish correct 38.1% (21 days), bearish correct 53.8% (26 days). PRO's solo view shows no edge. Neutral days also have the widest avg range (0.91%) — institutional indecision means unpredictable volatility.
 
 ## Trading Implications
 
@@ -295,7 +295,7 @@ When FII+PRO both lean bearish:
 
 ## Last 6 Years: All Examples
 
-*2023-09-11 to 2026-09-09 (730 trading days)*
+*2023-09-12 to 2026-09-11 (733 trading days)*
 
 ### Worked then Reversed (first half aligned, second half reversed)
 
@@ -483,6 +483,7 @@ When FII+PRO both lean bearish:
 
 | Date | FII View | PRO View | Alignment | Direction | Intraday Path | Close Outcome | VIX Exhaustion | VIX Predicted% | Actual Range% | High% | Low% | Close% |
 |------|----------|----------|-----------|-----------|---------------|---------------|----------------|---------------:|--------------:|------:|-----:|-------:|
+| 2026-09-04 | Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Reversed Before Half | 0.59% | 0.46% | 0.4% | -0.06% | -0.06% |
 | 2026-08-27 | Mildly Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.58% | 0.85% | 0.08% | -0.77% | -0.77% |
 | 2026-08-19 | Strong Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.6% | 0.61% | 0.09% | -0.52% | -0.31% |
 | 2026-08-12 | Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.62% | 0.85% | 0.0% | -0.84% | -0.15% |
@@ -647,9 +648,8 @@ When FII+PRO both lean bearish:
 | 2023-09-22 | Strong Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.57% | 0.71% | 0.27% | -0.44% | -0.31% |
 | 2023-09-21 | Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.58% | 0.69% | 0.04% | -0.65% | -0.46% |
 | 2023-09-20 | Strong Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.57% | 0.86% | 0.35% | -0.51% | -0.36% |
-| 2023-09-11 | Mildly Bullish | Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.56% | 0.68% | 0.59% | -0.08% | 0.55% |
 
-### Exceeded Half VIX Range + Worked and Remained (129 days — strongest signal, ~85% win rate)
+### Exceeded Half VIX Range + Worked and Remained (128 days — strongest signal, ~85% win rate)
 
 | Date | FII View | PRO View | Alignment | Direction | Intraday Path | Close Outcome | VIX Exhaustion | VIX Predicted% | Actual Range% | High% | Low% | Close% |
 |------|----------|----------|-----------|-----------|---------------|---------------|----------------|---------------:|--------------:|------:|-----:|-------:|
@@ -781,7 +781,6 @@ When FII+PRO both lean bearish:
 | 2023-09-22 | Strong Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.57% | 0.71% | 0.27% | -0.44% | -0.31% |
 | 2023-09-21 | Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.58% | 0.69% | 0.04% | -0.65% | -0.46% |
 | 2023-09-20 | Strong Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.57% | 0.86% | 0.35% | -0.51% | -0.36% |
-| 2023-09-11 | Mildly Bullish | Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.56% | 0.68% | 0.59% | -0.08% | 0.55% |
 
 ### Reversed Before Half VIX Range + Reversed by Close (152 days — weak alignment, ~76% lose)
 
@@ -1027,10 +1026,11 @@ When FII+PRO both lean bearish:
 | 2023-10-25 | Bullish | Strong Bearish | Top to Down | 0.57% | 1.42% | 0.32% | -1.1% | -0.83% |
 | 2023-10-20 | Bearish | Strong Bullish | Top to Down | 0.57% | 0.38% | 0.26% | -0.12% | -0.0% |
 
-### FII Solo View (PRO Neutral) — 46 days
+### FII Solo View (PRO Neutral) — 47 days
 
 | Date | FII View | PRO View | Direction | VIX Predicted% | Actual Range% | High% | Low% | Close% |
 |------|----------|----------|-----------|---------------:|--------------:|------:|-----:|-------:|
+| 2026-09-10 | Bearish | Neutral | Down to Up | 0.62% | 0.49% | 0.21% | -0.28% | 0.13% |
 | 2026-08-21 | Strong Bullish | Neutral | Top to Down | 0.56% | 0.32% | 0.0% | -0.32% | -0.13% |
 | 2026-07-24 | Bearish | Neutral | Down to Up | 0.71% | 0.92% | 0.66% | -0.25% | 0.51% |
 | 2026-07-23 | Strong Bearish | Neutral | Top to Down | 0.7% | 0.77% | 0.36% | -0.41% | -0.14% |
@@ -1080,4 +1080,4 @@ When FII+PRO both lean bearish:
 
 
 ---
-*Generated from 730 trading days (2023-09-11 to 2026-09-09)*
+*Generated from 733 trading days (2023-09-12 to 2026-09-11)*

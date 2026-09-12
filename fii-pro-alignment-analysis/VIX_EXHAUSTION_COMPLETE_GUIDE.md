@@ -31,7 +31,7 @@ BEARISH ALIGNMENT:
 
 ---
 
-## Master Summary (651 Aligned Days with VIX Data)
+## Master Summary (652 Aligned Days with VIX Data)
 
 ### Bullish Alignment (319 days)
 
@@ -40,12 +40,12 @@ BEARISH ALIGNMENT:
 | Exceeded Half | 116 | 36.4% | 101 | **87.1%** | +0.51% |
 | Reversed Before Half | 203 | 63.6% | 44 | **21.7%** | -0.41% |
 
-### Bearish Alignment (332 days)
+### Bearish Alignment (333 days)
 
 | VIX Exhaustion | Count | % | Worked and Remained | WR% | Avg Close% |
 |----------------|------:|--:|--------------------:|----:|----------:|
-| Exceeded Half | 191 | 57.5% | 153 | **80.1%** | -0.40% |
-| Reversed Before Half | 141 | 42.5% | 25 | **17.7%** | +0.37% |
+| Exceeded Half | 191 | 57.4% | 153 | **80.1%** | -0.40% |
+| Reversed Before Half | 142 | 42.6% | 26 | **18.3%** | +0.36% |
 
 ---
 
@@ -75,7 +75,7 @@ BEARISH ALIGNMENT:
 | Strong Bearish | Strong Bearish | 80 | 48 | 60.0% | 85.4% | 32 | 18.8% |
 | Strong Bearish | Bearish | 9 | 6 | 66.7% | 66.7% | 3 | 33.3% |
 | Strong Bearish | Mildly Bearish | 5 | 2 | 40.0% | 100.0% | 3 | 33.3% |
-| Bearish | Strong Bearish | 102 | 61 | 59.8% | 78.7% | 41 | 19.5% |
+| Bearish | Strong Bearish | 103 | 61 | 59.2% | 78.7% | 42 | 21.4% |
 | Bearish | Bearish | 32 | 18 | 56.2% | 77.8% | 14 | 28.6% |
 | Bearish | Mildly Bearish | 11 | 5 | 45.5% | 80.0% | 6 | 33.3% |
 | Mildly Bearish | Strong Bearish | 53 | 32 | 60.4% | 71.9% | 21 | 4.8% |
@@ -84,4 +84,4 @@ BEARISH ALIGNMENT:
 
 ---
 
-*Report generated from corrected alignment data on 2026-09-11 at 22:41:53*
+*Report generated from corrected alignment data on 2026-09-12 at 14:43:12*

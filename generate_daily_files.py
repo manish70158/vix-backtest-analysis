@@ -31,6 +31,15 @@ import pandas as pd
 import requests
 import yfinance as yf
 
+# Import data protection utilities
+from data_protection import (
+    read_csv_with_protection,
+    write_csv_with_protection,
+    backup_csv,
+    verify_no_row_loss,
+    log_action
+)
+
 warnings.filterwarnings("ignore")
 
 IST = ZoneInfo("Asia/Kolkata")
@@ -728,8 +737,10 @@ def repair_all():
             print(f"\n{label}: {csv_path.name} not found, skipping")
             continue
         print(f"\n{label}: {csv_path.name}")
+        original_df, _ = read_csv_with_protection(csv_path)
         df, fixed, blanked = repair_fii_pro(csv_path, cache, label)
-        df.to_csv(csv_path, index=False)
+        write_csv_with_protection(csv_path, df, original_df=original_df, 
+                                 action_desc="REPAIR")
         print(f"    Corrected {fixed} rows with wrong FII/PRO values")
         print(f"    {blanked} rows have no OI data available (left blank)")
         print(f"    Written {len(df)} rows to {csv_path.name}")
@@ -834,11 +845,24 @@ def main():
 
     if last_date >= today:
         if backfilled:
-            existing_nifty[nifty_columns].to_csv(nifty_csv_path, index=False)
-            existing_sensex[sensex_columns].to_csv(sensex_csv_path, index=False)
+            # Load originals for protection check
+            orig_nifty, _ = read_csv_with_protection(nifty_csv_path)
+            orig_sensex, _ = read_csv_with_protection(sensex_csv_path)
+            
+            write_csv_with_protection(nifty_csv_path, 
+                                     existing_nifty[nifty_columns],
+                                     original_df=orig_nifty,
+                                     action_desc="BACKFILL_ONLY")
+            write_csv_with_protection(sensex_csv_path,
+                                     existing_sensex[sensex_columns],
+                                     original_df=orig_sensex,
+                                     action_desc="BACKFILL_ONLY")
             if not existing_bse_daily.empty and bse_daily_columns:
-                existing_bse_daily[bse_daily_columns].to_csv(
-                    bse_daily_csv_path, index=False)
+                orig_bse, _ = read_csv_with_protection(bse_daily_csv_path)
+                write_csv_with_protection(bse_daily_csv_path,
+                                         existing_bse_daily[bse_daily_columns],
+                                         original_df=orig_bse,
+                                         action_desc="BACKFILL_ONLY")
             print(f"\n    Saved backfilled data. Already up to date!")
         else:
             print("\n    Already up to date!")
@@ -1414,13 +1438,17 @@ def main():
 
     # Nifty daily (use post-processed tmp_nifty from step 6b)
     updated_nifty = tmp_nifty[nifty_columns]
-    updated_nifty.to_csv(nifty_csv_path, index=False)
+    write_csv_with_protection(nifty_csv_path, updated_nifty, 
+                             original_df=existing_nifty,
+                             action_desc="DAILY_UPDATE")
     print(f"    Nifty:      {nifty_csv_path.name} — {len(updated_nifty)} rows "
           f"(+{len(new_nifty_rows)} new)")
 
     # Sensex daily (use post-processed tmp_sensex from step 6b)
     updated_sensex = tmp_sensex[sensex_columns]
-    updated_sensex.to_csv(sensex_csv_path, index=False)
+    write_csv_with_protection(sensex_csv_path, updated_sensex,
+                             original_df=existing_sensex,
+                             action_desc="DAILY_UPDATE")
     print(f"    Sensex:     {sensex_csv_path.name} — {len(updated_sensex)} rows "
           f"(+{len(new_sensex_rows)} new)")
 
@@ -1434,7 +1462,9 @@ def main():
             updated_bse = updated_bse[bse_daily_columns]
         else:
             updated_bse = new_bse_df
-        updated_bse.to_csv(bse_daily_csv_path, index=False)
+        write_csv_with_protection(bse_daily_csv_path, updated_bse,
+                                 original_df=existing_bse_daily if not existing_bse_daily.empty else None,
+                                 action_desc="DAILY_UPDATE")
         print(f"    BSE daily:  {bse_daily_csv_path.name} — "
               f"{len(updated_bse)} rows (+{len(new_bse_df)} new)")
 
@@ -1450,7 +1480,9 @@ def main():
                 [existing_6year, new_6year_df], ignore_index=True
             )
             updated_6year = updated_6year[sixyr_columns]
-            updated_6year.to_csv(sensex_6year_csv_path, index=False)
+            write_csv_with_protection(sensex_6year_csv_path, updated_6year,
+                                     original_df=existing_6year,
+                                     action_desc="EXPIRY_ADD")
             print(f"    6year:      {sensex_6year_csv_path.name} — "
                   f"{len(updated_6year)} rows (+{len(new_6year_df)} expiry)")
 

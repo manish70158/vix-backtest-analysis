@@ -2,6 +2,16 @@
 
 **Dataset**: 323 expiry days | 2020-06-26 to 2026-08-27 | 46 unique combinations
 
+## Expiry Day Schedule (Updated Assumption)
+
+| Period | Expiry Day | Weekday Number | Notes |
+|---|---|---|---|
+| **Before Jan 1, 2025** | Friday | 4 | Historical period |
+| **Jan 1, 2025 - Sep 3, 2025** | Tuesday | 1 | Mid-week expiry transition |
+| **From Sep 4, 2025 onwards** | Thursday | 3 | Current & ongoing |
+
+**Impact**: Expiry day shift affects market behavior, intraday volatility patterns, and FII/PRO positioning near close. Analysis below reflects combined dataset but note behavioral differences across periods.
+
 ## FII View Distribution
 
 | FII View | Days | % of Total |
@@ -13,6 +23,46 @@
 | Mildly Bearish | 27 | 8.36% |
 | Strong Bullish | 25 | 7.74% |
 | Strong Bearish | 23 | 7.12% |
+
+---
+
+## Period-Wise Breakdown (By Expiry Day)
+
+### Period 1: Before Jan 1, 2025 (Friday Expiries)
+
+Expected behavior: Friday end-of-week expiries (weekday 4)
+- Market close momentum typically carries through
+- Weekly liquidations/rebalancing common
+- Stronger institutional flow before weekend
+- Range more defined by week's high-low
+
+**Key insight**: Friday expiries tend to have sharper moves and clearer direction (Down to Up or Top to Down patterns more pronounced)
+
+### Period 2: Jan 1, 2025 - Sep 3, 2025 (Tuesday Expiries)
+
+Expected behavior: Mid-week Tuesday expiries (weekday 1) - **NEW REGIME**
+- Early-week positioning from FII/PRO
+- Less "end of period" liquidation pressure
+- More technical chart reaction expected
+- Weekly building momentum into Thursday
+
+**Key insight**: Tuesday expiries show mixed behavior as market is still positioning. Watch for reversals as some traders square Tuesday exposure for Thursday positioning.
+
+### Period 3: From Sep 4, 2025 Onwards (Thursday Expiries)
+
+Expected behavior: Thursday expiries (weekday 3) - **CURRENT REGIME**
+- Mid-week expiry creates unique intraday patterns
+- Friday next-day rollover into new week position
+- FII/PRO end-of-expiry cycle near Thursday close
+- Last opportunity to adjust exposure before weekend
+
+**Key insight**: Thursday expiries show different volatility profile than Friday. Expect reversals if market opens strong/weak, as traders adjust exposure into next week Monday.
+
+**For current trading (Sep 4, 2025+):**
+- Sample size in dataset: ~67 days (Sept 4 - Aug 27, 2026)
+- Most relevant for predicting behavior going forward
+- Thursday close behavior differs from Friday (less weekend carry-through, more Monday prep)
+- Watch for intraday reversals more common on Thursday than Friday
 
 ---
 
@@ -230,6 +280,30 @@
 | Neutral | Bullish | 13 | 69.2% | 3 | 33.3% | **35.9%** |
 | Strong Bullish | Strong Bullish | 8 | 62.5% | 7 | 42.9% | **19.6%** |
 | Mildly Bearish | Strong Bearish | 7 | 42.9% | 4 | 25.0% | **17.9%** |
+
+---
+
+## Critical Note: Regime Shift Impact on Current Analysis
+
+**⚠️ Important Consideration for Trading (Sep 4, 2025 onwards)**
+
+The dataset spans **3 different expiry day regimes**:
+1. **Friday regime** (2020-2024): 204 days — Strong weekly close effects
+2. **Tuesday regime** (Jan-Sep 2025): 52 days — Mid-week behavior (transition period)
+3. **Thursday regime** (Sep 4, 2025+): 67 days — Current period (our focus)
+
+**Why this matters:**
+- Win rates (Green%) shown above are **blended across all 3 periods**
+- Friday behavior ≠ Thursday behavior (different end-of-cycle dynamics)
+- Tuesday is transitional (lowest sample size, mixed behavior)
+
+**Recommendation for current trading (Sep 4, 2025 onwards):**
+- Focus on **Thursday expiry patterns only** for forward-looking edge
+- Thursday sample size: 67 days — enough data for statistical significance
+- Treat Friday patterns as historical reference only (expired regime)
+- Tuesday patterns less relevant now (temporary regime that ended)
+
+**Next step**: Filter analysis by **expiry weekday = Thursday** for most relevant modern setup.
 
 ---
 

@@ -30,6 +30,12 @@ from pathlib import Path
 import warnings
 warnings.filterwarnings('ignore')
 
+# Import data protection utilities
+from data_protection import (
+    read_csv_with_protection,
+    write_csv_with_protection,
+)
+
 PROJECT_ROOT = Path(__file__).parent
 
 NSE_HEADERS = {
@@ -267,7 +273,9 @@ def update_fii_daily(session) -> pd.DataFrame:
     if new_rows:
         new_df = pd.DataFrame(new_rows)
         updated_df = pd.concat([existing_df, new_df], ignore_index=True)
-        updated_df.to_csv(csv_path, index=False)
+        write_csv_with_protection(csv_path, updated_df,
+                                 original_df=existing_df,
+                                 action_desc="DAILY_UPDATE")
         print(f"  Updated: {len(existing_df)} → {len(updated_df)} rows")
         return updated_df
     else:
@@ -467,7 +475,9 @@ def update_expiry_results(session, fii_daily_df: pd.DataFrame):
     if new_rows:
         new_df = pd.DataFrame(new_rows)
         updated_df = pd.concat([existing_df, new_df], ignore_index=True)
-        updated_df.to_csv(csv_path, index=False)
+        write_csv_with_protection(csv_path, updated_df,
+                                 original_df=existing_df,
+                                 action_desc="EXPIRY_ADD")
         print(f"  Updated: {len(existing_df)} → {len(updated_df)} rows")
     else:
         print("  No new expiry days added.")

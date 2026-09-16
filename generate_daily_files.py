@@ -459,12 +459,14 @@ def backfill_recent_rows(existing_nifty, existing_sensex, existing_bse_daily,
                 t2d = t2.date() if isinstance(t2, datetime) else t2
                 oi_dates_needed.add(t2d)
 
-    # Retry NSE None entries (key exists but value is None = previously failed)
+    # Retry NSE dates that are missing (never fetched) OR None (previously
+    # failed). A missing key means the raw OI was never pulled, so T-1/T-2
+    # deltas can't be computed and the row stays blank — fetch those too.
     nse_retry = sorted(d for d in oi_dates_needed
-                       if d.strftime('%d%m%Y') in cache
-                       and cache[d.strftime('%d%m%Y')] is None)
+                       if d.strftime('%d%m%Y') not in cache
+                       or cache[d.strftime('%d%m%Y')] is None)
     if nse_retry:
-        print(f"    Retrying {len(nse_retry)} previously-failed NSE OI dates...")
+        print(f"    Retrying {len(nse_retry)} missing/failed NSE OI dates...")
         nse_ok = 0
         for d in nse_retry:
             cache.pop(d.strftime('%d%m%Y'), None)
@@ -477,12 +479,13 @@ def backfill_recent_rows(existing_nifty, existing_sensex, existing_bse_daily,
         save_cache(cache)
         print(f"    Got {nse_ok}/{len(nse_retry)} from NSE")
 
-    # Retry BSE None entries (key exists but value is None = previously failed)
+    # Retry BSE dates that are missing (never fetched) OR None (previously
+    # failed), same reasoning as NSE above.
     bse_retry = sorted(d for d in oi_dates_needed
-                       if d.strftime('%d%m%Y') in bse_cache
-                       and bse_cache[d.strftime('%d%m%Y')] is None)
+                       if d.strftime('%d%m%Y') not in bse_cache
+                       or bse_cache[d.strftime('%d%m%Y')] is None)
     if bse_retry:
-        print(f"    Retrying {len(bse_retry)} previously-failed BSE OI dates...")
+        print(f"    Retrying {len(bse_retry)} missing/failed BSE OI dates...")
         bse_ok = 0
         for d in bse_retry:
             bse_cache.pop(d.strftime('%d%m%Y'), None)

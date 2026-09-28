@@ -301,326 +301,326 @@ When FII+PRO both lean bearish:
 
 ## Last 6 Years: All Examples
 
-*2020-09-03 to 2026-09-01 (308 trading days)*
+*2020-09-03 00:00:00 to 2026-09-01 00:00:00 (308 trading days)*
 
 ### Worked then Reversed (first half aligned, second half reversed)
 
 | Date | FII View | PRO View | Alignment | Direction | Intraday Path | Close Outcome | VIX Exhaustion | VIX Predicted% | Actual Range% | High% | Low% | Close% |
 |------|----------|----------|-----------|-----------|---------------|---------------|----------------|---------------:|--------------:|------:|-----:|-------:|
-| 2026-08-25 | Strong Bearish | Strong Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.6% | 0.91% | 0.66% | -0.25% | 0.66% |
-| 2026-08-04 | Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.62% | 1.12% | 0.0% | -1.12% | -0.36% |
-| 2026-07-07 | Bullish | Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.62% | 0.74% | 0.27% | -0.47% | -0.45% |
-| 2026-06-16 | Mildly Bearish | Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.75% | 0.48% | 0.33% | -0.15% | 0.3% |
-| 2026-06-02 | Mildly Bearish | Strong Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.87% | 1.41% | 1.41% | 0.0% | 1.27% |
-| 2026-05-19 | Mildly Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 1.03% | 0.82% | 0.45% | -0.37% | -0.29% |
-| 2026-04-28 | Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Exceeded Half then Reversed | 0.96% | 0.93% | 0.55% | -0.39% | -0.14% |
-| 2026-03-02 | Strong Bearish | Strong Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.72% | 1.56% | 1.34% | -0.23% | 0.77% |
-| 2026-01-13 | Mildly Bullish | Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.6% | 1.14% | 0.01% | -1.14% | -0.71% |
-| 2025-12-23 | Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.51% | 0.44% | 0.11% | -0.33% | -0.15% |
-| 2025-11-18 | Mildly Bullish | Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.62% | 0.59% | 0.03% | -0.56% | -0.49% |
-| 2025-09-16 | Mildly Bearish | Strong Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.54% | 0.76% | 0.75% | -0.01% | 0.72% |
-| 2025-09-02 | Strong Bullish | Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Exceeded Half then Reversed | 0.59% | 0.95% | 0.42% | -0.53% | -0.32% |
-| 2025-08-07 | Bearish | Mildly Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Exceeded Half then Reversed | 0.63% | 1.19% | 0.69% | -0.49% | 0.66% |
-| 2025-07-24 | Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.55% | 0.9% | 0.01% | -0.89% | -0.76% |
-| 2024-12-26 | Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.69% | 0.84% | 0.33% | -0.51% | -0.07% |
-| 2024-12-19 | Bearish | Strong Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.75% | 0.56% | 0.54% | -0.03% | 0.36% |
-| 2024-09-12 | Mildly Bearish | Strong Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Exceeded Half then Reversed | 0.71% | 1.96% | 1.49% | -0.47% | 1.02% |
-| 2024-07-04 | Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.69% | 0.49% | 0.13% | -0.36% | -0.27% |
-| 2024-06-13 | Mildly Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.75% | 0.54% | 0.0% | -0.54% | -0.35% |
-| 2024-05-09 | Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.89% | 1.69% | 0.37% | -1.32% | -1.15% |
-| 2024-03-14 | Bearish | Strong Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.76% | 1.31% | 1.01% | -0.3% | 0.78% |
-| 2024-02-29 | Bearish | Strong Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.85% | 0.91% | 0.57% | -0.34% | 0.49% |
-| 2024-02-15 | Mildly Bearish | Mildly Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Exceeded Half then Reversed | 0.81% | 0.73% | 0.22% | -0.51% | 0.09% |
-| 2024-02-01 | Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.84% | 0.8% | 0.24% | -0.56% | -0.41% |
-| 2024-01-25 | Mildly Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.75% | 0.99% | 0.02% | -0.97% | -0.39% |
-| 2024-01-18 | Bearish | Strong Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Exceeded Half then Reversed | 0.79% | 1.19% | 0.58% | -0.6% | 0.29% |
-| 2023-09-28 | Mildly Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.61% | 1.39% | 0.02% | -1.36% | -1.06% |
-| 2023-09-14 | Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.62% | 0.61% | 0.2% | -0.41% | -0.13% |
-| 2023-08-24 | Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.61% | 1.1% | 0.25% | -0.85% | -0.79% |
-| 2023-07-27 | Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.55% | 1.33% | 0.08% | -1.25% | -0.76% |
-| 2023-06-22 | Mildly Bullish | Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.59% | 0.67% | 0.17% | -0.49% | -0.39% |
-| 2023-06-08 | Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.6% | 0.86% | 0.28% | -0.58% | -0.42% |
-| 2023-05-25 | Bearish | Strong Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Exceeded Half then Reversed | 0.69% | 0.73% | 0.37% | -0.36% | 0.37% |
-| 2023-05-11 | Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.68% | 0.47% | 0.0% | -0.47% | -0.29% |
-| 2023-03-02 | Mildly Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.68% | 0.79% | 0.13% | -0.66% | -0.59% |
-| 2023-02-02 | Mildly Bearish | Strong Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.88% | 1.17% | 0.78% | -0.39% | 0.54% |
-| 2023-01-19 | Strong Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.75% | 0.5% | 0.19% | -0.31% | -0.17% |
-| 2022-12-08 | Mildly Bearish | Strong Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.74% | 0.47% | 0.29% | -0.18% | 0.23% |
-| 2022-12-01 | Strong Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.72% | 0.57% | 0.08% | -0.5% | -0.38% |
-| 2022-11-03 | Bearish | Strong Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.87% | 0.79% | 0.76% | -0.02% | 0.44% |
-| 2022-10-13 | Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 1.06% | 0.9% | 0.14% | -0.76% | -0.41% |
-| 2022-10-06 | Strong Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 1.02% | 0.64% | 0.28% | -0.36% | -0.36% |
-| 2022-09-22 | Bearish | Strong Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Reversed Before Half | 1.01% | 1.08% | 0.64% | -0.44% | 0.15% |
-| 2022-09-08 | Mildly Bearish | Mildly Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Reversed Before Half | 1.01% | 0.64% | 0.33% | -0.31% | 0.29% |
-| 2022-05-26 | Mildly Bearish | Strong Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Exceeded Half then Reversed | 1.32% | 1.86% | 0.61% | -1.25% | 0.6% |
-| 2022-04-28 | Mildly Bearish | Strong Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Exceeded Half then Reversed | 1.08% | 1.46% | 0.77% | -0.69% | 0.24% |
-| 2022-03-10 | Mildly Bullish | Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 1.44% | 1.84% | 0.0% | -1.84% | -1.14% |
-| 2022-02-03 | Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.98% | 1.47% | 0.04% | -1.43% | -1.39% |
-| 2021-12-30 | Mildly Bearish | Strong Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.85% | 0.67% | 0.36% | -0.31% | 0.16% |
-| 2021-09-02 | Mildly Bearish | Strong Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.74% | 1.06% | 0.88% | -0.19% | 0.81% |
-| 2021-07-22 | Bearish | Mildly Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.69% | 0.67% | 0.62% | -0.05% | 0.58% |
-| 2021-06-17 | Mildly Bearish | Strong Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.78% | 0.97% | 0.77% | -0.19% | 0.21% |
-| 2021-04-01 | Strong Bearish | Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Exceeded Half then Reversed | 1.08% | 1.28% | 0.57% | -0.71% | 0.46% |
-| 2021-03-10 | Mildly Bullish | Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 1.18% | 0.76% | 0.1% | -0.66% | -0.22% |
-| 2021-01-28 | Bearish | Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Exceeded Half then Reversed | 1.28% | 1.32% | 0.63% | -0.69% | 0.07% |
-| 2020-11-26 | Bearish | Strong Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Exceeded Half then Reversed | 1.21% | 1.75% | 0.86% | -0.9% | 0.84% |
-| 2020-10-29 | Mildly Bearish | Strong Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Reversed Before Half | 1.22% | 1.18% | 0.95% | -0.23% | 0.32% |
-| 2020-09-10 | Mildly Bearish | Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Reversed Before Half | 1.16% | 1.17% | 0.88% | -0.3% | 0.8% |
+| 2026-08-25 00:00:00 | Strong Bearish | Strong Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.6% | 0.91% | 0.66% | -0.25% | 0.66% |
+| 2026-08-04 00:00:00 | Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.62% | 1.12% | 0.0% | -1.12% | -0.36% |
+| 2026-07-07 00:00:00 | Bullish | Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.62% | 0.74% | 0.27% | -0.47% | -0.45% |
+| 2026-06-16 00:00:00 | Mildly Bearish | Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.75% | 0.48% | 0.33% | -0.15% | 0.3% |
+| 2026-06-02 00:00:00 | Mildly Bearish | Strong Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.87% | 1.41% | 1.41% | 0.0% | 1.27% |
+| 2026-05-19 00:00:00 | Mildly Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 1.03% | 0.82% | 0.45% | -0.37% | -0.29% |
+| 2026-04-28 00:00:00 | Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Exceeded Half then Reversed | 0.96% | 0.93% | 0.55% | -0.39% | -0.14% |
+| 2026-03-02 00:00:00 | Strong Bearish | Strong Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.72% | 1.56% | 1.34% | -0.23% | 0.77% |
+| 2026-01-13 00:00:00 | Mildly Bullish | Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.6% | 1.14% | 0.01% | -1.14% | -0.71% |
+| 2025-12-23 00:00:00 | Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.51% | 0.44% | 0.11% | -0.33% | -0.15% |
+| 2025-11-18 00:00:00 | Mildly Bullish | Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.62% | 0.59% | 0.03% | -0.56% | -0.49% |
+| 2025-09-16 00:00:00 | Mildly Bearish | Strong Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.54% | 0.76% | 0.75% | -0.01% | 0.72% |
+| 2025-09-02 00:00:00 | Strong Bullish | Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Exceeded Half then Reversed | 0.59% | 0.95% | 0.42% | -0.53% | -0.32% |
+| 2025-08-07 00:00:00 | Bearish | Mildly Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Exceeded Half then Reversed | 0.63% | 1.19% | 0.69% | -0.49% | 0.66% |
+| 2025-07-24 00:00:00 | Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.55% | 0.9% | 0.01% | -0.89% | -0.76% |
+| 2024-12-26 00:00:00 | Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.69% | 0.84% | 0.33% | -0.51% | -0.07% |
+| 2024-12-19 00:00:00 | Bearish | Strong Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.75% | 0.56% | 0.54% | -0.03% | 0.36% |
+| 2024-09-12 00:00:00 | Mildly Bearish | Strong Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Exceeded Half then Reversed | 0.71% | 1.96% | 1.49% | -0.47% | 1.02% |
+| 2024-07-04 00:00:00 | Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.69% | 0.49% | 0.13% | -0.36% | -0.27% |
+| 2024-06-13 00:00:00 | Mildly Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.75% | 0.54% | 0.0% | -0.54% | -0.35% |
+| 2024-05-09 00:00:00 | Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.89% | 1.69% | 0.37% | -1.32% | -1.15% |
+| 2024-03-14 00:00:00 | Bearish | Strong Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.76% | 1.31% | 1.01% | -0.3% | 0.78% |
+| 2024-02-29 00:00:00 | Bearish | Strong Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.85% | 0.91% | 0.57% | -0.34% | 0.49% |
+| 2024-02-15 00:00:00 | Mildly Bearish | Mildly Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Exceeded Half then Reversed | 0.81% | 0.73% | 0.22% | -0.51% | 0.09% |
+| 2024-02-01 00:00:00 | Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.84% | 0.8% | 0.24% | -0.56% | -0.41% |
+| 2024-01-25 00:00:00 | Mildly Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.75% | 0.99% | 0.02% | -0.97% | -0.39% |
+| 2024-01-18 00:00:00 | Bearish | Strong Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Exceeded Half then Reversed | 0.79% | 1.19% | 0.58% | -0.6% | 0.29% |
+| 2023-09-28 00:00:00 | Mildly Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.61% | 1.39% | 0.02% | -1.36% | -1.06% |
+| 2023-09-14 00:00:00 | Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.62% | 0.61% | 0.2% | -0.41% | -0.13% |
+| 2023-08-24 00:00:00 | Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.61% | 1.1% | 0.25% | -0.85% | -0.79% |
+| 2023-07-27 00:00:00 | Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.55% | 1.33% | 0.08% | -1.25% | -0.76% |
+| 2023-06-22 00:00:00 | Mildly Bullish | Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.59% | 0.67% | 0.17% | -0.49% | -0.39% |
+| 2023-06-08 00:00:00 | Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.6% | 0.86% | 0.28% | -0.58% | -0.42% |
+| 2023-05-25 00:00:00 | Bearish | Strong Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Exceeded Half then Reversed | 0.69% | 0.73% | 0.37% | -0.36% | 0.37% |
+| 2023-05-11 00:00:00 | Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.68% | 0.47% | 0.0% | -0.47% | -0.29% |
+| 2023-03-02 00:00:00 | Mildly Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.68% | 0.79% | 0.13% | -0.66% | -0.59% |
+| 2023-02-02 00:00:00 | Mildly Bearish | Strong Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.88% | 1.17% | 0.78% | -0.39% | 0.54% |
+| 2023-01-19 00:00:00 | Strong Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.75% | 0.5% | 0.19% | -0.31% | -0.17% |
+| 2022-12-08 00:00:00 | Mildly Bearish | Strong Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.74% | 0.47% | 0.29% | -0.18% | 0.23% |
+| 2022-12-01 00:00:00 | Strong Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.72% | 0.57% | 0.08% | -0.5% | -0.38% |
+| 2022-11-03 00:00:00 | Bearish | Strong Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.87% | 0.79% | 0.76% | -0.02% | 0.44% |
+| 2022-10-13 00:00:00 | Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 1.06% | 0.9% | 0.14% | -0.76% | -0.41% |
+| 2022-10-06 00:00:00 | Strong Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 1.02% | 0.64% | 0.28% | -0.36% | -0.36% |
+| 2022-09-22 00:00:00 | Bearish | Strong Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Reversed Before Half | 1.01% | 1.08% | 0.64% | -0.44% | 0.15% |
+| 2022-09-08 00:00:00 | Mildly Bearish | Mildly Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Reversed Before Half | 1.01% | 0.64% | 0.33% | -0.31% | 0.29% |
+| 2022-05-26 00:00:00 | Mildly Bearish | Strong Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Exceeded Half then Reversed | 1.32% | 1.86% | 0.61% | -1.25% | 0.6% |
+| 2022-04-28 00:00:00 | Mildly Bearish | Strong Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Exceeded Half then Reversed | 1.08% | 1.46% | 0.77% | -0.69% | 0.24% |
+| 2022-03-10 00:00:00 | Mildly Bullish | Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 1.44% | 1.84% | 0.0% | -1.84% | -1.14% |
+| 2022-02-03 00:00:00 | Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.98% | 1.47% | 0.04% | -1.43% | -1.39% |
+| 2021-12-30 00:00:00 | Mildly Bearish | Strong Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.85% | 0.67% | 0.36% | -0.31% | 0.16% |
+| 2021-09-02 00:00:00 | Mildly Bearish | Strong Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.74% | 1.06% | 0.88% | -0.19% | 0.81% |
+| 2021-07-22 00:00:00 | Bearish | Mildly Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.69% | 0.67% | 0.62% | -0.05% | 0.58% |
+| 2021-06-17 00:00:00 | Mildly Bearish | Strong Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.78% | 0.97% | 0.77% | -0.19% | 0.21% |
+| 2021-04-01 00:00:00 | Strong Bearish | Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Exceeded Half then Reversed | 1.08% | 1.28% | 0.57% | -0.71% | 0.46% |
+| 2021-03-10 00:00:00 | Mildly Bullish | Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 1.18% | 0.76% | 0.1% | -0.66% | -0.22% |
+| 2021-01-28 00:00:00 | Bearish | Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Exceeded Half then Reversed | 1.28% | 1.32% | 0.63% | -0.69% | 0.07% |
+| 2020-11-26 00:00:00 | Bearish | Strong Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Exceeded Half then Reversed | 1.21% | 1.75% | 0.86% | -0.9% | 0.84% |
+| 2020-10-29 00:00:00 | Mildly Bearish | Strong Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Reversed Before Half | 1.22% | 1.18% | 0.95% | -0.23% | 0.32% |
+| 2020-09-10 00:00:00 | Mildly Bearish | Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Reversed Before Half | 1.16% | 1.17% | 0.88% | -0.3% | 0.8% |
 
 ### Against then Recovered (first half against view, second half recovered)
 
 | Date | FII View | PRO View | Alignment | Direction | Intraday Path | Close Outcome | VIX Exhaustion | VIX Predicted% | Actual Range% | High% | Low% | Close% |
 |------|----------|----------|-----------|-----------|---------------|---------------|----------------|---------------:|--------------:|------:|-----:|-------:|
-| 2026-07-21 | Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Reversed Before Half | 0.68% | 0.52% | 0.19% | -0.33% | -0.09% |
-| 2026-06-09 | Mildly Bearish | Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.89% | 0.75% | 0.09% | -0.66% | -0.01% |
-| 2026-05-12 | Bearish | Mildly Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.97% | 1.72% | 0.15% | -1.58% | -1.23% |
-| 2026-04-13 | Bullish | Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.99% | 1.49% | 1.35% | -0.14% | 0.97% |
-| 2026-03-30 | Mildly Bearish | Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 1.4% | 1.91% | 0.73% | -1.18% | -0.76% |
-| 2026-03-10 | Bullish | Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Reversed Before Half | 1.22% | 0.92% | 0.09% | -0.83% | 0.02% |
-| 2026-02-24 | Mildly Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.74% | 1.23% | 0.0% | -1.23% | -0.71% |
-| 2026-02-17 | Bullish | Strong Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.7% | 0.76% | 0.49% | -0.26% | 0.3% |
-| 2025-12-09 | Strong Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.58% | 0.76% | 0.22% | -0.54% | -0.1% |
-| 2025-11-25 | Mildly Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.69% | 0.67% | 0.13% | -0.54% | -0.53% |
-| 2025-10-14 | Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.58% | 0.99% | 0.13% | -0.86% | -0.61% |
-| 2025-09-23 | Bearish | Mildly Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.55% | 0.7% | 0.21% | -0.49% | -0.09% |
-| 2025-08-28 | Mildly Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.64% | 0.9% | 0.03% | -0.87% | -0.66% |
-| 2025-08-14 | Bullish | Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Reversed Before Half | 0.64% | 0.31% | 0.27% | -0.04% | 0.04% |
-| 2025-07-03 | Strong Bearish | Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.65% | 0.8% | 0.32% | -0.47% | -0.42% |
-| 2025-06-26 | Mildly Bullish | Mildly Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.68% | 1.21% | 1.17% | -0.04% | 1.03% |
-| 2025-06-05 | Mildly Bullish | Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.82% | 1.16% | 0.85% | -0.32% | 0.28% |
-| 2025-05-15 | Mildly Bullish | Strong Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.9% | 2.52% | 1.71% | -0.81% | 1.38% |
-| 2025-04-30 | Mildly Bearish | Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.91% | 0.81% | 0.22% | -0.59% | -0.39% |
-| 2025-04-03 | Bullish | Strong Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.72% | 0.69% | 0.67% | -0.02% | 0.39% |
-| 2025-03-06 | Mildly Bullish | Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Reversed Before Half | 0.72% | 1.38% | 0.36% | -1.03% | 0.24% |
-| 2025-01-30 | Mildly Bullish | Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.98% | 0.79% | 0.66% | -0.13% | 0.55% |
-| 2025-01-23 | Strong Bullish | Mildly Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.88% | 0.78% | 0.62% | -0.16% | 0.38% |
-| 2025-01-09 | Bearish | Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.76% | 0.79% | 0.06% | -0.73% | -0.5% |
-| 2025-01-02 | Bullish | Mildly Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.76% | 2.0% | 1.87% | -0.13% | 1.62% |
-| 2024-11-07 | Strong Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.78% | 1.32% | 0.06% | -1.27% | -1.2% |
-| 2024-10-31 | Strong Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.81% | 0.82% | 0.09% | -0.73% | -0.46% |
-| 2024-10-24 | Bullish | Strong Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Reversed Before Half | 0.77% | 0.57% | 0.28% | -0.29% | 0.01% |
-| 2024-10-17 | Strong Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.68% | 1.2% | 0.01% | -1.19% | -1.11% |
-| 2024-08-14 | Strong Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Reversed Before Half | 0.85% | 0.4% | 0.05% | -0.35% | -0.16% |
-| 2024-07-11 | Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.76% | 0.86% | 0.03% | -0.83% | -0.24% |
-| 2024-06-06 | Strong Bullish | Strong Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Reversed Before Half | 0.99% | 1.17% | 0.49% | -0.68% | 0.22% |
-| 2024-05-30 | Strong Bearish | Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 1.27% | 1.28% | 0.39% | -0.89% | -0.27% |
-| 2024-05-23 | Bullish | Strong Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 1.12% | 1.84% | 1.68% | -0.16% | 1.49% |
-| 2024-04-25 | Bullish | Mildly Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.54% | 1.44% | 1.38% | -0.05% | 1.09% |
-| 2024-01-04 | Bullish | Strong Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Reversed Before Half | 0.74% | 0.56% | 0.37% | -0.19% | 0.3% |
-| 2023-11-30 | Strong Bullish | Strong Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Reversed Before Half | 0.67% | 0.71% | 0.25% | -0.46% | 0.09% |
-| 2023-11-09 | Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.58% | 0.44% | 0.03% | -0.41% | -0.27% |
-| 2023-09-21 | Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.58% | 0.69% | 0.04% | -0.65% | -0.46% |
-| 2023-08-03 | Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.59% | 1.23% | 0.38% | -0.85% | -0.36% |
-| 2023-07-20 | Bullish | Strong Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.61% | 1.18% | 0.81% | -0.37% | 0.7% |
-| 2023-07-13 | Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.57% | 0.93% | 0.37% | -0.56% | -0.27% |
-| 2023-06-28 | Bullish | Strong Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.56% | 0.79% | 0.54% | -0.25% | 0.44% |
-| 2023-06-01 | Strong Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.63% | 0.62% | 0.0% | -0.61% | -0.5% |
-| 2023-05-18 | Strong Bearish | Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.69% | 1.04% | 0.05% | -1.0% | -0.84% |
-| 2023-04-27 | Bullish | Strong Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.61% | 0.75% | 0.66% | -0.08% | 0.62% |
-| 2023-04-06 | Strong Bullish | Strong Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.65% | 0.76% | 0.59% | -0.17% | 0.39% |
-| 2023-02-23 | Strong Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.82% | 0.93% | 0.25% | -0.67% | -0.29% |
-| 2023-01-25 | Mildly Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.72% | 1.36% | 0.0% | -1.36% | -1.01% |
-| 2023-01-05 | Strong Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.8% | 1.25% | 0.09% | -1.16% | -0.56% |
-| 2022-12-22 | Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.81% | 1.36% | 0.15% | -1.2% | -0.95% |
-| 2022-12-15 | Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.67% | 1.41% | 0.2% | -1.21% | -1.15% |
-| 2022-11-10 | Bearish | Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Reversed Before Half | 0.83% | 0.74% | 0.32% | -0.41% | -0.04% |
-| 2022-09-15 | Strong Bearish | Mildly Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.96% | 1.29% | 0.27% | -1.02% | -0.96% |
-| 2022-08-11 | Bearish | Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Reversed Before Half | 1.03% | 0.48% | 0.03% | -0.45% | -0.41% |
-| 2022-07-28 | Strong Bullish | Strong Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.95% | 1.16% | 1.01% | -0.16% | 0.88% |
-| 2022-07-14 | Bearish | Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.97% | 1.32% | 0.32% | -1.0% | -0.44% |
-| 2022-07-07 | Bullish | Strong Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Reversed Before Half | 1.06% | 0.64% | 0.23% | -0.41% | 0.14% |
-| 2022-05-19 | Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 1.17% | 1.3% | 0.41% | -0.89% | -0.56% |
-| 2022-05-05 | Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 1.15% | 1.73% | 0.53% | -1.2% | -1.1% |
-| 2022-03-17 | Bullish | Strong Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 1.26% | 0.98% | 0.82% | -0.16% | 0.56% |
-| 2022-03-03 | Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 1.53% | 1.94% | 0.27% | -1.67% | -1.28% |
-| 2022-02-24 | Mildly Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 1.28% | 3.01% | 0.93% | -2.08% | -2.0% |
-| 2022-02-10 | Bullish | Strong Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.97% | 1.21% | 0.49% | -0.72% | 0.19% |
-| 2022-01-20 | Mildly Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.93% | 1.59% | 0.07% | -1.52% | -0.77% |
-| 2021-12-02 | Bullish | Strong Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 1.02% | 1.51% | 1.36% | -0.14% | 1.27% |
-| 2021-11-11 | Mildly Bearish | Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.85% | 0.93% | 0.0% | -0.93% | -0.46% |
-| 2021-10-28 | Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.88% | 2.13% | 0.0% | -2.13% | -1.79% |
-| 2021-10-21 | Mildly Bearish | Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.96% | 1.82% | 0.0% | -1.82% | -0.89% |
-| 2021-10-07 | Mildly Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Reversed Before Half | 0.91% | 0.51% | 0.26% | -0.25% | -0.08% |
-| 2021-09-16 | Bullish | Strong Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.72% | 0.75% | 0.6% | -0.16% | 0.5% |
-| 2021-04-15 | Bullish | Strong Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Reversed Before Half | 1.07% | 1.66% | 0.51% | -1.16% | 0.46% |
-| 2021-03-25 | Mildly Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 1.18% | 2.1% | 0.0% | -2.1% | -1.54% |
-| 2021-02-25 | Mildly Bullish | Strong Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Reversed Before Half | 1.27% | 0.68% | 0.62% | -0.06% | 0.16% |
+| 2026-07-21 00:00:00 | Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Reversed Before Half | 0.68% | 0.52% | 0.19% | -0.33% | -0.09% |
+| 2026-06-09 00:00:00 | Mildly Bearish | Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.89% | 0.75% | 0.09% | -0.66% | -0.01% |
+| 2026-05-12 00:00:00 | Bearish | Mildly Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.97% | 1.72% | 0.15% | -1.58% | -1.23% |
+| 2026-04-13 00:00:00 | Bullish | Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.99% | 1.49% | 1.35% | -0.14% | 0.97% |
+| 2026-03-30 00:00:00 | Mildly Bearish | Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 1.4% | 1.91% | 0.73% | -1.18% | -0.76% |
+| 2026-03-10 00:00:00 | Bullish | Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Reversed Before Half | 1.22% | 0.92% | 0.09% | -0.83% | 0.02% |
+| 2026-02-24 00:00:00 | Mildly Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.74% | 1.23% | 0.0% | -1.23% | -0.71% |
+| 2026-02-17 00:00:00 | Bullish | Strong Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.7% | 0.76% | 0.49% | -0.26% | 0.3% |
+| 2025-12-09 00:00:00 | Strong Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.58% | 0.76% | 0.22% | -0.54% | -0.1% |
+| 2025-11-25 00:00:00 | Mildly Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.69% | 0.67% | 0.13% | -0.54% | -0.53% |
+| 2025-10-14 00:00:00 | Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.58% | 0.99% | 0.13% | -0.86% | -0.61% |
+| 2025-09-23 00:00:00 | Bearish | Mildly Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.55% | 0.7% | 0.21% | -0.49% | -0.09% |
+| 2025-08-28 00:00:00 | Mildly Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.64% | 0.9% | 0.03% | -0.87% | -0.66% |
+| 2025-08-14 00:00:00 | Bullish | Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Reversed Before Half | 0.64% | 0.31% | 0.27% | -0.04% | 0.04% |
+| 2025-07-03 00:00:00 | Strong Bearish | Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.65% | 0.8% | 0.32% | -0.47% | -0.42% |
+| 2025-06-26 00:00:00 | Mildly Bullish | Mildly Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.68% | 1.21% | 1.17% | -0.04% | 1.03% |
+| 2025-06-05 00:00:00 | Mildly Bullish | Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.82% | 1.16% | 0.85% | -0.32% | 0.28% |
+| 2025-05-15 00:00:00 | Mildly Bullish | Strong Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.9% | 2.52% | 1.71% | -0.81% | 1.38% |
+| 2025-04-30 00:00:00 | Mildly Bearish | Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.91% | 0.81% | 0.22% | -0.59% | -0.39% |
+| 2025-04-03 00:00:00 | Bullish | Strong Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.72% | 0.69% | 0.67% | -0.02% | 0.39% |
+| 2025-03-06 00:00:00 | Mildly Bullish | Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Reversed Before Half | 0.72% | 1.38% | 0.36% | -1.03% | 0.24% |
+| 2025-01-30 00:00:00 | Mildly Bullish | Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.98% | 0.79% | 0.66% | -0.13% | 0.55% |
+| 2025-01-23 00:00:00 | Strong Bullish | Mildly Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.88% | 0.78% | 0.62% | -0.16% | 0.38% |
+| 2025-01-09 00:00:00 | Bearish | Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.76% | 0.79% | 0.06% | -0.73% | -0.5% |
+| 2025-01-02 00:00:00 | Bullish | Mildly Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.76% | 2.0% | 1.87% | -0.13% | 1.62% |
+| 2024-11-07 00:00:00 | Strong Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.78% | 1.32% | 0.06% | -1.27% | -1.2% |
+| 2024-10-31 00:00:00 | Strong Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.81% | 0.82% | 0.09% | -0.73% | -0.46% |
+| 2024-10-24 00:00:00 | Bullish | Strong Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Reversed Before Half | 0.77% | 0.57% | 0.28% | -0.29% | 0.01% |
+| 2024-10-17 00:00:00 | Strong Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.68% | 1.2% | 0.01% | -1.19% | -1.11% |
+| 2024-08-14 00:00:00 | Strong Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Reversed Before Half | 0.85% | 0.4% | 0.05% | -0.35% | -0.16% |
+| 2024-07-11 00:00:00 | Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.76% | 0.86% | 0.03% | -0.83% | -0.24% |
+| 2024-06-06 00:00:00 | Strong Bullish | Strong Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Reversed Before Half | 0.99% | 1.17% | 0.49% | -0.68% | 0.22% |
+| 2024-05-30 00:00:00 | Strong Bearish | Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 1.27% | 1.28% | 0.39% | -0.89% | -0.27% |
+| 2024-05-23 00:00:00 | Bullish | Strong Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 1.12% | 1.84% | 1.68% | -0.16% | 1.49% |
+| 2024-04-25 00:00:00 | Bullish | Mildly Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.54% | 1.44% | 1.38% | -0.05% | 1.09% |
+| 2024-01-04 00:00:00 | Bullish | Strong Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Reversed Before Half | 0.74% | 0.56% | 0.37% | -0.19% | 0.3% |
+| 2023-11-30 00:00:00 | Strong Bullish | Strong Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Reversed Before Half | 0.67% | 0.71% | 0.25% | -0.46% | 0.09% |
+| 2023-11-09 00:00:00 | Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.58% | 0.44% | 0.03% | -0.41% | -0.27% |
+| 2023-09-21 00:00:00 | Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.58% | 0.69% | 0.04% | -0.65% | -0.46% |
+| 2023-08-03 00:00:00 | Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.59% | 1.23% | 0.38% | -0.85% | -0.36% |
+| 2023-07-20 00:00:00 | Bullish | Strong Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.61% | 1.18% | 0.81% | -0.37% | 0.7% |
+| 2023-07-13 00:00:00 | Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.57% | 0.93% | 0.37% | -0.56% | -0.27% |
+| 2023-06-28 00:00:00 | Bullish | Strong Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.56% | 0.79% | 0.54% | -0.25% | 0.44% |
+| 2023-06-01 00:00:00 | Strong Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.63% | 0.62% | 0.0% | -0.61% | -0.5% |
+| 2023-05-18 00:00:00 | Strong Bearish | Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.69% | 1.04% | 0.05% | -1.0% | -0.84% |
+| 2023-04-27 00:00:00 | Bullish | Strong Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.61% | 0.75% | 0.66% | -0.08% | 0.62% |
+| 2023-04-06 00:00:00 | Strong Bullish | Strong Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.65% | 0.76% | 0.59% | -0.17% | 0.39% |
+| 2023-02-23 00:00:00 | Strong Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.82% | 0.93% | 0.25% | -0.67% | -0.29% |
+| 2023-01-25 00:00:00 | Mildly Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.72% | 1.36% | 0.0% | -1.36% | -1.01% |
+| 2023-01-05 00:00:00 | Strong Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.8% | 1.25% | 0.09% | -1.16% | -0.56% |
+| 2022-12-22 00:00:00 | Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.81% | 1.36% | 0.15% | -1.2% | -0.95% |
+| 2022-12-15 00:00:00 | Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.67% | 1.41% | 0.2% | -1.21% | -1.15% |
+| 2022-11-10 00:00:00 | Bearish | Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Reversed Before Half | 0.83% | 0.74% | 0.32% | -0.41% | -0.04% |
+| 2022-09-15 00:00:00 | Strong Bearish | Mildly Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.96% | 1.29% | 0.27% | -1.02% | -0.96% |
+| 2022-08-11 00:00:00 | Bearish | Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Reversed Before Half | 1.03% | 0.48% | 0.03% | -0.45% | -0.41% |
+| 2022-07-28 00:00:00 | Strong Bullish | Strong Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.95% | 1.16% | 1.01% | -0.16% | 0.88% |
+| 2022-07-14 00:00:00 | Bearish | Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.97% | 1.32% | 0.32% | -1.0% | -0.44% |
+| 2022-07-07 00:00:00 | Bullish | Strong Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Reversed Before Half | 1.06% | 0.64% | 0.23% | -0.41% | 0.14% |
+| 2022-05-19 00:00:00 | Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 1.17% | 1.3% | 0.41% | -0.89% | -0.56% |
+| 2022-05-05 00:00:00 | Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 1.15% | 1.73% | 0.53% | -1.2% | -1.1% |
+| 2022-03-17 00:00:00 | Bullish | Strong Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 1.26% | 0.98% | 0.82% | -0.16% | 0.56% |
+| 2022-03-03 00:00:00 | Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 1.53% | 1.94% | 0.27% | -1.67% | -1.28% |
+| 2022-02-24 00:00:00 | Mildly Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 1.28% | 3.01% | 0.93% | -2.08% | -2.0% |
+| 2022-02-10 00:00:00 | Bullish | Strong Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.97% | 1.21% | 0.49% | -0.72% | 0.19% |
+| 2022-01-20 00:00:00 | Mildly Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.93% | 1.59% | 0.07% | -1.52% | -0.77% |
+| 2021-12-02 00:00:00 | Bullish | Strong Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 1.02% | 1.51% | 1.36% | -0.14% | 1.27% |
+| 2021-11-11 00:00:00 | Mildly Bearish | Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.85% | 0.93% | 0.0% | -0.93% | -0.46% |
+| 2021-10-28 00:00:00 | Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.88% | 2.13% | 0.0% | -2.13% | -1.79% |
+| 2021-10-21 00:00:00 | Mildly Bearish | Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.96% | 1.82% | 0.0% | -1.82% | -0.89% |
+| 2021-10-07 00:00:00 | Mildly Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Reversed Before Half | 0.91% | 0.51% | 0.26% | -0.25% | -0.08% |
+| 2021-09-16 00:00:00 | Bullish | Strong Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.72% | 0.75% | 0.6% | -0.16% | 0.5% |
+| 2021-04-15 00:00:00 | Bullish | Strong Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Reversed Before Half | 1.07% | 1.66% | 0.51% | -1.16% | 0.46% |
+| 2021-03-25 00:00:00 | Mildly Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 1.18% | 2.1% | 0.0% | -2.1% | -1.54% |
+| 2021-02-25 00:00:00 | Mildly Bullish | Strong Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Reversed Before Half | 1.27% | 0.68% | 0.62% | -0.06% | 0.16% |
 
 ### Exceeded Half VIX Range + Worked and Remained (59 days — strongest signal, ~85% win rate)
 
 | Date | FII View | PRO View | Alignment | Direction | Intraday Path | Close Outcome | VIX Exhaustion | VIX Predicted% | Actual Range% | High% | Low% | Close% |
 |------|----------|----------|-----------|-----------|---------------|---------------|----------------|---------------:|--------------:|------:|-----:|-------:|
-| 2026-06-09 | Mildly Bearish | Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.89% | 0.75% | 0.09% | -0.66% | -0.01% |
-| 2026-05-12 | Bearish | Mildly Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.97% | 1.72% | 0.15% | -1.58% | -1.23% |
-| 2026-04-13 | Bullish | Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.99% | 1.49% | 1.35% | -0.14% | 0.97% |
-| 2026-03-30 | Mildly Bearish | Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 1.4% | 1.91% | 0.73% | -1.18% | -0.76% |
-| 2026-02-24 | Mildly Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.74% | 1.23% | 0.0% | -1.23% | -0.71% |
-| 2026-02-17 | Bullish | Strong Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.7% | 0.76% | 0.49% | -0.26% | 0.3% |
-| 2025-12-09 | Strong Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.58% | 0.76% | 0.22% | -0.54% | -0.1% |
-| 2025-11-25 | Mildly Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.69% | 0.67% | 0.13% | -0.54% | -0.53% |
-| 2025-10-14 | Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.58% | 0.99% | 0.13% | -0.86% | -0.61% |
-| 2025-09-23 | Bearish | Mildly Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.55% | 0.7% | 0.21% | -0.49% | -0.09% |
-| 2025-08-28 | Mildly Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.64% | 0.9% | 0.03% | -0.87% | -0.66% |
-| 2025-07-03 | Strong Bearish | Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.65% | 0.8% | 0.32% | -0.47% | -0.42% |
-| 2025-06-26 | Mildly Bullish | Mildly Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.68% | 1.21% | 1.17% | -0.04% | 1.03% |
-| 2025-06-05 | Mildly Bullish | Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.82% | 1.16% | 0.85% | -0.32% | 0.28% |
-| 2025-05-15 | Mildly Bullish | Strong Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.9% | 2.52% | 1.71% | -0.81% | 1.38% |
-| 2025-04-30 | Mildly Bearish | Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.91% | 0.81% | 0.22% | -0.59% | -0.39% |
-| 2025-04-03 | Bullish | Strong Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.72% | 0.69% | 0.67% | -0.02% | 0.39% |
-| 2025-01-30 | Mildly Bullish | Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.98% | 0.79% | 0.66% | -0.13% | 0.55% |
-| 2025-01-23 | Strong Bullish | Mildly Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.88% | 0.78% | 0.62% | -0.16% | 0.38% |
-| 2025-01-09 | Bearish | Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.76% | 0.79% | 0.06% | -0.73% | -0.5% |
-| 2025-01-02 | Bullish | Mildly Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.76% | 2.0% | 1.87% | -0.13% | 1.62% |
-| 2024-11-07 | Strong Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.78% | 1.32% | 0.06% | -1.27% | -1.2% |
-| 2024-10-31 | Strong Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.81% | 0.82% | 0.09% | -0.73% | -0.46% |
-| 2024-10-17 | Strong Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.68% | 1.2% | 0.01% | -1.19% | -1.11% |
-| 2024-07-11 | Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.76% | 0.86% | 0.03% | -0.83% | -0.24% |
-| 2024-05-30 | Strong Bearish | Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 1.27% | 1.28% | 0.39% | -0.89% | -0.27% |
-| 2024-05-23 | Bullish | Strong Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 1.12% | 1.84% | 1.68% | -0.16% | 1.49% |
-| 2024-04-25 | Bullish | Mildly Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.54% | 1.44% | 1.38% | -0.05% | 1.09% |
-| 2023-11-09 | Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.58% | 0.44% | 0.03% | -0.41% | -0.27% |
-| 2023-09-21 | Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.58% | 0.69% | 0.04% | -0.65% | -0.46% |
-| 2023-08-03 | Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.59% | 1.23% | 0.38% | -0.85% | -0.36% |
-| 2023-07-20 | Bullish | Strong Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.61% | 1.18% | 0.81% | -0.37% | 0.7% |
-| 2023-07-13 | Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.57% | 0.93% | 0.37% | -0.56% | -0.27% |
-| 2023-06-28 | Bullish | Strong Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.56% | 0.79% | 0.54% | -0.25% | 0.44% |
-| 2023-06-01 | Strong Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.63% | 0.62% | 0.0% | -0.61% | -0.5% |
-| 2023-05-18 | Strong Bearish | Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.69% | 1.04% | 0.05% | -1.0% | -0.84% |
-| 2023-04-27 | Bullish | Strong Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.61% | 0.75% | 0.66% | -0.08% | 0.62% |
-| 2023-04-06 | Strong Bullish | Strong Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.65% | 0.76% | 0.59% | -0.17% | 0.39% |
-| 2023-02-23 | Strong Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.82% | 0.93% | 0.25% | -0.67% | -0.29% |
-| 2023-01-25 | Mildly Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.72% | 1.36% | 0.0% | -1.36% | -1.01% |
-| 2023-01-05 | Strong Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.8% | 1.25% | 0.09% | -1.16% | -0.56% |
-| 2022-12-22 | Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.81% | 1.36% | 0.15% | -1.2% | -0.95% |
-| 2022-12-15 | Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.67% | 1.41% | 0.2% | -1.21% | -1.15% |
-| 2022-09-15 | Strong Bearish | Mildly Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.96% | 1.29% | 0.27% | -1.02% | -0.96% |
-| 2022-07-28 | Strong Bullish | Strong Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.95% | 1.16% | 1.01% | -0.16% | 0.88% |
-| 2022-07-14 | Bearish | Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.97% | 1.32% | 0.32% | -1.0% | -0.44% |
-| 2022-05-19 | Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 1.17% | 1.3% | 0.41% | -0.89% | -0.56% |
-| 2022-05-05 | Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 1.15% | 1.73% | 0.53% | -1.2% | -1.1% |
-| 2022-03-17 | Bullish | Strong Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 1.26% | 0.98% | 0.82% | -0.16% | 0.56% |
-| 2022-03-03 | Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 1.53% | 1.94% | 0.27% | -1.67% | -1.28% |
-| 2022-02-24 | Mildly Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 1.28% | 3.01% | 0.93% | -2.08% | -2.0% |
-| 2022-02-10 | Bullish | Strong Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.97% | 1.21% | 0.49% | -0.72% | 0.19% |
-| 2022-01-20 | Mildly Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.93% | 1.59% | 0.07% | -1.52% | -0.77% |
-| 2021-12-02 | Bullish | Strong Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 1.02% | 1.51% | 1.36% | -0.14% | 1.27% |
-| 2021-11-11 | Mildly Bearish | Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.85% | 0.93% | 0.0% | -0.93% | -0.46% |
-| 2021-10-28 | Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.88% | 2.13% | 0.0% | -2.13% | -1.79% |
-| 2021-10-21 | Mildly Bearish | Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.96% | 1.82% | 0.0% | -1.82% | -0.89% |
-| 2021-09-16 | Bullish | Strong Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.72% | 0.75% | 0.6% | -0.16% | 0.5% |
-| 2021-03-25 | Mildly Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 1.18% | 2.1% | 0.0% | -2.1% | -1.54% |
+| 2026-06-09 00:00:00 | Mildly Bearish | Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.89% | 0.75% | 0.09% | -0.66% | -0.01% |
+| 2026-05-12 00:00:00 | Bearish | Mildly Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.97% | 1.72% | 0.15% | -1.58% | -1.23% |
+| 2026-04-13 00:00:00 | Bullish | Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.99% | 1.49% | 1.35% | -0.14% | 0.97% |
+| 2026-03-30 00:00:00 | Mildly Bearish | Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 1.4% | 1.91% | 0.73% | -1.18% | -0.76% |
+| 2026-02-24 00:00:00 | Mildly Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.74% | 1.23% | 0.0% | -1.23% | -0.71% |
+| 2026-02-17 00:00:00 | Bullish | Strong Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.7% | 0.76% | 0.49% | -0.26% | 0.3% |
+| 2025-12-09 00:00:00 | Strong Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.58% | 0.76% | 0.22% | -0.54% | -0.1% |
+| 2025-11-25 00:00:00 | Mildly Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.69% | 0.67% | 0.13% | -0.54% | -0.53% |
+| 2025-10-14 00:00:00 | Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.58% | 0.99% | 0.13% | -0.86% | -0.61% |
+| 2025-09-23 00:00:00 | Bearish | Mildly Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.55% | 0.7% | 0.21% | -0.49% | -0.09% |
+| 2025-08-28 00:00:00 | Mildly Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.64% | 0.9% | 0.03% | -0.87% | -0.66% |
+| 2025-07-03 00:00:00 | Strong Bearish | Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.65% | 0.8% | 0.32% | -0.47% | -0.42% |
+| 2025-06-26 00:00:00 | Mildly Bullish | Mildly Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.68% | 1.21% | 1.17% | -0.04% | 1.03% |
+| 2025-06-05 00:00:00 | Mildly Bullish | Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.82% | 1.16% | 0.85% | -0.32% | 0.28% |
+| 2025-05-15 00:00:00 | Mildly Bullish | Strong Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.9% | 2.52% | 1.71% | -0.81% | 1.38% |
+| 2025-04-30 00:00:00 | Mildly Bearish | Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.91% | 0.81% | 0.22% | -0.59% | -0.39% |
+| 2025-04-03 00:00:00 | Bullish | Strong Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.72% | 0.69% | 0.67% | -0.02% | 0.39% |
+| 2025-01-30 00:00:00 | Mildly Bullish | Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.98% | 0.79% | 0.66% | -0.13% | 0.55% |
+| 2025-01-23 00:00:00 | Strong Bullish | Mildly Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.88% | 0.78% | 0.62% | -0.16% | 0.38% |
+| 2025-01-09 00:00:00 | Bearish | Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.76% | 0.79% | 0.06% | -0.73% | -0.5% |
+| 2025-01-02 00:00:00 | Bullish | Mildly Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.76% | 2.0% | 1.87% | -0.13% | 1.62% |
+| 2024-11-07 00:00:00 | Strong Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.78% | 1.32% | 0.06% | -1.27% | -1.2% |
+| 2024-10-31 00:00:00 | Strong Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.81% | 0.82% | 0.09% | -0.73% | -0.46% |
+| 2024-10-17 00:00:00 | Strong Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.68% | 1.2% | 0.01% | -1.19% | -1.11% |
+| 2024-07-11 00:00:00 | Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.76% | 0.86% | 0.03% | -0.83% | -0.24% |
+| 2024-05-30 00:00:00 | Strong Bearish | Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 1.27% | 1.28% | 0.39% | -0.89% | -0.27% |
+| 2024-05-23 00:00:00 | Bullish | Strong Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 1.12% | 1.84% | 1.68% | -0.16% | 1.49% |
+| 2024-04-25 00:00:00 | Bullish | Mildly Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.54% | 1.44% | 1.38% | -0.05% | 1.09% |
+| 2023-11-09 00:00:00 | Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.58% | 0.44% | 0.03% | -0.41% | -0.27% |
+| 2023-09-21 00:00:00 | Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.58% | 0.69% | 0.04% | -0.65% | -0.46% |
+| 2023-08-03 00:00:00 | Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.59% | 1.23% | 0.38% | -0.85% | -0.36% |
+| 2023-07-20 00:00:00 | Bullish | Strong Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.61% | 1.18% | 0.81% | -0.37% | 0.7% |
+| 2023-07-13 00:00:00 | Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.57% | 0.93% | 0.37% | -0.56% | -0.27% |
+| 2023-06-28 00:00:00 | Bullish | Strong Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.56% | 0.79% | 0.54% | -0.25% | 0.44% |
+| 2023-06-01 00:00:00 | Strong Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.63% | 0.62% | 0.0% | -0.61% | -0.5% |
+| 2023-05-18 00:00:00 | Strong Bearish | Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.69% | 1.04% | 0.05% | -1.0% | -0.84% |
+| 2023-04-27 00:00:00 | Bullish | Strong Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.61% | 0.75% | 0.66% | -0.08% | 0.62% |
+| 2023-04-06 00:00:00 | Strong Bullish | Strong Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.65% | 0.76% | 0.59% | -0.17% | 0.39% |
+| 2023-02-23 00:00:00 | Strong Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.82% | 0.93% | 0.25% | -0.67% | -0.29% |
+| 2023-01-25 00:00:00 | Mildly Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.72% | 1.36% | 0.0% | -1.36% | -1.01% |
+| 2023-01-05 00:00:00 | Strong Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.8% | 1.25% | 0.09% | -1.16% | -0.56% |
+| 2022-12-22 00:00:00 | Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.81% | 1.36% | 0.15% | -1.2% | -0.95% |
+| 2022-12-15 00:00:00 | Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.67% | 1.41% | 0.2% | -1.21% | -1.15% |
+| 2022-09-15 00:00:00 | Strong Bearish | Mildly Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.96% | 1.29% | 0.27% | -1.02% | -0.96% |
+| 2022-07-28 00:00:00 | Strong Bullish | Strong Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.95% | 1.16% | 1.01% | -0.16% | 0.88% |
+| 2022-07-14 00:00:00 | Bearish | Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.97% | 1.32% | 0.32% | -1.0% | -0.44% |
+| 2022-05-19 00:00:00 | Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 1.17% | 1.3% | 0.41% | -0.89% | -0.56% |
+| 2022-05-05 00:00:00 | Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 1.15% | 1.73% | 0.53% | -1.2% | -1.1% |
+| 2022-03-17 00:00:00 | Bullish | Strong Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 1.26% | 0.98% | 0.82% | -0.16% | 0.56% |
+| 2022-03-03 00:00:00 | Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 1.53% | 1.94% | 0.27% | -1.67% | -1.28% |
+| 2022-02-24 00:00:00 | Mildly Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 1.28% | 3.01% | 0.93% | -2.08% | -2.0% |
+| 2022-02-10 00:00:00 | Bullish | Strong Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.97% | 1.21% | 0.49% | -0.72% | 0.19% |
+| 2022-01-20 00:00:00 | Mildly Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.93% | 1.59% | 0.07% | -1.52% | -0.77% |
+| 2021-12-02 00:00:00 | Bullish | Strong Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 1.02% | 1.51% | 1.36% | -0.14% | 1.27% |
+| 2021-11-11 00:00:00 | Mildly Bearish | Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.85% | 0.93% | 0.0% | -0.93% | -0.46% |
+| 2021-10-28 00:00:00 | Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.88% | 2.13% | 0.0% | -2.13% | -1.79% |
+| 2021-10-21 00:00:00 | Mildly Bearish | Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.96% | 1.82% | 0.0% | -1.82% | -0.89% |
+| 2021-09-16 00:00:00 | Bullish | Strong Bullish | Bullish Alignment | Down to Up | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 0.72% | 0.75% | 0.6% | -0.16% | 0.5% |
+| 2021-03-25 00:00:00 | Mildly Bearish | Strong Bearish | Bearish Alignment | Top to Down | Against then Recovered | Worked and Remained | Exceeded Half then Reversed | 1.18% | 2.1% | 0.0% | -2.1% | -1.54% |
 
 ### Reversed Before Half VIX Range + Reversed by Close (47 days — weak alignment, ~76% lose)
 
 | Date | FII View | PRO View | Alignment | Direction | Intraday Path | Close Outcome | VIX Exhaustion | VIX Predicted% | Actual Range% | High% | Low% | Close% |
 |------|----------|----------|-----------|-----------|---------------|---------------|----------------|---------------:|--------------:|------:|-----:|-------:|
-| 2026-08-25 | Strong Bearish | Strong Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.6% | 0.91% | 0.66% | -0.25% | 0.66% |
-| 2026-08-04 | Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.62% | 1.12% | 0.0% | -1.12% | -0.36% |
-| 2026-07-07 | Bullish | Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.62% | 0.74% | 0.27% | -0.47% | -0.45% |
-| 2026-06-16 | Mildly Bearish | Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.75% | 0.48% | 0.33% | -0.15% | 0.3% |
-| 2026-06-02 | Mildly Bearish | Strong Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.87% | 1.41% | 1.41% | 0.0% | 1.27% |
-| 2026-05-19 | Mildly Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 1.03% | 0.82% | 0.45% | -0.37% | -0.29% |
-| 2026-03-02 | Strong Bearish | Strong Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.72% | 1.56% | 1.34% | -0.23% | 0.77% |
-| 2026-01-13 | Mildly Bullish | Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.6% | 1.14% | 0.01% | -1.14% | -0.71% |
-| 2025-12-23 | Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.51% | 0.44% | 0.11% | -0.33% | -0.15% |
-| 2025-11-18 | Mildly Bullish | Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.62% | 0.59% | 0.03% | -0.56% | -0.49% |
-| 2025-09-16 | Mildly Bearish | Strong Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.54% | 0.76% | 0.75% | -0.01% | 0.72% |
-| 2025-07-24 | Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.55% | 0.9% | 0.01% | -0.89% | -0.76% |
-| 2024-12-26 | Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.69% | 0.84% | 0.33% | -0.51% | -0.07% |
-| 2024-12-19 | Bearish | Strong Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.75% | 0.56% | 0.54% | -0.03% | 0.36% |
-| 2024-07-04 | Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.69% | 0.49% | 0.13% | -0.36% | -0.27% |
-| 2024-06-13 | Mildly Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.75% | 0.54% | 0.0% | -0.54% | -0.35% |
-| 2024-05-09 | Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.89% | 1.69% | 0.37% | -1.32% | -1.15% |
-| 2024-03-14 | Bearish | Strong Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.76% | 1.31% | 1.01% | -0.3% | 0.78% |
-| 2024-02-29 | Bearish | Strong Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.85% | 0.91% | 0.57% | -0.34% | 0.49% |
-| 2024-02-01 | Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.84% | 0.8% | 0.24% | -0.56% | -0.41% |
-| 2024-01-25 | Mildly Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.75% | 0.99% | 0.02% | -0.97% | -0.39% |
-| 2023-09-28 | Mildly Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.61% | 1.39% | 0.02% | -1.36% | -1.06% |
-| 2023-09-14 | Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.62% | 0.61% | 0.2% | -0.41% | -0.13% |
-| 2023-08-24 | Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.61% | 1.1% | 0.25% | -0.85% | -0.79% |
-| 2023-07-27 | Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.55% | 1.33% | 0.08% | -1.25% | -0.76% |
-| 2023-06-22 | Mildly Bullish | Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.59% | 0.67% | 0.17% | -0.49% | -0.39% |
-| 2023-06-08 | Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.6% | 0.86% | 0.28% | -0.58% | -0.42% |
-| 2023-05-11 | Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.68% | 0.47% | 0.0% | -0.47% | -0.29% |
-| 2023-03-02 | Mildly Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.68% | 0.79% | 0.13% | -0.66% | -0.59% |
-| 2023-02-02 | Mildly Bearish | Strong Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.88% | 1.17% | 0.78% | -0.39% | 0.54% |
-| 2023-01-19 | Strong Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.75% | 0.5% | 0.19% | -0.31% | -0.17% |
-| 2022-12-08 | Mildly Bearish | Strong Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.74% | 0.47% | 0.29% | -0.18% | 0.23% |
-| 2022-12-01 | Strong Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.72% | 0.57% | 0.08% | -0.5% | -0.38% |
-| 2022-11-03 | Bearish | Strong Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.87% | 0.79% | 0.76% | -0.02% | 0.44% |
-| 2022-10-13 | Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 1.06% | 0.9% | 0.14% | -0.76% | -0.41% |
-| 2022-10-06 | Strong Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 1.02% | 0.64% | 0.28% | -0.36% | -0.36% |
-| 2022-09-22 | Bearish | Strong Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Reversed Before Half | 1.01% | 1.08% | 0.64% | -0.44% | 0.15% |
-| 2022-09-08 | Mildly Bearish | Mildly Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Reversed Before Half | 1.01% | 0.64% | 0.33% | -0.31% | 0.29% |
-| 2022-03-10 | Mildly Bullish | Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 1.44% | 1.84% | 0.0% | -1.84% | -1.14% |
-| 2022-02-03 | Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.98% | 1.47% | 0.04% | -1.43% | -1.39% |
-| 2021-12-30 | Mildly Bearish | Strong Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.85% | 0.67% | 0.36% | -0.31% | 0.16% |
-| 2021-09-02 | Mildly Bearish | Strong Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.74% | 1.06% | 0.88% | -0.19% | 0.81% |
-| 2021-07-22 | Bearish | Mildly Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.69% | 0.67% | 0.62% | -0.05% | 0.58% |
-| 2021-06-17 | Mildly Bearish | Strong Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.78% | 0.97% | 0.77% | -0.19% | 0.21% |
-| 2021-03-10 | Mildly Bullish | Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 1.18% | 0.76% | 0.1% | -0.66% | -0.22% |
-| 2020-10-29 | Mildly Bearish | Strong Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Reversed Before Half | 1.22% | 1.18% | 0.95% | -0.23% | 0.32% |
-| 2020-09-10 | Mildly Bearish | Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Reversed Before Half | 1.16% | 1.17% | 0.88% | -0.3% | 0.8% |
+| 2026-08-25 00:00:00 | Strong Bearish | Strong Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.6% | 0.91% | 0.66% | -0.25% | 0.66% |
+| 2026-08-04 00:00:00 | Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.62% | 1.12% | 0.0% | -1.12% | -0.36% |
+| 2026-07-07 00:00:00 | Bullish | Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.62% | 0.74% | 0.27% | -0.47% | -0.45% |
+| 2026-06-16 00:00:00 | Mildly Bearish | Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.75% | 0.48% | 0.33% | -0.15% | 0.3% |
+| 2026-06-02 00:00:00 | Mildly Bearish | Strong Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.87% | 1.41% | 1.41% | 0.0% | 1.27% |
+| 2026-05-19 00:00:00 | Mildly Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 1.03% | 0.82% | 0.45% | -0.37% | -0.29% |
+| 2026-03-02 00:00:00 | Strong Bearish | Strong Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.72% | 1.56% | 1.34% | -0.23% | 0.77% |
+| 2026-01-13 00:00:00 | Mildly Bullish | Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.6% | 1.14% | 0.01% | -1.14% | -0.71% |
+| 2025-12-23 00:00:00 | Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.51% | 0.44% | 0.11% | -0.33% | -0.15% |
+| 2025-11-18 00:00:00 | Mildly Bullish | Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.62% | 0.59% | 0.03% | -0.56% | -0.49% |
+| 2025-09-16 00:00:00 | Mildly Bearish | Strong Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.54% | 0.76% | 0.75% | -0.01% | 0.72% |
+| 2025-07-24 00:00:00 | Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.55% | 0.9% | 0.01% | -0.89% | -0.76% |
+| 2024-12-26 00:00:00 | Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.69% | 0.84% | 0.33% | -0.51% | -0.07% |
+| 2024-12-19 00:00:00 | Bearish | Strong Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.75% | 0.56% | 0.54% | -0.03% | 0.36% |
+| 2024-07-04 00:00:00 | Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.69% | 0.49% | 0.13% | -0.36% | -0.27% |
+| 2024-06-13 00:00:00 | Mildly Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.75% | 0.54% | 0.0% | -0.54% | -0.35% |
+| 2024-05-09 00:00:00 | Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.89% | 1.69% | 0.37% | -1.32% | -1.15% |
+| 2024-03-14 00:00:00 | Bearish | Strong Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.76% | 1.31% | 1.01% | -0.3% | 0.78% |
+| 2024-02-29 00:00:00 | Bearish | Strong Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.85% | 0.91% | 0.57% | -0.34% | 0.49% |
+| 2024-02-01 00:00:00 | Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.84% | 0.8% | 0.24% | -0.56% | -0.41% |
+| 2024-01-25 00:00:00 | Mildly Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.75% | 0.99% | 0.02% | -0.97% | -0.39% |
+| 2023-09-28 00:00:00 | Mildly Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.61% | 1.39% | 0.02% | -1.36% | -1.06% |
+| 2023-09-14 00:00:00 | Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.62% | 0.61% | 0.2% | -0.41% | -0.13% |
+| 2023-08-24 00:00:00 | Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.61% | 1.1% | 0.25% | -0.85% | -0.79% |
+| 2023-07-27 00:00:00 | Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.55% | 1.33% | 0.08% | -1.25% | -0.76% |
+| 2023-06-22 00:00:00 | Mildly Bullish | Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.59% | 0.67% | 0.17% | -0.49% | -0.39% |
+| 2023-06-08 00:00:00 | Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.6% | 0.86% | 0.28% | -0.58% | -0.42% |
+| 2023-05-11 00:00:00 | Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.68% | 0.47% | 0.0% | -0.47% | -0.29% |
+| 2023-03-02 00:00:00 | Mildly Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.68% | 0.79% | 0.13% | -0.66% | -0.59% |
+| 2023-02-02 00:00:00 | Mildly Bearish | Strong Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.88% | 1.17% | 0.78% | -0.39% | 0.54% |
+| 2023-01-19 00:00:00 | Strong Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.75% | 0.5% | 0.19% | -0.31% | -0.17% |
+| 2022-12-08 00:00:00 | Mildly Bearish | Strong Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.74% | 0.47% | 0.29% | -0.18% | 0.23% |
+| 2022-12-01 00:00:00 | Strong Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.72% | 0.57% | 0.08% | -0.5% | -0.38% |
+| 2022-11-03 00:00:00 | Bearish | Strong Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.87% | 0.79% | 0.76% | -0.02% | 0.44% |
+| 2022-10-13 00:00:00 | Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 1.06% | 0.9% | 0.14% | -0.76% | -0.41% |
+| 2022-10-06 00:00:00 | Strong Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 1.02% | 0.64% | 0.28% | -0.36% | -0.36% |
+| 2022-09-22 00:00:00 | Bearish | Strong Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Reversed Before Half | 1.01% | 1.08% | 0.64% | -0.44% | 0.15% |
+| 2022-09-08 00:00:00 | Mildly Bearish | Mildly Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Reversed Before Half | 1.01% | 0.64% | 0.33% | -0.31% | 0.29% |
+| 2022-03-10 00:00:00 | Mildly Bullish | Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 1.44% | 1.84% | 0.0% | -1.84% | -1.14% |
+| 2022-02-03 00:00:00 | Bullish | Strong Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.98% | 1.47% | 0.04% | -1.43% | -1.39% |
+| 2021-12-30 00:00:00 | Mildly Bearish | Strong Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.85% | 0.67% | 0.36% | -0.31% | 0.16% |
+| 2021-09-02 00:00:00 | Mildly Bearish | Strong Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.74% | 1.06% | 0.88% | -0.19% | 0.81% |
+| 2021-07-22 00:00:00 | Bearish | Mildly Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.69% | 0.67% | 0.62% | -0.05% | 0.58% |
+| 2021-06-17 00:00:00 | Mildly Bearish | Strong Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Reversed Before Half | 0.78% | 0.97% | 0.77% | -0.19% | 0.21% |
+| 2021-03-10 00:00:00 | Mildly Bullish | Bullish | Bullish Alignment | Top to Down | Worked then Reversed | Reversed by Close | Reversed Before Half | 1.18% | 0.76% | 0.1% | -0.66% | -0.22% |
+| 2020-10-29 00:00:00 | Mildly Bearish | Strong Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Reversed Before Half | 1.22% | 1.18% | 0.95% | -0.23% | 0.32% |
+| 2020-09-10 00:00:00 | Mildly Bearish | Bearish | Bearish Alignment | Down to Up | Worked then Reversed | Reversed by Close | Reversed Before Half | 1.16% | 1.17% | 0.88% | -0.3% | 0.8% |
 
 ### Mixed Days (FII vs PRO opposing) — 28 days
 
 | Date | FII View | PRO View | Direction | VIX Predicted% | Actual Range% | High% | Low% | Close% |
 |------|----------|----------|-----------|---------------:|--------------:|------:|-----:|-------:|
-| 2026-09-01 | Mildly Bullish | Strong Bearish | Top to Down | 0.59% | 0.79% | 0.27% | -0.52% | -0.09% |
-| 2026-08-18 | Mildly Bullish | Bearish | Top to Down | 0.59% | 0.47% | 0.19% | -0.28% | -0.28% |
-| 2026-07-28 | Bullish | Mildly Bearish | Down to Up | 0.66% | 0.36% | 0.29% | -0.07% | 0.07% |
-| 2026-05-05 | Mildly Bullish | Bearish | Top to Down | 0.96% | 0.83% | 0.12% | -0.71% | -0.0% |
-| 2026-02-10 | Bullish | Strong Bearish | Top to Down | 0.64% | 0.46% | 0.26% | -0.2% | -0.02% |
-| 2025-09-09 | Mildly Bullish | Bearish | Down to Up | 0.57% | 0.31% | 0.11% | -0.2% | 0.06% |
-| 2025-04-24 | Bullish | Mildly Bearish | Top to Down | 0.84% | 0.54% | 0.29% | -0.25% | -0.14% |
-| 2025-03-20 | Mildly Bullish | Bearish | Down to Up | 0.7% | 1.05% | 0.78% | -0.27% | 0.56% |
-| 2024-12-05 | Mildly Bullish | Mildly Bearish | Down to Up | 0.76% | 2.29% | 1.3% | -0.99% | 0.66% |
-| 2024-11-28 | Mildly Bullish | Bearish | Top to Down | 0.77% | 1.95% | 0.29% | -1.65% | -1.3% |
-| 2024-11-14 | Mildly Bearish | Strong Bullish | Down to Up | 0.81% | 0.81% | 0.57% | -0.25% | 0.07% |
-| 2024-10-03 | Strong Bearish | Strong Bullish | Top to Down | 0.63% | 1.61% | 0.73% | -0.87% | -0.73% |
-| 2024-08-29 | Mildly Bullish | Strong Bearish | Down to Up | 0.73% | 0.78% | 0.63% | -0.15% | 0.49% |
-| 2024-08-08 | Strong Bearish | Strong Bullish | Top to Down | 0.85% | 1.08% | 0.38% | -0.7% | -0.62% |
-| 2024-08-01 | Strong Bearish | Strong Bullish | Top to Down | 0.69% | 0.49% | 0.19% | -0.3% | -0.1% |
-| 2024-07-25 | Bearish | Bullish | Down to Up | 0.62% | 0.89% | 0.81% | -0.08% | 0.76% |
-| 2024-06-27 | Bullish | Strong Bearish | Down to Up | 0.74% | 1.18% | 0.86% | -0.32% | 0.65% |
-| 2024-06-20 | Bullish | Strong Bearish | Top to Down | 0.72% | 0.77% | 0.16% | -0.61% | -0.03% |
-| 2024-04-10 | Mildly Bullish | Strong Bearish | Down to Up | 0.59% | 0.45% | 0.24% | -0.2% | 0.07% |
-| 2024-03-28 | Bearish | Strong Bullish | Down to Up | 0.66% | 1.59% | 1.59% | 0.0% | 0.81% |
-| 2024-02-22 | Bullish | Strong Bearish | Down to Up | 0.83% | 1.71% | 0.77% | -0.93% | 0.61% |
-| 2024-02-08 | Mildly Bearish | Bullish | Top to Down | 0.81% | 1.57% | 0.01% | -1.56% | -1.14% |
-| 2024-01-11 | Bearish | Strong Bullish | Top to Down | 0.68% | 0.61% | 0.18% | -0.43% | -0.09% |
-| 2023-12-28 | Bearish | Strong Bullish | Down to Up | 0.81% | 0.57% | 0.4% | -0.17% | 0.27% |
-| 2023-12-07 | Bullish | Strong Bearish | Top to Down | 0.72% | 0.43% | 0.04% | -0.39% | -0.08% |
-| 2023-08-17 | Bearish | Strong Bullish | Top to Down | 0.64% | 0.69% | 0.06% | -0.64% | -0.54% |
-| 2022-11-17 | Bullish | Mildly Bearish | Top to Down | 0.79% | 0.57% | 0.32% | -0.25% | -0.13% |
-| 2021-05-19 | Bullish | Mildly Bearish | Top to Down | 1.01% | 0.82% | 0.49% | -0.33% | -0.26% |
+| 2026-09-01 00:00:00 | Mildly Bullish | Strong Bearish | Top to Down | 0.59% | 0.79% | 0.27% | -0.52% | -0.09% |
+| 2026-08-18 00:00:00 | Mildly Bullish | Bearish | Top to Down | 0.59% | 0.47% | 0.19% | -0.28% | -0.28% |
+| 2026-07-28 00:00:00 | Bullish | Mildly Bearish | Down to Up | 0.66% | 0.36% | 0.29% | -0.07% | 0.07% |
+| 2026-05-05 00:00:00 | Mildly Bullish | Bearish | Top to Down | 0.96% | 0.83% | 0.12% | -0.71% | -0.0% |
+| 2026-02-10 00:00:00 | Bullish | Strong Bearish | Top to Down | 0.64% | 0.46% | 0.26% | -0.2% | -0.02% |
+| 2025-09-09 00:00:00 | Mildly Bullish | Bearish | Down to Up | 0.57% | 0.31% | 0.11% | -0.2% | 0.06% |
+| 2025-04-24 00:00:00 | Bullish | Mildly Bearish | Top to Down | 0.84% | 0.54% | 0.29% | -0.25% | -0.14% |
+| 2025-03-20 00:00:00 | Mildly Bullish | Bearish | Down to Up | 0.7% | 1.05% | 0.78% | -0.27% | 0.56% |
+| 2024-12-05 00:00:00 | Mildly Bullish | Mildly Bearish | Down to Up | 0.76% | 2.29% | 1.3% | -0.99% | 0.66% |
+| 2024-11-28 00:00:00 | Mildly Bullish | Bearish | Top to Down | 0.77% | 1.95% | 0.29% | -1.65% | -1.3% |
+| 2024-11-14 00:00:00 | Mildly Bearish | Strong Bullish | Down to Up | 0.81% | 0.81% | 0.57% | -0.25% | 0.07% |
+| 2024-10-03 00:00:00 | Strong Bearish | Strong Bullish | Top to Down | 0.63% | 1.61% | 0.73% | -0.87% | -0.73% |
+| 2024-08-29 00:00:00 | Mildly Bullish | Strong Bearish | Down to Up | 0.73% | 0.78% | 0.63% | -0.15% | 0.49% |
+| 2024-08-08 00:00:00 | Strong Bearish | Strong Bullish | Top to Down | 0.85% | 1.08% | 0.38% | -0.7% | -0.62% |
+| 2024-08-01 00:00:00 | Strong Bearish | Strong Bullish | Top to Down | 0.69% | 0.49% | 0.19% | -0.3% | -0.1% |
+| 2024-07-25 00:00:00 | Bearish | Bullish | Down to Up | 0.62% | 0.89% | 0.81% | -0.08% | 0.76% |
+| 2024-06-27 00:00:00 | Bullish | Strong Bearish | Down to Up | 0.74% | 1.18% | 0.86% | -0.32% | 0.65% |
+| 2024-06-20 00:00:00 | Bullish | Strong Bearish | Top to Down | 0.72% | 0.77% | 0.16% | -0.61% | -0.03% |
+| 2024-04-10 00:00:00 | Mildly Bullish | Strong Bearish | Down to Up | 0.59% | 0.45% | 0.24% | -0.2% | 0.07% |
+| 2024-03-28 00:00:00 | Bearish | Strong Bullish | Down to Up | 0.66% | 1.59% | 1.59% | 0.0% | 0.81% |
+| 2024-02-22 00:00:00 | Bullish | Strong Bearish | Down to Up | 0.83% | 1.71% | 0.77% | -0.93% | 0.61% |
+| 2024-02-08 00:00:00 | Mildly Bearish | Bullish | Top to Down | 0.81% | 1.57% | 0.01% | -1.56% | -1.14% |
+| 2024-01-11 00:00:00 | Bearish | Strong Bullish | Top to Down | 0.68% | 0.61% | 0.18% | -0.43% | -0.09% |
+| 2023-12-28 00:00:00 | Bearish | Strong Bullish | Down to Up | 0.81% | 0.57% | 0.4% | -0.17% | 0.27% |
+| 2023-12-07 00:00:00 | Bullish | Strong Bearish | Top to Down | 0.72% | 0.43% | 0.04% | -0.39% | -0.08% |
+| 2023-08-17 00:00:00 | Bearish | Strong Bullish | Top to Down | 0.64% | 0.69% | 0.06% | -0.64% | -0.54% |
+| 2022-11-17 00:00:00 | Bullish | Mildly Bearish | Top to Down | 0.79% | 0.57% | 0.32% | -0.25% | -0.13% |
+| 2021-05-19 00:00:00 | Bullish | Mildly Bearish | Top to Down | 1.01% | 0.82% | 0.49% | -0.33% | -0.26% |
 
 ### FII Solo View (PRO Neutral) — 21 days
 
 | Date | FII View | PRO View | Direction | VIX Predicted% | Actual Range% | High% | Low% | Close% |
 |------|----------|----------|-----------|---------------:|--------------:|------:|-----:|-------:|
-| 2026-07-14 | Bullish | Neutral | Top to Down | 0.7% | 0.55% | 0.37% | -0.18% | -0.14% |
-| 2026-05-26 | Strong Bullish | Neutral | Top to Down | 0.87% | 0.85% | 0.36% | -0.49% | -0.29% |
-| 2026-03-17 | Bullish | Neutral | Down to Up | 1.13% | 1.32% | 0.7% | -0.62% | 0.28% |
-| 2026-02-03 | Bearish | Neutral | Top to Down | 0.73% | 2.66% | 0.13% | -2.53% | -2.26% |
-| 2025-10-07 | Mildly Bullish | Neutral | Down to Up | 0.53% | 0.58% | 0.54% | -0.04% | 0.11% |
-| 2025-09-30 | Mildly Bullish | Neutral | Top to Down | 0.6% | 0.58% | 0.16% | -0.42% | -0.24% |
-| 2024-12-12 | Bullish | Neutral | Top to Down | 0.69% | 0.6% | 0.29% | -0.31% | -0.26% |
-| 2024-11-21 | Bullish | Neutral | Top to Down | 0.82% | 1.04% | 0.08% | -0.96% | -0.6% |
-| 2024-10-10 | Bearish | Neutral | Top to Down | 0.74% | 0.62% | 0.27% | -0.35% | -0.24% |
-| 2024-04-04 | Mildly Bearish | Neutral | Top to Down | 0.6% | 1.4% | 0.12% | -1.28% | -0.23% |
-| 2023-09-07 | Strong Bearish | Neutral | Down to Up | 0.56% | 0.95% | 0.71% | -0.25% | 0.64% |
-| 2023-04-20 | Mildly Bullish | Neutral | Top to Down | 0.64% | 0.56% | 0.26% | -0.31% | -0.08% |
-| 2022-10-20 | Bearish | Neutral | Down to Up | 0.92% | 0.93% | 0.92% | -0.01% | 0.82% |
-| 2022-06-02 | Bearish | Neutral | Down to Up | 1.09% | 1.22% | 1.0% | -0.22% | 0.94% |
-| 2022-04-13 | Bearish | Neutral | Top to Down | 0.95% | 1.17% | 0.36% | -0.81% | -0.75% |
-| 2022-03-31 | Mildly Bullish | Neutral | Top to Down | 1.08% | 0.7% | 0.23% | -0.48% | -0.29% |
-| 2021-10-14 | Mildly Bullish | Neutral | Down to Up | 0.84% | 0.55% | 0.42% | -0.13% | 0.36% |
-| 2021-09-30 | Bearish | Neutral | Top to Down | 0.99% | 0.88% | 0.13% | -0.75% | -0.62% |
-| 2021-08-18 | Bearish | Neutral | Top to Down | 0.7% | 0.98% | 0.06% | -0.93% | -0.85% |
-| 2021-01-21 | Mildly Bearish | Neutral | Top to Down | 1.13% | 1.59% | 0.15% | -1.44% | -0.68% |
-| 2020-10-01 | Mildly Bullish | Neutral | Down to Up | 1.02% | 0.68% | 0.56% | -0.12% | 0.51% |
+| 2026-07-14 00:00:00 | Bullish | Neutral | Top to Down | 0.7% | 0.55% | 0.37% | -0.18% | -0.14% |
+| 2026-05-26 00:00:00 | Strong Bullish | Neutral | Top to Down | 0.87% | 0.85% | 0.36% | -0.49% | -0.29% |
+| 2026-03-17 00:00:00 | Bullish | Neutral | Down to Up | 1.13% | 1.32% | 0.7% | -0.62% | 0.28% |
+| 2026-02-03 00:00:00 | Bearish | Neutral | Top to Down | 0.73% | 2.66% | 0.13% | -2.53% | -2.26% |
+| 2025-10-07 00:00:00 | Mildly Bullish | Neutral | Down to Up | 0.53% | 0.58% | 0.54% | -0.04% | 0.11% |
+| 2025-09-30 00:00:00 | Mildly Bullish | Neutral | Top to Down | 0.6% | 0.58% | 0.16% | -0.42% | -0.24% |
+| 2024-12-12 00:00:00 | Bullish | Neutral | Top to Down | 0.69% | 0.6% | 0.29% | -0.31% | -0.26% |
+| 2024-11-21 00:00:00 | Bullish | Neutral | Top to Down | 0.82% | 1.04% | 0.08% | -0.96% | -0.6% |
+| 2024-10-10 00:00:00 | Bearish | Neutral | Top to Down | 0.74% | 0.62% | 0.27% | -0.35% | -0.24% |
+| 2024-04-04 00:00:00 | Mildly Bearish | Neutral | Top to Down | 0.6% | 1.4% | 0.12% | -1.28% | -0.23% |
+| 2023-09-07 00:00:00 | Strong Bearish | Neutral | Down to Up | 0.56% | 0.95% | 0.71% | -0.25% | 0.64% |
+| 2023-04-20 00:00:00 | Mildly Bullish | Neutral | Top to Down | 0.64% | 0.56% | 0.26% | -0.31% | -0.08% |
+| 2022-10-20 00:00:00 | Bearish | Neutral | Down to Up | 0.92% | 0.93% | 0.92% | -0.01% | 0.82% |
+| 2022-06-02 00:00:00 | Bearish | Neutral | Down to Up | 1.09% | 1.22% | 1.0% | -0.22% | 0.94% |
+| 2022-04-13 00:00:00 | Bearish | Neutral | Top to Down | 0.95% | 1.17% | 0.36% | -0.81% | -0.75% |
+| 2022-03-31 00:00:00 | Mildly Bullish | Neutral | Top to Down | 1.08% | 0.7% | 0.23% | -0.48% | -0.29% |
+| 2021-10-14 00:00:00 | Mildly Bullish | Neutral | Down to Up | 0.84% | 0.55% | 0.42% | -0.13% | 0.36% |
+| 2021-09-30 00:00:00 | Bearish | Neutral | Top to Down | 0.99% | 0.88% | 0.13% | -0.75% | -0.62% |
+| 2021-08-18 00:00:00 | Bearish | Neutral | Top to Down | 0.7% | 0.98% | 0.06% | -0.93% | -0.85% |
+| 2021-01-21 00:00:00 | Mildly Bearish | Neutral | Top to Down | 1.13% | 1.59% | 0.15% | -1.44% | -0.68% |
+| 2020-10-01 00:00:00 | Mildly Bullish | Neutral | Down to Up | 1.02% | 0.68% | 0.56% | -0.12% | 0.51% |
 
 
 ---
-*Generated from 312 trading days (2020-08-06 to 2026-09-01)*
+*Generated from 312 trading days (2020-08-06 00:00:00 to 2026-09-01 00:00:00)*

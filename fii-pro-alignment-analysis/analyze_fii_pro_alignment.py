@@ -994,7 +994,42 @@ def main():
     df["vix_regime"] = df["vix_open"].apply(vix_regime)
 
     # Year for trend analysis
-    df["year"] = pd.to_datetime(df["date"]).dt.year
+    df["date"] = pd.to_datetime(df["date"])  # normalize
+    df = df.sort_values("date").reset_index(drop=True)
+    df["year"] = df["date"].dt.year
+
+    # Cumulative positions for FII and PRO (index/fut, calls, puts)
+    cum_cols = [
+        "t1_fii_fut_daily", "t1_fii_call_daily", "t1_fii_put_daily",
+        "t1_pro_fut_daily", "t1_pro_call_daily", "t1_pro_put_daily",
+    ]
+    for c in cum_cols:
+        out_c = f"cum_{c}"
+        if c in df.columns:
+            # treat missing values as 0 for cumulative sums
+            df[c] = pd.to_numeric(df[c], errors="coerce").fillna(0)
+            df[out_c] = df[c].cumsum()
+        else:
+            df[out_c] = 0
+
+    # Derive position-based view from cumulative future (index) position
+    def pos_view_from_cum(x):
+        if x > 0:
+            return "Bullish"
+        elif x < 0:
+            return "Bearish"
+        else:
+            return "Neutral"
+
+    df["fii_pos_view"] = df["cum_t1_fii_fut_daily"].apply(pos_view_from_cum)
+    df["pro_pos_view"] = df["cum_t1_pro_fut_daily"].apply(pos_view_from_cum)
+
+    # Compare declared view vs cumulative-position-derived view
+    df["fii_view_bucket"] = df["fii_view"].apply(bucket_view)
+    df["pro_view_bucket"] = df["pro_view"].apply(bucket_view)
+    df["fii_view_matches_cum"] = df.apply(lambda r: r["fii_view_bucket"] == r["fii_pos_view"], axis=1)
+    df["pro_view_matches_cum"] = df.apply(lambda r: r["pro_view_bucket"] == r["pro_pos_view"], axis=1)
+    df["both_views_match_cum"] = df["fii_view_matches_cum"] & df["pro_view_matches_cum"]
 
     # Print alignment summary
     print(f"\nAlignment breakdown:")
@@ -1018,6 +1053,15 @@ def main():
         "vix_predicted_move_pct",
         "intraday_high_pct", "intraday_low_pct", "actual_open_close_pct",
         "actual_range_pct", "is_nifty_expiry", "vix_open", "vix_regime", "year"
+    ]
+    # include cumulative position columns
+    output_cols += [
+        "cum_t1_fii_fut_daily", "cum_t1_fii_call_daily", "cum_t1_fii_put_daily",
+        "cum_t1_pro_fut_daily", "cum_t1_pro_call_daily", "cum_t1_pro_put_daily",
+    ]
+    # include position-match columns
+    output_cols += [
+        "fii_pos_view", "pro_pos_view", "fii_view_matches_cum", "pro_view_matches_cum", "both_views_match_cum"
     ]
     df[output_cols].to_csv(OUTPUT_CSV, index=False)
     print(f"\nResults CSV: {OUTPUT_CSV}")

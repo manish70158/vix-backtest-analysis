@@ -176,58 +176,88 @@ def save_cache(cache):
         json.dump(cache, f)
 
 
+# HTTP statuses worth retrying (throttling / server hiccups), vs a 404 which
+# means the archive file is simply not there.
+TRANSIENT_STATUSES = {403, 408, 429, 500, 502, 503, 504}
+FETCH_RETRIES = 4
+
+
+def _parse_nse_oi_csv(text):
+    """Parse the NSE participant-OI CSV body into net positions, or None."""
+    lines = text.strip().split('\n')
+    if len(lines) < 4:
+        return None
+    data = {}
+    for line in lines[2:]:
+        parts = [p.strip().replace('"', '').strip() for p in line.split(',')]
+        if len(parts) < 9:
+            continue
+        category = parts[0].strip().upper()
+        if category == 'TOTAL':
+            continue
+        try:
+            fut_long = int(parts[1]) if parts[1].strip() else 0
+            fut_short = int(parts[2]) if parts[2].strip() else 0
+        except ValueError:
+            continue
+        call_long = int(parts[5]) if parts[5].strip() else 0
+        put_long = int(parts[6]) if parts[6].strip() else 0
+        call_short = int(parts[7]) if parts[7].strip() else 0
+        put_short = int(parts[8]) if parts[8].strip() else 0
+        if 'FII' in category or 'FOREIGN' in category:
+            data['fii_fut_idx_net'] = fut_long - fut_short
+            data['fii_call_net'] = call_long - call_short
+            data['fii_put_net'] = put_long - put_short
+        if 'PRO' in category or 'PROPRIETARY' in category:
+            data['pro_fut_idx_net'] = fut_long - fut_short
+            data['pro_call_net'] = call_long - call_short
+            data['pro_put_net'] = put_long - put_short
+    return data if 'fii_fut_idx_net' in data else None
+
+
 def fetch_participant_oi(session, date_obj, cache):
-    """Fetch participant-wise OI for a date from NSE archives."""
+    """Fetch participant-wise OI for a date from NSE archives.
+
+    Robust against transient failures so the daily job dumps data accurately:
+      - retries throttling / 5xx / network errors with backoff
+      - caches None ONLY when the archive is definitively absent (a 404 for a
+        date old enough to have been published = genuine holiday). Transient
+        failures and not-yet-published recent dates are left UNcached so the
+        next run retries instead of poisoning the cache with a false holiday.
+    """
     date_str = date_obj.strftime('%d%m%Y')
     if date_str in cache:
         return cache[date_str]
 
-    url = f"https://archives.nseindia.com/content/nsccl/fao_participant_oi_{date_str}.csv"
-    try:
-        r = session.get(url, timeout=15)
-        if r.status_code != 200:
-            cache[date_str] = None
-            return None
+    d = date_obj.date() if isinstance(date_obj, datetime) else date_obj
+    today = datetime.now(IST).date()
+    # A 404 is only a trustworthy "no data" once the archive should exist
+    # (NSE publishes end-of-day; give it until the next day).
+    archive_should_exist = (today - d).days >= 2
 
-        lines = r.text.strip().split('\n')
-        if len(lines) < 4:
-            cache[date_str] = None
-            return None
-
-        data = {}
-        for line in lines[2:]:
-            parts = [p.strip().replace('"', '').strip() for p in line.split(',')]
-            if len(parts) < 9:
-                continue
-            category = parts[0].strip().upper()
-            if category == 'TOTAL':
-                continue
-            try:
-                fut_long = int(parts[1]) if parts[1].strip() else 0
-                fut_short = int(parts[2]) if parts[2].strip() else 0
-            except ValueError:
-                continue
-
-            call_long = int(parts[5]) if parts[5].strip() else 0
-            put_long = int(parts[6]) if parts[6].strip() else 0
-            call_short = int(parts[7]) if parts[7].strip() else 0
-            put_short = int(parts[8]) if parts[8].strip() else 0
-
-            if 'FII' in category or 'FOREIGN' in category:
-                data['fii_fut_idx_net'] = fut_long - fut_short
-                data['fii_call_net'] = call_long - call_short
-                data['fii_put_net'] = put_long - put_short
-            if 'PRO' in category or 'PROPRIETARY' in category:
-                data['pro_fut_idx_net'] = fut_long - fut_short
-                data['pro_call_net'] = call_long - call_short
-                data['pro_put_net'] = put_long - put_short
-
-        result = data if 'fii_fut_idx_net' in data else None
-        cache[date_str] = result
-        return result
-    except Exception:
-        cache[date_str] = None
-        return None
+    url = (f"https://archives.nseindia.com/content/nsccl/"
+           f"fao_participant_oi_{date_str}.csv")
+    for attempt in range(FETCH_RETRIES):
+        try:
+            r = session.get(url, timeout=20)
+            if r.status_code == 200:
+                result = _parse_nse_oi_csv(r.text)
+                if result is not None:
+                    cache[date_str] = result
+                    return result
+                # 200 but unparseable/partial — retry, may be mid-publish
+            elif r.status_code == 404:
+                if archive_should_exist:
+                    cache[date_str] = None   # genuine holiday / no session
+                return None                  # recent 404: retry next run
+            elif r.status_code not in TRANSIENT_STATUSES:
+                return None                  # unexpected, don't poison cache
+        except requests.RequestException:
+            pass
+        if attempt < FETCH_RETRIES - 1:
+            time.sleep(1.2 * (attempt + 1))  # linear backoff
+    # Exhausted retries on a transient failure: do NOT cache None → retry later
+    return None
 
 
 def find_prev_trading_day(date_obj, max_lookback=7, cache=None):
@@ -276,54 +306,76 @@ def _parse_indian_num(s):
 
 
 def fetch_bse_participant_oi(bse_session, date_obj, bse_cache):
-    """Fetch BSE participant OI for a date from beta.bseindia.com."""
+    """Fetch BSE participant OI for a date from beta.bseindia.com.
+
+    Robust like fetch_participant_oi: retries transient failures, and only
+    caches None when the site returns a valid page with no data for a date
+    old enough to have been published. Transient/parse failures on recent
+    dates are left UNcached so the next run retries.
+    """
     date_str = date_obj.strftime('%d%m%Y')
     if date_str in bse_cache:
         return bse_cache[date_str]
 
-    try:
-        r = bse_session.get(BSE_URL, timeout=20)
-        if r.status_code != 200:
+    d = date_obj.date() if isinstance(date_obj, datetime) else date_obj
+    today = datetime.now(IST).date()
+    archive_should_exist = (today - d).days >= 2
+
+    def cache_none_if_due():
+        if archive_should_exist:
             bse_cache[date_str] = None
-            return None
-
-        html = r.text
-        viewstate = re.search(r'__VIEWSTATE[^G][^>]*value="([^"]*)"', html)
-        event_val = re.search(r'__EVENTVALIDATION[^>]*value="([^"]*)"', html)
-        viewstate_gen = re.search(
-            r'__VIEWSTATEGENERATOR[^>]*value="([^"]*)"', html
-        )
-
-        if not viewstate or not event_val:
-            bse_cache[date_str] = None
-            return None
-
-        form_date = date_obj.strftime("%d/%m/%Y")
-        form_data = {
-            "__VIEWSTATE": viewstate.group(1),
-            "__VIEWSTATEGENERATOR": (
-                viewstate_gen.group(1) if viewstate_gen else ""
-            ),
-            "__VIEWSTATEENCRYPTED": "",
-            "__EVENTVALIDATION": event_val.group(1),
-            "ctl00$ContentPlaceHolder1$txtDate1": form_date,
-            "ctl00$ContentPlaceHolder1$btnTradeArchives": "Submit",
-        }
-
-        r2 = bse_session.post(BSE_URL, data=form_data, timeout=20)
-        if r2.status_code != 200:
-            bse_cache[date_str] = None
-            return None
-
-        result = _parse_bse_oi_from_grid(r2.text)
-        if result is None:
-            result = _parse_bse_oi_from_html(r2.text)
-
-        bse_cache[date_str] = result
-        return result
-    except Exception:
-        bse_cache[date_str] = None
         return None
+
+    form_date = date_obj.strftime("%d/%m/%Y")
+    for attempt in range(FETCH_RETRIES):
+        try:
+            r = bse_session.get(BSE_URL, timeout=20)
+            if r.status_code != 200:
+                if r.status_code not in TRANSIENT_STATUSES:
+                    return cache_none_if_due()
+                raise requests.RequestException("transient GET status")
+
+            html = r.text
+            viewstate = re.search(r'__VIEWSTATE[^G][^>]*value="([^"]*)"', html)
+            event_val = re.search(r'__EVENTVALIDATION[^>]*value="([^"]*)"', html)
+            viewstate_gen = re.search(
+                r'__VIEWSTATEGENERATOR[^>]*value="([^"]*)"', html
+            )
+            if not viewstate or not event_val:
+                raise requests.RequestException("form tokens missing")
+
+            form_data = {
+                "__VIEWSTATE": viewstate.group(1),
+                "__VIEWSTATEGENERATOR": (
+                    viewstate_gen.group(1) if viewstate_gen else ""
+                ),
+                "__VIEWSTATEENCRYPTED": "",
+                "__EVENTVALIDATION": event_val.group(1),
+                "ctl00$ContentPlaceHolder1$txtDate1": form_date,
+                "ctl00$ContentPlaceHolder1$btnTradeArchives": "Submit",
+            }
+            r2 = bse_session.post(BSE_URL, data=form_data, timeout=20)
+            if r2.status_code != 200:
+                if r2.status_code not in TRANSIENT_STATUSES:
+                    return cache_none_if_due()
+                raise requests.RequestException("transient POST status")
+
+            result = _parse_bse_oi_from_grid(r2.text)
+            if result is None:
+                result = _parse_bse_oi_from_html(r2.text)
+            if result is not None:
+                bse_cache[date_str] = result
+                return result
+            # Valid page but no data parsed: genuine "no data" only if due,
+            # otherwise retry next run.
+            return cache_none_if_due()
+        except requests.RequestException:
+            pass
+        except Exception:
+            pass
+        if attempt < FETCH_RETRIES - 1:
+            time.sleep(1.5 * (attempt + 1))
+    return None
 
 
 def _parse_bse_oi_from_grid(html):
@@ -490,8 +542,12 @@ def backfill_recent_rows(existing_nifty, existing_sensex, existing_bse_daily,
     """
     recent_dates = pd.to_datetime(existing_nifty['date']).tail(15).dt.date.tolist()
 
-    # Collect T-1 and T-2 dates needed
-    oi_dates_needed = set()
+    # Collect T-1 and T-2 dates needed, PLUS the recent dates themselves. The
+    # most recent row's own OI is the pending T-1 for the next (not-yet-added)
+    # trading day; without this, a failed fetch for the last day would never
+    # be retried (it is not a T-1/T-2 of any existing row) and would silently
+    # become a false holiday — exactly what happened to Oct 9 2026.
+    oi_dates_needed = set(recent_dates)
     for d in recent_dates:
         dt_obj = datetime.combine(d, datetime.min.time())
         t1 = find_prev_trading_day(dt_obj, cache=cache)

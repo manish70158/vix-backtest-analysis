@@ -126,6 +126,41 @@ def determine_fii_direction(fut_d, call_d, put_d):
     return "Neutral"
 
 
+# Base daily columns whose running totals feed the cum_* columns.
+CUM_BASE_COLS = [
+    "t1_fii_fut_daily", "t1_fii_call_daily", "t1_fii_put_daily",
+    "t1_pro_fut_daily", "t1_pro_call_daily", "t1_pro_put_daily",
+]
+
+
+def recompute_cumulative(df):
+    """Recompute cum_* running totals from the t1_* daily columns.
+
+    cum_<col> is the date-ordered cumulative sum of <col>, with missing
+    daily values treated as 0 (matches analyze_fii_pro_alignment.py). Only
+    acts when the base t1_* columns exist (i.e. the Nifty daily file).
+
+    Returns (df, changed) where *changed* is True if any cum value differs
+    from what was already stored (including newly-filled NaN rows).
+    """
+    if not all(c in df.columns for c in CUM_BASE_COLS):
+        return df, False
+    df = df.sort_values("date").reset_index(drop=True)
+    changed = False
+    for base in CUM_BASE_COLS:
+        cum_col = f"cum_{base}"
+        new_cum = pd.to_numeric(df[base], errors="coerce").fillna(0).cumsum()
+        if cum_col in df.columns:
+            old = pd.to_numeric(df[cum_col], errors="coerce")
+            # NaN in old (never computed) counts as a difference → changed
+            if ((old - new_cum).abs().fillna(1e9) > 0.5).any():
+                changed = True
+        else:
+            changed = True
+        df[cum_col] = new_cum
+    return df, changed
+
+
 # ---------------------------------------------------------------------------
 # NSE Participant OI (cached)
 # ---------------------------------------------------------------------------
@@ -843,13 +878,18 @@ def main():
     if backfilled:
         print(f"    Updated {backfilled} rows with actual FII/PRO data")
 
+    # Keep cum_* running totals current even when no new rows are due
+    existing_nifty, cum_changed = recompute_cumulative(existing_nifty)
+    if cum_changed:
+        print("    Recomputed cum_* running totals for Nifty")
+
     if last_date >= today:
-        if backfilled:
+        if backfilled or cum_changed:
             # Load originals for protection check
             orig_nifty, _ = read_csv_with_protection(nifty_csv_path)
             orig_sensex, _ = read_csv_with_protection(sensex_csv_path)
-            
-            write_csv_with_protection(nifty_csv_path, 
+
+            write_csv_with_protection(nifty_csv_path,
                                      existing_nifty[nifty_columns],
                                      original_df=orig_nifty,
                                      action_desc="BACKFILL_ONLY")
@@ -920,6 +960,27 @@ def main():
         idx.date() if hasattr(idx, 'date') else pd.Timestamp(idx).date()
         for idx in nifty_yf.index
     ])
+
+    # Guard: yfinance can return a stale boundary bar (e.g. last Friday's row
+    # when queried over a weekend), which would re-append an existing date and
+    # double-count it in the cum_* totals. Keep only genuinely new dates.
+    existing_dates = set(pd.to_datetime(existing_nifty["date"]).dt.date)
+    existing_dates |= set(pd.to_datetime(existing_sensex["date"]).dt.date)
+    new_dates = [d for d in new_dates
+                 if d > last_date and d not in existing_dates]
+
+    if not new_dates:
+        print("    No new trading days (yfinance returned no rows past "
+              f"{last_date})")
+        if cum_changed:
+            orig_nifty, _ = read_csv_with_protection(nifty_csv_path)
+            write_csv_with_protection(nifty_csv_path,
+                                      existing_nifty[nifty_columns],
+                                      original_df=orig_nifty,
+                                      action_desc="CUM_ONLY")
+            print("    Saved recomputed cum_* totals.")
+        print("\n    Already up to date!")
+        return
 
     # Collect T-1 and T-2 dates needed for daily change computation
     dates_needed = set()
@@ -1432,6 +1493,9 @@ def main():
         tmp_sensex['t1_fii_stance'] = tmp_sensex['t1_fii_stance'].fillna('FII Neutral')
         tmp_sensex['t1_pro_stance'] = tmp_sensex['t1_pro_stance'].fillna('PRO Neutral')
         print(f"    Sensex FII/PRO: {count} rows with missing OI data (left blank)")
+
+    # Recompute cum_* running totals so appended rows get populated too
+    tmp_nifty, _ = recompute_cumulative(tmp_nifty)
 
     # 7. Write updated CSVs
     print("\n[7] Writing updated CSVs...")

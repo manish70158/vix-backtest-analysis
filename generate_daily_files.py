@@ -136,6 +136,9 @@ CUM_NET_MAP = {
     "cum_t1_pro_fut_daily": "pro_fut_idx_net",
     "cum_t1_pro_call_daily": "pro_call_net",
     "cum_t1_pro_put_daily": "pro_put_net",
+    "cum_t1_client_fut_daily": "client_fut_idx_net",
+    "cum_t1_client_call_daily": "client_call_net",
+    "cum_t1_client_put_daily": "client_put_net",
 }
 
 
@@ -231,6 +234,10 @@ def _parse_nse_oi_csv(text):
             data['pro_fut_idx_net'] = fut_long - fut_short
             data['pro_call_net'] = call_long - call_short
             data['pro_put_net'] = put_long - put_short
+        if category == 'CLIENT':
+            data['client_fut_idx_net'] = fut_long - fut_short
+            data['client_call_net'] = call_long - call_short
+            data['client_put_net'] = put_long - put_short
     return data if 'fii_fut_idx_net' in data else None
 
 
@@ -912,6 +919,15 @@ def main():
         )
         filled = existing_nifty['vix_predicted_move_pct'].notna().sum()
         print(f"    Added VIX accuracy columns (backfilled {filled} rows)")
+
+    # Ensure all cum_t1_* net-OI columns exist in the write order (appends any
+    # new ones, e.g. the client_* columns, to the end of the Nifty schema).
+    missing_cum_cols = [c for c in CUM_NET_MAP if c not in nifty_columns]
+    if missing_cum_cols:
+        nifty_columns.extend(missing_cum_cols)
+        for c in missing_cum_cols:
+            existing_nifty[c] = pd.NA
+        print(f"    Added cum_* columns: {', '.join(missing_cum_cols)}")
 
     # BSE daily CSV (may be empty / header-only)
     if bse_daily_csv_path.exists():

@@ -126,38 +126,57 @@ def determine_fii_direction(fut_d, call_d, put_d):
     return "Neutral"
 
 
-# Base daily columns whose running totals feed the cum_* columns.
-CUM_BASE_COLS = [
-    "t1_fii_fut_daily", "t1_fii_call_daily", "t1_fii_put_daily",
-    "t1_pro_fut_daily", "t1_pro_call_daily", "t1_pro_put_daily",
-]
+# The cum_t1_* columns hold the RAW net OI (Long - Short) at end of the prior
+# trading day (T-1) — the actual participant position that matches the NSE
+# archive file for that date — keyed by their source field in the OI cache.
+CUM_NET_MAP = {
+    "cum_t1_fii_fut_daily": "fii_fut_idx_net",
+    "cum_t1_fii_call_daily": "fii_call_net",
+    "cum_t1_fii_put_daily": "fii_put_net",
+    "cum_t1_pro_fut_daily": "pro_fut_idx_net",
+    "cum_t1_pro_call_daily": "pro_call_net",
+    "cum_t1_pro_put_daily": "pro_put_net",
+}
 
 
-def recompute_cumulative(df):
-    """Recompute cum_* running totals from the t1_* daily columns.
+def populate_t1_net(df, cache):
+    """Fill the cum_t1_* columns with the raw net OI at end of the prior
+    trading day (T-1) for each row, taken straight from the OI cache.
 
-    cum_<col> is the date-ordered cumulative sum of <col>, with missing
-    daily values treated as 0 (matches analyze_fii_pro_alignment.py). Only
-    acts when the base t1_* columns exist (i.e. the Nifty daily file).
+    These are the actual FII/PRO net positions (Future Index Long - Short,
+    Index Call net, Index Put net) that match the published NSE archive for
+    date T-1 — NOT a running cumulative sum. The sibling t1_*_daily columns
+    remain the day-over-day deltas (this row's T-1 net - previous row's).
 
-    Returns (df, changed) where *changed* is True if any cum value differs
-    from what was already stored (including newly-filled NaN rows).
+    Returns (df, changed); *changed* is True if any value differs from what
+    was already stored (including newly-filled blanks).
     """
-    if not all(c in df.columns for c in CUM_BASE_COLS):
+    if "date" not in df.columns:
         return df, False
     df = df.sort_values("date").reset_index(drop=True)
+    for col in CUM_NET_MAP:
+        if col not in df.columns:
+            df[col] = pd.NA
     changed = False
-    for base in CUM_BASE_COLS:
-        cum_col = f"cum_{base}"
-        new_cum = pd.to_numeric(df[base], errors="coerce").fillna(0).cumsum()
-        if cum_col in df.columns:
-            old = pd.to_numeric(df[cum_col], errors="coerce")
-            # NaN in old (never computed) counts as a difference → changed
-            if ((old - new_cum).abs().fillna(1e9) > 0.5).any():
+    for i, dval in enumerate(df["date"]):
+        try:
+            d = datetime.strptime(str(dval), "%Y-%m-%d")
+        except (ValueError, TypeError):
+            continue
+        t1 = find_prev_trading_day(d, cache=cache)
+        if not t1:
+            continue
+        t1d = cache.get(t1.strftime("%d%m%Y"))
+        if not t1d:
+            continue
+        for col, src in CUM_NET_MAP.items():
+            if src not in t1d:
+                continue
+            old = df.at[i, col]
+            new = t1d[src]
+            if pd.isna(old) or int(old) != int(new):
                 changed = True
-        else:
-            changed = True
-        df[cum_col] = new_cum
+                df.at[i, col] = new
     return df, changed
 
 
@@ -934,10 +953,10 @@ def main():
     if backfilled:
         print(f"    Updated {backfilled} rows with actual FII/PRO data")
 
-    # Keep cum_* running totals current even when no new rows are due
-    existing_nifty, cum_changed = recompute_cumulative(existing_nifty)
+    # Keep cum_* T-1 net-OI columns current even when no new rows are due
+    existing_nifty, cum_changed = populate_t1_net(existing_nifty, cache)
     if cum_changed:
-        print("    Recomputed cum_* running totals for Nifty")
+        print("    Populated cum_* with T-1 raw net OI for Nifty")
 
     if last_date >= today:
         if backfilled or cum_changed:
@@ -1550,8 +1569,8 @@ def main():
         tmp_sensex['t1_pro_stance'] = tmp_sensex['t1_pro_stance'].fillna('PRO Neutral')
         print(f"    Sensex FII/PRO: {count} rows with missing OI data (left blank)")
 
-    # Recompute cum_* running totals so appended rows get populated too
-    tmp_nifty, _ = recompute_cumulative(tmp_nifty)
+    # Populate cum_* with T-1 raw net OI so appended rows get it too
+    tmp_nifty, _ = populate_t1_net(tmp_nifty, cache)
 
     # 7. Write updated CSVs
     print("\n[7] Writing updated CSVs...")

@@ -45,3 +45,4 @@ date,day_of_week,sensex_open,sensex_high,sensex_low,sensex_close,actual_range_pc
 2026-11-06,Friday,79413.66,81028.02,79016.05,81028.02,2.53,2.03,Down to Up,15.58,17.47,12.0,34864.0,1276.0,FII Neutral,33600.0,Mildly Bullish,1528.0,81534.0,13945.0,PRO Neutral,69117.0,Bullish
 2026-11-09,Monday,81327.29,81339.41,80519.31,81106.65,1.01,-0.27,Top to Down,18.43,17.42,-42.0,12602.0,-10800.0,FII Neutral,23360.0,Neutral,353.0,-44897.0,-58229.0,PRO Confident (sold puts >20K),13685.0,Neutral
 2026-11-11,Wednesday,82248.68,82520.4,81417.39,81879.4,1.34,-0.45,Top to Down,17.42,17.56,-14.0,-52673.0,45195.0,FII Hedging (bought puts >20K),-97882.0,Bearish,-224.0,7878.0,65283.0,PRO Hedging (bought puts >20K),-57629.0,Bearish
+2026-11-12,Thursday,81762.27,82325.61,81576.15,81911.01,0.92,0.18,Down to Up,17.56,16.62,-23.0,39307.0,-24415.0,FII Confident (sold puts >20K),63699.0,Bullish,111.0,8708.0,71879.0,PRO Hedging (bought puts >20K),-63060.0,Bearish
